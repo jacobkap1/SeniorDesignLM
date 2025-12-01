@@ -1,3 +1,4 @@
+# Imports the YOLO class from the Ultralytics library, which contains the tools needed to load and run the YOLO models.
 from ultralytics import YOLO
 
 # Load a COCO-pretrained YOLO11n model
