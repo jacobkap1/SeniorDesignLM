@@ -2,9 +2,9 @@
 
 This repository is being managed by the following developers:
 
-Jacob Kaplan 🧑‍💻⚙️
+-Jacob Kaplan 🧑‍💻⚙️
 
-Matthew Ramos 🧑‍💻💼
+-Matthew Ramos 🧑‍💻💼
 
 🔍 About This Project
 
