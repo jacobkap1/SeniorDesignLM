@@ -12,4 +12,4 @@ Inside this repository, you’ll find our YOLO-based object detection model deve
 
 We’ve put a lot of work into building and training this model, and we’re excited to share our progress with you.
 
-![Lockheed Martin Logo](https://upload.wikimedia.org/wikipedia/commons/3/3f/Lockheed_Martin_logo.svg)
+
