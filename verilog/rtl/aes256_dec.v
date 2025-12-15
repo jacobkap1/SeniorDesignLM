@@ -1,14 +1,15 @@
 // -----------------------------------------------------------------------------
 // aes256_dec.v 
 // -----------------------------------------------------------------------------
-// AES-256 CBC Decryption Core for PolarFire SoC (MPFS095T)
-// - 2 rounds per cycle
+// - byte-sequential sbox, (SHARES-1)-th order secure
 // - Active-high enable_i, active-low resetn
 // - Streaming input with bvalid_i
 // - 'valid_o' pulses after block is done
 // ----------------------------------------------------------------------------- 
 `timescale 1ns/1ps
-module aes256_dec (
+module aes256_dec #(
+    parameter SHARES = 3
+)(
     // control
     input  logic         clk,
     input  logic         resetn,
@@ -16,16 +17,14 @@ module aes256_dec (
 
     // muxed input
     // can either be key round shares, iv shares or cipher shares
-    input  logic [127:0] b0_i,
-    input  logic [127:0] b1_i,
-    input  logic [127:0] b2_i,
+    input  logic [127:0] b_i[0:SHARES-1],
     input  logic         bvalid_i,
     
-    // fresh randomness for invsbox calls
-    input  logic [3455:0] r_i,
-    input  logic          rvalid_i,
+    // sbox
+    output logic [7:0]   sbox_i[0:SHARES-1],
+    input  logic [7:0]   sbox_o[0:SHARES-1],
     
-    // digest
+    // plaintext
     output logic [127:0] plain_o,
 
     // outputs
@@ -34,7 +33,7 @@ module aes256_dec (
     output logic [3:0]   round_o,
     output logic [1:0]   sel_o
 );
-    int i, j, k;
+    int i, j, o;
     // --------------------------------------------------- ROM ---------------------------------------------------
     localparam logic [7:0] gmul_09[0:255] = '{
         8'h00, 8'h09, 8'h12, 8'h1b, 8'h24, 8'h2d, 8'h36, 8'h3f, 8'h48, 8'h41, 8'h5a, 8'h53, 8'h6c, 8'h65, 8'h7e, 8'h77,
@@ -133,16 +132,16 @@ module aes256_dec (
          st[ 7], st[ 6], st[ 5], st[ 4],
          st[ 3], st[ 2], st[ 1], st[ 0]} = s;
 
-        for (k = 0; k < 16; k = k + 4) begin
-            a0 = st[k+3];
-            a1 = st[k+2];
-            a2 = st[k+1];
-            a3 = st[k];
+        for (j = 0; j < 16; j = j + 4) begin
+            a0 = st[j+3];
+            a1 = st[j+2];
+            a2 = st[j+1];
+            a3 = st[j];
         
-            st[k+3] = gmul_0e[a0] ^ gmul_0b[a1] ^ gmul_0d[a2] ^ gmul_09[a3];
-            st[k+2] = gmul_09[a0] ^ gmul_0e[a1] ^ gmul_0b[a2] ^ gmul_0d[a3];
-            st[k+1] = gmul_0d[a0] ^ gmul_09[a1] ^ gmul_0e[a2] ^ gmul_0b[a3];
-            st[k]   = gmul_0b[a0] ^ gmul_0d[a1] ^ gmul_09[a2] ^ gmul_0e[a3];
+            st[j+3] = gmul_0e[a0] ^ gmul_0b[a1] ^ gmul_0d[a2] ^ gmul_09[a3];
+            st[j+2] = gmul_09[a0] ^ gmul_0e[a1] ^ gmul_0b[a2] ^ gmul_0d[a3];
+            st[j+1] = gmul_0d[a0] ^ gmul_09[a1] ^ gmul_0e[a2] ^ gmul_0b[a3];
+            st[j]   = gmul_0b[a0] ^ gmul_0d[a1] ^ gmul_09[a2] ^ gmul_0e[a3];
         end
 
         InvMixColumns = {st[15], st[14], st[13], st[12],
@@ -157,75 +156,80 @@ module aes256_dec (
     endfunction
 
     // ------------------------------------------------ Registers ------------------------------------------------
-    // Buffer
-    logic [127:0] buffer0, buffer1, buffer2;
-    logic         buffers_full;
-
     // Working/state logics
-    logic [127:0] P0, P1, P2;
-    logic [127:0] s0, s1, s2;
-    logic [127:0] sw0, sw1, sw2;
-    logic [127:0] w0[0:14], w1[0:14], w2[0:14];
+    logic [127:0] P[0:SHARES-1];
+    logic [127:0] s[0:SHARES-1];
+    logic [127:0] s_tmp[0:SHARES-1];
+    
+    logic [127:0] C     [0:SHARES-1];
+    logic [127:0] C_prev[0:SHARES-1];
+    logic [7:0]   byte_i[0:SHARES-1];
+    logic [7:0]   byte_o[0:SHARES-1];
+    
+    logic [127:0] w[0:SHARES-1][0:14];
     logic [3:0]   t;
+    
+    logic [2:0] p;
+    logic [3:0] idx_i, idx_o;
 
     // ------------------------------------------- Next/Derived States -------------------------------------------
-    // perform all operations on every share in parallel
-    subbytes ivsb (
-        .b0(InvShiftRows(s0)),
-        .b1(InvShiftRows(s1)),
-        .b2(InvShiftRows(s2)),
-        .r(r_i[1727:0]), .decrypt(1),
-        .sw0(sw0),
-        .sw1(sw1),
-        .sw2(sw2)
-    );
+    assign sbox_i = byte_i;
+    assign byte_o = sbox_o;
+    
+    logic [7:0] st [0:SHARES-1][0:15];
+    logic [7:0] s_o[0:SHARES-1][0:15];
+    
+    genvar k, l;
+    generate
+        for (k = 0; k < SHARES; k++) begin
+            for (l = 0; l < 16; l++) begin
+                assign st[k][l] = s[k][8*l+7:8*l];
+            end
+        end
+    endgenerate
     
     // --------------------------------------------------- FSM ---------------------------------------------------
     // FSM
-    typedef enum logic [2:0] {LOAD_W, LOAD_IV, LOAD_S, CBC, INVCYPHER, UPDATE} state_t;
+    typedef enum logic [2:0] {LOAD_W, LOAD_IV, LOAD_S, FIRST, SUBBYTES, ROUND, UPDATE} state_t;
     state_t state;
 
     // ------------------------------------------ Main sequential block ------------------------------------------
     always_ff @(posedge clk or negedge resetn) begin
         if (!resetn) begin
-            P0 <= 128'b0; P1 <= 128'b0; P2 <= 128'b0;
-            s0 <= 128'd0; s1 <= 128'd0; s2 <= 128'd0;
+            P      <= '{default:128'd0};
+            s      <= '{default:128'd0};
+            C      <= '{default:128'd0};
+            C_prev <= '{default:128'd0};
+            byte_i <= '{default:8'd0};
             
-            w0 <= '{default:128'd0}; w1 <= '{default:128'd0}; w2 <= '{default:128'd0};
-            
-            buffer0 <= 128'b0; buffer1 <= 128'b0; buffer2 <= 128'b0;
-            buffers_full <= 1'b0;
+            w <= '{default:'{default:128'd0}};
             
             sel_o   <= 2'd0;
             round_o <= 4'd0;
             
             state <= LOAD_W;
             t     <= 4'b0;
-
+            
+            p     <= 3'd0;
+            idx_i <= 4'd0;
+            idx_o <= 4'd0;
+            
         end else if (enable_i) begin
             valid_o <= 1'b0;
             // ---------------- accept input blocks ----------------
-            if (!buffers_full && bvalid_i) begin
-                buffer0 <= b0_i;
-                buffer1 <= b1_i;
-                buffer2 <= b2_i;
-                buffers_full <= 1'b1;
-            end
             
             // --- FSM ---
             case(state)
                 LOAD_W: begin
-                    if (buffers_full) begin
+                    if (bvalid_i) begin
                         // mux points to key round shares: store internally
-                        w0[t] <= buffer0;
-                        w1[t] <= buffer1;
-                        w2[t] <= buffer2;
-                        
-                        buffers_full <= 1'b0;
+                        for (i = 0; i < SHARES; i++) begin
+                            w[i][t] <= b_i[i];
+                        end
                         
                         if (t >= 4'd14) begin
                             sel_o <= 2'd1;
-                            state  <= LOAD_IV;
+                            state <= LOAD_IV;
                         end else begin
                             round_o <= round_o + 1;
                             t       <= t + 1;
@@ -234,13 +238,9 @@ module aes256_dec (
                 end
                 
                 LOAD_IV: begin
-                    if (buffers_full) begin
+                    if (bvalid_i) begin
                         // mux points to iv
-                        P0 <= buffer0 ^ buffer1 ^ buffer2;
-                        P1 <= buffer1;
-                        P2 <= buffer2;
-                        
-                        buffers_full <= 1'b0;
+                        C_prev <= b_i;
                         
                         sel_o <= 2'd2;
                         state <= LOAD_S;
@@ -248,62 +248,91 @@ module aes256_dec (
                 end
                 
                 LOAD_S: begin
-                    if (buffers_full) begin
+                    if (bvalid_i) begin
                         // mux points to actual ciphertext block
-                        s0 <= buffer0 ^ buffer1 ^ buffer2;
-                        s1 <= buffer1;
-                        s2 <= buffer2;
-                        
-                        buffers_full <= 1'b0;
-                        
-                        state <= CBC;
+                        s     <= b_i;
+                        C     <= b_i;
+                        state <= FIRST;
                     end
                 end
                 
-                CBC: begin
-                    // perform CBC with previous block on each share
-                    s0 <= AddRoundKey(s0, w0[14]);
-                    s1 <= AddRoundKey(s1, w1[14]);
-                    s2 <= AddRoundKey(s2, w2[14]);
+                FIRST: begin
+                    // first round
+                    for (i = 0; i < SHARES; i++) begin
+                        s_tmp[i] = InvShiftRows(AddRoundKey(s[i], w[i][14]));
+                        
+                        s[i] <= s_tmp[i];
+                        
+                        byte_i[i] = s_tmp[i][7:0];
+                    end
                     
                     t     <= 4'd13;
-                    state <= INVCYPHER;
+                    p     <= 3'd0;
+                    idx_i <= 4'd1;
+                    idx_o <= 4'd0;
+                    state <= SUBBYTES;
                 end
                 
-                INVCYPHER: begin
-                    if (rvalid_i) begin
-                        if (t >= 1) begin
-                            // round = 1..13
-                            s0 <= InvMixColumns(AddRoundKey(sw0, w0[t]));
-                            s1 <= InvMixColumns(AddRoundKey(sw1, w1[t]));
-                            s2 <= InvMixColumns(AddRoundKey(sw2, w2[t]));
-                            
-                            t <= t - 1;
-                        end else begin
-                            // final round
-                            s0 <= AddRoundKey(sw0, w0[t]);
-                            s1 <= AddRoundKey(sw1, w1[t]);
-                            s2 <= AddRoundKey(sw2, w2[t]);
-                            
-                            state <= UPDATE;
+                SUBBYTES: begin
+                    if (idx_i > 0) begin
+                        for (i = 0; i < SHARES; i++) begin
+                            byte_i[i] = st[i][idx_i];
                         end
+                        idx_i++;
+                    end
+                    
+                    if (p == 3'd7) begin
+                        for (i = 0; i < SHARES; i++) begin
+                            s_o[i][idx_o] <= byte_o[i];
+                        end
+                        
+                        if (idx_o >= 4'd14) state <= ROUND;
+                        else idx_o++;
+                    end else p++;
+                end
+                
+                ROUND: begin
+                    for (i = 0; i < SHARES; i++) begin
+                        s_tmp[i] = { byte_o[i], s_o[i][14], s_o[i][13], s_o[i][12],
+                                    s_o[i][11], s_o[i][10], s_o[i][ 9], s_o[i][ 8],
+                                    s_o[i][ 7], s_o[i][ 6], s_o[i][ 5], s_o[i][ 4],
+                                    s_o[i][ 3], s_o[i][ 2], s_o[i][ 1], s_o[i][ 0]};
+                    end
+                
+                    
+                    if (t >= 1) begin
+                        // round = 1..13
+                        for (i = 0; i < SHARES; i++) begin
+                            s_tmp[i] = InvShiftRows(InvMixColumns(AddRoundKey(s_tmp[i], w[i][t])));
+                            
+                            s[i] <= s_tmp[i];
+                            
+                            byte_i[i] = s_tmp[i][7:0];
+                        end
+                        
+                        t     <= t - 1;
+                        p     <= 3'd0;
+                        idx_i <= 4'd1;
+                        idx_o <= 4'd0;
+                        state <= SUBBYTES;
+                    end else begin
+                        // final round
+                        for (i = 0; i < SHARES; i++) begin
+                            s[i] <= AddRoundKey(s_tmp[i], w[i][t]);
+                        end
+                        
+                        state <= UPDATE;
                     end
                 end
                 
                 UPDATE: begin
                     valid_o <= 1'b1;
-                    P0 <= s0;
-                    P1 <= s1;
-                    P2 <= s2;
+                    for (i = 0; i < SHARES; i++) begin
+                        P[i] <= s[i] ^ C_prev[i];
+                    end
                     
-                    if (buffers_full) begin
-                        s0 <= buffer0 ^ buffer1 ^ buffer2;
-                        s1 <= buffer1;
-                        s2 <= buffer2;
-                        
-                        buffers_full <= 1'b0;
-                        state        <= CBC;
-                    end else state <= LOAD_S;
+                    C_prev <= C;
+                    state <= LOAD_S;
                 end
                 
                 default: begin
@@ -313,7 +342,16 @@ module aes256_dec (
         end
     end
     
-    // ------------------------------------------------- Outputs -------------------------------------------------
-    assign plain_o = P0 ^ P1 ^ P2;
-    assign ready_o = state >= LOAD_S && !buffers_full;
+    // ------------------------------------------------- Outputs ------------------------------------------------- 
+    logic [127:0] result;
+    
+    always_comb begin
+        result = 128'd0;
+        for (o = 0; o < SHARES; o++) begin
+            result ^= P[o];
+        end
+    end
+    
+    assign plain_o = result;
+    assign ready_o = state == LOAD_S;
 endmodule
