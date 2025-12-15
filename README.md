@@ -4,6 +4,8 @@ This repository is being managed by the following developers:
 
 - Jacob Kaplan 🧑‍💻⚙️
 
+- Daniel Hernandez Sanchez🧑‍💻⚙️
+
 - Matthew Ramos 🧑‍💻💼
 
 🔍 About This Project
