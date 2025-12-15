@@ -9,3 +9,7 @@ results = model.train(data="coco8.yaml", epochs=100, imgsz=640)
 
 # Run inference with the YOLO11n model on the 'bus.jpg' image
 results = model("path/to/bus.jpg")
+
+# COCO  = large, real-world dataset (330k+ images, 80 classes)
+# COCO8 = tiny demo subset of COCO (8 images, same 80 classes)
+
