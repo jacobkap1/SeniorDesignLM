@@ -1,22 +1,24 @@
 `timescale 1ns/1ps
-module latch128(
+module aes_latch #(
+    parameter WIDTH = 128
+)(
     input  logic         clk,
     input  logic         resetn,
     input  logic         enable_i,
     input  logic         clear_i,
     
-    input  logic [127:0] d_i,
+    input  logic [WIDTH-1:0] d_i,
     input  logic         valid_i,
 
-    output logic [127:0] d_o,
+    output logic [WIDTH-1:0] d_o,
     output logic         valid_o
 );
 
-    logic [127:0] d_reg;
+    logic [WIDTH-1:0] d_reg;
     logic         valid_reg;
     always_ff @(posedge clk or negedge resetn) begin
         if (!resetn || clear_i) begin
-            d_reg     <= 128'd0;
+            d_reg     <= 'd0;
             valid_reg <= 1'b0;
         end else begin
             if (valid_i) begin
