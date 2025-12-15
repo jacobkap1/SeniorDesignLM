@@ -17,7 +17,7 @@ results = model.predict(source="0", conf=0.5, show=True)
 
 #Iterate over each frame's detection results.
 #Each element that is stored in the results variable corresponds to one video frame. 
-#Displays YOLO's raw prediction data and a text file for each frame, with each row having the format: object class, x center, y center, x width, y width.
+#Displays YOLO's raw prediction data and a text file for each frame, with each row having the format: object class, x center, y center, x width, y height.
 for frame_id, r in enumerate(results):
     
     #If no objects were detected in the video frame, skip it. 
