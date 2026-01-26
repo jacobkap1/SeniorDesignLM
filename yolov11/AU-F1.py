@@ -37,8 +37,7 @@ def iou(b1, b2):
 
 y_true = []
 y_scores = []
-IOU_THRESHOLD = 0.5
-
+IOU_Threshold = 0.5
 
 for r in results:
     if r.boxes is None:
@@ -54,7 +53,7 @@ for r in results:
             if gt[0] == cls:
                 best_iou = max(best_iou, iou([cls, x, y, w, h], gt))
 
-        y_true.append(1 if best_iou >= IOU_THRESHOLD else 0)
+        y_true.append(1 if best_iou >= IOU_Threshold else 0)
         y_scores.append(conf)
 
 for frame_id, r in enumerate(results):
