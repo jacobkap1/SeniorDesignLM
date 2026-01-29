@@ -1,7 +1,6 @@
 from ultralytics import YOLO
 import os
 import numpy as np
-import cv2
 from sklearn.metrics import roc_curve, auc, precision_recall_curve, f1_score
 
 Image_Dir = "data/images"
@@ -116,3 +115,4 @@ f1 = f1_score(y_true, y_pred)
 print(f"AU-ROC: {roc_auc:.3f}")
 print(f"AU-PR: {pr_auc:.3f}")
 print(f"F1: {f1:.3f}")
+
