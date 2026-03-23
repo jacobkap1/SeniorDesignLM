@@ -37,14 +37,13 @@ y_scores = []
 
 cap = cv2.VideoCapture(0)
 frame_id = 0
-prev_time = 0
 
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         break
 
-    frame_name = f"frame_{frame_id:04d}.jpg"
+    frame_name = f"frame{frame_id:07d}.jpg"
     frame_path = os.path.join(Frame_Dir, frame_name)
     cv2.imwrite(frame_path, frame)
 
