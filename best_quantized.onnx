@@ -43182,7 +43182,7 @@ $/model.22/m.0/cv3/conv/Conv_output_0
 onnx.inferonnxruntime.quantrë
 descriptionÅUltralytics YOLO11n model trained on C:\Users\matth\miniconda3\envs\yolov11\Lib\site-packages\ultralytics\cfg\datasets\coco8.yamlr
 authorUltralyticsr"
-date2026-02-24T21:20:03.012689r
+date2026-03-25T20:59:23.098635r
 version8.4.16r=
 license2AGPL-3.0 License (https://ultralytics.com/license)r$
 docshttps://docs.ultralytics.comr
