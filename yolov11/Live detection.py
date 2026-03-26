@@ -11,11 +11,14 @@ Frame_Dir = "data/live_frames"
 Label_Dir = "data/live_labels"
 Save_Dir = "data/live_saved"
 
-os.makedirs(Save_Dir, exist_ok=True)
-os.makedirs(Frame_Dir, exist_ok=True)
-os.makedirs(Label_Dir, exist_ok=True)
+os.makedirs(Save_Dir, exist_ok = True)
+os.makedirs(Frame_Dir, exist_ok = True)
+os.makedirs(Label_Dir, exist_ok = True)
 
-model = YOLO("yolo11n.pt")
+model_coco = YOLO("yolo11n.pt")
+model_pen = YOLO("pen/runs/detect/trains/weights/best.pt")
+
+Pen_ID = {0: 80}
 
 def iou(b1, b2):
     x1_min, y1_min = b1[1]-b1[3]/2, b1[2]-b1[4]/2
@@ -43,11 +46,12 @@ while cap.isOpened():
     if not ret:
         break
 
-    frame_name = f"frame{frame_id:07d}.jpg"
+    frame_name = f"frame{frame_id:d}.jpg"
     frame_path = os.path.join(Frame_Dir, frame_name)
     cv2.imwrite(frame_path, frame)
 
-    results = model(frame, conf=CONF_Threshold)
+    results_coco = model_coco(frame, conf = CONF_Threshold)
+    results_pen = model_pen(frame, conf = CONF_Threshold)
 
     label_path = os.path.join(Label_Dir, frame_name.replace(".jpg", ".txt"))
 
@@ -59,10 +63,9 @@ while cap.isOpened():
                 gt_boxes.append([int(cls), x, y, w, h])
 
     with open(label_path, "w") as f:
-        for r in results:
-            if r.boxes is None:
+        for r in results_coco:
+            if not r.boxes:
                 continue
-
             for box in r.boxes:
                 cls = int(box.cls[0])
                 x, y, w, h = box.xywhn[0].tolist()
@@ -79,10 +82,32 @@ while cap.isOpened():
                 y_true.append(label)
                 y_scores.append(conf)
 
-    saved = results[0].plot()
-    saved_path = os.path.join(Save_Dir, frame_name)
-    cv2.imwrite(saved_path, saved)
+        for r in results_pen:
+            if not r.boxes:
+                continue
+            for box in r.boxes:
+                cls_model = int(box.cls[0])
+                cls = Pen_ID.get(cls_model, cls_model)
 
+                x, y, w, h = box.xywhn[0].tolist()
+                conf = float(box.conf[0])
+
+                f.write(f"{cls} {x:.6f} {y:.6f} {w:.6f} {h:.6f}\n")
+
+                best_iou = 0
+                for gt in gt_boxes:
+                    if gt[0] == cls:
+                        best_iou = max(best_iou, iou([cls, x, y, w, h], gt))
+
+                label = 1 if best_iou >= IOU_Threshold else 0
+                y_true.append(label)
+                y_scores.append(conf)
+
+    saved = results_coco[0].plot(show = False)
+    saved = results_pen[0].plot(img = saved, show = False)
+    saved_path = os.path.join(Save_Dir, frame_name)
+
+    cv2.imwrite(saved_path, saved) 
     cv2.imshow("Live Detection", saved)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
