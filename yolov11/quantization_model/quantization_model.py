@@ -1,3 +1,4 @@
+
 # Imports are used to load, export, quantize, run, and benchmark the YOLO model in ONNX format
 # Ultralytics YOLO loads the trained .pt model and handles ONNX export format
 from ultralytics import YOLO
@@ -51,8 +52,8 @@ _COCO_DATASETS_DIR = _YOLOV11_ROOT / "datasets"
 _COCO128_ROOT = _COCO_DATASETS_DIR / "coco128"
 _COCO128_IMAGES = _COCO128_ROOT / "images" / "train2017"
 
-# "Dataset A" = FP32 run, "Dataset B" = INT8 run — **same image folder**, not two different datasets.
-# Quantized vs non-quantized is the **model**, not the folder.
+# "Dataset A" = FP32 "Dataset B" = INT8
+# Quantized model vs non-quantized model
 DATASET_A = _COCO128_IMAGES
 DATASET_B = _COCO128_IMAGES
 
@@ -64,17 +65,17 @@ def ensure_coco128():
         return _COCO128_ROOT
     print("\n  (Downloading coco128: 128 COCO images + labels — needed for bicycle/car/motorcycle GT.)")
     from ultralytics.utils.downloads import download
-
+    #URL where the coco128 dataset was downloaded from
     url = "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip"
     download(url, dir=_COCO_DATASETS_DIR, unzip=True)
     return _COCO128_ROOT
 
-# COCO class IDs for metrics (coco8 labels use full 80-class COCO indices)
+# COCO class IDs for metrics
 TARGET_COCO_IDS = (0, 1, 2, 3)  # person, bicycle, car, motorcycle
 NUM_TARGET_CLASSES = len(TARGET_COCO_IDS)
 TARGET_COCO_SET = frozenset(TARGET_COCO_IDS)
 
-# Readable names (must align with TARGET_COCO_IDS order)
+# Readable names (must align with TARGET_COCO_IDS order that was defined above)
 CLASS_NAMES = {0: "person", 1: "bicycle", 2: "car", 3: "motorcycle"}
 
 # IOU threshold to determine if a predicted box matches a ground truth box
@@ -86,13 +87,13 @@ CONF_THRESHOLD = 0.25
 
 # Exporting to ONNX
 # Converts the trained .pt model into ONNX format
-print("\n[1/4] Exporting model to ONNX...")
+print("\n Phase 1 : Exporting model to ONNX")
 model = YOLO(MODEL_TRAIN2)
 model.export(format="onnx", simplify=True, half=False)
 print(f"ONNX model saved to: {ONNX_ORIGINAL}")
 
 # Quantize to INT8
-print("\n[2/4] Quantizing model to INT8...")
+print("\n Phase 2 :Quantizing model to INT8")
 quantize_dynamic(
     model_input=ONNX_ORIGINAL,
     model_output=ONNX_QUANT,
@@ -119,8 +120,6 @@ def load_images(folder):
 
 
 # Loads the YOLO .txt ground truth label file for a given image
-# Tries: (1) label next to the image, (2) Ultralytics layout:
-#       <dataset>/images/<split>/<name>.jpg -> <dataset>/labels/<split>/<name>.txt
 def load_labels(image_path):
     p = Path(image_path)
     label_path = p.with_suffix(".txt")
@@ -191,7 +190,7 @@ def _auc_and_ap(yt, ys):
     return auc, ap
 
 
-# Computes Precision, Recall, F1, AUC, and AP for TARGET_COCO_IDS only (person, bicycle, car, motorcycle)
+# Computes Precision, Recall, F1, AUC, and AP for TARGET_COCO_IDS
 def compute_metrics(predictions_per_image, labels_per_image):
     y_true  = {c: [] for c in range(NUM_TARGET_CLASSES)}
     y_score = {c: [] for c in range(NUM_TARGET_CLASSES)}
@@ -323,7 +322,6 @@ def benchmark(model_path, label, images):
     print(f"  Avg latency  : {avg:.2f} ms")
     print(f"  P95 latency  : {p95:.2f} ms")
     print(f"  Throughput   : {1000/avg:.1f} FPS")
-    print(f"  ---")
     print(f"  Target classes (COCO): person, bicycle, car, motorcycle (IDs 0–3)")
     print(f"  Detection Quality (IoU>={IOU_THRESHOLD}, conf>={CONF_THRESHOLD})")
     print(f"  Precision    : {_fmt_metric(m['precision'])}")
@@ -331,7 +329,7 @@ def benchmark(model_path, label, images):
     print(f"  F1 Score     : {_fmt_metric(m['f1'])}")
     print(f"  AUC          : {_fmt_metric(m['auc'])}  (nan if only one label type; use AP below)")
     print(f"  AP (mAP-pr)  : {_fmt_metric(m['ap'])}  (average precision — ranking metric)")
-    print(f"  --- Per-Class (person / bicycle / car / motorcycle) ---")
+    print(f"  Per-Class (person / bicycle / car / motorcycle) ")
     for cls_id in range(NUM_TARGET_CLASSES):
         scores = m["per_class"][cls_id]
         name = CLASS_NAMES[cls_id]
@@ -362,7 +360,7 @@ def print_fp32_vs_quant(fp32, quant, title):
     print(f"  Model size      : FP32 {fp32['size']:.2f} MB  |  INT8 {quant['size']:.2f} MB  "
           f"({(1 - quant['size']/fp32['size'])*100:.1f}% smaller)")
     print(f"  FPS             : FP32 {fp32['fps']:.1f}  |  INT8 {quant['fps']:.1f}")
-    print(f"  --- Overall (target classes 0–3) INT8 − FP32 ---")
+    print(f"  Overall (target classes 0–3) INT8 − FP32")
     for key, lab in [
         ("precision", "Precision"), ("recall", "Recall"), ("f1", "F1"),
         ("auc", "AUC"), ("ap", "AP"),
@@ -370,7 +368,7 @@ def print_fp32_vs_quant(fp32, quant, title):
         a, b = fp32[key], quant[key]
         d = _metric_delta(b, a) if a == a and b == b else float("nan")
         print(f"  {lab:<10s}  Δ = {d:+.4f}" if d == d else f"  {lab:<10s}  Δ = nan")
-    print(f"  --- Per-class: person, bicycle, car, motorcycle ---")
+    print(f"  Per-class: person, bicycle, car, motorcycle ")
     hdr = f"  {'class':<12} {'metric':<10} {'FP32':>10} {'INT8':>10} {'Δ':>10}"
     print(hdr)
     print(f"  {'-'*56}")
@@ -388,7 +386,7 @@ def print_fp32_vs_quant(fp32, quant, title):
 
 # FP32 run = "Dataset A", INT8 run = "Dataset B" — same COCO images, different models.
 ensure_coco128()
-print("\n[3/4] Benchmarking: same COCO images — Dataset A = FP32 ONNX, Dataset B = INT8 ONNX ...")
+print("\n Phase 3 :Benchmarking: same COCO images — Dataset A = FP32 ONNX, Dataset B = INT8 ONNX ...")
 print(f"  Image root: {DATASET_A.resolve()}")
 _path_groups = OrderedDict()
 for label, folder in [("Dataset A (FP32)", DATASET_A), ("Dataset B (INT8)", DATASET_B)]:
@@ -405,12 +403,12 @@ for resolved_path, labels in _path_groups.items():
     quant = benchmark(ONNX_QUANT, f"Quantized INT8 — {group_title}", imgs)
     print_fp32_vs_quant(
         fp32, quant,
-        f"{group_title} — same folder, FP32 vs quantized model" if len(labels) > 1 else labels[0],
+        f"{group_title} FP32 vs quantized model" if len(labels) > 1 else labels[0],
     )
     _all_runs.append((group_title, labels, fp32, quant))
 
 print(f"\n{'='*50}")
-print("  SUMMARY: FP32 vs INT8 (all dataset groups)")
+print("  SUMMARY: FP32 vs INT8 (all dataset groups and metrics)")
 print(f"{'='*50}")
 for group_title, labels, fp32, quant in _all_runs:
     print(f"\n  [{group_title}]  (overall target classes)")
@@ -427,4 +425,4 @@ for group_title, labels, fp32, quant in _all_runs:
     print(f"    AP         FP32 {_fmt_metric(fp32['ap'])}  INT8 {_fmt_metric(quant['ap'])}  "
           f"Δ {(f'{dp:+.4f}' if dp == dp else 'nan')}")
 
-print("\n[4/4] Done.")
+print("\n Done.")
