@@ -1,22 +1,29 @@
 from ultralytics import YOLO
 import os
+import cv2
 import numpy as np
 from sklearn.metrics import roc_curve, auc, precision_recall_curve, f1_score
 
-Image_Dir = "data/images"
-Label_Dir = "data/labels"
-Saved_Dir = "data/saved"
+IOU_Threshold = 0.5
 
-os.makedirs(Label_Dir, exist_ok=True)
-os.makedirs(Saved_Dir, exist_ok=True)
+Image_Dir = "pics/images"
+Label_Dir = "pics/labels"
+Saved_Dir = "pics/saved"
 
-model = YOLO("yolo11n.pt")
+os.makedirs(Image_Dir, exist_ok = True)
+os.makedirs(Label_Dir, exist_ok = True)
+os.makedirs(Saved_Dir, exist_ok = True)
+
+model_coco = YOLO("yolo11n.pt")
+model_pen = YOLO("pen.pt")
+
+pen_ID = {0: 80}
 
 def iou(b1, b2):
-    x1_min, y1_min = b1[1]-b1[3]/2, b1[2]-b1[4]/2
-    x1_max, y1_max = b1[1]+b1[3]/2, b1[2]+b1[4]/2
-    x2_min, y2_min = b2[1]-b2[3]/2, b2[2]-b2[4]/2
-    x2_max, y2_max = b2[1]+b2[3]/2, b2[2]+b2[4]/2
+    x1_min, y1_min = b1[1] - b1[3] / 2, b1[2] - b1[4] / 2
+    x1_max, y1_max = b1[1] + b1[3] / 2, b1[2] + b1[4] / 2
+    x2_min, y2_min = b2[1] - b2[3] / 2, b2[2] - b2[4] / 2
+    x2_max, y2_max = b2[1] + b2[3] / 2, b2[2] + b2[4] / 2
 
     inter_w = max(0, min(x1_max, x2_max) - max(x1_min, x2_min))
     inter_h = max(0, min(y1_max, y2_max) - max(y1_min, y2_min))
@@ -29,17 +36,19 @@ def iou(b1, b2):
 
 y_true = []
 y_scores = []
-IOU_Threshold = 0.5
 
 for img_name in os.listdir(Image_Dir):
-    if not img_name.lower().endswith(".jpg"):
+    if not img_name.lower().endswith((".jpg", ".jpeg", ".png")):
         continue
 
     print(f"\nProcessing {img_name}")
 
     img_path = os.path.join(Image_Dir, img_name)
 
-    label_path = os.path.join(Label_Dir, img_name.replace(".jpg", ".txt"))
+    base_name = os.path.splitext(img_name)[0]
+
+    label_path = os.path.join(Label_Dir, base_name + ".txt")
+
     gt_boxes = []
 
     if os.path.exists(label_path):
@@ -51,12 +60,13 @@ for img_name in os.listdir(Image_Dir):
     multi_y_true = []
     multi_y_scores = []
 
-    results = model(img_path)
+    results_coco = model_coco(img_path)
+    results_pen = model_pen(img_path)
 
-    pred_label_path = os.path.join(Label_Dir, img_name.replace(".jpg", ".txt"))
+    pred_label_path = os.path.join(Label_Dir, base_name + ".txt")
 
     with open(pred_label_path, "w") as f_txt:
-        for r in results:
+        for r in results_coco:
             if r.boxes is None:
                 continue
 
@@ -80,13 +90,43 @@ for img_name in os.listdir(Image_Dir):
                 y_true.append(label)
                 y_scores.append(conf)
 
+        for r in results_pen:
+            if r.boxes is None:
+                continue
+
+            for box in r.boxes:
+                pen_cls = int(box.cls[0])
+                cls = pen_ID.get(pen_cls, pen_cls)
+                
+                x, y, w_box, h_box = box.xywhn[0].tolist()
+                conf = float(box.conf[0])
+
+                f_txt.write(f"{cls} {x:.6f} {y:.6f} {w_box:.6f} {h_box:.6f}\n")
+
+                best_iou = 0
+                for gt in gt_boxes:
+                    if gt[0] == cls:
+                        best_iou = max(best_iou, iou([cls, x, y, w_box, h_box], gt))
+
+                label = 1 if best_iou >= IOU_Threshold else 0
+
+                multi_y_true.append(label)
+                multi_y_scores.append(conf)
+
+                y_true.append(label)
+                y_scores.append(conf)
+
+    saved = results_coco[0].plot()
+    saved = results_pen[0].plot(img = saved)
     save_path = os.path.join(Saved_Dir, img_name)
-    r.save(filename=save_path)
+    r.save(filename = save_path)
+    
+    cv2.imwrite(save_path, saved)
 
     print(f"Saved image: {save_path}")
     print(f"Saved labels: {pred_label_path}")
 
-    print(f"Metrics for {img_name}")
+    print(f"\nMetrics for {img_name}")
 
     fpr, tpr, _ = roc_curve(multi_y_true, multi_y_scores)
     roc_auc_i = auc(fpr, tpr)
@@ -101,7 +141,7 @@ for img_name in os.listdir(Image_Dir):
     print(f"AU-PR: {pr_auc_i:.3f}")
     print(f"F1: {f1_i:.3f}")
 
-print("Dataset metrics")
+print("\nDataset metrics")
 
 fpr, tpr, _ = roc_curve(y_true, y_scores)
 roc_auc = auc(fpr, tpr)
@@ -115,4 +155,3 @@ f1 = f1_score(y_true, y_pred)
 print(f"AU-ROC: {roc_auc:.3f}")
 print(f"AU-PR: {pr_auc:.3f}")
 print(f"F1: {f1:.3f}")
-
