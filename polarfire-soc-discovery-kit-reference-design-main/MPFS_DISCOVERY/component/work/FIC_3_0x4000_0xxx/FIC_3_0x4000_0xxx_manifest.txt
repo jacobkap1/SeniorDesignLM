@@ -1,0 +1,29 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+
+Date      :  Tue Feb 17 20:51:19 2026
+Project   :  D:\Microchip\Reference_Designs\polarfire\polarfire-soc-discovery-kit-reference-design\MPFS_DISCOVERY
+Component :  FIC_3_0x4000_0xxx
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/core/coreapb3.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/core/coreapb3_muxptob3.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/work/FIC_3_0x4000_0xxx/FIC_3_0x4000_0xxx.v
+
+Stimulus files for all Simulation tools:
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/mti/scripts/wave_user.do
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/mti/scripts/bfmtovec_compile.tcl
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/mti/scripts/bfmtovec.exe
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/mti/scripts/bfmtovec.lin
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/mti/scripts/coreapb3_usertb_master.bfm
+
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/coreparameters.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/amba_bfm/bfm_main.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/amba_bfm/bfm_ahbtoapb.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/amba_bfm/bfm_apb.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/amba_bfm/bfm_apbslaveext.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/amba_bfm/bfm_apbslave.v
+    D:/Microchip/Reference_Designs/polarfire/polarfire-soc-discovery-kit-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/CoreAPB3/4.2.100/rtl/vlog/test/user/testbench.v
+

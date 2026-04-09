@@ -1,0 +1,73 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+
+Date      :  Fri Feb 27 01:40:05 2026
+Project   :  C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY
+Component :  DMA_CONTROLLER
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_ram_cache.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_SRAM_cache.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_ram_bd.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_SRAM_bd.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_ram_fifo_0.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_SRAM_fifo_0.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_ram_dscConCacheNM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_SRAM_dscConCacheNM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_ram_dscCacheNM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_SRAM_dscCacheNM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_ram_dscCacheM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/DMA_CONTROLLER_DMA_CONTROLLER_0_SRAM_dscCacheM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_axi4_initiator_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_axi4_stream_target_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_axi4_lite_target_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_ram_1k20_wrapper.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_buffer_descriptors.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_control_registers.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_utility_functions.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_cache.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_dma_arbiter.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_dma_controller.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_dma_start_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_dma_tran_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_dscrptr_src_mux.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_ext_dscrptr_fetch_fsm.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_fixed_priority_arbiter.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_int_controller.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_int_x_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_int_error_ctrl_fsm.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_int_ext_dscrptr_cache.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_int_status_mux.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_rd_tran_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_rd_tran_queue.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_round_robin_arbiter.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_ctrl_if_mux_cdc.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_round_robin_arbiter_w_ack.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_trans_ack.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_wr_tran_ctrl.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/coreaxi4dmacontroller_wr_tran_queue.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/CoreAXI4DMAController_int_0_ControllerFIFO.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/CoreAXI4DMAController_int_1_ControllerFIFO.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/CoreAXI4DMAController_int_2_ControllerFIFO.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/core/CoreAXI4DMAController_int_3_ControllerFIFO.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/coreparameters.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/coreaxi4dmacontroller_firmware_driver_model.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/coreaxi4dmacontroller_application.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_initiator.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_stream_initiator.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_stream_initiator_application.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_target_ram.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_to_axi4_lite_bridge.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_interconnect_readAddressChannel.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_interconnect_readDataChannel.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_interconnect_writeAddressChannel.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_interconnect_writeDataChannel.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_interconnect_writeResponseChannel.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Actel/DirectCore/COREAXI4DMACONTROLLER/2.2.107/rtl/vlog/test/axi4_interconnect.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/DMA_CONTROLLER/DMA_CONTROLLER_0/rtl/vlog/test/coreaxi4dmacontroller_testbench.v
+

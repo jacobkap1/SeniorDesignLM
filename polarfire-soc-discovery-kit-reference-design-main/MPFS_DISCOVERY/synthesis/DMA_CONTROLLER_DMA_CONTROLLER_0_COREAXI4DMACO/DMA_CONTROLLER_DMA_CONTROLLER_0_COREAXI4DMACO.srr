@@ -1,0 +1,504 @@
+# Tue Feb 17 21:00:37 2026
+
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03M-SP1-1
+Install: D:\Microchip\Libero_SoC_2025.2\Libero_SoC\Synplify_Pro
+OS: Windows 10 or later
+Hostname: ANDREWS-LAPTOP
+
+Implementation : synthesis
+Synopsys Microchip Technology Mapper, Version map202503actsp1, Build 108R, Built Nov 18 2025 06:37:26, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 196MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 197MB peak: 210MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 198MB peak: 210MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 199MB peak: 210MB)
+
+
+@N: MF104 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_dma_controller.v":16:7:16:73|Found compile point of type hard on View view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog) 
+@N: MF104 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller.v":16:7:16:59|Found compile point of type hard on View view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO(verilog) 
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 284MB peak: 284MB)
+
+
+Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
+
+Finished environment creation (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 284MB peak: 285MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 284MB peak: 285MB)
+
+
+Start creating ILM for FPGA DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 284MB peak: 285MB)
+
+
+Finished creating ILM for FPGA DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 284MB peak: 285MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 277MB peak: 285MB)
+
+
+Begin compile point sub-process log
+
+@N: MF106 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller.v":16:7:16:59|Mapping Compile point view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO(verilog) because 
+		 no database from previous run found.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 277MB peak: 285MB)
+
+@N: MO111 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_x_ctrl.v":125:32:125:45|Tristate driver fifoFullQueueX (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_interrupt_x_ctrl_1s_0s_27s_0s_0_1(verilog)) on net fifoFullQueueX (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_interrupt_x_ctrl_1s_0s_27s_0s_0_1(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_controller.v":125:32:125:35|Tristate driver int3 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) on net int3 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_controller.v":124:32:124:35|Tristate driver int2 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) on net int2 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_controller.v":123:32:123:35|Tristate driver int1 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) on net int1 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_controller.v":119:32:119:45|Tristate driver waitStrDscrptr (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) on net waitStrDscrptr (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller.v":308:36:308:41|Tristate driver TREADY (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO(verilog)) on net TREADY (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO(verilog)) has its enable tied to GND.
+@N: BZ173 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":658:8:658:11|ROM readDscrptrValid_d[2:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog)) mapped in logic.
+@N: MO106 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":658:8:658:11|Found ROM readDscrptrValid_d[2:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog)) with 22 words by 3 bits.
+@N: BZ173 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":208:23:239:25|ROM un402_ctrlAddrDec[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog)) mapped in logic.
+@N: MO106 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":208:23:239:25|Found ROM un402_ctrlAddrDec[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog)) with 62 words by 2 bits.
+@N: BZ173 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1975:8:1975:11|ROM AXI4RdTransDone_1 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog)) mapped in logic.
+@N: MO106 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1975:8:1975:11|Found ROM AXI4RdTransDone_1 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog)) with 9 words by 1 bit.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 280MB peak: 285MB)
+
+
+Starting area decomp  (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 280MB peak: 285MB)
+
+Encoding state machine FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop\[0\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCRd.currStateARd[1:0] (in view: work.MPFS_DISCOVERY_KIT(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvread.v":343:1:343:6|There are no possible illegal states for state machine FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop\[0\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCRd.currStateARd[1:0] (in view: work.MPFS_DISCOVERY_KIT(verilog)); safe FSM implementation is not required.
+Encoding state machine FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop\[0\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCWr.currStateAWr[1:0] (in view: work.MPFS_DISCOVERY_KIT(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvwrite.v":426:1:426:6|There are no possible illegal states for state machine FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop\[0\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCWr.currStateAWr[1:0] (in view: work.MPFS_DISCOVERY_KIT(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[8:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4LiteTARGETCtrl(verilog))
+original code -> new code
+   000000001 -> 000000001
+   000000010 -> 000000010
+   000000100 -> 000000100
+   000001000 -> 000001000
+   000010000 -> 000010000
+   000100000 -> 000100000
+   001000000 -> 001000000
+   010000000 -> 010000000
+   100000000 -> 100000000
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_lite_target_ctrl.v":355:0:355:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.ARREADYReg because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.currState[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_lite_target_ctrl.v":476:0:476:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.RVALIDReg because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.currState[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_lite_target_ctrl.v":444:0:444:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.BVALIDReg because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.currState[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_lite_target_ctrl.v":427:0:427:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.WREADYReg because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.currState[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_lite_target_ctrl.v":339:0:339:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.AWREADYReg because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4LiteTARGETCtrl.currState[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+Encoding state machine currRdState[21:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog))
+original code -> new code
+   0000000000000000000001 -> 0000000000000000000001
+   0000000000000000000010 -> 0000000000000000000010
+   0000000000000000000100 -> 0000000000000000000100
+   0000000000000000001000 -> 0000000000000000001000
+   0000000000000000010000 -> 0000000000000000010000
+   0000000000000000100000 -> 0000000000000000100000
+   0000000000000001000000 -> 0000000000000001000000
+   0000000000000010000000 -> 0000000000000010000000
+   0000000000000100000000 -> 0000000000000100000000
+   0000000000001000000000 -> 0000000000001000000000
+   0000000000010000000000 -> 0000000000010000000000
+   0000000000100000000000 -> 0000000000100000000000
+   0000000001000000000000 -> 0000000001000000000000
+   0000000010000000000000 -> 0000000010000000000000
+   0000000100000000000000 -> 0000000100000000000000
+   0000001000000000000000 -> 0000001000000000000000
+   0000010000000000000000 -> 0000010000000000000000
+   0000100000000000000000 -> 0000100000000000000000
+   0001000000000000000000 -> 0001000000000000000000
+   0010000000000000000000 -> 0010000000000000000000
+   0100000000000000000000 -> 0100000000000000000000
+   1000000000000000000000 -> 1000000000000000000000
+Encoding state machine currWrState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":453:0:453:5|There are no possible illegal states for state machine currWrState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1(verilog)); safe FSM implementation is not required.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":318:0:318:5|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_bufferDescriptors.rmrReq because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_bufferDescriptors.currWrState[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+Encoding state machine DMAStartCtrl_inst.DMAStartCtrlRRA.currState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_round_robin_arbiter_w_ack.v":166:0:166:5|There are no possible illegal states for state machine DMAStartCtrl_inst.DMAStartCtrlRRA.currState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog)); safe FSM implementation is not required.
+Encoding state machine dscrptrSrcMux_inst.dscrptrSrcMuxRRA.currState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_round_robin_arbiter_w_ack.v":166:0:166:5|There are no possible illegal states for state machine dscrptrSrcMux_inst.dscrptrSrcMuxRRA.currState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog)); safe FSM implementation is not required.
+Encoding state machine dscrptrSrcMux_inst.currState[4:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine extDscrptrFetchFSM_inst.currState[7:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   00000001 -> 00000001
+   00000010 -> 00000010
+   00000100 -> 00000100
+   00001000 -> 00001000
+   00010000 -> 00010000
+   00100000 -> 00100000
+   01000000 -> 01000000
+   10000000 -> 10000000
+Encoding state machine DMAArbiter_inst.currState[2:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   000 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine intStatusMux_inst.currState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_status_mux.v":97:0:97:5|There are no possible illegal states for state machine intStatusMux_inst.currState[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog)); safe FSM implementation is not required.
+Encoding state machine DMATranCtrl.intErrorCtrl_inst.currState[13:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   00000000000001 -> 00000000000001
+   00000000000010 -> 00000000000010
+   00000000000100 -> 00000000000100
+   00000000001000 -> 00000000001000
+   00000000010000 -> 00000000010000
+   00000000100000 -> 00000000100000
+   00000001000000 -> 00000001000000
+   00000010000000 -> 00000010000000
+   00000100000000 -> 00000100000000
+   00001000000000 -> 00001000000000
+   00010000000000 -> 00010000000000
+   00100000000000 -> 00100000000000
+   01000000000000 -> 01000000000000
+   10000000000000 -> 10000000000000
+Encoding state machine DMATranCtrl.rdTranCtrl_inst.currState[7:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   00000001 -> 00000001
+   00000010 -> 00000010
+   00000100 -> 00000100
+   00001000 -> 00001000
+   00010000 -> 00010000
+   00100000 -> 00100000
+   01000000 -> 01000000
+   10000000 -> 10000000
+Encoding state machine DMATranCtrl.transAck_inst.currState[2:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine DMATranCtrl.wrTranCtrl_inst.currState[8:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMACoc(verilog))
+original code -> new code
+   000000001 -> 000000001
+   000000010 -> 000000010
+   000000100 -> 000000100
+   000001000 -> 000001000
+   000010000 -> 000010000
+   000100000 -> 000100000
+   001000000 -> 001000000
+   010000000 -> 010000000
+   100000000 -> 100000000
+Encoding state machine currStateWr[10:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog))
+original code -> new code
+   0000000000001 -> 00000000001
+   0000000000010 -> 00000000010
+   0000000000100 -> 00000000100
+   0000000001000 -> 00000001000
+   0000000010000 -> 00000010000
+   0000000100000 -> 00000100000
+   0000001000000 -> 00001000000
+   0000010000000 -> 00010000000
+   0000100000000 -> 00100000000
+   0001000000000 -> 01000000000
+   0010000000000 -> 10000000000
+Encoding state machine currStateRd[8:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog))
+original code -> new code
+   0000000000001 -> 000000001
+   0000000000010 -> 000000010
+   0000000000100 -> 000000100
+   0000000001000 -> 000001000
+   0000000010000 -> 000010000
+   0000000100000 -> 000100000
+   0000001000000 -> 001000000
+   0000010000000 -> 010000000
+   0000100000000 -> 100000000
+@N: MO231 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":863:4:863:9|Found counter in view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog) instance rdAddr_1[7:0] 
+@N: MO231 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":836:10:836:15|Found counter in view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog) instance ram_rdreq_cntr[8:0] 
+@N: MO231 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":668:3:668:8|Found counter in view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog) instance rdbeat_cnt[8:0] 
+@N: MO231 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":2628:0:2628:5|Found counter in view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog) instance wrAddrReg[7:0] 
+@N: MO231 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1848:0:1848:5|Found counter in view:work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog) instance beatCntReg[8:0] 
+@N: MF179 :|Found 9 by 9 bit equality operator ('==') ren_sc8 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog))
+@N: MF179 :|Found 9 by 9 bit equality operator ('==') nextStateWr38 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog))
+@N: MF179 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1314:40:1314:73|Found 24 by 24 bit equality operator ('==') rdAddrReg_d19 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog))
+@N: MF179 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1173:32:1173:60|Found 9 by 9 bit equality operator ('==') WLASTReg_d5 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11(verilog))
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":2501:0:2501:5|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.beatsInRdBurst[1] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.beatsInRdBurst[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":2596:0:2596:5|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.ARLENReg[1] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.ARLENReg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1540:0:1540:5|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.beatsInWrBurst[1] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.beatsInWrBurst[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1668:0:1668:5|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.AWLENReg[1] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.AWLENReg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished area decomp  (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:14s; Memory used current: 287MB peak: 287MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:14s; Memory used current: 287MB peak: 288MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:15s; Memory used current: 295MB peak: 295MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":605:2:605:7|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.ren_sc_d1 because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_memoryMapDMACache.rdEn_f1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\microchip\reference_designs\polarfire\polarfire-soc-discovery-kit-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":614:2:614:7|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.ren_sc_d2 because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_memoryMapDMACache.rdEn_f2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:17s; Memory used current: 289MB peak: 305MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:17s; Memory used current: 291MB peak: 305MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:19s; Memory used current: 294MB peak: 305MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:19s; Memory used current: 294MB peak: 305MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:20s; Memory used current: 295MB peak: 305MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:21s; Memory used current: 326MB peak: 326MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:22s		     1.00ns		2594 /      1499
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:24s; Memory used current: 326MB peak: 327MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:24s; Memory used current: 326MB peak: 327MB)
+
+
+End compile point sub-process log
+
+@N: MT615 |Found clock REF_CLK_50MHz with period 20.00ns 
+@N: MT615 |Found clock CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 with period 8.00ns 
+@N: MT615 |Found clock CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1 with period 8.00ns 
+@N: MT615 |Found clock CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2 with period 8.00ns 
+@N: MT615 |Found clock CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3 with period 20.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue Feb 17 21:01:11 2026
+#
+
+
+Top view:               MPFS_DISCOVERY_KIT
+Requested Frequency:    50.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    D:\Microchip\Reference_Designs\polarfire\polarfire-soc-discovery-kit-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 2.556
+
+                                                                  Requested     Estimated     Requested     Estimated               Clock                              Clock           
+Starting Clock                                                    Frequency     Frequency     Period        Period        Slack     Type                               Group           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     125.0 MHz     183.7 MHz     8.000         5.444         2.556     generated (from REF_CLK_50MHz)     default_clkgroup
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1     125.0 MHz     NA            8.000         NA            NA        generated (from REF_CLK_50MHz)     default_clkgroup
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2     125.0 MHz     NA            8.000         NA            NA        generated (from REF_CLK_50MHz)     default_clkgroup
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3     50.0 MHz      NA            20.000        NA            NA        generated (from REF_CLK_50MHz)     default_clkgroup
+REF_CLK_50MHz                                                     50.0 MHz      NA            20.000        NA            NA        declared                           default_clkgroup
+=======================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                       Ending                                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0  CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0  |  8.000       2.556  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                             Starting                                                                                               Arrival          
+Instance                                                                                                                     Reference                                                         Type     Pin     Net                 Time        Slack
+                                                                                                                             Clock                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.DMAStartCtrlRRA.grantReg[0]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       inp1[286]           0.218       2.556
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.wrByteCnt[2]                               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       wrByteCnt[2]        0.218       2.632
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.DMAStartCtrlRRA.grantReg[1]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       inp1[287]           0.218       2.635
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.wrByteCnt[0]                               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       wrByteCnt[0]        0.218       2.642
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.wrByteCnt[4]                               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       wrByteCnt[4]        0.218       2.648
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.wrByteCnt[6]                               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       wrByteCnt[6]        0.218       2.651
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.wrByteCnt[3]                               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       wrByteCnt[3]        0.218       2.666
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.dstNumOfBytesInRdReg[0]                    CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       un1_wrByteCnt_0     0.218       2.672
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.dstNumOfBytesInRdReg[1]                    CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       un1_wrByteCnt_1     0.218       2.680
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.DMAStartCtrlRRA.grantReg[2]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      Q       inp1[288]           0.218       2.680
+=====================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                                       Starting                                                                                                                                              Required          
+Instance                                                                                                                               Reference                                                         Type     Pin     Net                                                                Time         Slack
+                                                                                                                                       Clock                                                                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[0]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      D       DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[0]          8.000        2.556
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[1]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      D       DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[1]          8.000        2.556
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[2]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      D       DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[2]          8.000        2.556
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[3]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      D       DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[3]          8.000        2.556
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_AXI4INITIATORDMACtrl.beatsInWrBurst[4]                                    CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      D       N_1960_i                                                           8.000        2.632
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[0]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      EN      DMAArbiter_inst.DSCRPTR_CACHE.un1_dataValidExtDscrptrReg45_1_i     7.873        2.709
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[1]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      EN      DMAArbiter_inst.DSCRPTR_CACHE.un1_dataValidExtDscrptrReg45_1_i     7.873        2.709
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[2]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      EN      DMAArbiter_inst.DSCRPTR_CACHE.un1_dataValidExtDscrptrReg45_1_i     7.873        2.709
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[3]     CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      EN      DMAArbiter_inst.DSCRPTR_CACHE.un1_dataValidExtDscrptrReg45_1_i     7.873        2.709
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.reqStore[0]                                 CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0     SLE      D       DMAArbiter_inst.reqStore_22[0]                                     8.000        2.728
+===============================================================================================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      8.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.000
+
+    - Propagation time:                      5.444
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.556
+
+    Number of logic level(s):                8
+    Starting point:                          FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.DMAStartCtrlRRA.grantReg[0] / Q
+    Ending point:                            FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[0] / D
+    The start point is clocked by            CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 [rising] (rise=0.000 fall=4.000 period=8.000) on pin CLK
+    The end   point is clocked by            CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 [rising] (rise=0.000 fall=4.000 period=8.000) on pin CLK
+
+Instance / Net                                                                                                                                      Pin      Pin               Arrival     No. of    
+Name                                                                                                                                       Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.DMAStartCtrlRRA.grantReg[0]                   SLE      Q        Out     0.218     0.218 r     -         
+inp1[286]                                                                                                                                  Net      -        -       0.948     -           4         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.un36_ldDscrptrNum                             CFG4     D        In      -         1.166 r     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAStartCtrl_inst.un36_ldDscrptrNum                             CFG4     Y        Out     0.212     1.378 f     -         
+DMAStartCtrl_inst.un36_ldDscrptrNum_i                                                                                                      Net      -        -       0.124     -           2         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.dscrptrSrcMux_inst.intDscrptrNum_BufferDescriptors_0_iv[1]      CFG4     D        In      -         1.502 f     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.dscrptrSrcMux_inst.intDscrptrNum_BufferDescriptors_0_iv[1]      CFG4     Y        Out     0.192     1.694 f     -         
+intDscrptrNum_BufferDscrptrs[1]                                                                                                            Net      -        -       0.579     -           5         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_bufferDescriptors.m81_2_1_0_0_wmux                                            ARI1     B        In      -         2.273 f     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_bufferDescriptors.m81_2_1_0_0_wmux                                            ARI1     Y        Out     0.207     2.480 r     -         
+m81_2_1_0_0_y0                                                                                                                             Net      -        -       0.118     -           1         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_bufferDescriptors.m81_2_1_0_wmux_0                                            ARI1     A        In      -         2.598 r     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_bufferDescriptors.m81_2_1_0_wmux_0                                            ARI1     Y        Out     0.126     2.724 r     -         
+N_82_i                                                                                                                                     Net      -        -       0.124     -           2         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.dscrptrSrcMux_inst.nextState[4]                                 CFG4     C        In      -         2.848 r     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.dscrptrSrcMux_inst.nextState[4]                                 CFG4     Y        Out     0.148     2.996 r     -         
+DMAArbiter_inst.DSCRPTR_CACHE.ldDscrptr                                                                                                    Net      -        -       1.048     -           104       
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg45          CFG3     C        In      -         4.044 r     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg45          CFG3     Y        Out     0.148     4.192 r     -         
+DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg45                                                                                     Net      -        -       0.637     -           9         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5_1[0]     CFG4     D        In      -         4.829 r     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5_1[0]     CFG4     Y        Out     0.232     5.061 r     -         
+DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5_1[0]                                                                                Net      -        -       0.118     -           1         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[0]       CFG4     C        In      -         5.178 r     -         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[0]       CFG4     Y        Out     0.148     5.326 r     -         
+DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg_5[0]                                                                                  Net      -        -       0.118     -           1         
+FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMAArbiter_inst.DSCRPTR_CACHE.dataValidExtDscrptrReg[0]         SLE      D        In      -         5.444 r     -         
+=====================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 5.444 is 1.630(29.9%) logic and 3.814(70.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+@W: MT447 :"d:/microchip/reference_designs/polarfire/polarfire-soc-discovery-kit-reference-design/mpfs_discovery/designer/mpfs_discovery_kit/synthesis.fdc":12:0:12:0|Timing constraint (through [get_nets { FIC_0_PERIPHERALS_0.DMA_INITIATOR_inst_0.ARESETN* }]) (false path) was not applied to the design because none of the '-through' objects specified by the constraint exist in the design 
+@W: MT447 :"d:/microchip/reference_designs/polarfire/polarfire-soc-discovery-kit-reference-design/mpfs_discovery/designer/mpfs_discovery_kit/synthesis.fdc":13:0:13:0|Timing constraint (through [get_nets { FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.ARESETN* }]) (false path) was not applied to the design because none of the '-through' objects specified by the constraint exist in the design 
+None
+Writing compile point status file D:\Microchip\Reference_Designs\polarfire\polarfire-soc-discovery-kit-reference-design\MPFS_DISCOVERY\synthesis\DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                                              Status     Reason     
+------------------------------------------------------------------------
+DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACO     Mapped     No database
+========================================================================
+
+Process took 0h:00m:34s realtime, 0h:00m:25s cputime
+# Tue Feb 17 21:01:12 2026
+
+###########################################################]

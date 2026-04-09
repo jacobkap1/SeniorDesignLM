@@ -1,0 +1,9 @@
+n work COREAXI4INTERCONNECT_Z40 verilog;
+av .compile_point_summary_status "Remapped";
+av .compile_point_summary_reason "Mapping options changed";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 37.7031;
+av .compile_point_starttime_stamp "Fri Feb 27 09:58:03 2026";
+av .compile_point_endtime_stamp "Fri Feb 27 09:58:42 2026";
+av .compile_point_realtime_used 38.24;

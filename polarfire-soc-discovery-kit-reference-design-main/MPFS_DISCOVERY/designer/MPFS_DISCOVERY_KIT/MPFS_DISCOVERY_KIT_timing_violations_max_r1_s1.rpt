@@ -1,0 +1,919 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version 2025.2
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+Date: Tue Feb 17 21:09:06 2026
+
+
+Design: MPFS_DISCOVERY_KIT
+Family: PolarFireSoC
+Die: MPFS095T
+Package: FCSG325
+Temperature Range: 0 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_lt,fast_hv_lt,slow_lv_ht
+
+
+Path 1
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[6]:EN
+  Delay (ns):              3.667
+  Slack (ns):              3.832
+  Arrival (ns):            9.902
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[4]:EN
+  Delay (ns):              3.667
+  Slack (ns):              3.832
+  Arrival (ns):            9.902
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[2]:EN
+  Delay (ns):              3.667
+  Slack (ns):              3.832
+  Arrival (ns):            9.902
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[0]:EN
+  Delay (ns):              3.667
+  Slack (ns):              3.832
+  Arrival (ns):            9.902
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[7]:EN
+  Delay (ns):              3.666
+  Slack (ns):              3.833
+  Arrival (ns):            9.901
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 6
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[5]:EN
+  Delay (ns):              3.666
+  Slack (ns):              3.833
+  Arrival (ns):            9.901
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 7
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[3]:EN
+  Delay (ns):              3.666
+  Slack (ns):              3.833
+  Arrival (ns):            9.901
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 8
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/wrLenFif/genblk1.DPRam/mem_mem_0_0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXILtePC/SlvPCWr/countResp[1]:EN
+  Delay (ns):              3.666
+  Slack (ns):              3.833
+  Arrival (ns):            9.901
+  Required (ns):          13.734
+  Operating Conditions: slow_lv_ht
+
+Path 9
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdReg[0]rff_0:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.919
+  Slack (ns):              3.911
+  Arrival (ns):            9.974
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 10
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/wrTranCtrl_inst/currState[5]:D
+  Delay (ns):              3.905
+  Slack (ns):              3.924
+  Arrival (ns):            9.959
+  Required (ns):          13.883
+  Operating Conditions: slow_lv_ht
+
+Path 11
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdValidReg[0]:D
+  Delay (ns):              3.912
+  Slack (ns):              3.933
+  Arrival (ns):            9.966
+  Required (ns):          13.899
+  Operating Conditions: slow_lv_ht
+
+Path 12
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[4]:D
+  Delay (ns):              3.863
+  Slack (ns):              3.940
+  Arrival (ns):            9.941
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 13
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[4]:D
+  Delay (ns):              3.862
+  Slack (ns):              3.941
+  Arrival (ns):            9.940
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 14
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdReg[0]rff_0:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[0]:D
+  Delay (ns):              3.880
+  Slack (ns):              3.950
+  Arrival (ns):            9.935
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 15
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/DWC_DownConv_preCalcCmdFifoWrCtrl_inst/tot_len_pre_Z[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/wrCmdFifoWriteCtrl/len_latched[9]:D
+  Delay (ns):              3.868
+  Slack (ns):              3.951
+  Arrival (ns):            9.895
+  Required (ns):          13.846
+  Operating Conditions: slow_lv_ht
+
+Path 16
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdValidReg[1]:EN
+  Delay (ns):              3.757
+  Slack (ns):              3.952
+  Arrival (ns):            9.811
+  Required (ns):          13.763
+  Operating Conditions: slow_lv_ht
+
+Path 17
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdValidReg[0]:EN
+  Delay (ns):              3.756
+  Slack (ns):              3.953
+  Arrival (ns):            9.810
+  Required (ns):          13.763
+  Operating Conditions: slow_lv_ht
+
+Path 18
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[4]:D
+  Delay (ns):              3.845
+  Slack (ns):              3.958
+  Arrival (ns):            9.923
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 19
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R3C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/sDat[4]:D
+  Delay (ns):              3.625
+  Slack (ns):              3.959
+  Arrival (ns):            9.855
+  Required (ns):          13.814
+  Operating Conditions: slow_lv_ht
+
+Path 20
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[4]:D
+  Delay (ns):              3.844
+  Slack (ns):              3.959
+  Arrival (ns):            9.922
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 21
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[4]:D
+  Delay (ns):              3.841
+  Slack (ns):              3.962
+  Arrival (ns):            9.919
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 22
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/numOfBytes_rdTranQueue0_Z[8]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.860
+  Slack (ns):              3.968
+  Arrival (ns):            9.917
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 23
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[13]:D
+  Delay (ns):              3.850
+  Slack (ns):              3.970
+  Arrival (ns):            9.904
+  Required (ns):          13.874
+  Operating Conditions: slow_lv_ht
+
+Path 24
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[32]:EN
+  Delay (ns):              3.738
+  Slack (ns):              3.971
+  Arrival (ns):            9.761
+  Required (ns):          13.732
+  Operating Conditions: slow_lv_ht
+
+Path 25
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[28]:EN
+  Delay (ns):              3.738
+  Slack (ns):              3.972
+  Arrival (ns):            9.761
+  Required (ns):          13.733
+  Operating Conditions: slow_lv_ht
+
+Path 26
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/numOfBytes_rdTranQueue1_Z[8]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.855
+  Slack (ns):              3.972
+  Arrival (ns):            9.913
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 27
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[4]:D
+  Delay (ns):              3.823
+  Slack (ns):              3.980
+  Arrival (ns):            9.901
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 28
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[7]:D
+  Delay (ns):              3.825
+  Slack (ns):              3.982
+  Arrival (ns):            9.903
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 29
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[7]:D
+  Delay (ns):              3.824
+  Slack (ns):              3.983
+  Arrival (ns):            9.902
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 30
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/DWC_DownConv_preCalcCmdFifoWrCtrl_inst/tot_len_pre_Z[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/wrCmdFifoWriteCtrl/SLAVE_ALEN[5]:D
+  Delay (ns):              3.843
+  Slack (ns):              3.986
+  Arrival (ns):            9.870
+  Required (ns):          13.856
+  Operating Conditions: slow_lv_ht
+
+Path 31
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[14]:D
+  Delay (ns):              3.814
+  Slack (ns):              3.990
+  Arrival (ns):            9.868
+  Required (ns):          13.858
+  Operating Conditions: slow_lv_ht
+
+Path 32
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/rdCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.834
+  Slack (ns):              3.994
+  Arrival (ns):            9.891
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 33
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[0]:D
+  Delay (ns):              3.812
+  Slack (ns):              3.995
+  Arrival (ns):            9.890
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 34
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[0]:D
+  Delay (ns):              3.811
+  Slack (ns):              3.996
+  Arrival (ns):            9.889
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 35
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdValidReg[1]:D
+  Delay (ns):              3.848
+  Slack (ns):              3.997
+  Arrival (ns):            9.902
+  Required (ns):          13.899
+  Operating Conditions: slow_lv_ht
+
+Path 36
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[4]:D
+  Delay (ns):              3.830
+  Slack (ns):              3.997
+  Arrival (ns):            9.884
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 37
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R2C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/sDat[4]:D
+  Delay (ns):              3.591
+  Slack (ns):              4.001
+  Arrival (ns):            9.813
+  Required (ns):          13.814
+  Operating Conditions: slow_lv_ht
+
+Path 38
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[7]:D
+  Delay (ns):              3.803
+  Slack (ns):              4.004
+  Arrival (ns):            9.881
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 39
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/numOfBytes_rdTranQueue0_Z[8]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[0]:D
+  Delay (ns):              3.821
+  Slack (ns):              4.007
+  Arrival (ns):            9.878
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 40
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R3C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/sDat[5]:D
+  Delay (ns):              3.567
+  Slack (ns):              4.008
+  Arrival (ns):            9.797
+  Required (ns):          13.805
+  Operating Conditions: slow_lv_ht
+
+Path 41
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/numOfBytes_rdTranQueue1_Z[8]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[0]:D
+  Delay (ns):              3.816
+  Slack (ns):              4.011
+  Arrival (ns):            9.874
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 42
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[4]:D
+  Delay (ns):              3.792
+  Slack (ns):              4.011
+  Arrival (ns):            9.870
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 43
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[55]:EN
+  Delay (ns):              3.695
+  Slack (ns):              4.014
+  Arrival (ns):            9.718
+  Required (ns):          13.732
+  Operating Conditions: slow_lv_ht
+
+Path 44
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[68]:EN
+  Delay (ns):              3.694
+  Slack (ns):              4.015
+  Arrival (ns):            9.717
+  Required (ns):          13.732
+  Operating Conditions: slow_lv_ht
+
+Path 45
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[63]:EN
+  Delay (ns):              3.690
+  Slack (ns):              4.015
+  Arrival (ns):            9.713
+  Required (ns):          13.728
+  Operating Conditions: slow_lv_ht
+
+Path 46
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[61]:EN
+  Delay (ns):              3.694
+  Slack (ns):              4.015
+  Arrival (ns):            9.717
+  Required (ns):          13.732
+  Operating Conditions: slow_lv_ht
+
+Path 47
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[53]:EN
+  Delay (ns):              3.694
+  Slack (ns):              4.015
+  Arrival (ns):            9.717
+  Required (ns):          13.732
+  Operating Conditions: slow_lv_ht
+
+Path 48
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[4]:D
+  Delay (ns):              3.812
+  Slack (ns):              4.015
+  Arrival (ns):            9.866
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 49
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[58]:EN
+  Delay (ns):              3.693
+  Slack (ns):              4.016
+  Arrival (ns):            9.716
+  Required (ns):          13.732
+  Operating Conditions: slow_lv_ht
+
+Path 50
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[0]:D
+  Delay (ns):              3.790
+  Slack (ns):              4.017
+  Arrival (ns):            9.868
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 51
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[4]:D
+  Delay (ns):              3.806
+  Slack (ns):              4.021
+  Arrival (ns):            9.860
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 52
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[4]:D
+  Delay (ns):              3.774
+  Slack (ns):              4.029
+  Arrival (ns):            9.852
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 53
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/rdCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[0]:D
+  Delay (ns):              3.795
+  Slack (ns):              4.033
+  Arrival (ns):            9.852
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 54
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R3C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/sDat[21]:D
+  Delay (ns):              3.537
+  Slack (ns):              4.038
+  Arrival (ns):            9.767
+  Required (ns):          13.805
+  Operating Conditions: slow_lv_ht
+
+Path 55
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[7]:D
+  Delay (ns):              3.792
+  Slack (ns):              4.039
+  Arrival (ns):            9.846
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 56
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[4]:D
+  Delay (ns):              3.788
+  Slack (ns):              4.039
+  Arrival (ns):            9.842
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 57
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel_rep:D
+  Delay (ns):              3.694
+  Slack (ns):              4.042
+  Arrival (ns):            9.748
+  Required (ns):          13.790
+  Operating Conditions: slow_lv_ht
+
+Path 58
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/rdCache1Sel_rep:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.771
+  Slack (ns):              4.043
+  Arrival (ns):            9.842
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 59
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[17]:D
+  Delay (ns):              3.803
+  Slack (ns):              4.045
+  Arrival (ns):            9.857
+  Required (ns):          13.902
+  Operating Conditions: slow_lv_ht
+
+Path 60
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/rdCache1Sel_rep:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_memoryMapDMACache/cache0ByteCnt_Z[10]:D
+  Delay (ns):              3.692
+  Slack (ns):              4.045
+  Arrival (ns):            9.763
+  Required (ns):          13.808
+  Operating Conditions: slow_lv_ht
+
+Path 61
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[0]:D
+  Delay (ns):              3.779
+  Slack (ns):              4.052
+  Arrival (ns):            9.833
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 62
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R2C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/sDat[5]:D
+  Delay (ns):              3.530
+  Slack (ns):              4.053
+  Arrival (ns):            9.752
+  Required (ns):          13.805
+  Operating Conditions: slow_lv_ht
+
+Path 63
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[7]:D
+  Delay (ns):              3.754
+  Slack (ns):              4.053
+  Arrival (ns):            9.832
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 64
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[6]:D
+  Delay (ns):              3.750
+  Slack (ns):              4.053
+  Arrival (ns):            9.828
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 65
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[6]:D
+  Delay (ns):              3.749
+  Slack (ns):              4.054
+  Arrival (ns):            9.827
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 66
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[22]:D
+  Delay (ns):              3.790
+  Slack (ns):              4.059
+  Arrival (ns):            9.844
+  Required (ns):          13.903
+  Operating Conditions: slow_lv_ht
+
+Path 67
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[7]:D
+  Delay (ns):              3.768
+  Slack (ns):              4.063
+  Arrival (ns):            9.822
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 68
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[16]:D
+  Delay (ns):              3.739
+  Slack (ns):              4.065
+  Arrival (ns):            9.793
+  Required (ns):          13.858
+  Operating Conditions: slow_lv_ht
+
+Path 69
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[0]:D
+  Delay (ns):              3.741
+  Slack (ns):              4.066
+  Arrival (ns):            9.819
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 70
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[5]:D
+  Delay (ns):              3.738
+  Slack (ns):              4.069
+  Arrival (ns):            9.816
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 71
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[5]:D
+  Delay (ns):              3.737
+  Slack (ns):              4.070
+  Arrival (ns):            9.815
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 72
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[6]:D
+  Delay (ns):              3.728
+  Slack (ns):              4.075
+  Arrival (ns):            9.806
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 73
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWLENReg[0]:D
+  Delay (ns):              3.755
+  Slack (ns):              4.076
+  Arrival (ns):            9.809
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 74
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdReg[0]_DMATranCtrl.numOfBytesInRdReg[0]_ram1_[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.734
+  Slack (ns):              4.078
+  Arrival (ns):            9.807
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 75
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/rdCache1Sel_rep:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[0]:D
+  Delay (ns):              3.732
+  Slack (ns):              4.082
+  Arrival (ns):            9.803
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 76
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[2]:D
+  Delay (ns):              3.722
+  Slack (ns):              4.082
+  Arrival (ns):            9.800
+  Required (ns):          13.882
+  Operating Conditions: slow_lv_ht
+
+Path 77
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[21]:D
+  Delay (ns):              3.723
+  Slack (ns):              4.083
+  Arrival (ns):            9.777
+  Required (ns):          13.860
+  Operating Conditions: slow_lv_ht
+
+Path 78
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[2]:D
+  Delay (ns):              3.721
+  Slack (ns):              4.083
+  Arrival (ns):            9.799
+  Required (ns):          13.882
+  Operating Conditions: slow_lv_ht
+
+Path 79
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[0]:D
+  Delay (ns):              3.718
+  Slack (ns):              4.089
+  Arrival (ns):            9.796
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 80
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[0]:D
+  Delay (ns):              3.717
+  Slack (ns):              4.090
+  Arrival (ns):            9.795
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 81
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdReg[0]_DMATranCtrl.numOfBytesInRdReg[0]_ram1_[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.718
+  Slack (ns):              4.091
+  Arrival (ns):            9.794
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 82
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[15]:D
+  Delay (ns):              3.715
+  Slack (ns):              4.091
+  Arrival (ns):            9.769
+  Required (ns):          13.860
+  Operating Conditions: slow_lv_ht
+
+Path 83
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[5]:D
+  Delay (ns):              3.716
+  Slack (ns):              4.091
+  Arrival (ns):            9.794
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 84
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_extFetchReg[24]:D
+  Delay (ns):              3.712
+  Slack (ns):              4.092
+  Arrival (ns):            9.766
+  Required (ns):          13.858
+  Operating Conditions: slow_lv_ht
+
+Path 85
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/numOfBytesInRdReg[0]rff_1:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/rdTranQueue_inst/reqCnt_Z[1]:D
+  Delay (ns):              3.707
+  Slack (ns):              4.095
+  Arrival (ns):            9.790
+  Required (ns):          13.885
+  Operating Conditions: slow_lv_ht
+
+Path 86
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R3C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/holdDat[4]:D
+  Delay (ns):              3.487
+  Slack (ns):              4.097
+  Arrival (ns):            9.717
+  Required (ns):          13.814
+  Operating Conditions: slow_lv_ht
+
+Path 87
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_intStatusMuxReg[14]:D
+  Delay (ns):              3.705
+  Slack (ns):              4.099
+  Arrival (ns):            9.759
+  Required (ns):          13.858
+  Operating Conditions: slow_lv_ht
+
+Path 88
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/rdCache1Sel_rep:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_memoryMapDMACache/cache0ByteCnt_Z[9]:D
+  Delay (ns):              3.638
+  Slack (ns):              4.099
+  Arrival (ns):            9.709
+  Required (ns):          13.808
+  Operating Conditions: slow_lv_ht
+
+Path 89
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[3]
+  Delay (ns):              5.862
+  Slack (ns):              4.100
+  Arrival (ns):           12.876
+  Required (ns):          16.976
+  Operating Conditions: slow_lv_ht
+
+Path 90
+  From: FIC_0_PERIPHERALS_0/MSS_LSRAM_inst_0/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R2C0/INST_RAM1K20_IP:A_CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/sDat[20]:D
+  Delay (ns):              3.497
+  Slack (ns):              4.102
+  Arrival (ns):            9.719
+  Required (ns):          13.821
+  Operating Conditions: slow_lv_ht
+
+Path 91
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[56]:EN
+  Delay (ns):              3.611
+  Slack (ns):              4.102
+  Arrival (ns):            9.634
+  Required (ns):          13.736
+  Operating Conditions: slow_lv_ht
+
+Path 92
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[51]:EN
+  Delay (ns):              3.611
+  Slack (ns):              4.102
+  Arrival (ns):            9.634
+  Required (ns):          13.736
+  Operating Conditions: slow_lv_ht
+
+Path 93
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[48]:EN
+  Delay (ns):              3.611
+  Slack (ns):              4.102
+  Arrival (ns):            9.634
+  Required (ns):          13.736
+  Operating Conditions: slow_lv_ht
+
+Path 94
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[59]:EN
+  Delay (ns):              3.610
+  Slack (ns):              4.103
+  Arrival (ns):            9.633
+  Required (ns):          13.736
+  Operating Conditions: slow_lv_ht
+
+Path 95
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[54]:EN
+  Delay (ns):              3.610
+  Slack (ns):              4.103
+  Arrival (ns):            9.633
+  Required (ns):          13.736
+  Operating Conditions: slow_lv_ht
+
+Path 96
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[72]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/sDat[52]:EN
+  Delay (ns):              3.610
+  Slack (ns):              4.103
+  Arrival (ns):            9.633
+  Required (ns):          13.736
+  Operating Conditions: slow_lv_ht
+
+Path 97
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/wrCache1Sel:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_DMAController/DMATranCtrl/intErrorCtrl_inst/extDscrptrAddr_intStatusMuxReg[17]:D
+  Delay (ns):              3.702
+  Slack (ns):              4.103
+  Arrival (ns):            9.756
+  Required (ns):          13.859
+  Operating Conditions: slow_lv_ht
+
+Path 98
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[3]:D
+  Delay (ns):              3.700
+  Slack (ns):              4.103
+  Arrival (ns):            9.778
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 99
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/beatsInWrBurst[3]:D
+  Delay (ns):              3.699
+  Slack (ns):              4.104
+  Arrival (ns):            9.777
+  Required (ns):          13.881
+  Operating Conditions: slow_lv_ht
+
+Path 100
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/dstNumOfBytesInRdReg[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/wrByteCnt[1]:D
+  Delay (ns):              3.706
+  Slack (ns):              4.104
+  Arrival (ns):            9.784
+  Required (ns):          13.888
+  Operating Conditions: slow_lv_ht
+

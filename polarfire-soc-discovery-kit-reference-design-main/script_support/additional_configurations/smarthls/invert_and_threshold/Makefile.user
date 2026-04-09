@@ -1,27 +1,25 @@
-NAME = invert_and_threshold
-
 #-------------------------------------------------
-# Select the souce
+# Select the source
 #-------------------------------------------------
-# SRCS = main_variations/main.simple.cpp
+SRCS = main_variations/main.simple.cpp
 # SRCS = main_variations/main.cpu_usage.cpp
 # SRCS = main_variations/main.hls_driver.cpp
 # SRCS = main_variations/main.non-blocking.cpp
 
 # This option requires bitstream configuration 
-SRCS = main_variations/main.fifo.cpp
+# SRCS = main_variations/main.fifo.cpp
 
 
 #-------------------------------------------------
 # Select the SoC design:
 #-------------------------------------------------
-LOCAL_CONFIG = -legup-config=config.tcl
+LOCAL_CONFIG = -shls-config=config.tcl
 
 #-------------------------------------------------
 # Additional compilation settings
 #-------------------------------------------------
 # To include the bmp.h header
-USER_CXX_FLAG = -I./
+USER_CXX_FLAG += -I./
 
 #-------------------------------------------------
 # Runtime settings

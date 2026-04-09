@@ -1,0 +1,3558 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version 2025.2
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+Date: Mon Mar 23 10:24:26 2026
+
+
+Design: MPFS_DISCOVERY_KIT
+Family: PolarFireSoC
+Die: MPFS095T
+Package: FCSG325
+Temperature Range: 0 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_lt,fast_hv_lt,slow_lv_ht
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+Required Period (ns):       8.000
+Required Frequency (MHz):   125.000
+Worst Slack (ns):           -0.385
+Operating Conditions:       slow_lv_ht
+
+Clock Domain:               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+Required Period (ns):       20.000
+Required Frequency (MHz):   50.000
+Worst Slack (ns):           2.789
+Operating Conditions:       slow_lv_ht
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               MBUS_SPI_CLK
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_M2F
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_M2F
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               REF_CLK_50MHz
+Required Period (ns):       20.000
+Required Frequency (MHz):   50.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1
+Required Period (ns):       8.000
+Required Frequency (MHz):   125.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2
+Required Period (ns):       8.000
+Required Frequency (MHz):   125.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+                            Input to Output
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+SET Register to Register
+
+Path 1
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              8.129
+  Slack (ns):             -0.385
+  Arrival (ns):           14.200
+  Required (ns):          13.815
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.250
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              8.128
+  Slack (ns):             -0.383
+  Arrival (ns):           14.198
+  Required (ns):          13.815
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.248
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              8.040
+  Slack (ns):             -0.296
+  Arrival (ns):           14.111
+  Required (ns):          13.815
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.161
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              7.996
+  Slack (ns):             -0.252
+  Arrival (ns):           14.067
+  Required (ns):          13.815
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.117
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              7.926
+  Slack (ns):             -0.182
+  Arrival (ns):           13.997
+  Required (ns):          13.815
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.047
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[4]:CLK
+  To: FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  data required time                                 13.815
+  data arrival time                          -       14.200
+  slack                                              -0.385
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+               +     0.000          Clock source
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT0 (r)
+               +     4.304          Clock generation
+  4.304                        
+               +     0.273          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_0
+  4.577                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:A (r)
+               +     0.243          cell: ADLIB:ICB_CLKINT
+  4.820                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:Y (r)
+               +     0.148          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_NET
+  4.968                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0:A (r)
+               +     0.164          cell: ADLIB:GB
+  5.132                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0:Y (r)
+               +     0.417          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_Y
+  5.549                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7:A (r)
+               +     0.058          cell: ADLIB:RGB
+  5.607                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7:Y (f)
+               +     0.464          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7_rgb_net_1
+  6.071                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[4]:CLK (r)
+               +     0.201          cell: ADLIB:SLE
+  6.272                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[4]:Q (r)
+               +     0.512          net: FIC_0_PERIPHERALS_0/security_core_0_hash_core_t[4]
+  6.784                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/N_60_0_i:C (r)
+               +     0.171          cell: ADLIB:CFG3
+  6.955                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/N_60_0_i:Y (r)
+               +     0.152          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/N_60_0_i_Z
+  7.107                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/m131_1_0_wmux:D (r)
+               +     0.171          cell: ADLIB:CFG4A
+  7.278                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/m131_1_0_wmux:Y (r)
+               +     0.064          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/m131_1_0_y0
+  7.342                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/m131_1_0_wmux_0:A (r)
+               +     0.078          cell: ADLIB:CFG4A
+  7.420                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/m131_1_0_wmux_0:Y (r)
+               +     0.512          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/m131_1_0_wmux_0_Y
+  7.932                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_4:B (r)
+               +     0.094          cell: ADLIB:ARI1_CC
+  8.026                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_4:P (f)
+               +     0.015          net: NET_CC_CONFIG10676
+  8.041                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_CC_0:P[4] (f)
+               +     0.415          cell: ADLIB:CC_CONFIG
+  8.456                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_CC_0:CC[11] (r)
+               +     0.000          net: NET_CC_CONFIG10707
+  8.456                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_11:CC (r)
+               +     0.063          cell: ADLIB:ARI1_CC
+  8.519                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_11:S (r)
+               +     0.420          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_Z[11]
+  8.939                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_11_RNI0GH9Q21:B (r)
+               +     0.156          cell: ADLIB:ARI1_CC
+  9.095                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_11_RNI0GH9Q21:Y (r)
+               +     0.067          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_11_RNI0GH9Q21_Y
+  9.162                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_12_RNI3N08N02:A (r)
+               +     0.051          cell: ADLIB:ARI1_CC
+  9.213                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_12_RNI3N08N02:P (f)
+               +     0.014          net: NET_CC_CONFIG3248
+  9.227                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_RNIO6M8J_CC_2:P[11] (f)
+               +     0.162          cell: ADLIB:CC_CONFIG
+  9.389                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_RNIO6M8J_CC_2:CO (r)
+               +     0.008          net: CI_TO_CO3148
+  9.397                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_RNIO6M8J_CC_3:CI (r)
+               +     0.104          cell: ADLIB:CC_CONFIG
+  9.501                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_RNIO6M8J_CC_3:CO (r)
+               +     0.011          net: CI_TO_CO3149
+  9.512                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_RNIO6M8J_CC_4:CI (r)
+               +     0.082          cell: ADLIB:CC_CONFIG
+  9.594                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_0_RNIO6M8J_CC_4:CC[3] (r)
+               +     0.000          net: NET_CC_CONFIG3315
+  9.594                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_20_RNIUFJ3QF2:CC (r)
+               +     0.063          cell: ADLIB:ARI1_CC
+  9.657                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_20_RNIUFJ3QF2:S (r)
+               +     0.435          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/un1_ROUND_7_cry_20_RNIUFJ3QF2_S
+  10.092                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v[20]:B (r)
+               +     0.053          cell: ADLIB:CFG3
+  10.145                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v[20]:Y (r)
+               +     0.615          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/CH[20]
+  10.760                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNI490TKU2[20]:B (r)
+               +     0.090          cell: ADLIB:ARI1_CC
+  10.850                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNI490TKU2[20]:Y (r)
+               +     0.065          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNI490TKU2_Y[20]
+  10.915                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIDI1CJ22[21]:A (r)
+               +     0.051          cell: ADLIB:ARI1_CC
+  10.966                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIDI1CJ22[21]:P (f)
+               +     0.016          net: NET_CC_CONFIG13494
+  10.982                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIOOH6C4[0]_CC_4:P[1] (f)
+               +     0.381          cell: ADLIB:CC_CONFIG
+  11.363                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIOOH6C4[0]_CC_4:CO (r)
+               +     0.008          net: CI_TO_CO13325
+  11.371                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIOOH6C4[0]_CC_5:CI (r)
+               +     0.101          cell: ADLIB:CC_CONFIG
+  11.472                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIOOH6C4[0]_CC_5:CC[1] (r)
+               +     0.000          net: NET_CC_CONFIG13545
+  11.472                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIKG3PFT1[27]:CC (r)
+               +     0.063          cell: ADLIB:ARI1_CC
+  11.535                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/un8_T1__v_RNIKG3PFT1[27]:S (r)
+               +     0.580          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/un9_ROUND_8[27]
+  12.115                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNI9RLPQ43[27]:C (r)
+               +     0.094          cell: ADLIB:ARI1_CC
+  12.209                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNI9RLPQ43[27]:P (f)
+               +     0.014          net: NET_CC_CONFIG5681
+  12.223                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNI375LM4[0]_CC_4:P[11] (f)
+               +     0.162          cell: ADLIB:CC_CONFIG
+  12.385                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNI375LM4[0]_CC_4:CO (r)
+               +     0.008          net: CI_TO_CO5464
+  12.393                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNI375LM4[0]_CC_5:CI (r)
+               +     0.101          cell: ADLIB:CC_CONFIG
+  12.494                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNI375LM4[0]_CC_5:CC[1] (r)
+               +     0.000          net: NET_CC_CONFIG5692
+  12.494                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNIGPFUHD2[28]:CC (r)
+               +     0.063          cell: ADLIB:ARI1_CC
+  12.557                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP1_RNIGPFUHD2[28]:S (r)
+               +     0.356          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/un9_ROUND_6[28]
+  12.913                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNIEIEI0B2[28]:C (r)
+               +     0.090          cell: ADLIB:ARI1_CC
+  13.003                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNIEIEI0B2[28]:Y (r)
+               +     0.065          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNIEIEI0B2_Y[28]
+  13.068                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNICR78ES2[29]:A (r)
+               +     0.051          cell: ADLIB:ARI1_CC
+  13.119                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNICR78ES2[29]:P (f)
+               +     0.016          net: NET_CC_CONFIG10250
+  13.135                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP0_RNIUHAQ05[0]_CC_5:P[1] (f)
+               +     0.366          cell: ADLIB:CC_CONFIG
+  13.501                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/EP0_RNIUHAQ05[0]_CC_5:CC[3] (r)
+               +     0.000          net: NET_CC_CONFIG10261
+  13.501                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNIBCKO892[30]:CC (r)
+               +     0.063          cell: ADLIB:ARI1_CC
+  13.564                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNIBCKO892[30]:S (r)
+               +     0.561          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/MAJ_RNIBCKO892_S[30]
+  14.125                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/a_7_3[30]:C (r)
+               +     0.053          cell: ADLIB:CFG4
+  14.178                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/a_7_3[30]:Y (r)
+               +     0.022          net: FIC_0_PERIPHERALS_0/security_core_0/hash_core/a_7[30]
+  14.200                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D (r)
+                                    
+  14.200                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  8.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+               +     0.000          Clock source
+  8.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT0 (r)
+               +     3.885          Clock generation
+  11.885                       
+               +     0.249          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_0
+  12.134                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:A (r)
+               +     0.211          cell: ADLIB:ICB_CLKINT
+  12.345                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:Y (r)
+               +     0.134          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_NET
+  12.479                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_GB0:A (r)
+               +     0.149          cell: ADLIB:GB
+  12.628                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_GB0:Y (r)
+               +     0.376          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_gbs_1
+  13.004                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB8:A (r)
+               +     0.052          cell: ADLIB:RGB
+  13.056                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB8:Y (f)
+               +     0.405          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB8_rgb_net_1
+  13.461                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:CLK (r)
+               +     0.489          
+  13.950                       clock reconvergence pessimism
+               -     0.135          
+  13.815                       clock jitter
+               -     0.000          Library setup time: ADLIB:SLE
+  13.815                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+                                    
+  13.815                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/W[8][24]:ALn
+  Delay (ns):              3.586
+  Slack (ns):              3.954
+  Arrival (ns):            9.667
+  Required (ns):          13.621
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.911
+  Skew (ns):               0.116
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/W[10][24]:ALn
+  Delay (ns):              3.586
+  Slack (ns):              3.954
+  Arrival (ns):            9.667
+  Required (ns):          13.621
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.911
+  Skew (ns):               0.116
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[26]:ALn
+  Delay (ns):              3.582
+  Slack (ns):              3.954
+  Arrival (ns):            9.663
+  Required (ns):          13.617
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.911
+  Skew (ns):               0.120
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_12[26]:ALn
+  Delay (ns):              3.582
+  Slack (ns):              3.954
+  Arrival (ns):            9.663
+  Required (ns):          13.617
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.911
+  Skew (ns):               0.120
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[26]:ALn
+  Delay (ns):              3.582
+  Slack (ns):              3.954
+  Arrival (ns):            9.663
+  Required (ns):          13.617
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.911
+  Skew (ns):               0.120
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK
+  To: FIC_0_PERIPHERALS_0/security_core_0/hash_core/W[8][24]:ALn
+  data required time                                 13.621
+  data arrival time                          -        9.667
+  slack                                               3.954
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+               +     0.000          Clock source
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT0 (r)
+               +     4.304          Clock generation
+  4.304                        
+               +     0.273          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_0
+  4.577                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:A (r)
+               +     0.243          cell: ADLIB:ICB_CLKINT
+  4.820                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:Y (r)
+               +     0.148          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_NET
+  4.968                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0:A (r)
+               +     0.164          cell: ADLIB:GB
+  5.132                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0:Y (r)
+               +     0.417          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_Y
+  5.549                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7:A (r)
+               +     0.058          cell: ADLIB:RGB
+  5.607                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7:Y (f)
+               +     0.474          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7_rgb_net_1
+  6.081                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:CLK (r)
+               +     0.209          cell: ADLIB:SLE
+  6.290                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE:Q (r)
+               +     2.284          net: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE_net
+  8.574                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_GB0:A (r)
+               +     0.140          cell: ADLIB:GB
+  8.714                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_GB0:Y (r)
+               +     0.406          net: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_gbs_1
+  9.120                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_RGB1_RGB10:A (r)
+               +     0.058          cell: ADLIB:RGB
+  9.178                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_RGB1_RGB10:Y (f)
+               +     0.489          net: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_RGB1_RGB10_rgb_net_1
+  9.667                        FIC_0_PERIPHERALS_0/security_core_0/hash_core/W[8][24]:ALn (r)
+                                    
+  9.667                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  8.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+               +     0.000          Clock source
+  8.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT0 (r)
+               +     3.885          Clock generation
+  11.885                       
+               +     0.249          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_0
+  12.134                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:A (r)
+               +     0.211          cell: ADLIB:ICB_CLKINT
+  12.345                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:Y (r)
+               +     0.134          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_NET
+  12.479                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_GB0:A (r)
+               +     0.149          cell: ADLIB:GB
+  12.628                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_GB0:Y (r)
+               +     0.374          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_gbs_1
+  13.002                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB11:A (r)
+               +     0.052          cell: ADLIB:RGB
+  13.054                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB11:Y (f)
+               +     0.422          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB11_rgb_net_1
+  13.476                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/W[8][24]:CLK (r)
+               +     0.489          
+  13.965                       clock reconvergence pessimism
+               -     0.135          
+  13.830                       clock jitter
+               -     0.209          Library recovery time: ADLIB:SLE
+  13.621                       FIC_0_PERIPHERALS_0/security_core_0/hash_core/W[8][24]:ALn
+                                    
+  13.621                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:ALn
+  Delay (ns):              6.513
+  Arrival (ns):            6.513
+  Recovery (ns):           0.209
+  External Recovery (ns):   1.380
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_14[0]:ALn
+  Delay (ns):              6.513
+  Arrival (ns):            6.513
+  Recovery (ns):           0.209
+  External Recovery (ns):   1.380
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_10[0]:ALn
+  Delay (ns):              6.513
+  Arrival (ns):            6.513
+  Recovery (ns):           0.209
+  External Recovery (ns):   1.380
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_13[0]:ALn
+  Delay (ns):              6.512
+  Arrival (ns):            6.512
+  Recovery (ns):           0.209
+  External Recovery (ns):   1.379
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_12[0]:ALn
+  Delay (ns):              6.512
+  Arrival (ns):            6.512
+  Recovery (ns):           0.209
+  External Recovery (ns):   1.379
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: SWITCH2
+  To: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:ALn
+  data required time                                    N/C
+  data arrival time                          -        6.513
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SWITCH2 (r)
+               +     0.000          net: SWITCH2
+  0.000                        SWITCH2_ibuf/U_IOPAD:PAD (r)
+               +     0.610          cell: ADLIB:IOPAD_IN
+  0.610                        SWITCH2_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: SWITCH2_ibuf/YIN
+  0.610                        SWITCH2_ibuf/U_IOIN:YIN (r)
+               +     0.336          cell: ADLIB:IOIN_IB_E
+  0.946                        SWITCH2_ibuf/U_IOIN:Y (r)
+               +     4.047          net: SWITCH2_c
+  4.993                        CLOCKS_AND_RESETS_0/AND3_0:A (r)
+               +     0.135          cell: ADLIB:CFG3
+  5.128                        CLOCKS_AND_RESETS_0/AND3_0:Y (r)
+               +     0.064          net: CLOCKS_AND_RESETS_0/AND3_0_Y
+  5.192                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/un1_EXT_RST_N_2:C (r)
+               +     0.078          cell: ADLIB:CFG3
+  5.270                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/un1_EXT_RST_N_2:Y (r)
+               +     1.243          net: CLOCKS_AND_RESETS_0/un1_EXT_RST_N_2
+  6.513                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:ALn (r)
+                                    
+  6.513                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+               +     0.000          Clock source
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT0 (r)
+               +     3.885          Clock generation
+  N/C                          
+               +     0.249          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_0
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:A (r)
+               +     0.211          cell: ADLIB:ICB_CLKINT
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1:Y (r)
+               +     0.134          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_NET
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0:A (r)
+               +     0.149          cell: ADLIB:GB
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0:Y (r)
+               +     0.377          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_Y
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7:A (r)
+               +     0.052          cell: ADLIB:RGB
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7:Y (f)
+               +     0.420          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB7_rgb_net_1
+  N/C                          CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK (r)
+               -     0.135          
+  N/C                          clock jitter
+               -     0.209          Library recovery time: ADLIB:SLE
+  N/C                          CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:ALn
+
+
+Operating Conditions : slow_lv_ht
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q to CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0
+
+----------------------------------------------------
+
+Clock Domain CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+
+SET Register to Register
+
+Path 1
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[7]
+  Delay (ns):              7.292
+  Slack (ns):              2.789
+  Arrival (ns):           14.301
+  Required (ns):          17.090
+  Setup (ns):             -0.268
+  Minimum Period (ns):    14.152
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[0]
+  Delay (ns):              7.064
+  Slack (ns):              2.922
+  Arrival (ns):           14.073
+  Required (ns):          16.995
+  Setup (ns):             -0.173
+  Minimum Period (ns):    13.886
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[3]
+  Delay (ns):              7.010
+  Slack (ns):              2.952
+  Arrival (ns):           14.019
+  Required (ns):          16.971
+  Setup (ns):             -0.149
+  Minimum Period (ns):    13.826
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[5]
+  Delay (ns):              7.070
+  Slack (ns):              2.960
+  Arrival (ns):           14.079
+  Required (ns):          17.039
+  Setup (ns):             -0.217
+  Minimum Period (ns):    13.810
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[1]
+  Delay (ns):              6.976
+  Slack (ns):              2.987
+  Arrival (ns):           13.985
+  Required (ns):          16.972
+  Setup (ns):             -0.150
+  Minimum Period (ns):    13.756
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK
+  To: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[7]
+  data required time                                 17.090
+  data arrival time                          -       14.301
+  slack                                               2.789
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (r)
+               +     4.314          Clock generation
+  4.314                        
+               +     0.959          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  5.273                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (r)
+               +     0.243          cell: ADLIB:ICB_CLKINT
+  5.516                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (r)
+               +     0.145          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  5.661                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (r)
+               +     0.163          cell: ADLIB:GB
+  5.824                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (r)
+               +     0.410          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  6.234                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1:A (r)
+               +     0.058          cell: ADLIB:RGB
+  6.292                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1:Y (f)
+               +     0.717          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1_rgb_net_1
+  7.009                        MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK (r)
+               +     1.738          cell: ADLIB:MSS
+  8.747                        MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PADDR[26] (r)
+               +     1.462          net: MSS_WRAPPER_0_FIC_3_APB_INITIATOR_PADDR[26]
+  10.209                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/iPSELS_raw_2_2_0_.m2:A (r)
+               +     0.142          cell: ADLIB:CFG3
+  10.351                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/iPSELS_raw_2_2_0_.m2:Y (f)
+               +     0.067          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/N_9_mux
+  10.418                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/iPSELS[0]:D (f)
+               +     0.052          cell: ADLIB:CFG4
+  10.470                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/iPSELS[0]:Y (f)
+               +     0.499          net: FIC_3_PERIPHERALS_0/FIC_3_0x4xxx_xxxx_0_APBmslave0_PSELx
+  10.969                       FIC_3_PERIPHERALS_0/COREGPIO_C0/GPIO_0/xhdl1.GEN_BITS[4].REG_GEN.CONFIG_reg[4]2_2_0_0_a2_0_i_o3:A (f)
+               +     0.050          cell: ADLIB:CFG2
+  11.019                       FIC_3_PERIPHERALS_0/COREGPIO_C0/GPIO_0/xhdl1.GEN_BITS[4].REG_GEN.CONFIG_reg[4]2_2_0_0_a2_0_i_o3:Y (r)
+               +     0.071          net: FIC_3_PERIPHERALS_0/N_406
+  11.090                       FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/p_CtrlReg1Seq.controlReg15_1_0_o2:A (r)
+               +     0.090          cell: ADLIB:CFG2
+  11.180                       FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/p_CtrlReg1Seq.controlReg15_1_0_o2:Y (r)
+               +     0.134          net: FIC_3_PERIPHERALS_0/N_412
+  11.314                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/iPSELS_0_a3[3]:B (r)
+               +     0.051          cell: ADLIB:CFG3
+  11.365                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/iPSELS_0_a3[3]:Y (f)
+               +     0.081          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1_FIC_3_0x4000_03xx_PSELx
+  11.446                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PSELSBUS[1]:A (f)
+               +     0.085          cell: ADLIB:CFG2
+  11.531                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PSELSBUS[1]:Y (f)
+               +     0.140          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PSELSBUS_Z[1]
+  11.671                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/iPRDATA27:B (f)
+               +     0.136          cell: ADLIB:CFG3
+  11.807                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/iPRDATA27:Y (r)
+               +     0.552          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/iPRDATA27_Z
+  12.359                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_0_RNO_0[7]:B (r)
+               +     0.053          cell: ADLIB:CFG4
+  12.412                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_0_RNO_0[7]:Y (r)
+               +     0.412          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/APBmslave1_PRDATAS1_m[7]
+  12.824                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_0[7]:C (r)
+               +     0.078          cell: ADLIB:CFG4
+  12.902                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_0[7]:Y (r)
+               +     0.136          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_0_Z[7]
+  13.038                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_2_cZ[7]:C (r)
+               +     0.078          cell: ADLIB:CFG4
+  13.116                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4000_0xxx_0/FIC_3_0x4000_0xxx_0/u_mux_p_to_b3/PRDATA_0_iv_2_cZ[7]:Y (r)
+               +     0.159          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/PRDATA_0_iv_2[7]
+  13.275                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/u_mux_p_to_b3/PRDATA_0[7]:D (r)
+               +     0.135          cell: ADLIB:CFG4
+  13.410                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/FIC_3_0x4xxx_xxxx_0/FIC_3_0x4xxx_xxxx_0/u_mux_p_to_b3/PRDATA_0[7]:Y (r)
+               +     0.081          net: FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/N_231
+  13.491                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/APB_ARBITER_0/in_prdata[7]:A (r)
+               +     0.078          cell: ADLIB:CFG3
+  13.569                       FIC_3_PERIPHERALS_0/FIC_3_ADDRESS_GENERATION_1/APB_ARBITER_0/in_prdata[7]:Y (r)
+               +     0.732          net: MSS_WRAPPER_0_FIC_3_APB_INITIATOR_PRDATA[7]
+  14.301                       MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[7] (r)
+                                    
+  14.301                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  10.000                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (f)
+               +     3.886          Clock generation
+  13.886                       
+               +     0.849          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  14.735                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (f)
+               +     0.224          cell: ADLIB:ICB_CLKINT
+  14.959                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (f)
+               +     0.125          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  15.084                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (f)
+               +     0.141          cell: ADLIB:GB
+  15.225                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (f)
+               +     0.372          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  15.597                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1:A (f)
+               +     0.054          cell: ADLIB:RGB
+  15.651                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1:Y (r)
+               +     0.517          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1_rgb_net_1
+  16.168                       MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_PCLK (f)
+               +     0.789          
+  16.957                       clock reconvergence pessimism
+               -     0.135          
+  16.822                       clock jitter
+               -    -0.268          Library setup time: ADLIB:MSS
+  17.090                       MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_3_APB_M_PRDATA[7]
+                                    
+  17.090                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From: RPI_I2C_SCL
+  To:   FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[4]:D
+  Delay (ns):              3.447
+  Arrival (ns):            3.447
+  Setup (ns):              0.000
+  External Setup (ns):    -0.474
+  Operating Conditions: fast_hv_lt
+
+Path 2
+  From: RPI_I2C_SCL
+  To:   FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[2]:D
+  Delay (ns):              3.313
+  Arrival (ns):            3.313
+  Setup (ns):              0.000
+  External Setup (ns):    -0.607
+  Operating Conditions: fast_hv_lt
+
+Path 3
+  From: RPI_I2C_SCL
+  To:   FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[3]:D
+  Delay (ns):              3.310
+  Arrival (ns):            3.310
+  Setup (ns):              0.000
+  External Setup (ns):    -0.610
+  Operating Conditions: fast_hv_lt
+
+Path 4
+  From: RPI_I2C_SCL
+  To:   FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[5]:D
+  Delay (ns):              3.308
+  Arrival (ns):            3.308
+  Setup (ns):              0.000
+  External Setup (ns):    -0.612
+  Operating Conditions: fast_hv_lt
+
+Path 5
+  From: RPI_I2C_SCL
+  To:   FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[11]:D
+  Delay (ns):              3.249
+  Arrival (ns):            3.249
+  Setup (ns):              0.000
+  External Setup (ns):    -0.688
+  Operating Conditions: fast_hv_lt
+
+
+Expanded Path 1
+  From: RPI_I2C_SCL
+  To: FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[4]:D
+  data required time                                    N/C
+  data arrival time                          -        3.447
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        RPI_I2C_SCL (f)
+               +     1.078          cell: ADLIB:IOPAD_BI
+  1.078                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0_SCL_BIBUF/U_IOPAD:Y (f)
+               +     0.000          net: FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0_SCL_BIBUF/YIN
+  1.078                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0_SCL_BIBUF/U_IOBI:YIN (f)
+               +     0.131          cell: ADLIB:IOBI_IB_OB_EB
+  1.209                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0_SCL_BIBUF/U_IOBI:Y (f)
+               +     1.388          net: FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0_SCL_BIBUF_Y
+  2.597                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_4[0]:B (f)
+               +     0.082          cell: ADLIB:CFG2
+  2.679                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_4[0]:Y (f)
+               +     0.331          net: FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_4_Z[0]
+  3.010                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_ns_i_0_o3[12]:B (f)
+               +     0.036          cell: ADLIB:CFG2
+  3.046                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_ns_i_0_o3[12]:Y (f)
+               +     0.237          net: FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/N_254
+  3.283                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_RNO[4]:D (f)
+               +     0.148          cell: ADLIB:CFG4
+  3.431                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0_RNO[4]:Y (r)
+               +     0.016          net: FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/N_855_i
+  3.447                        FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[4]:D (r)
+                                    
+  3.447                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (r)
+               +     2.578          Clock generation
+  N/C                          
+               +     0.586          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (r)
+               +     0.141          cell: ADLIB:ICB_CLKINT
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (r)
+               +     0.093          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (r)
+               +     0.108          cell: ADLIB:GB
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (r)
+               +     0.254          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB2:A (r)
+               +     0.038          cell: ADLIB:RGB
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB2:Y (f)
+               +     0.258          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB2_rgb_net_1
+  N/C                          FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[4]:CLK (r)
+               -     0.135          
+  N/C                          clock jitter
+               -     0.000          Library setup time: ADLIB:SLE
+  N/C                          FIC_3_PERIPHERALS_0/CORE_I2C_C0_0_WRAPPER_1/COREI2C_C0_0/COREI2C_C0_0/I2C_NUM_GENERATION[0].ui2c/SCLI_ff_reg_0[4]:D
+
+
+Operating Conditions : fast_hv_lt
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/URF/control1[1]:CLK
+  To:   SPISDO
+  Delay (ns):              8.861
+  Arrival (ns):           15.613
+  Clock to Out (ns):      15.613
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/stxs_txzeros:CLK
+  To:   SPISDO
+  Delay (ns):              8.721
+  Arrival (ns):           15.458
+  Clock to Out (ns):      15.458
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/stxs_direct:CLK
+  To:   SPISDO
+  Delay (ns):              8.538
+  Arrival (ns):           15.275
+  Clock to Out (ns):      15.275
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/URF/cfg_ssel[0]:CLK
+  To:   SPISS
+  Delay (ns):              8.380
+  Arrival (ns):           15.139
+  Clock to Out (ns):      15.139
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/mtx_spi_data_out:CLK
+  To:   SPISDO
+  Delay (ns):              8.357
+  Arrival (ns):           15.120
+  Clock to Out (ns):      15.120
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/URF/control1[1]:CLK
+  To: SPISDO
+  data required time                                    N/C
+  data arrival time                          -       15.613
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (r)
+               +     4.314          Clock generation
+  4.314                        
+               +     0.959          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  5.273                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (r)
+               +     0.243          cell: ADLIB:ICB_CLKINT
+  5.516                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (r)
+               +     0.145          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  5.661                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (r)
+               +     0.163          cell: ADLIB:GB
+  5.824                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (r)
+               +     0.414          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  6.238                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0:A (r)
+               +     0.058          cell: ADLIB:RGB
+  6.296                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0:Y (f)
+               +     0.456          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0_rgb_net_1
+  6.752                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/URF/control1[1]:CLK (r)
+               +     0.209          cell: ADLIB:SLE
+  6.961                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/URF/control1[1]:Q (r)
+               +     0.625          net: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/SPIMODE
+  7.586                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_u_2_0_RNO:A (r)
+               +     0.051          cell: ADLIB:CFG2
+  7.637                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_u_2_0_RNO:Y (f)
+               +     0.125          net: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_sn_N_3
+  7.762                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_u_2_0:D (f)
+               +     0.052          cell: ADLIB:CFG4
+  7.814                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_u_2_0:Y (f)
+               +     0.128          net: FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/SPISDO_c_2
+  7.942                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_u:A (f)
+               +     0.085          cell: ADLIB:CFG3
+  8.027                        FIC_3_PERIPHERALS_0/SPI_FOR_7_SEG_0/SPI_FOR_7_SEG_0/USPI/UCC/spi_data_out_u:Y (f)
+               +     4.600          net: SPISDO_c
+  12.627                       SPISDO_obuf/U_IOTRI:D (f)
+               +     0.918          cell: ADLIB:IOTRI_OB_EB
+  13.545                       SPISDO_obuf/U_IOTRI:DOUT (f)
+               +     0.000          net: SPISDO_obuf/DOUT
+  13.545                       SPISDO_obuf/U_IOPAD:D (f)
+               +     2.068          cell: ADLIB:IOPAD_TRI
+  15.613                       SPISDO_obuf/U_IOPAD:PAD (f)
+               +     0.000          net: SPISDO
+  15.613                       SPISDO (f)
+                                    
+  15.613                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+                                    
+  N/C                          SPISDO (f)
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[4]:ALn
+  Delay (ns):              3.338
+  Slack (ns):             16.233
+  Arrival (ns):           10.088
+  Required (ns):          26.321
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.632
+  Skew (ns):               0.085
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[2]:ALn
+  Delay (ns):              3.338
+  Slack (ns):             16.233
+  Arrival (ns):           10.088
+  Required (ns):          26.321
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.632
+  Skew (ns):               0.085
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/iPRDATA[7]:ALn
+  Delay (ns):              3.338
+  Slack (ns):             16.233
+  Arrival (ns):           10.088
+  Required (ns):          26.321
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.632
+  Skew (ns):               0.085
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[1]:ALn
+  Delay (ns):              3.337
+  Slack (ns):             16.234
+  Arrival (ns):           10.087
+  Required (ns):          26.321
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.631
+  Skew (ns):               0.085
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/iPRDATA[2]:ALn
+  Delay (ns):              3.337
+  Slack (ns):             16.234
+  Arrival (ns):           10.087
+  Required (ns):          26.321
+  Recovery (ns):           0.209
+  Minimum Period (ns):     3.631
+  Skew (ns):               0.085
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK
+  To: FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[4]:ALn
+  data required time                                 26.321
+  data arrival time                          -       10.088
+  slack                                              16.233
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  0.000                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (r)
+               +     4.314          Clock generation
+  4.314                        
+               +     0.959          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  5.273                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (r)
+               +     0.243          cell: ADLIB:ICB_CLKINT
+  5.516                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (r)
+               +     0.145          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  5.661                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (r)
+               +     0.163          cell: ADLIB:GB
+  5.824                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (r)
+               +     0.414          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  6.238                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0:A (r)
+               +     0.058          cell: ADLIB:RGB
+  6.296                        CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0:Y (f)
+               +     0.454          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0_rgb_net_1
+  6.750                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:CLK (r)
+               +     0.201          cell: ADLIB:SLE
+  6.951                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep[0]:Q (r)
+               +     2.033          net: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_Z[0]
+  8.984                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]:A (r)
+               +     0.141          cell: ADLIB:GB
+  9.125                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]:Y (r)
+               +     0.415          net: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]/U0_Y
+  9.540                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]/U0_RGB1_RGB0:A (r)
+               +     0.058          cell: ADLIB:RGB
+  9.598                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]/U0_RGB1_RGB0:Y (f)
+               +     0.490          net: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]/U0_RGB1_RGB0_rgb_net_1
+  10.088                       FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[4]:ALn (r)
+                                    
+  10.088                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  20.000                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  20.000                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (r)
+               +     3.894          Clock generation
+  23.894                       
+               +     0.872          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  24.766                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (r)
+               +     0.211          cell: ADLIB:ICB_CLKINT
+  24.977                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (r)
+               +     0.132          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  25.109                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (r)
+               +     0.148          cell: ADLIB:GB
+  25.257                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (r)
+               +     0.372          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  25.629                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1:A (r)
+               +     0.052          cell: ADLIB:RGB
+  25.681                       CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1:Y (f)
+               +     0.413          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB1_rgb_net_1
+  26.094                       FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[4]:CLK (r)
+               +     0.571          
+  26.665                       clock reconvergence pessimism
+               -     0.135          
+  26.530                       clock jitter
+               -     0.209          Library recovery time: ADLIB:SLE
+  26.321                       FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/rx_dout_reg_Z[4]:ALn
+                                    
+  26.321                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_4[0]:ALn
+  Delay (ns):              7.445
+  Arrival (ns):            7.445
+  Recovery (ns):           0.196
+  External Recovery (ns):   1.688
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_7[0]:ALn
+  Delay (ns):              7.024
+  Arrival (ns):            7.024
+  Recovery (ns):           0.196
+  External Recovery (ns):   1.269
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_6[0]:ALn
+  Delay (ns):              7.025
+  Arrival (ns):            7.025
+  Recovery (ns):           0.196
+  External Recovery (ns):   1.269
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_14[0]:ALn
+  Delay (ns):              7.025
+  Arrival (ns):            7.025
+  Recovery (ns):           0.196
+  External Recovery (ns):   1.269
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: SWITCH2
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_10[0]:ALn
+  Delay (ns):              7.024
+  Arrival (ns):            7.024
+  Recovery (ns):           0.196
+  External Recovery (ns):   1.268
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: SWITCH2
+  To: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_4[0]:ALn
+  data required time                                    N/C
+  data arrival time                          -        7.445
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        SWITCH2 (r)
+               +     0.000          net: SWITCH2
+  0.000                        SWITCH2_ibuf/U_IOPAD:PAD (r)
+               +     0.610          cell: ADLIB:IOPAD_IN
+  0.610                        SWITCH2_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: SWITCH2_ibuf/YIN
+  0.610                        SWITCH2_ibuf/U_IOIN:YIN (r)
+               +     0.336          cell: ADLIB:IOIN_IB_E
+  0.946                        SWITCH2_ibuf/U_IOIN:Y (r)
+               +     4.047          net: SWITCH2_c
+  4.993                        CLOCKS_AND_RESETS_0/AND3_0:A (r)
+               +     0.135          cell: ADLIB:CFG3
+  5.128                        CLOCKS_AND_RESETS_0/AND3_0:Y (r)
+               +     0.064          net: CLOCKS_AND_RESETS_0/AND3_0_Y
+  5.192                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/un1_EXT_RST_N_2:C (r)
+               +     0.078          cell: ADLIB:CFG3
+  5.270                        CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/un1_EXT_RST_N_2:Y (r)
+               +     2.175          net: CLOCKS_AND_RESETS_0/un1_EXT_RST_N_2
+  7.445                        CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_4[0]:ALn (r)
+                                    
+  7.445                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3
+               +     0.000          Clock source
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0:OUT3 (r)
+               +     3.894          Clock generation
+  N/C                          
+               +     0.872          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_clkint_12
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:A (r)
+               +     0.211          cell: ADLIB:ICB_CLKINT
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1:Y (r)
+               +     0.132          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_NET
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:A (r)
+               +     0.148          cell: ADLIB:GB
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12:Y (r)
+               +     0.375          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_Y
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0:A (r)
+               +     0.052          cell: ADLIB:RGB
+  N/C                          CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0:Y (f)
+               +     0.404          net: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12/U0_RGB1_RGB0_rgb_net_1
+  N/C                          CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_4[0]:CLK (r)
+               -     0.135          
+  N/C                          clock jitter
+               -     0.196          Library recovery time: ADLIB:SLE
+  N/C                          CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_4[0]:ALn
+
+
+Operating Conditions : slow_lv_ht
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/ring_osc_gen.0.latch[0]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/ring_osc_gen.1.latch[1]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/ring_osc_gen.2.latch[2]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/ring_osc_gen.3.latch[3]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/ring_osc_gen.4.latch[4]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.0.latch[0]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.1.latch[1]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.2.latch[2]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.3.latch[3]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.4.latch[4]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.5.latch[5]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/ring_osc_gen.6.latch[6]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.0.latch[0]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.1.latch[1]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.2.latch[2]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.3.latch[3]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.4.latch[4]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.5.latch[5]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.6.latch[6]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.7.latch[7]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
+
+----------------------------------------------------
+
+Clock Domain FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/ring_osc_gen.8.latch[8]:CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+----------------------------------------------------
+
+SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+No Path 
+
+END SET FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+No Path 
+
+END SET CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 to FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
+
+----------------------------------------------------
+
+Clock Domain MBUS_SPI_CLK
+
+Info: The maximum frequency of this clock domain is limited by the period of pin MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_F2M
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From: MBUS_SPI_MISO
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_DI_F2M
+  Delay (ns):              3.426
+  Arrival (ns):            3.426
+  Setup (ns):              0.803
+  External Setup (ns):     1.459
+  Operating Conditions: slow_lv_lt
+
+
+Expanded Path 1
+  From: MBUS_SPI_MISO
+  To: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_DI_F2M
+  data required time                                    N/C
+  data arrival time                          -        3.426
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MBUS_SPI_MISO (f)
+               +     0.000          net: MBUS_SPI_MISO
+  0.000                        MBUS_SPI_MISO_ibuf/U_IOPAD:PAD (f)
+               +     1.082          cell: ADLIB:IOPAD_IN
+  1.082                        MBUS_SPI_MISO_ibuf/U_IOPAD:Y (f)
+               +     0.000          net: MBUS_SPI_MISO_ibuf/YIN
+  1.082                        MBUS_SPI_MISO_ibuf/U_IOIN:YIN (f)
+               +     0.267          cell: ADLIB:IOIN_IB_E
+  1.349                        MBUS_SPI_MISO_ibuf/U_IOIN:Y (f)
+               +     2.077          net: MBUS_SPI_MISO_c
+  3.426                        MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_DI_F2M (f)
+                                    
+  3.426                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          MBUS_SPI_CLK
+               +     0.000          Clock source
+  N/C                          MBUS_SPI_CLK (r)
+               +     0.652          cell: ADLIB:IOPAD_BI
+  N/C                          MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOPAD:Y (r)
+               +     0.000          net: MSS_WRAPPER_0/SPI_0_CLK_BIBUF/YIN
+  N/C                          MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOBI:YIN (r)
+               +     0.262          cell: ADLIB:IOBI_IB_OB_EB
+  N/C                          MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOBI:Y (r)
+               +     1.856          net: MSS_WRAPPER_0/SPI_0_CLK_BIBUF_Y
+  N/C                          MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_F2M (r)
+               -     0.803          Library setup time: ADLIB:MSS
+  N/C                          MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_DI_F2M
+
+
+Operating Conditions : slow_lv_lt
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_F2M
+  To:   MBUS_SPI_MOSI
+  Delay (ns):             10.408
+  Arrival (ns):           14.658
+  Clock to Out (ns):      14.658
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_F2M
+  To: MBUS_SPI_MOSI
+  data required time                                    N/C
+  data arrival time                          -       14.658
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MBUS_SPI_CLK
+               +     0.000          Clock source
+  0.000                        MBUS_SPI_CLK (f)
+               +     1.199          cell: ADLIB:IOPAD_BI
+  1.199                        MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOPAD:Y (f)
+               +     0.000          net: MSS_WRAPPER_0/SPI_0_CLK_BIBUF/YIN
+  1.199                        MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOBI:YIN (f)
+               +     0.338          cell: ADLIB:IOBI_IB_OB_EB
+  1.537                        MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOBI:Y (f)
+               +     2.713          net: MSS_WRAPPER_0/SPI_0_CLK_BIBUF_Y
+  4.250                        MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_F2M (f)
+               +     3.145          cell: ADLIB:MSS
+  7.395                        MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_DO_M2F (f)
+               +     3.718          net: MBUS_SPI_MOSI_c
+  11.113                       MBUS_SPI_MOSI_obuf/U_IOTRI:D (f)
+               +     0.918          cell: ADLIB:IOTRI_OB_EB
+  12.031                       MBUS_SPI_MOSI_obuf/U_IOTRI:DOUT (f)
+               +     0.000          net: MBUS_SPI_MOSI_obuf/DOUT
+  12.031                       MBUS_SPI_MOSI_obuf/U_IOPAD:D (f)
+               +     2.627          cell: ADLIB:IOPAD_TRI
+  14.658                       MBUS_SPI_MOSI_obuf/U_IOPAD:PAD (f)
+               +     0.000          net: MBUS_SPI_MOSI
+  14.658                       MBUS_SPI_MOSI (f)
+                                    
+  14.658                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          MBUS_SPI_CLK
+                                    
+  N/C                          MBUS_SPI_MOSI (f)
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: MBUS_SPI_CS
+  To:   MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_SS_F2M
+  Delay (ns):              3.937
+  Arrival (ns):            3.937
+  Recovery (ns):           1.686
+  External Recovery (ns):   2.557
+  Operating Conditions: slow_lv_lt
+
+
+Expanded Path 1
+  From: MBUS_SPI_CS
+  To: MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_SS_F2M
+  data required time                                    N/C
+  data arrival time                          -        3.937
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MBUS_SPI_CS (f)
+               +     1.082          cell: ADLIB:IOPAD_BI
+  1.082                        MSS_WRAPPER_0/SPI_0_SS_BIBUF/U_IOPAD:Y (f)
+               +     0.000          net: MSS_WRAPPER_0/SPI_0_SS_BIBUF/YIN
+  1.082                        MSS_WRAPPER_0/SPI_0_SS_BIBUF/U_IOBI:YIN (f)
+               +     0.267          cell: ADLIB:IOBI_IB_OB_EB
+  1.349                        MSS_WRAPPER_0/SPI_0_SS_BIBUF/U_IOBI:Y (f)
+               +     2.588          net: MSS_WRAPPER_0/SPI_0_SS_BIBUF_Y
+  3.937                        MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_SS_F2M (f)
+                                    
+  3.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          MBUS_SPI_CLK
+               +     0.000          Clock source
+  N/C                          MBUS_SPI_CLK (f)
+               +     0.943          cell: ADLIB:IOPAD_BI
+  N/C                          MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOPAD:Y (f)
+               +     0.000          net: MSS_WRAPPER_0/SPI_0_CLK_BIBUF/YIN
+  N/C                          MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOBI:YIN (f)
+               +     0.255          cell: ADLIB:IOBI_IB_OB_EB
+  N/C                          MSS_WRAPPER_0/SPI_0_CLK_BIBUF/U_IOBI:Y (f)
+               +     1.868          net: MSS_WRAPPER_0/SPI_0_CLK_BIBUF_Y
+  N/C                          MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_F2M (f)
+               -     1.686          Library recovery time: ADLIB:MSS
+  N/C                          MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_SS_F2M
+
+
+Operating Conditions : slow_lv_lt
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_M2F
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:SPI_0_CLK_M2F
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain REF_CLK_50MHz
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin REF_CLK_50MHz_ibuf/U_IOPAD:PAD
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1
+
+Info: The maximum frequency of this clock domain is limited by the period of pin MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_1_ACLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2
+
+Info: The maximum frequency of this clock domain is limited by the period of pin MSS_WRAPPER_0/MPFS_DISCOVERY_KIT_MSS_0/I_MSS:FIC_2_ACLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path 
+
+END SET Input to Output
+
+----------------------------------------------------
+

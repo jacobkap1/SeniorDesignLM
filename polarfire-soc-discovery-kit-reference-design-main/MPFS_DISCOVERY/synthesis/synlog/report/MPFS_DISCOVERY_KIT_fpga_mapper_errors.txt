@@ -1,0 +1,2 @@
+**** Begin Compile Point : MPFS_DISCOVERY_KIT ****
+**** End Compile Point : MPFS_DISCOVERY_KIT ****

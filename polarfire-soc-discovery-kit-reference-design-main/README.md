@@ -1,8 +1,8 @@
-# PolarFire&reg; SoC Discovery Kit Reference Design Generation Tcl Scripts - Libero&reg; SoC v2024.2+
+# PolarFire&reg; SoC Discovery Kit Reference Design Generation Tcl Scripts - Libero&reg; SoC v2025.2+
 
 ## Table of Contents
 
-- [PolarFire® SoC Discovery Kit Reference Design Generation Tcl Scripts - Libero® SoC v2024.2+](#polarfire-soc-discovery-kit-reference-design-generation-tcl-scripts---libero-soc-v20242)
+- [PolarFire® SoC Discovery Kit Reference Design Generation Tcl Scripts - Libero® SoC v2025.2+](#polarfire-soc-discovery-kit-reference-design-generation-tcl-scripts---libero-soc-v20252)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Using the reference design generation Tcl script](#using-the-reference-design-generation-tcl-script)
@@ -40,7 +40,7 @@ A Libero SoC Tcl script is provided to generate the reference design using Liber
 
 Out of the box the kit runs a FIR filter demo, this reference design is configured to run bare metal applications, boot Linux&reg; and enable peripherals on the kit. To generate the FIR filter design an argument is provided which can be passed when running Tcl scripts from Libero SoC, see the [Argument based design generation](#argument-based-design-generation) section for more information.
 
-This repository supports Libero SoC v2024.2 and above, which is available for download [here](https://www.microchip.com/en-us/products/fpgas-and-plds/fpga-and-soc-design-tools/fpga/libero-software-later-versions#Documents%20and%20Downloads). The release notes will note the version(s) of Libero that these scripts have been tested on.
+This repository supports Libero SoC v2025.2 and above, which is available for download [here](https://www.microchip.com/en-us/products/fpgas-and-plds/fpga-and-soc-design-tools/fpga/libero-software-later-versions#Documents%20and%20Downloads). The release notes will note the version(s) of Libero that these scripts have been tested on.
 
 <a name="using-the-reference-design-generation-tcl-script"></a>
 ## Using the reference design generation Tcl script
@@ -94,8 +94,8 @@ Additional arguments are also supported to modify or configure aspects of the de
 | EXPORT_FPE:PATH           | Runs the full design flow after generating a design and exports a FlashPro Express file to a specified path e.g EXPORT_FPE:/home/user/jobs/                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | AXI4_STREAM_DEMO          | Demonstrates configuring and implementing an AXI4 streaming interface on an CoreAXI4DMAController.<br> Creates the AXI4_STREAM_DATA_GENERATOR module which connects to the CoreAXI4DMAController in the design. The AXI4_STREAM_DATA_GENERATOR module generates AXI4 Stream transactions with incrementing data which can be used to benchmark the performance of the system. Further information regarding this demonstration is available in the following [guide](https://mi-v-ecosystem.github.io/redirects/demo-guides_mpfs-axi4-stream-demo). Note: this argument cannot be used with the Mi-V RV32 soft CPU designs. |
 | DESIGN_VERSION:VERSION      | Used to specify the FPGA design version which will be included in the programming bitstream e.g DESIGN_VERSION:12345 (note: 16 bit value only)                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| SILICON_SIGNATURE:SIGNATURE      | Used to specify the silicon signature to be included in the programming bitstream, set to 'D15C0417' by default. Setting this argument overrides this default value.
-
+| SILICON_SIGNATURE:SIGNATURE      | Used to specify the silicon signature to be included in the programming bitstream, set to 'D15C0417' by default. Setting this argument overrides this default value. |
+| SMARTHLS:PATH             | This flag allows the creation and automatic integration of a hardware module described in C++ using Microchip's SmartHLS tool. The flag accepts one argument indicating the path to a SmartHLS project directory. For example, to compile the included example, the flag would be like this: SMARTHLS:./script_support/additional_configurations/smarthls/invert_and_threshold 
 
 **Note:** The arguments listed in the table above can be used with other arguments - i.e you can pass "I2C_LOOPBACK", "HSS_UPDATE" and "PROGRAM" as arguments.
 

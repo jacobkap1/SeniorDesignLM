@@ -1,0 +1,27 @@
+********************************************************************
+Delay Instance Report - Date: Thu Apr  9 00:37:10 2026
+Product: Designer
+Release: 2025.2
+Version: 2025.2.0.14
+Design Name: MPFS_DISCOVERY_KIT
+Family: PolarFireSoC
+Die: MPFS095T
+Package: FCSG325
+********************************************************************
+
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+
+
++-----------------+----------------------------------------------------------------+------------------+-------------+-----------------+-----------+
+| Type            | Instance Name                                                  | Param Name       | Delay Value | PDC Option Name | Editable? |
++-----------------+----------------------------------------------------------------+------------------+-------------+-----------------+-----------+
+| ICB_CLKDIVDELAY | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD     | DELAY_LINE_VAL   | 1           | DELAY           | Yes       |
+| ICB_CLKDIVDELAY | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD     | DELAY_VAL_X2     | 1           | DELAY           | Yes       |
+| ICB_CLKDIVDELAY | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_RXCLK/I_CDD    | DELAY_LINE_VAL   | 0           | DELAY           | Yes       |
+| ICB_CLKDIVDELAY | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_RXCLK/I_CDD    | DELAY_VAL_X2     | 1           | DELAY           | Yes       |
+| LANECTRL        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_LANECTRL_0/I_LANECTRL  | RX_DQS_DELAY_VAL | 1           | RX_DQS_DELAY    | Yes       |
+| LANECTRL        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_LANECTRL_0/I_LANECTRL  | TX_DQS_DELAY_VAL | 1           | TX_DQS_DELAY    | No        |
+| PLL_DELAY       | MIPI_CAMERA_0/PF_CCC_C1_0/PF_CCC_C1_0/pll_inst_0_DELAY         | CDELAY0_SEL      | 0           | DELAY           | No        |
+| PLL_DELAY       | CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0_DELAY | CDELAY0_SEL      | 0           | DELAY           | No        |
++-----------------+----------------------------------------------------------------+------------------+-------------+-----------------+-----------+
+
