@@ -46,6 +46,8 @@ ONNX_ORIGINAL = r"C:\Users\jacob\SeniorDesignLM\yolov11\runs\detect\train2\weigh
 # we want two paths to compare the quantization model to the original model, so we can see the difference in size and speed
 ONNX_QUANT    = r"C:\Users\jacob\SeniorDesignLM\best_quantized.onnx"
 
+ONNX_OP21    = r"C:\Users\jacob\SeniorDesignLM\best_quantized_21.onnx"
+
 # COCO benchmarks: coco128 (128 COCO train images) includes GT for person/bicycle/car/motorcycle.
 # coco8 only has 8 images and **no** labels for classes 1–3, so P/R/F1 for those stay empty on coco8.
 _COCO_DATASETS_DIR = _YOLOV11_ROOT / "datasets"
@@ -97,10 +99,16 @@ print("\n Phase 2 :Quantizing model to INT8")
 quantize_dynamic(
     model_input=ONNX_ORIGINAL,
     model_output=ONNX_QUANT,
-    weight_type=QuantType.QInt8
+    weight_type=QuantType.QUInt8
 )
 print(f"Quantized model saved to: {ONNX_QUANT}")
 
+
+#Converting quantized model to use opset 21
+oldmodel = onnx.load(ONNX_QUANT)
+new_model = onnx.version_converter.convert_version(oldmodel,21)
+onnx.save(new_model, ONNX_OP21)
+print(f"Opset 21 quantized model saved to: {ONNX_OP21}")
 
 # Function to load and preprocess images from a folder
 def load_images(folder):
