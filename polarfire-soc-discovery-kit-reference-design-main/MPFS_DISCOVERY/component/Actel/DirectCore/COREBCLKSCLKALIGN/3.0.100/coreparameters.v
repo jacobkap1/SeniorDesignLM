@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Wed Apr  8 15:52:48 2026
+// Created by Microsemi SmartDesign Sun Apr 12 01:41:35 2026
 // Parameters for COREBCLKSCLKALIGN
 //--------------------------------------------------------------------
 

@@ -1,0 +1,88 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "23:43:57    11-Apr-2026",
+	"Working Directory" : "C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/synthesis",
+	"Install" : "C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Synplify_Pro"
+},
+"synthesis" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "23:39:18",
+   "Runtime" : "04m:39s",
+   "Executable Run Time" : "04m:36s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "23:39:18",
+      "Runtime" : "04m:39s",
+      "Executable Run Time" : "04m:36s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "23:39:18",
+         "Runtime" : "02m:38s",
+         "Executable Run Time" : "02m:36s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "23:39:18",
+            "Runtime" : "02m:15s",
+            "Executable Run Time" : "02m:13s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Run Success" : "yes",
+               "Run Start Time" : "23:39:18",
+               "Run Time" : "02m:12s",
+               "Exe Run Time" : "02m:11s",
+               "max_parallel_jobs" : "4",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/synthesis",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Run Success" : "yes",
+               "Run Start Time" : "23:41:31",
+               "Run Time" : "02s",
+               "Exe Run Time" : "02s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Run Success" : "yes",
+            "Run Start Time" : "23:41:33",
+            "Run Time" : "23s",
+            "Exe Run Time" : "23s",
+            "max_parallel_jobs" : "4",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "23:41:56",
+         "Runtime" : "02m:01s",
+         "Executable Run Time" : "02m:00s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/synthesis",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Run Success" : "yes",
+            "Run Start Time" : "23:41:56",
+            "Run Time" : "02m:01s",
+            "Exe Run Time" : "02m:00s",
+            "max_parallel_jobs" : "4",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

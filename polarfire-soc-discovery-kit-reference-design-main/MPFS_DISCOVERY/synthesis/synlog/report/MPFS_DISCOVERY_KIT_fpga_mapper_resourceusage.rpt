@@ -16,46 +16,47 @@ IOD             3 uses
 LANECTRL        1 use
 MSS             1 use
 MX2             1 use
-OR2             7 uses
+OR2             6 uses
 OR4             64 uses
 PLL             2 uses
-CFG1           174 uses
-CFG2           4459 uses
-CFG3           12268 uses
-CFG4           13999 uses
+CFG1           189 uses
+CFG2           4758 uses
+CFG3           13474 uses
+CFG4           14590 uses
 
 Carry cells:
-ARI1            4575 uses - used for arithmetic functions
-ARI1            7580 uses - used for Wide-Mux implementation
-Total ARI1      12155 uses
+ARI1            4825 uses - used for arithmetic functions
+ARI1            10289 uses - used for Wide-Mux implementation
+Total ARI1      15114 uses
 
 
 Sequential Cells: 
-SLE            26098 uses
+SLE            32615 uses
 
 DSP Blocks:    0 of 292 (0%)
 
-I/O ports: 141
-I/O primitives: 130
+I/O ports: 142
+I/O primitives: 131
 BIBUF          47 uses
 BIBUF_DIFF     2 uses
 INBUF          19 uses
 INBUF_DIFF     3 uses
 OUTBUF         57 uses
 OUTBUF_DIFF    2 uses
+TRIBUFF        1 use
 
 
 Global Clock Buffers: 14
 
-Total LUTs:    43055
+Total LUTs:    48125
 
 Extra resources required for RAM and MACC_PA interface logic during P&R:
 
-RAM64X12 Interface Logic : SLEs = 1260; LUTs = 1260;
-RAM1K20  Interface Logic : SLEs = 1620; LUTs = 1620;
+RAM64X12 Interface Logic : SLEs = 912; LUTs = 912;
+RAM1K20  Interface Logic : SLEs = 1800; LUTs = 1800;
 MACC_PA     Interface Logic : SLEs = 0; LUTs = 0;
 MACC_PA_BC_ROM     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  26098 + 1260 + 1620 + 0 = 28978;
-Total number of LUTs after P&R:  43055 + 1260 + 1620 + 0 = 45935;
+Total number of SLEs after P&R:  32615 + 912 + 1800 + 0 = 35327;
+Total number of LUTs after P&R:  48125 + 912 + 1800 + 0 = 50837;
 

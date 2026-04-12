@@ -4,7 +4,7 @@ set max_timing_multi_corner [report \
     -analysis max \
     -multi_corner yes \
     -format   text \
-    {MPFS_DISCOVERY_KIT_timing_r26_s86.rpt}]
+    {MPFS_DISCOVERY_KIT_timing_r33_s16.rpt}]
 set max_timing_violations_multi_corner [report \
     -type     timing_violations \
     -analysis max \
@@ -12,7 +12,7 @@ set max_timing_violations_multi_corner [report \
     -format   text \
     -use_slack_threshold no \
     -max_paths 100 \
-    {MPFS_DISCOVERY_KIT_timing_violations_max_r26_s86.rpt}]
+    {MPFS_DISCOVERY_KIT_timing_violations_max_r33_s16.rpt}]
 set min_timing_violations_multi_corner [report \
     -type     timing_violations \
     -analysis min \
@@ -20,7 +20,7 @@ set min_timing_violations_multi_corner [report \
     -format   text \
     -use_slack_threshold no \
     -max_paths 100 \
-    {MPFS_DISCOVERY_KIT_timing_violations_min_r26_s86.rpt}]
+    {MPFS_DISCOVERY_KIT_timing_violations_min_r33_s16.rpt}]
 set has_violations {MPFS_DISCOVERY_KIT_has_violations}
 set fp [open $has_violations w]
 puts $fp "_max_timing_violations_multi_corner $max_timing_violations_multi_corner"

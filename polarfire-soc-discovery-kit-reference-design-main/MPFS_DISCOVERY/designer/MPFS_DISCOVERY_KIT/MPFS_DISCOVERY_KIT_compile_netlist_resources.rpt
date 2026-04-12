@@ -1,6 +1,6 @@
 Compile Report
 Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
-Date: Wed Apr  8 23:28:52 2026
+Date: Sun Apr 12 01:18:17 2026
 
 Device Selection
 +------------------------+--------------+
@@ -29,18 +29,18 @@ Resource Usage
 +-----------------------------+-------+-------+------------+
 | Type                        | Used  | Total | Percentage |
 +-----------------------------+-------+-------+------------+
-| 4LUT                        | 46072 | 93516 | 49.27      |
-| DFF                         | 29008 | 93516 | 31.02      |
-| User I/O                    | 64    | 80    | 80.00      |
-| -- Single-ended I/O         | 58    | 80    | 72.50      |
+| 4LUT                        | 50976 | 93516 | 54.51      |
+| DFF                         | 35357 | 93516 | 37.81      |
+| User I/O                    | 65    | 80    | 81.25      |
+| -- Single-ended I/O         | 59    | 80    | 73.75      |
 | -- Differential I/O Pairs   | 3     | 40    | 7.50       |
 | -- I/Os using I/O Registers | 0     | 80    | 0.00       |
 | I/O Register Flip-Flops     | 0     | 240   | 0.00       |
 | -- Input  I/O Flip-Flops    | 0     | 80    | 0.00       |
 | -- Output I/O Flip-Flops    | 0     | 80    | 0.00       |
 | -- Enable I/O Flip-Flops    | 0     | 80    | 0.00       |
-| uSRAM                       | 105   | 876   | 11.99      |
-| LSRAM                       | 45    | 308   | 14.61      |
+| uSRAM                       | 76    | 876   | 8.68       |
+| LSRAM                       | 50    | 308   | 16.23      |
 | Math                        | 0     | 292   | 0.00       |
 | H-Chip Global               | 11    | 48    | 22.92      |
 | PLL                         | 2     | 8     | 25.00      |
@@ -60,11 +60,11 @@ Detailed Logic Resource Usage
 +-----------------------+-------+-------+
 | Type                  | 4LUT  | DFF   |
 +-----------------------+-------+-------+
-| Fabric Logic          | 43192 | 26128 |
-| uSRAM Interface Logic | 1260  | 1260  |
-| LSRAM Interface Logic | 1620  | 1620  |
+| Fabric Logic          | 48264 | 32645 |
+| uSRAM Interface Logic | 912   | 912   |
+| LSRAM Interface Logic | 1800  | 1800  |
 | Math Interface Logic  | 0     | 0     |
-| Total Used            | 46072 | 29008 |
+| Total Used            | 50976 | 35357 |
 +-----------------------+-------+-------+
 
 Detailed Carry Chains Resource Usage
@@ -73,12 +73,12 @@ Detailed Carry Chains Resource Usage
 | 2      | 2    |
 | 3      | 3    |
 | 5      | 5    |
-| 6      | 20   |
-| 7      | 32   |
-| 8      | 63   |
-| 9      | 70   |
-| 10     | 25   |
-| 11     | 22   |
+| 6      | 26   |
+| 7      | 34   |
+| 8      | 74   |
+| 9      | 77   |
+| 10     | 29   |
+| 11     | 23   |
 | 12     | 18   |
 | 13     | 15   |
 | 14     | 29   |
@@ -92,16 +92,17 @@ Detailed Carry Chains Resource Usage
 | 33     | 6    |
 | 35     | 1    |
 | 63     | 12   |
-| Total  | 355  |
+| Total  | 386  |
 +--------+------+
 
 Detailed 4LUT Groups Resource Usage
 +--------+------+
 | Length | Used |
-| 2      | 3136 |
-| 5      | 188  |
+| 2      | 3623 |
+| 5      | 533  |
+| 10     | 1    |
 | 46     | 8    |
-| Total  | 3332 |
+| Total  | 4165 |
 +--------+------+
 
 I/O Function
@@ -109,7 +110,7 @@ I/O Function
 | Type                          | w/o register | w/ register | w/ DDR register |
 +-------------------------------+--------------+-------------+-----------------+
 | Input I/O                     | 15           | 0           | 0               |
-| Output I/O                    | 19           | 0           | 0               |
+| Output I/O                    | 20           | 0           | 0               |
 | Bidirectional I/O             | 24           | 0           | 0               |
 | Differential Input I/O Pairs  | 3            | 0           | 0               |
 | Differential Output I/O Pairs | 0            | 0           | 0               |
@@ -119,13 +120,13 @@ Nets assigned to chip global resources
 +--------+---------+-------------------------------------------------------------------------------------------------------------+
 | Fanout | Type    | Name                                                                                                        |
 +--------+---------+-------------------------------------------------------------------------------------------------------------+
-| 23107  | INT_NET | Net   : CLOCKS_AND_RESETS_0_FIC_0_CLK                                                                       |
+| 29563  | INT_NET | Net   : CLOCKS_AND_RESETS_0_FIC_0_CLK                                                                       |
 |        |         | Driver: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0/U0_RGB1                                      |
 |        |         | Source: NETLIST                                                                                             |
-| 15613  | INT_NET | Net   : dff_arst                                                                                            |
+| 20988  | INT_NET | Net   : dff_arst                                                                                            |
 |        |         | Driver: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15_RNIJUDE1_0[0]/U0_RGB1                        |
 |        |         | Source: NETLIST                                                                                             |
-| 6266   | INT_NET | Net   : FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/sysReset_arst                            |
+| 7315   | INT_NET | Net   : FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/sysReset_arst                            |
 |        |         | Driver: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/arst_aclk_sync/sysReset_RNIHOMD2/U0_RGB1 |
 |        |         | Source: NETLIST                                                                                             |
 | 1485   | INT_NET | Net   : FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/sysReset_arst                              |
@@ -140,7 +141,7 @@ Nets assigned to chip global resources
 | 1055   | INT_NET | Net   : dff_arst_0                                                                                          |
 |        |         | Driver: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_15_rep_RNIS9V04[0]/U0_RGB1                      |
 |        |         | Source: NETLIST                                                                                             |
-| 597    | INT_NET | Net   : CLOCKS_AND_RESETS_0_FIC_1_CLK                                                                       |
+| 639    | INT_NET | Net   : CLOCKS_AND_RESETS_0_FIC_1_CLK                                                                       |
 |        |         | Driver: CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_4/U0_RGB1                                      |
 |        |         | Source: NETLIST                                                                                             |
 | 333    | INT_NET | Net   : MIPI_CAMERA_0/PF_CCC_C1_0_OUT0_FABCLK_0                                                             |
@@ -161,54 +162,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+----------------------------------------------------------------------------------------+
-| Fanout | Type    | Name                                                                                   |
-+--------+---------+----------------------------------------------------------------------------------------+
-| 3075   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[2]                          |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[2]                            |
-| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[1]                       |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[1]                     |
-| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB2                         |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[5]                     |
-| 1681   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[0]                       |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[0]                         |
-| 1551   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB1                         |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[4]                     |
-| 1538   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[3]                          |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[3]                            |
-| 1319   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB0                         |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[3]                         |
-| 771    | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/CO0_0                                      |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[0]                            |
-| 747    | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/N_56229_i_0_o2               |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/state_ns_4_0_.N_56229_i_0_o2 |
-| 725    | INT_NET | Net   : MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_net_387                     |
-|        |         | Driver: MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/reset_w                         |
-+--------+---------+----------------------------------------------------------------------------------------+
++--------+---------+--------------------------------------------------------------------+
+| Fanout | Type    | Name                                                               |
++--------+---------+--------------------------------------------------------------------+
+| 5764   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/dec/state_Z[0]         |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/dec/state[0]           |
+| 3075   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[2]      |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[2]        |
+| 3067   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/dec/t_Z[2]             |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/dec/t_rep[2]           |
+| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[1]   |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[1] |
+| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB2     |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[5] |
+| 1681   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[0]   |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[0]     |
+| 1551   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB1     |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[4] |
+| 1546   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/dec/t_Z[3]             |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/dec/t_rep[3]           |
+| 1538   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[3]      |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[3]        |
+| 1319   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB0     |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[3]     |
++--------+---------+--------------------------------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+----------------------------------------------------------------------------------------+
-| Fanout | Type    | Name                                                                                   |
-+--------+---------+----------------------------------------------------------------------------------------+
-| 3075   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[2]                          |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[2]                            |
-| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[1]                       |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[1]                     |
-| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB2                         |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[5]                     |
-| 1681   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[0]                       |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[0]                         |
-| 1551   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB1                         |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[4]                     |
-| 1538   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[3]                          |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[3]                            |
-| 1319   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB0                         |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[3]                         |
-| 771    | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/CO0_0                                      |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[0]                            |
-| 747    | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/N_56229_i_0_o2               |
-|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/state_ns_4_0_.N_56229_i_0_o2 |
-| 725    | INT_NET | Net   : MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_net_387                     |
-|        |         | Driver: MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/reset_w                         |
-+--------+---------+----------------------------------------------------------------------------------------+
++--------+---------+--------------------------------------------------------------------+
+| Fanout | Type    | Name                                                               |
++--------+---------+--------------------------------------------------------------------+
+| 5764   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/dec/state_Z[0]         |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/dec/state[0]           |
+| 3075   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[2]      |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[2]        |
+| 3067   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/dec/t_Z[2]             |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/dec/t_rep[2]           |
+| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[1]   |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[1] |
+| 2401   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB2     |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[5] |
+| 1681   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_Z[0]   |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[0]     |
+| 1551   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB1     |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t_rep[4] |
+| 1546   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/dec/t_Z[3]             |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/dec/t_rep[3]           |
+| 1538   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr_Z[3]      |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/aes_exp_addr[3]        |
+| 1319   | INT_NET | Net   : FIC_0_PERIPHERALS_0/security_core_0/key_expansion/ANB0     |
+|        |         | Driver: FIC_0_PERIPHERALS_0/security_core_0/key_expansion/t[3]     |
++--------+---------+--------------------------------------------------------------------+
 

@@ -4,7 +4,6 @@ module trivium (
     input  logic        enable_i,
     input  logic [63:0] seed_i,
     input  logic        valid_i,
-    input  logic        reseed_i,
 
     output logic [63:0] z,
     output logic        valid_o
@@ -17,8 +16,6 @@ module trivium (
     logic [63:0] s162, s171, s175, s176, s177;
     logic [63:0] s243, s264, s286, s287, s288;
     logic [63:0] t1, t2, t3;
-    
-    logic seeded;
     
     assign s66  = (A[1] << 62) ^ (A[0] >>  2);
     assign s93  = (A[1] << 35) ^ (A[0] >> 29);
@@ -48,13 +45,11 @@ module trivium (
             B <= '{default: 64'd0};
             C <= '{default: 64'd0};
             
-            seeded   = 1'b0;
             z       <= 64'b0;                    
             valid_o <= 1'b0;
         end else if (enable_i) begin
-            if (reseed_i) seeded = 1'b0;
             
-            if (valid_i && !seeded) begin
+            if (valid_i) begin
                 A[0] <= seed_i;
                 A[1] <= 64'd0;
                 
@@ -64,9 +59,8 @@ module trivium (
                 C[0] <= 64'd0;
                 C[1] <= 64'h700000000000;
                 
-                seeded = 1'b1;
                 t <= 5'd0;
-            end else if (seeded) begin
+            end else begin
                 z <= t1 ^ t2 ^ t3;
                 
                 A[1] <= A[0];

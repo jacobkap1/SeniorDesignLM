@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Apr  8 23:19:17 2026
+// Created by SmartDesign Sun Apr 12 01:08:48 2026
 // Version: 2025.2 2025.2.0.14
 //////////////////////////////////////////////////////////////////////
 
@@ -40,6 +40,7 @@ module MPFS_DISCOVERY_KIT(
     ACT_N,
     BA,
     BG0,
+    CAM_EN,
     CAS_N,
     CK0,
     CK0_N,
@@ -156,6 +157,7 @@ output [13:0] A;
 output        ACT_N;
 output [1:0]  BA;
 output        BG0;
+output        CAM_EN;
 output        CAS_N;
 output        CK0;
 output        CK0_N;
@@ -242,6 +244,7 @@ wire   [13:0] A_net_0;
 wire          ACT_N_net_0;
 wire   [1:0]  BA_net_0;
 wire          BG0_net_0;
+wire          CAM_EN_net_0;
 wire          CAS_N_net_0;
 wire          CK0_net_0;
 wire          CK0_N_net_0;
@@ -330,37 +333,43 @@ wire          FIC_0_PERIPHERALS_0_AXI4mslave3_WREADY;
 wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave3_WSTRB;
 wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave3_WUSER;
 wire          FIC_0_PERIPHERALS_0_AXI4mslave3_WVALID;
-wire   [37:0] FIC_0_PERIPHERALS_0_AXI4mslave4_ARADDR;
-wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARBURST;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARCACHE;
-wire   [8:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARID;
-wire   [7:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARLEN;
-wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARLOCK;
-wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARPROT;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARQOS;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARREGION;
-wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARSIZE;
-wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_ARUSER;
-wire          FIC_0_PERIPHERALS_0_AXI4mslave4_ARVALID;
-wire   [37:0] FIC_0_PERIPHERALS_0_AXI4mslave4_AWADDR;
-wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWBURST;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWCACHE;
-wire   [8:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWID;
-wire   [7:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWLEN;
-wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWLOCK;
-wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWPROT;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWQOS;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWREGION;
-wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWSIZE;
-wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_AWUSER;
-wire          FIC_0_PERIPHERALS_0_AXI4mslave4_AWVALID;
-wire          FIC_0_PERIPHERALS_0_AXI4mslave4_BREADY;
-wire          FIC_0_PERIPHERALS_0_AXI4mslave4_RREADY;
-wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_WDATA;
-wire          FIC_0_PERIPHERALS_0_AXI4mslave4_WLAST;
-wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_WSTRB;
-wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_WUSER;
-wire          FIC_0_PERIPHERALS_0_AXI4mslave4_WVALID;
+wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARBURST;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARCACHE;
+wire   [8:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARID;
+wire   [7:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARLEN;
+wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARLOCK;
+wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARPROT;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARQOS;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARREADY;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARREGION;
+wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARSIZE;
+wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARUSER;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARVALID;
+wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWBURST;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWCACHE;
+wire   [8:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWID;
+wire   [7:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWLEN;
+wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWLOCK;
+wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWPROT;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWQOS;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWREADY;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWREGION;
+wire   [2:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWSIZE;
+wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWUSER;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWVALID;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_BREADY;
+wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_BRESP;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_BVALID;
+wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_RDATA;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_RREADY;
+wire   [1:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_RRESP;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_RVALID;
+wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_WDATA;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_WLAST;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_WREADY;
+wire   [3:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_WSTRB;
+wire   [0:0]  FIC_0_PERIPHERALS_0_AXI4mslave4_0_WUSER;
+wire          FIC_0_PERIPHERALS_0_AXI4mslave4_0_WVALID;
 wire          FIC_0_PERIPHERALS_0_DMA_CONTROLLER_IRQ;
 wire          FIC_3_PERIPHERALS_0_CORE_I2C_C0_INT;
 wire          FIC_3_PERIPHERALS_0_FRAMING_ERR;
@@ -370,7 +379,6 @@ wire   [2:2]  FIC_3_PERIPHERALS_0_GPIO_OUT2to2;
 wire   [3:3]  FIC_3_PERIPHERALS_0_GPIO_OUT3to3;
 wire   [4:4]  FIC_3_PERIPHERALS_0_GPIO_OUT4to4;
 wire   [5:5]  FIC_3_PERIPHERALS_0_GPIO_OUT5to5;
-wire   [6:6]  FIC_3_PERIPHERALS_0_GPIO_OUT6to6;
 wire          FIC_3_PERIPHERALS_0_IHC_MP_APP_E51_IRQ;
 wire          FIC_3_PERIPHERALS_0_IHC_MP_APP_U54_1_IRQ;
 wire          FIC_3_PERIPHERALS_0_IHC_MP_APP_U54_2_IRQ;
@@ -392,7 +400,7 @@ wire          LED3_net_0;
 wire          LED4_net_0;
 wire          LED5_net_0;
 wire          LED6_net_0;
-wire          LED7_net_0;
+wire   [6:6]  LED7_net_0;
 wire          MAC_0_MDC_net_0;
 wire          mBUS_INT;
 wire          MBUS_PWM_net_0;
@@ -497,7 +505,6 @@ wire          MSS_WRAPPER_0_GPIO_2_M2F_19;
 wire          MSS_WRAPPER_0_GPIO_2_M2F_20;
 wire          MSS_WRAPPER_0_GPIO_2_M2F_21;
 wire          MSS_WRAPPER_0_GPIO_2_M2F_22;
-wire          MSS_WRAPPER_0_GPIO_2_M2F_23;
 wire          MSS_WRAPPER_0_MSS_DLL_LOCKS;
 wire          MSS_WRAPPER_0_MSS_RESET_N_M2F;
 wire          ODT0_net_0;
@@ -568,7 +575,6 @@ wire          LED1_net_1;
 wire          LED2_net_1;
 wire          LED3_net_1;
 wire          LED4_net_1;
-wire          LED5_net_1;
 wire          LED6_net_1;
 wire          LED7_net_1;
 wire          MAC_0_MDC_net_1;
@@ -593,9 +599,11 @@ wire          SPISDO_net_1;
 wire          SPISS_net_1;
 wire          SPI_1_DO_net_1;
 wire          WE_N_net_1;
+wire          CAM_EN_net_1;
 wire   [13:0] A_net_1;
 wire   [1:0]  BA_net_1;
 wire   [1:0]  DM_net_1;
+wire          LED5_net_1;
 wire   [6:0]  GPIO_OUT_net_0;
 wire   [63:0] MSS_INT_F2M_net_0;
 //--------------------------------------------------------------------
@@ -606,13 +614,10 @@ wire          GND_net;
 wire   [58:16]MSS_INT_F2M_const_net_0;
 wire   [8:0]  AXI4mslave3_SLAVE3_BID_const_net_0;
 wire   [8:0]  AXI4mslave3_SLAVE3_RID_const_net_0;
-wire   [8:0]  AXI4mslave4_SLAVE4_BID_const_net_0;
-wire   [1:0]  AXI4mslave4_SLAVE4_BRESP_const_net_0;
-wire   [8:0]  AXI4mslave4_SLAVE4_RID_const_net_0;
-wire   [31:0] AXI4mslave4_SLAVE4_RDATA_const_net_0;
-wire   [1:0]  AXI4mslave4_SLAVE4_RRESP_const_net_0;
 wire   [3:0]  AXI4mmaster0_MASTER0_AWREGION_const_net_0;
 wire   [3:0]  AXI4mmaster0_MASTER0_ARREGION_const_net_0;
+wire   [8:0]  AXI4mslave4_SLAVE4_BID_const_net_0;
+wire   [8:0]  AXI4mslave4_SLAVE4_RID_const_net_0;
 wire   [32:0] PLL0_SW_DRI_RDATA_const_net_0;
 wire   [7:0]  FIC_1_AXI4_INITIATOR_FIC_1_AXI4_M_BID_const_net_0;
 wire   [1:0]  FIC_1_AXI4_INITIATOR_FIC_1_AXI4_M_BRESP_const_net_0;
@@ -697,6 +702,12 @@ wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave3_ARADDR_0_31to0;
 wire   [37:0] FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR;
 wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR_0;
 wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR_0_31to0;
+wire   [37:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR;
+wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR_0;
+wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR_0_31to0;
+wire   [37:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR;
+wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR_0;
+wire   [31:0] FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR_0_31to0;
 wire   [1:0]  MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK;
 wire          MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK_0;
 wire   [0:0]  MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK_0_0to0;
@@ -719,13 +730,10 @@ assign GND_net                                             = 1'b0;
 assign MSS_INT_F2M_const_net_0                             = 43'h00000000000;
 assign AXI4mslave3_SLAVE3_BID_const_net_0                  = 9'h000;
 assign AXI4mslave3_SLAVE3_RID_const_net_0                  = 9'h000;
-assign AXI4mslave4_SLAVE4_BID_const_net_0                  = 9'h000;
-assign AXI4mslave4_SLAVE4_BRESP_const_net_0                = 2'h0;
-assign AXI4mslave4_SLAVE4_RID_const_net_0                  = 9'h000;
-assign AXI4mslave4_SLAVE4_RDATA_const_net_0                = 32'h00000000;
-assign AXI4mslave4_SLAVE4_RRESP_const_net_0                = 2'h0;
 assign AXI4mmaster0_MASTER0_AWREGION_const_net_0           = 4'h0;
 assign AXI4mmaster0_MASTER0_ARREGION_const_net_0           = 4'h0;
+assign AXI4mslave4_SLAVE4_BID_const_net_0                  = 9'h000;
+assign AXI4mslave4_SLAVE4_RID_const_net_0                  = 9'h000;
 assign PLL0_SW_DRI_RDATA_const_net_0                       = 33'h000000000;
 assign FIC_1_AXI4_INITIATOR_FIC_1_AXI4_M_BID_const_net_0   = 8'h00;
 assign FIC_1_AXI4_INITIATOR_FIC_1_AXI4_M_BRESP_const_net_0 = 2'h0;
@@ -802,11 +810,9 @@ assign LED3_net_1            = LED3_net_0;
 assign LED3                  = LED3_net_1;
 assign LED4_net_1            = LED4_net_0;
 assign LED4                  = LED4_net_1;
-assign LED5_net_1            = LED5_net_0;
-assign LED5                  = LED5_net_1;
 assign LED6_net_1            = LED6_net_0;
 assign LED6                  = LED6_net_1;
-assign LED7_net_1            = LED7_net_0;
+assign LED7_net_1            = LED7_net_0[6];
 assign LED7                  = LED7_net_1;
 assign MAC_0_MDC_net_1       = MAC_0_MDC_net_0;
 assign MAC_0_MDC             = MAC_0_MDC_net_1;
@@ -852,12 +858,16 @@ assign SPI_1_DO_net_1        = SPI_1_DO_net_0;
 assign SPI_1_DO              = SPI_1_DO_net_1;
 assign WE_N_net_1            = WE_N_net_0;
 assign WE_N                  = WE_N_net_1;
+assign CAM_EN_net_1          = CAM_EN_net_0;
+assign CAM_EN                = CAM_EN_net_1;
 assign A_net_1               = A_net_0;
 assign A[13:0]               = A_net_1;
 assign BA_net_1              = BA_net_0;
 assign BA[1:0]               = BA_net_1;
 assign DM_net_1              = DM_net_0;
 assign DM[1:0]               = DM_net_1;
+assign LED5_net_1            = LED5_net_0;
+assign LED5                  = LED5_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
@@ -867,7 +877,7 @@ assign FIC_3_PERIPHERALS_0_GPIO_OUT2to2[2] = GPIO_OUT_net_0[2:2];
 assign FIC_3_PERIPHERALS_0_GPIO_OUT3to3[3] = GPIO_OUT_net_0[3:3];
 assign FIC_3_PERIPHERALS_0_GPIO_OUT4to4[4] = GPIO_OUT_net_0[4:4];
 assign FIC_3_PERIPHERALS_0_GPIO_OUT5to5[5] = GPIO_OUT_net_0[5:5];
-assign FIC_3_PERIPHERALS_0_GPIO_OUT6to6[6] = GPIO_OUT_net_0[6:6];
+assign LED7_net_0[6]                       = GPIO_OUT_net_0[6:6];
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
@@ -908,6 +918,12 @@ assign FIC_0_PERIPHERALS_0_AXI4mslave3_ARADDR_0_31to0 = FIC_0_PERIPHERALS_0_AXI4
 
 assign FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR_0 = { FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR_0_31to0 };
 assign FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR_0_31to0 = FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR[31:0];
+
+assign FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR_0 = { FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR_0_31to0 };
+assign FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR_0_31to0 = FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR[31:0];
+
+assign FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR_0 = { FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR_0_31to0 };
+assign FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR_0_31to0 = FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR[31:0];
 
 assign MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK_0 = { MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK_0_0to0 };
 assign MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK_0_0to0 = MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK[0:0];
@@ -956,24 +972,6 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mslave0_SLAVE0_ARREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave0_ARREADY ),
         .AXI4mslave0_SLAVE0_RLAST      ( FIC_0_PERIPHERALS_0_AXI4mslave0_RLAST ),
         .AXI4mslave0_SLAVE0_RVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave0_RVALID ),
-        .AXI4mslave3_SLAVE3_AWREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWREADY ),
-        .AXI4mslave3_SLAVE3_WREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave3_WREADY ),
-        .AXI4mslave3_SLAVE3_BVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave3_BVALID ),
-        .AXI4mslave3_SLAVE3_ARREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARREADY ),
-        .AXI4mslave3_SLAVE3_RLAST      ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave3_SLAVE3_RVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave3_RVALID ),
-        .AXI4mslave4_SLAVE4_AWREADY    ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_WREADY     ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_BVALID     ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_ARREADY    ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_RLAST      ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_RVALID     ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mmaster0_MASTER0_AWVALID  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWVALID ),
-        .AXI4mmaster0_MASTER0_WLAST    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WLAST ),
-        .AXI4mmaster0_MASTER0_WVALID   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WVALID ),
-        .AXI4mmaster0_MASTER0_BREADY   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BREADY ),
-        .AXI4mmaster0_MASTER0_ARVALID  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARVALID ),
-        .AXI4mmaster0_MASTER0_RREADY   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RREADY ),
         .AXI4mslave0_SLAVE0_BID        ( FIC_0_PERIPHERALS_0_AXI4mslave0_BID_0 ),
         .AXI4mslave0_SLAVE0_BRESP      ( FIC_0_PERIPHERALS_0_AXI4mslave0_BRESP ),
         .AXI4mslave0_SLAVE0_RID        ( FIC_0_PERIPHERALS_0_AXI4mslave0_RID_0 ),
@@ -981,20 +979,19 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mslave0_SLAVE0_RRESP      ( FIC_0_PERIPHERALS_0_AXI4mslave0_RRESP ),
         .AXI4mslave0_SLAVE0_BUSER      ( GND_net ), // tied to 1'b0 from definition
         .AXI4mslave0_SLAVE0_RUSER      ( GND_net ), // tied to 1'b0 from definition
+        .AXI4mslave3_SLAVE3_AWREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWREADY ),
+        .AXI4mslave3_SLAVE3_WREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave3_WREADY ),
         .AXI4mslave3_SLAVE3_BID        ( AXI4mslave3_SLAVE3_BID_const_net_0 ), // tied to 9'h000 from definition
         .AXI4mslave3_SLAVE3_BRESP      ( FIC_0_PERIPHERALS_0_AXI4mslave3_BRESP ),
+        .AXI4mslave3_SLAVE3_BVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave3_BVALID ),
+        .AXI4mslave3_SLAVE3_ARREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARREADY ),
         .AXI4mslave3_SLAVE3_RID        ( AXI4mslave3_SLAVE3_RID_const_net_0 ), // tied to 9'h000 from definition
         .AXI4mslave3_SLAVE3_RDATA      ( FIC_0_PERIPHERALS_0_AXI4mslave3_RDATA ),
         .AXI4mslave3_SLAVE3_RRESP      ( FIC_0_PERIPHERALS_0_AXI4mslave3_RRESP ),
+        .AXI4mslave3_SLAVE3_RLAST      ( GND_net ), // tied to 1'b0 from definition
+        .AXI4mslave3_SLAVE3_RVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave3_RVALID ),
         .AXI4mslave3_SLAVE3_BUSER      ( GND_net ), // tied to 1'b0 from definition
         .AXI4mslave3_SLAVE3_RUSER      ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_BID        ( AXI4mslave4_SLAVE4_BID_const_net_0 ), // tied to 9'h000 from definition
-        .AXI4mslave4_SLAVE4_BRESP      ( AXI4mslave4_SLAVE4_BRESP_const_net_0 ), // tied to 2'h0 from definition
-        .AXI4mslave4_SLAVE4_RID        ( AXI4mslave4_SLAVE4_RID_const_net_0 ), // tied to 9'h000 from definition
-        .AXI4mslave4_SLAVE4_RDATA      ( AXI4mslave4_SLAVE4_RDATA_const_net_0 ), // tied to 32'h00000000 from definition
-        .AXI4mslave4_SLAVE4_RRESP      ( AXI4mslave4_SLAVE4_RRESP_const_net_0 ), // tied to 2'h0 from definition
-        .AXI4mslave4_SLAVE4_BUSER      ( GND_net ), // tied to 1'b0 from definition
-        .AXI4mslave4_SLAVE4_RUSER      ( GND_net ), // tied to 1'b0 from definition
         .AXI4mmaster0_MASTER0_AWID     ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWID ),
         .AXI4mmaster0_MASTER0_AWADDR   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWADDR ),
         .AXI4mmaster0_MASTER0_AWLEN    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWLEN ),
@@ -1005,8 +1002,12 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mmaster0_MASTER0_AWPROT   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWPROT ),
         .AXI4mmaster0_MASTER0_AWQOS    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWQOS ),
         .AXI4mmaster0_MASTER0_AWREGION ( AXI4mmaster0_MASTER0_AWREGION_const_net_0 ), // tied to 4'h0 from definition
+        .AXI4mmaster0_MASTER0_AWVALID  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWVALID ),
         .AXI4mmaster0_MASTER0_WDATA    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WDATA ),
         .AXI4mmaster0_MASTER0_WSTRB    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WSTRB ),
+        .AXI4mmaster0_MASTER0_WLAST    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WLAST ),
+        .AXI4mmaster0_MASTER0_WVALID   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WVALID ),
+        .AXI4mmaster0_MASTER0_BREADY   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BREADY ),
         .AXI4mmaster0_MASTER0_ARID     ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARID ),
         .AXI4mmaster0_MASTER0_ARADDR   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARADDR ),
         .AXI4mmaster0_MASTER0_ARLEN    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARLEN ),
@@ -1017,9 +1018,24 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mmaster0_MASTER0_ARPROT   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARPROT ),
         .AXI4mmaster0_MASTER0_ARQOS    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARQOS ),
         .AXI4mmaster0_MASTER0_ARREGION ( AXI4mmaster0_MASTER0_ARREGION_const_net_0 ), // tied to 4'h0 from definition
+        .AXI4mmaster0_MASTER0_ARVALID  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARVALID ),
+        .AXI4mmaster0_MASTER0_RREADY   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RREADY ),
         .AXI4mmaster0_MASTER0_AWUSER   ( GND_net ), // tied to 1'b0 from definition
         .AXI4mmaster0_MASTER0_WUSER    ( GND_net ), // tied to 1'b0 from definition
         .AXI4mmaster0_MASTER0_ARUSER   ( GND_net ), // tied to 1'b0 from definition
+        .AXI4mslave4_SLAVE4_AWREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWREADY ),
+        .AXI4mslave4_SLAVE4_WREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WREADY ),
+        .AXI4mslave4_SLAVE4_BID        ( AXI4mslave4_SLAVE4_BID_const_net_0 ), // tied to 9'h000 from definition
+        .AXI4mslave4_SLAVE4_BRESP      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_BRESP ),
+        .AXI4mslave4_SLAVE4_BVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_BVALID ),
+        .AXI4mslave4_SLAVE4_ARREADY    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARREADY ),
+        .AXI4mslave4_SLAVE4_RID        ( AXI4mslave4_SLAVE4_RID_const_net_0 ), // tied to 9'h000 from definition
+        .AXI4mslave4_SLAVE4_RDATA      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RDATA ),
+        .AXI4mslave4_SLAVE4_RRESP      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RRESP ),
+        .AXI4mslave4_SLAVE4_RLAST      ( GND_net ), // tied to 1'b0 from definition
+        .AXI4mslave4_SLAVE4_RVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RVALID ),
+        .AXI4mslave4_SLAVE4_BUSER      ( GND_net ), // tied to 1'b0 from definition
+        .AXI4mslave4_SLAVE4_RUSER      ( GND_net ), // tied to 1'b0 from definition
         // Outputs
         .DMA_CONTROLLER_IRQ            ( FIC_0_PERIPHERALS_0_DMA_CONTROLLER_IRQ ),
         .AXI4mslave0_SLAVE0_AWVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave0_AWVALID ),
@@ -1028,24 +1044,6 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mslave0_SLAVE0_BREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave0_BREADY ),
         .AXI4mslave0_SLAVE0_ARVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave0_ARVALID ),
         .AXI4mslave0_SLAVE0_RREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave0_RREADY ),
-        .AXI4mslave3_SLAVE3_AWVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWVALID ),
-        .AXI4mslave3_SLAVE3_WLAST      ( FIC_0_PERIPHERALS_0_AXI4mslave3_WLAST ),
-        .AXI4mslave3_SLAVE3_WVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave3_WVALID ),
-        .AXI4mslave3_SLAVE3_BREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave3_BREADY ),
-        .AXI4mslave3_SLAVE3_ARVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARVALID ),
-        .AXI4mslave3_SLAVE3_RREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave3_RREADY ),
-        .AXI4mslave4_SLAVE4_AWVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWVALID ),
-        .AXI4mslave4_SLAVE4_WLAST      ( FIC_0_PERIPHERALS_0_AXI4mslave4_WLAST ),
-        .AXI4mslave4_SLAVE4_WVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave4_WVALID ),
-        .AXI4mslave4_SLAVE4_BREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave4_BREADY ),
-        .AXI4mslave4_SLAVE4_ARVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARVALID ),
-        .AXI4mslave4_SLAVE4_RREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave4_RREADY ),
-        .AXI4mmaster0_MASTER0_AWREADY  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWREADY ),
-        .AXI4mmaster0_MASTER0_WREADY   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WREADY ),
-        .AXI4mmaster0_MASTER0_BVALID   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BVALID ),
-        .AXI4mmaster0_MASTER0_ARREADY  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARREADY ),
-        .AXI4mmaster0_MASTER0_RLAST    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RLAST ),
-        .AXI4mmaster0_MASTER0_RVALID   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RVALID ),
         .AXI4mslave0_SLAVE0_AWID       ( FIC_0_PERIPHERALS_0_AXI4mslave0_AWID ),
         .AXI4mslave0_SLAVE0_AWADDR     ( FIC_0_PERIPHERALS_0_AXI4mslave0_AWADDR ),
         .AXI4mslave0_SLAVE0_AWLEN      ( FIC_0_PERIPHERALS_0_AXI4mslave0_AWLEN ),
@@ -1081,8 +1079,12 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mslave3_SLAVE3_AWPROT     ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWPROT ),
         .AXI4mslave3_SLAVE3_AWQOS      ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWQOS ),
         .AXI4mslave3_SLAVE3_AWREGION   ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWREGION ),
+        .AXI4mslave3_SLAVE3_AWVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWVALID ),
         .AXI4mslave3_SLAVE3_WDATA      ( FIC_0_PERIPHERALS_0_AXI4mslave3_WDATA ),
         .AXI4mslave3_SLAVE3_WSTRB      ( FIC_0_PERIPHERALS_0_AXI4mslave3_WSTRB ),
+        .AXI4mslave3_SLAVE3_WLAST      ( FIC_0_PERIPHERALS_0_AXI4mslave3_WLAST ),
+        .AXI4mslave3_SLAVE3_WVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave3_WVALID ),
+        .AXI4mslave3_SLAVE3_BREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave3_BREADY ),
         .AXI4mslave3_SLAVE3_ARID       ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARID ),
         .AXI4mslave3_SLAVE3_ARADDR     ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARADDR ),
         .AXI4mslave3_SLAVE3_ARLEN      ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARLEN ),
@@ -1093,41 +1095,55 @@ FIC_0_PERIPHERALS FIC_0_PERIPHERALS_0(
         .AXI4mslave3_SLAVE3_ARPROT     ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARPROT ),
         .AXI4mslave3_SLAVE3_ARQOS      ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARQOS ),
         .AXI4mslave3_SLAVE3_ARREGION   ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARREGION ),
+        .AXI4mslave3_SLAVE3_ARVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARVALID ),
+        .AXI4mslave3_SLAVE3_RREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave3_RREADY ),
         .AXI4mslave3_SLAVE3_AWUSER     ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWUSER ),
         .AXI4mslave3_SLAVE3_WUSER      ( FIC_0_PERIPHERALS_0_AXI4mslave3_WUSER ),
         .AXI4mslave3_SLAVE3_ARUSER     ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARUSER ),
-        .AXI4mslave4_SLAVE4_AWID       ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWID ),
-        .AXI4mslave4_SLAVE4_AWADDR     ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWADDR ),
-        .AXI4mslave4_SLAVE4_AWLEN      ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWLEN ),
-        .AXI4mslave4_SLAVE4_AWSIZE     ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWSIZE ),
-        .AXI4mslave4_SLAVE4_AWBURST    ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWBURST ),
-        .AXI4mslave4_SLAVE4_AWLOCK     ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWLOCK ),
-        .AXI4mslave4_SLAVE4_AWCACHE    ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWCACHE ),
-        .AXI4mslave4_SLAVE4_AWPROT     ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWPROT ),
-        .AXI4mslave4_SLAVE4_AWQOS      ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWQOS ),
-        .AXI4mslave4_SLAVE4_AWREGION   ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWREGION ),
-        .AXI4mslave4_SLAVE4_WDATA      ( FIC_0_PERIPHERALS_0_AXI4mslave4_WDATA ),
-        .AXI4mslave4_SLAVE4_WSTRB      ( FIC_0_PERIPHERALS_0_AXI4mslave4_WSTRB ),
-        .AXI4mslave4_SLAVE4_ARID       ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARID ),
-        .AXI4mslave4_SLAVE4_ARADDR     ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARADDR ),
-        .AXI4mslave4_SLAVE4_ARLEN      ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARLEN ),
-        .AXI4mslave4_SLAVE4_ARSIZE     ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARSIZE ),
-        .AXI4mslave4_SLAVE4_ARBURST    ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARBURST ),
-        .AXI4mslave4_SLAVE4_ARLOCK     ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARLOCK ),
-        .AXI4mslave4_SLAVE4_ARCACHE    ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARCACHE ),
-        .AXI4mslave4_SLAVE4_ARPROT     ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARPROT ),
-        .AXI4mslave4_SLAVE4_ARQOS      ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARQOS ),
-        .AXI4mslave4_SLAVE4_ARREGION   ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARREGION ),
-        .AXI4mslave4_SLAVE4_AWUSER     ( FIC_0_PERIPHERALS_0_AXI4mslave4_AWUSER ),
-        .AXI4mslave4_SLAVE4_WUSER      ( FIC_0_PERIPHERALS_0_AXI4mslave4_WUSER ),
-        .AXI4mslave4_SLAVE4_ARUSER     ( FIC_0_PERIPHERALS_0_AXI4mslave4_ARUSER ),
+        .AXI4mmaster0_MASTER0_AWREADY  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_AWREADY ),
+        .AXI4mmaster0_MASTER0_WREADY   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_WREADY ),
         .AXI4mmaster0_MASTER0_BID      ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BID ),
         .AXI4mmaster0_MASTER0_BRESP    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BRESP ),
+        .AXI4mmaster0_MASTER0_BVALID   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BVALID ),
+        .AXI4mmaster0_MASTER0_ARREADY  ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_ARREADY ),
         .AXI4mmaster0_MASTER0_RID      ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RID ),
         .AXI4mmaster0_MASTER0_RDATA    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RDATA ),
         .AXI4mmaster0_MASTER0_RRESP    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RRESP ),
+        .AXI4mmaster0_MASTER0_RLAST    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RLAST ),
+        .AXI4mmaster0_MASTER0_RVALID   ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RVALID ),
         .AXI4mmaster0_MASTER0_BUSER    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_BUSER ),
-        .AXI4mmaster0_MASTER0_RUSER    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RUSER ) 
+        .AXI4mmaster0_MASTER0_RUSER    ( MSS_WRAPPER_0_FIC_0_AXI4_INITIATOR_RUSER ),
+        .AXI4mslave4_SLAVE4_AWID       ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWID ),
+        .AXI4mslave4_SLAVE4_AWADDR     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR ),
+        .AXI4mslave4_SLAVE4_AWLEN      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWLEN ),
+        .AXI4mslave4_SLAVE4_AWSIZE     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWSIZE ),
+        .AXI4mslave4_SLAVE4_AWBURST    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWBURST ),
+        .AXI4mslave4_SLAVE4_AWLOCK     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWLOCK ),
+        .AXI4mslave4_SLAVE4_AWCACHE    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWCACHE ),
+        .AXI4mslave4_SLAVE4_AWPROT     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWPROT ),
+        .AXI4mslave4_SLAVE4_AWQOS      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWQOS ),
+        .AXI4mslave4_SLAVE4_AWREGION   ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWREGION ),
+        .AXI4mslave4_SLAVE4_AWVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWVALID ),
+        .AXI4mslave4_SLAVE4_WDATA      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WDATA ),
+        .AXI4mslave4_SLAVE4_WSTRB      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WSTRB ),
+        .AXI4mslave4_SLAVE4_WLAST      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WLAST ),
+        .AXI4mslave4_SLAVE4_WVALID     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WVALID ),
+        .AXI4mslave4_SLAVE4_BREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_BREADY ),
+        .AXI4mslave4_SLAVE4_ARID       ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARID ),
+        .AXI4mslave4_SLAVE4_ARADDR     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR ),
+        .AXI4mslave4_SLAVE4_ARLEN      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARLEN ),
+        .AXI4mslave4_SLAVE4_ARSIZE     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARSIZE ),
+        .AXI4mslave4_SLAVE4_ARBURST    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARBURST ),
+        .AXI4mslave4_SLAVE4_ARLOCK     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARLOCK ),
+        .AXI4mslave4_SLAVE4_ARCACHE    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARCACHE ),
+        .AXI4mslave4_SLAVE4_ARPROT     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARPROT ),
+        .AXI4mslave4_SLAVE4_ARQOS      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARQOS ),
+        .AXI4mslave4_SLAVE4_ARREGION   ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARREGION ),
+        .AXI4mslave4_SLAVE4_ARVALID    ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARVALID ),
+        .AXI4mslave4_SLAVE4_RREADY     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RREADY ),
+        .AXI4mslave4_SLAVE4_AWUSER     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWUSER ),
+        .AXI4mslave4_SLAVE4_WUSER      ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WUSER ),
+        .AXI4mslave4_SLAVE4_ARUSER     ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARUSER ) 
         );
 
 //--------FIC_3_PERIPHERALS
@@ -1188,6 +1204,11 @@ MIPI_CAMERA MIPI_CAMERA_0(
         .mAXI4_SLAVE_arready          ( MIPI_CAMERA_0_mAXI4_SLAVE_ARREADY ),
         .mAXI4_SLAVE_rlast            ( MIPI_CAMERA_0_mAXI4_SLAVE_RLAST ),
         .mAXI4_SLAVE_rvalid           ( MIPI_CAMERA_0_mAXI4_SLAVE_RVALID ),
+        .AXI4Lite_Target_IF_AWVALID_I ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWVALID ),
+        .AXI4Lite_Target_IF_WVALID_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_WVALID ),
+        .AXI4Lite_Target_IF_BREADY_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_BREADY ),
+        .AXI4Lite_Target_IF_ARVALID_I ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARVALID ),
+        .AXI4Lite_Target_IF_RREADY_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_RREADY ),
         .mAXI4_SLAVE_bid              ( MIPI_CAMERA_0_mAXI4_SLAVE_BID ),
         .mAXI4_SLAVE_bresp            ( MIPI_CAMERA_0_mAXI4_SLAVE_BRESP ),
         .mAXI4_SLAVE_rid              ( MIPI_CAMERA_0_mAXI4_SLAVE_RID ),
@@ -1196,13 +1217,16 @@ MIPI_CAMERA MIPI_CAMERA_0(
         .RXD                          ( RXD ),
         .RXD_N                        ( RXD_N ),
         .AXI4Lite_Target_IF_AWADDR_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWADDR_0 ),
-        .AXI4Lite_Target_IF_AWVALID_I ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWVALID ),
         .AXI4Lite_Target_IF_WDATA_I   ( FIC_0_PERIPHERALS_0_AXI4mslave3_WDATA ),
-        .AXI4Lite_Target_IF_WVALID_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_WVALID ),
-        .AXI4Lite_Target_IF_BREADY_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_BREADY ),
         .AXI4Lite_Target_IF_ARADDR_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARADDR_0 ),
-        .AXI4Lite_Target_IF_ARVALID_I ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARVALID ),
-        .AXI4Lite_Target_IF_RREADY_I  ( FIC_0_PERIPHERALS_0_AXI4mslave3_RREADY ),
+        .AXI4L_VDMA_awaddr            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWADDR_0 ),
+        .AXI4L_VDMA_awvalid           ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWVALID ),
+        .AXI4L_VDMA_wdata             ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WDATA ),
+        .AXI4L_VDMA_wvalid            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WVALID ),
+        .AXI4L_VDMA_bready            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_BREADY ),
+        .AXI4L_VDMA_araddr            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARADDR_0 ),
+        .AXI4L_VDMA_arvalid           ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARVALID ),
+        .AXI4L_VDMA_rready            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RREADY ),
         // Outputs
         .mAXI4_SLAVE_awvalid          ( MIPI_CAMERA_0_mAXI4_SLAVE_AWVALID ),
         .mAXI4_SLAVE_wlast            ( MIPI_CAMERA_0_mAXI4_SLAVE_WLAST ),
@@ -1210,6 +1234,13 @@ MIPI_CAMERA MIPI_CAMERA_0(
         .mAXI4_SLAVE_bready           ( MIPI_CAMERA_0_mAXI4_SLAVE_BREADY ),
         .mAXI4_SLAVE_arvalid          ( MIPI_CAMERA_0_mAXI4_SLAVE_ARVALID ),
         .mAXI4_SLAVE_rready           ( MIPI_CAMERA_0_mAXI4_SLAVE_RREADY ),
+        .AXI4Lite_Target_IF_AWREADY_O ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWREADY ),
+        .AXI4Lite_Target_IF_WREADY_O  ( FIC_0_PERIPHERALS_0_AXI4mslave3_WREADY ),
+        .AXI4Lite_Target_IF_BVALID_O  ( FIC_0_PERIPHERALS_0_AXI4mslave3_BVALID ),
+        .AXI4Lite_Target_IF_ARREADY_O ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARREADY ),
+        .AXI4Lite_Target_IF_RVALID_O  ( FIC_0_PERIPHERALS_0_AXI4mslave3_RVALID ),
+        .INT_DMA_O                    ( MIPI_CAMERA_0_INT_DMA_O ),
+        .MIPI_INTERRUPT_O             ( MIPI_CAMERA_0_MIPI_INTERRUPT_O ),
         .mAXI4_SLAVE_awid             ( MIPI_CAMERA_0_mAXI4_SLAVE_AWID ),
         .mAXI4_SLAVE_awaddr           ( MIPI_CAMERA_0_mAXI4_SLAVE_AWADDR ),
         .mAXI4_SLAVE_awlen            ( MIPI_CAMERA_0_mAXI4_SLAVE_AWLEN ),
@@ -1228,16 +1259,17 @@ MIPI_CAMERA MIPI_CAMERA_0(
         .mAXI4_SLAVE_arlock           ( MIPI_CAMERA_0_mAXI4_SLAVE_ARLOCK ),
         .mAXI4_SLAVE_arcache          ( MIPI_CAMERA_0_mAXI4_SLAVE_ARCACHE ),
         .mAXI4_SLAVE_arprot           ( MIPI_CAMERA_0_mAXI4_SLAVE_ARPROT ),
-        .AXI4Lite_Target_IF_AWREADY_O ( FIC_0_PERIPHERALS_0_AXI4mslave3_AWREADY ),
-        .AXI4Lite_Target_IF_WREADY_O  ( FIC_0_PERIPHERALS_0_AXI4mslave3_WREADY ),
         .AXI4Lite_Target_IF_BRESP_O   ( FIC_0_PERIPHERALS_0_AXI4mslave3_BRESP ),
-        .AXI4Lite_Target_IF_BVALID_O  ( FIC_0_PERIPHERALS_0_AXI4mslave3_BVALID ),
-        .AXI4Lite_Target_IF_ARREADY_O ( FIC_0_PERIPHERALS_0_AXI4mslave3_ARREADY ),
         .AXI4Lite_Target_IF_RDATA_O   ( FIC_0_PERIPHERALS_0_AXI4mslave3_RDATA ),
         .AXI4Lite_Target_IF_RRESP_O   ( FIC_0_PERIPHERALS_0_AXI4mslave3_RRESP ),
-        .AXI4Lite_Target_IF_RVALID_O  ( FIC_0_PERIPHERALS_0_AXI4mslave3_RVALID ),
-        .INT_DMA_O                    ( MIPI_CAMERA_0_INT_DMA_O ),
-        .MIPI_INTERRUPT_O             ( MIPI_CAMERA_0_MIPI_INTERRUPT_O ) 
+        .AXI4L_VDMA_awready           ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_AWREADY ),
+        .AXI4L_VDMA_wready            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_WREADY ),
+        .AXI4L_VDMA_bresp             ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_BRESP ),
+        .AXI4L_VDMA_bvalid            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_BVALID ),
+        .AXI4L_VDMA_arready           ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_ARREADY ),
+        .AXI4L_VDMA_rdata             ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RDATA ),
+        .AXI4L_VDMA_rresp             ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RRESP ),
+        .AXI4L_VDMA_rvalid            ( FIC_0_PERIPHERALS_0_AXI4mslave4_0_RVALID ) 
         );
 
 //--------MSS_WRAPPER
@@ -1425,7 +1457,7 @@ MSS_WRAPPER MSS_WRAPPER_0(
         .GPIO_2_M2F_20                             ( MSS_WRAPPER_0_GPIO_2_M2F_20 ),
         .GPIO_2_M2F_21                             ( MSS_WRAPPER_0_GPIO_2_M2F_21 ),
         .GPIO_2_M2F_22                             ( MSS_WRAPPER_0_GPIO_2_M2F_22 ),
-        .GPIO_2_M2F_23                             ( MSS_WRAPPER_0_GPIO_2_M2F_23 ),
+        .GPIO_2_M2F_23                             ( CAM_EN_net_0 ),
         .MAC_0_MDC                                 ( MAC_0_MDC_net_0 ),
         .MMUART_0_TXD_M2F                          ( FTDI_UART_D_RXD_net_0 ),
         .MMUART_1_TXD                              ( MMUART_1_TXD_net_0 ),
@@ -1591,15 +1623,6 @@ OR2 OR2_LED6(
         .B ( MSS_WRAPPER_0_GPIO_2_M2F_22 ),
         // Outputs
         .Y ( LED6_net_0 ) 
-        );
-
-//--------OR2
-OR2 OR2_LED7(
-        // Inputs
-        .A ( FIC_3_PERIPHERALS_0_GPIO_OUT6to6 ),
-        .B ( MSS_WRAPPER_0_GPIO_2_M2F_23 ),
-        // Outputs
-        .Y ( LED7_net_0 ) 
         );
 
 

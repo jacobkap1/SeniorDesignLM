@@ -31,7 +31,7 @@ Finished optimization stage 1 on work_read_mux_vdma_read_mux_vdma_38_8_1_g_ADDR_
 @N: CD630 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Microchip\SolutionCore\VDMA\1.1.0\RTL\read_demux_vdma.vhd":23:7:23:21|Synthesizing work.read_demux_vdma.read_demux_vdma.
 Post processing for work.read_demux_vdma.read_demux_vdma
 Running optimization stage 1 on read_demux_vdma .......
-Finished optimization stage 1 on read_demux_vdma (CPU Time 0h:00m:00s, Memory Used current: 159MB peak: 178MB)
+Finished optimization stage 1 on read_demux_vdma (CPU Time 0h:00m:00s, Memory Used current: 158MB peak: 178MB)
 @N: CD630 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\neoTRNG.vhd":52:7:52:13|Synthesizing work.neotrng.neotrng_rtl.
 @N: CD630 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\neoTRNG.vhd":228:7:228:18|Synthesizing work.neotrng_cell.neotrng_cell_rtl.
 Post processing for work.neotrng_cell.neotrng_cell_rtl
@@ -104,7 +104,7 @@ State machine has 6 reachable states with original encodings of:
    001000
    010000
    100000
-Finished optimization stage 2 on request_scheduler_vdma (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 178MB)
+Finished optimization stage 2 on request_scheduler_vdma (CPU Time 0h:00m:01s, Memory Used current: 164MB peak: 178MB)
 Running optimization stage 2 on write_demux_vdma .......
 Finished optimization stage 2 on write_demux_vdma (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 178MB)
 Running optimization stage 2 on work_write_mux_vdma_write_mux_vdma_64_38_8_1_g_DATA_WIDTHg_ADDR_WIDTH .......

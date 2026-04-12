@@ -1,90 +1,147 @@
-set_io -port_name REF_CLK_50MHz \
-    -pin_name R18 \
-    -fixed true \
-    -io_std LVCMOS18 \
+# Microchip I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: 2025.2 2025.2.0.14
+
+# Family: PolarFireSoC , Die: MPFS095T , Package: FCSG325
+
+# Date generated: Sat Apr 11 17:52:54 2026 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io -port_name DIP1  \
+    -pin_name U17       \
+    -fixed true         \
     -DIRECTION INPUT
 
-set_io -port_name SWITCH1 \
-    -pin_name T19 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name SWITCH2 \
-    -pin_name U18 \
-    -fixed true \
+
+set_io -port_name DIP2  \
+    -pin_name Y16       \
+    -fixed true         \
     -DIRECTION INPUT
 
-set_io -port_name DIP1 \
-    -pin_name U17 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP2 \
-    -pin_name Y16 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP3 \
-    -pin_name R17 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP4 \
-    -pin_name AA15 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP5 \
-    -pin_name AA20 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP6 \
-    -pin_name Y20 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP7 \
-    -pin_name V21 \
-    -fixed true \
-    -DIRECTION INPUT
-    
-set_io -port_name DIP8 \
-    -pin_name AA19 \
-    -fixed true \
+
+set_io -port_name DIP3  \
+    -pin_name R17       \
+    -fixed true         \
     -DIRECTION INPUT
 
-set_io -port_name LED1 \
-    -pin_name T18 \
-    -fixed true \
-    -DIRECTION OUTPUT
-    
-set_io -port_name LED2 \
-    -pin_name V17 \
-    -fixed true \
-    -DIRECTION OUTPUT
-    
-set_io -port_name LED3 \
-    -pin_name U20 \
-    -fixed true \
-    -DIRECTION OUTPUT
-    
-set_io -port_name LED4 \
-    -pin_name U21 \
-    -fixed true \
-    -DIRECTION OUTPUT
-    
-set_io -port_name LED5 \
-    -pin_name AA18 \
-    -fixed true \
+
+set_io -port_name DIP4  \
+    -pin_name AA15      \
+    -fixed true         \
+    -DIRECTION INPUT
+
+
+set_io -port_name DIP5  \
+    -pin_name AA20      \
+    -fixed true         \
+    -DIRECTION INPUT
+
+
+set_io -port_name DIP6  \
+    -pin_name Y20       \
+    -fixed true         \
+    -DIRECTION INPUT
+
+
+set_io -port_name DIP7  \
+    -pin_name V21       \
+    -fixed true         \
+    -DIRECTION INPUT
+
+
+set_io -port_name DIP8  \
+    -pin_name AA19      \
+    -fixed true         \
+    -DIRECTION INPUT
+
+
+set_io -port_name LED2  \
+    -pin_name V17       \
+    -fixed true         \
     -DIRECTION OUTPUT
 
-set_io -port_name LED6 \
-    -pin_name V16 \
-    -fixed true \
+
+set_io -port_name LED3  \
+    -pin_name U20       \
+    -fixed true         \
     -DIRECTION OUTPUT
-    
-set_io -port_name LED7 \
-    -pin_name U15 \
-    -fixed true \
+
+
+set_io -port_name LED4  \
+    -pin_name U21       \
+    -fixed true         \
     -DIRECTION OUTPUT
+
+
+set_io -port_name LED5  \
+    -pin_name AA18      \
+    -fixed true         \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name LED6  \
+    -pin_name V16       \
+    -fixed true         \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name LED7  \
+    -pin_name U15       \
+    -fixed true         \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name REF_CLK_50MHz  \
+    -pin_name R18                \
+    -fixed true                  \
+    -DIRECTION INPUT
+
+
+set_io -port_name SWITCH1  \
+    -pin_name T19          \
+    -fixed true            \
+    -DIRECTION INPUT
+
+
+set_io -port_name SWITCH2  \
+    -pin_name U18          \
+    -fixed true            \
+    -DIRECTION INPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+
+#
+#Ports using Dedicated Pins
+
+#
+

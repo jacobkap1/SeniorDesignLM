@@ -14,7 +14,7 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>432</data>
+  <data>429</data>
   <report_link name="more"><data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\synlog\report\MPFS_DISCOVERY_KIT_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
@@ -29,13 +29,13 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Real Time">
-  <data>00h:02m:09s</data>
+  <data>00h:03m:47s</data>
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1775705171</data>
+  <data type="timestamp">1775970831</data>
   </info>
 			</job_info>
 </job_run_status>

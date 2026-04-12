@@ -1,6 +1,6 @@
 Device Selection
 Report Version,Date,Product,Release,Version,Design Name,Family,Die,Package
-0.1,Thu Apr  9 00:37:16 2026,Designer,2025.2,2025.2.0.14,MPFS_DISCOVERY_KIT,PolarFireSoC,MPFS095T,FCSG325
+0.1,Sun Apr 12 02:46:00 2026,Designer,2025.2,2025.2.0.14,MPFS_DISCOVERY_KIT,PolarFireSoC,MPFS095T,FCSG325
 Pin Report
 Pin,Port,Function,Bank,State,I/O Std,Direction,Used I/O Reg,User I/O Lock Down,Clamp Diode,Resistor Pull,Use I/O Calibration from the lane,Schmitt Trigger,Vcm Input Range,On Die Termination,Odt Value (Ohm),Input Delay,Slew,Output Drive (mA),Impedance (ohm),Output Load (pF),Source Termination (Ohm),Output Delay,MSS Resistor Pull,MSS Clamp Diode,MSS Persist,MSS User I/O Lock Down,MSS Odt (Ohm),MSS Thevenin (Ohm),MSS Schmitt Trigger,MSS Vcm Input Range,MSS Low Power Mode Input Receiver,MSS Low Power Mode Output Buffer,MSS Output Drive (mA),MSS Source Termination (Ohm),Board Layout
 A1,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,VSS
@@ -15,14 +15,14 @@ A9,---,TDI,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,
 A10,RXD_N[1],GPIO121NB1,Bank1,Fixed,SSTL18I,Input,None,No,ON,None,No,OFF,MID,ON,50,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,RXD_N[1]
 A11,---,VDDI1,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
 A12,RX_CLK_P,GPIO125PB1/CLKIN_S_3/CCC_SW_CLKIN_S_3,Bank1,Fixed,SSTL18I,Input,None,No,ON,None,No,OFF,MID,ON,50,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,RX_CLK_P
-A13,MBUS_RST,GPIO127PB1,Bank1,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_RST
+A13,---,GPIO127PB1,Bank1,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF"
 A14,VSC_RESETN,GPIO127NB1,Bank1,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,VSC_RESETN
 A15,RPI_GPIO13,GPIO131PB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO13
 A16,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,VSS
-A17,MBUS_SPI_CLK,GPIO1PB1/CLKIN_S_5,Bank1,Assigned,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_CLK
-A18,MBUS_SPI_CS,GPIO3NB1,Bank1,Assigned,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_CS
+A17,MBUS_SPI_CS,GPIO1PB1/CLKIN_S_5,Bank1,Assigned,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_CS
+A18,MBUS_SPI_CLK,GPIO3NB1,Bank1,Assigned,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_CLK
 A19,RPI_GPIO25,GPIO3PB1/CLKIN_S_6,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO25
-A20,MBUS_UART_TXD,GPIO5PB1/CLKIN_S_7,Bank1,Assigned,LVCMOS18,Input,None,No,ON,Up,No,OFF,---,OFF,120,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_UART_TXD
+A20,MBUS_PWM,GPIO5PB1/CLKIN_S_7,Bank1,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_PWM
 A21,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,VSS
 AA1,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,VSS
 AA2,A[11],MSS_DDR_A11,Bank6,Special,HSTL12I,Output,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,OFF,---,---,---,---,---,---,34,---,A[11]
@@ -60,12 +60,12 @@ B12,RX_CLK_N,GPIO125NB1,Bank1,Fixed,SSTL18I,Input,None,No,ON,None,No,OFF,MID,ON,
 B13,---,VDDI1,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
 B14,RPI_GPIO20,GPIO129PB1/CCC_SW_PLL0_OUT0,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO20
 B15,RPI_GPIO16,GPIO129NB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO16
-B16,MBUS_SPI_MOSI,GPIO131NB1,Bank1,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_MOSI
+B16,MBUS_SPI_MISO,GPIO131NB1,Bank1,Assigned,LVCMOS18,Input,None,No,ON,Up,No,OFF,---,OFF,120,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_MISO
 B17,RPI_GPIO26,GPIO1NB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO26
 B18,---,VDDI1,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
 B19,RPI_GPIO19,GPIO0PB1/CLKIN_S_4,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO19
 B20,RPI_GPIO12,GPIO0NB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO12
-B21,MBUS_SPI_MISO,GPIO5NB1,Bank1,Assigned,LVCMOS18,Input,None,No,ON,Up,No,OFF,---,OFF,120,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_MISO
+B21,MBUS_UART_TXD,GPIO5NB1,Bank1,Assigned,LVCMOS18,Input,None,No,ON,Up,No,OFF,---,OFF,120,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_UART_TXD
 C1,---,MSSIO37B2,Bank2,Special,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI2 through resistor (10K ohm) is allowed. CLAMP=OFF"
 C2,---,MSSIO35B2,Bank2,Special,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI2 through resistor (10K ohm) is allowed. CLAMP=OFF"
 C6,---,SCK,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"Must connect to VSS through resistor (10K ohm), CLAMP=OFF"
@@ -84,7 +84,7 @@ D9,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,
 D10,---,VDDI1,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
 D11,---,GPIO124PB1/CCC_SW_PLL1_OUT1,Bank1,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF"
 D12,---,GPIO124NB1,Bank1,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF"
-D13,---,GPIO128PB1/DQS/CCC_SW_PLL0_OUT0,Bank1,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF"
+D13,MBUS_RST,GPIO128PB1/DQS/CCC_SW_PLL0_OUT0,Bank1,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_RST
 D14,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,VSS
 D15,MAC_0_MDC,GPIO130PB1/CCC_SW_PLL0_OUT1,Bank1,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MAC_0_MDC
 D16,MDIO_PAD,GPIO9NB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MDIO_PAD
@@ -107,7 +107,7 @@ E13,RPI_GPIO21,GPIO128NB1/DQS,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,--
 E14,---,GPIO126NB1,Bank1,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF"
 E15,---,GPIO126PB1,Bank1,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF"
 E16,---,VDDI1,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
-E17,MBUS_PWM,GPIO9PB1/CLKIN_S_8/CCC_SE_CLKIN_S_8/CCC_SE_PLL0_OUT0,Bank1,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_PWM
+E17,MBUS_SPI_MOSI,GPIO9PB1/CLKIN_S_8/CCC_SE_CLKIN_S_8/CCC_SE_PLL0_OUT0,Bank1,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_SPI_MOSI
 E18,RPI_I2C_SDA,GPIO16NB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_I2C_SDA
 E20,VSC_TXDIS_SRESETN,GPIO15NB1,Bank1,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,VSC_TXDIS_SRESETN
 E21,RPI_GPIO23,GPIO11NB1,Bank1,Fixed,LVCMOS18,Inout,None,No,ON,Up,No,OFF,---,OFF,120,OFF,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,RPI_GPIO23
@@ -294,10 +294,10 @@ V11,DM[0],MSS_DDR_DM0,Bank6,Special,POD12I,Output,---,---,---,---,---,---,---,--
 V12,DQS[1],MSS_DDR_DQS_P1,Bank6,Special,POD12I,Inout,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,OFF,120,---,---,---,---,---,48,---,DQS[1]
 V13,DM[1],MSS_DDR_DM1,Bank6,Special,POD12I,Output,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,OFF,---,---,---,---,---,---,48,---,DM[1]
 V14,---,VSS,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,VSS
-V15,---,HSIO75PB0/DQS/CCC_NW_PLL1_OUT0,Bank0,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON"
+V15,MBUS_AN,HSIO75PB0/DQS/CCC_NW_PLL1_OUT0,Bank0,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_AN
 V16,LED6,HSIO77PB0/CCC_NW_CLKIN_N_0,Bank0,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,LED6
 V17,LED2,HSIO77NB0,Bank0,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,LED2
-V18,MBUS_AN,HSIO57PB0/DQS/CCC_NE_PLL1_OUT0,Bank0,Assigned,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,MBUS_AN
+V18,---,HSIO57PB0/DQS/CCC_NE_PLL1_OUT0,Bank0,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON"
 V20,---,VDDI0,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
 V21,DIP7,HSIO68NB0,Bank0,Fixed,LVCMOS18,Input,None,No,ON,Up,No,OFF,---,OFF,120,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,DIP7
 W1,A[13],MSS_DDR_A13,Bank6,Special,HSTL12I,Output,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,OFF,---,---,---,---,---,---,34,---,A[13]
@@ -320,7 +320,7 @@ Y10,DQS_N[0],MSS_DDR_DQS_N0,Bank6,Special,POD12I,Inout,---,---,---,---,---,---,-
 Y11,DQ[6],MSS_DDR_DQ6,Bank6,Special,POD12I,Inout,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,OFF,120,---,---,---,---,---,48,---,DQ[6]
 Y12,DQ[11],MSS_DDR_DQ11,Bank6,Special,POD12I,Inout,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,OFF,120,---,---,---,---,---,48,---,DQ[11]
 Y13,---,VDDI0,---,Reserved,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,1.8v
-Y14,---,HSIO76PB0/CCC_NW_CLKIN_N_1,Bank0,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON"
+Y14,CAM_EN,HSIO76PB0/CCC_NW_CLKIN_N_1,Bank0,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,CAM_EN
 Y15,SPISS,HSIO74PB0/CLKIN_N_2/CCC_NW_CLKIN_N_2/CCC_NW_PLL1_OUT0,Bank0,Fixed,LVCMOS18,Output,None,No,ON,None,No,---,---,---,120,---,OFF,8,---,5,---,OFF,---,---,---,---,---,---,---,---,---,---,---,---,SPISS
 Y16,DIP2,HSIO74NB0,Bank0,Fixed,LVCMOS18,Input,None,No,ON,Up,No,OFF,---,OFF,120,OFF,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,DIP2
 Y17,---,HSIO73NB0,Bank0,Unassigned,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,"DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON"

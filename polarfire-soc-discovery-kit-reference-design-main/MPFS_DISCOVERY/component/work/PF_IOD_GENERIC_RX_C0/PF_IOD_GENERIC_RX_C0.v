@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Apr  8 15:52:57 2026
+// Created by SmartDesign Sun Apr 12 01:41:38 2026
 // Version: 2025.2 2025.2.0.14
 //////////////////////////////////////////////////////////////////////
 
@@ -16,7 +16,7 @@
 create_and_configure_core -core_vlnv {Actel:SystemBuilder:PF_IOD_GENERIC_RX:2.1.116} -component_name {PF_IOD_GENERIC_RX_C0} -params {\
 "BCLKSCLK_TRN_DIR:BACKWARD" \
 "CLOCK_DELAY_VALUE:0" \
-"DATA_RATE:500" \
+"DATA_RATE:456" \
 "DATA_RATIO:8" \
 "DATA_WIDTH:7" \
 "DDR_MODE:DDR" \

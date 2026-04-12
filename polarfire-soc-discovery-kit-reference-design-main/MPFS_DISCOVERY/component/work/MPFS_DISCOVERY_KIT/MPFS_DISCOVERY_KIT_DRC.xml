@@ -33,8 +33,8 @@
   <drc>
     <status>C:\Microchip\Libero_SoC_2025.2\Libero_SoC\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin FIC_0_PERIPHERALS_0:AXI4mslave4</detail>
+    <message> bus interface ID width mismatch</message>
+    <detail> There is an ID width mismatch between FIC_0_PERIPHERALS_0:AXI4mslave4:AXI4mslave4_SLAVE4_AWID[0-8] and MIPI_CAMERA_0:AXI4L_VDMA:[0--1] which may result in a loss of data.</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/MPFS_DISCOVERY_KIT/pins/FIC_0_PERIPHERALS_0:AXI4mslave4</crossprobe>
   </drc>
 </drcreport>

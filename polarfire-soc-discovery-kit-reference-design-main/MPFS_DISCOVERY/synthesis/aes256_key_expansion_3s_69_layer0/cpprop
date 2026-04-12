@@ -1,0 +1,9 @@
+n work aes256_key_expansion_3s_69_layer0 verilog;
+av .compile_point_summary_status "Mapped";
+av .compile_point_summary_reason "No database";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 227.094;
+av .compile_point_starttime_stamp "Sat Apr 11 20:35:53 2026";
+av .compile_point_endtime_stamp "Sat Apr 11 20:39:45 2026";
+av .compile_point_realtime_used 231.501;

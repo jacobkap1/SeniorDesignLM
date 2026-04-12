@@ -61,11 +61,11 @@ File C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_
 @W: BN108 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":21:7:21:39|syn_hier attribute not currently supported on instances: mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_Z15_layer0.
 @W: BN108 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":21:7:21:39|syn_hier attribute not currently supported on instances: mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_Z18_layer0.
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 411MB peak: 413MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 416MB peak: 417MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Wed Apr  8 23:26:15 2026
+# Sun Apr 12 01:13:55 2026
 
 ###########################################################]

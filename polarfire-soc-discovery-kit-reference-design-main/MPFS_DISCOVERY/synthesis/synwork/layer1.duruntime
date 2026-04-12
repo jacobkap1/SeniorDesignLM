@@ -1,6 +1,9 @@
 Runtime Summary:
 ================
 
+	*Library: work, Entity: request_scheduler_vdma, Architecture: request_scheduler_vdma
+		Optimization Phase          : 0h:00m:01s
+
 	The following design units have negligible CPU times:
 	=====================================================
 		*Library: work, Entity: neoTRNG_cell_5_false, Architecture: neotrng_cell_rtl
@@ -16,7 +19,7 @@ Runtime Summary:
 		*Library: work, Entity: work_read_mux_vdma_read_mux_vdma_38_8_1_g_ADDR_WIDTH, Architecture: read_mux_vdma
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: request_scheduler_vdma, Architecture: request_scheduler_vdma
-			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
 		*Library: work, Entity: write_demux_vdma, Architecture: write_demux_vdma
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: work_write_mux_vdma_write_mux_vdma_64_38_8_1_g_DATA_WIDTHg_ADDR_WIDTH, Architecture: write_mux_vdma

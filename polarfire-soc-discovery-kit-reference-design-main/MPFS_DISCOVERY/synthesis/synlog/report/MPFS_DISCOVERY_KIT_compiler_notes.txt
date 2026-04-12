@@ -192,7 +192,7 @@
 @N: CL134 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.9.100\rtl\vlog\core\Axi4CrossBar\DualPort_Ram_SyncWr_SyncRd.v":94:0:94:5|Found RAM mem, depth=512, width=43
 @N: CG179 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.9.100\rtl\vlog\core\Axi4Convertors\SlvAxi4ProtConvRead.v":281:20:281:28|Removing redundant assignment.
 @N: CG179 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MSS_LSRAM\COREAXI4SRAM_0\rtl\vlog\core\CoreAXI4SRAM_MAINCTRL.v":563:91:563:103|Removing redundant assignment.
-@N: CG794 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\csprng\csprng.v":59:8:59:16|Using module neoTRNG from library work
+@N: CG794 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\csprng\csprng.v":56:8:56:16|Using module neoTRNG from library work
 @N: CG179 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\GPIO\GPIO_0\rtl\vlog\core\coregpio.v":512:16:512:28|Removing redundant assignment.
 @N: CG179 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\GPIO\GPIO_0\rtl\vlog\core\coregpio.v":515:16:515:28|Removing redundant assignment.
 @N: CG179 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\GPIO\GPIO_0\rtl\vlog\core\coregpio.v":436:15:436:26|Removing redundant assignment.
@@ -344,12 +344,9 @@
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v":2846:3:2846:8|Trying to extract state machine for register fsmdet.
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v":1890:3:1890:8|Trying to extract state machine for register fsmsync.
 @N: CL162 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\security_core.v":93:4:93:9|Found a potential sequential shift hash_block with address depth of 16 words and data bit width of 32.
-@N: CL134 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes256_dec.v":189:4:189:12|Found RAM w[0][0], depth=15, width=128
-@N: CL134 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes256_dec.v":189:4:189:12|Found RAM w[1][0], depth=15, width=128
-@N: CL134 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes256_dec.v":189:4:189:12|Found RAM w[2][0], depth=15, width=128
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes256_dec.v":189:4:189:12|Trying to extract state machine for register state.
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes_key_expansion.v":55:4:55:12|Trying to extract state machine for register state.
-@N: CL162 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\trng_acc.v":14:4:14:12|Found a potential sequential shift seed_o with address depth of 8 words and data bit width of 8.
+@N: CL162 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\trng_acc.v":13:4:13:12|Found a potential sequential shift seed_o with address depth of 8 words and data bit width of 8.
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\sha256.v":179:4:179:12|Trying to extract state machine for register state.
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.9.100\rtl\vlog\core\Axi4Convertors\SlvAxi4ProtConvRead.v":343:1:343:6|Trying to extract state machine for register currStateARd.
 @N: CL201 :"C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.9.100\rtl\vlog\core\Axi4Convertors\SlvAxi4ProtConvWrite.v":426:1:426:6|Trying to extract state machine for register currStateAWr.

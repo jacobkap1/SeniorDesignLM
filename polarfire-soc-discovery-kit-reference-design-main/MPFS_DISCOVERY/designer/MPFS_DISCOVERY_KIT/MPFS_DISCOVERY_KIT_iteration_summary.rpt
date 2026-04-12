@@ -269,3 +269,88 @@
           86        85    N/A                       -0.212  MPFS_DISCOVERY_KIT_timing_violations_max_r26_s86.rpt  MPFS_DISCOVERY_KIT_r26_s86
   The best result MPFS_DISCOVERY_KIT_r26_s86 has been saved into the project.
 
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 27   DATE: 22:42:46 10-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 87 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+          87        86    N/A                       -0.253  MPFS_DISCOVERY_KIT_timing_violations_max_r27_s87.rpt  MPFS_DISCOVERY_KIT_r27_s87
+          88        87    N/A                       -1.929  MPFS_DISCOVERY_KIT_timing_violations_max_r27_s88.rpt  MPFS_DISCOVERY_KIT_r27_s88
+          89        88    N/A                       -0.206  MPFS_DISCOVERY_KIT_timing_violations_max_r27_s89.rpt  MPFS_DISCOVERY_KIT_r27_s89
+          90        89    N/A                       -0.201  MPFS_DISCOVERY_KIT_timing_violations_max_r27_s90.rpt  MPFS_DISCOVERY_KIT_r27_s90
+          91        90    N/A                       -0.437  MPFS_DISCOVERY_KIT_timing_violations_max_r27_s91.rpt  MPFS_DISCOVERY_KIT_r27_s91
+  The best result MPFS_DISCOVERY_KIT_r27_s90 has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 28   DATE: 12:16:22 11-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 92 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+          92        91    N/A                       -0.564  MPFS_DISCOVERY_KIT_timing_violations_max_r28_s92.rpt  MPFS_DISCOVERY_KIT_r28_s92
+          93        92    N/A                       -0.232  MPFS_DISCOVERY_KIT_timing_violations_max_r28_s93.rpt  MPFS_DISCOVERY_KIT_r28_s93
+          94        93    N/A                       -0.564  MPFS_DISCOVERY_KIT_timing_violations_max_r28_s94.rpt  MPFS_DISCOVERY_KIT_r28_s94
+          95        94    N/A                       -0.242  MPFS_DISCOVERY_KIT_timing_violations_max_r28_s95.rpt  MPFS_DISCOVERY_KIT_r28_s95
+          96        95    N/A                       -0.283  MPFS_DISCOVERY_KIT_timing_violations_max_r28_s96.rpt  MPFS_DISCOVERY_KIT_r28_s96
+  The best result MPFS_DISCOVERY_KIT_r28_s93 has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 29   DATE: 17:59:44 11-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 97 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+          97        96    N/A                Layout failed  MPFS_DISCOVERY_KIT_timing_violations_max_r29_s97.rpt  MPFS_DISCOVERY_KIT_r29_s97
+          98        97    N/A                       -0.339  MPFS_DISCOVERY_KIT_timing_violations_max_r29_s98.rpt  MPFS_DISCOVERY_KIT_r29_s98
+          99        98    N/A                       -0.468  MPFS_DISCOVERY_KIT_timing_violations_max_r29_s99.rpt  MPFS_DISCOVERY_KIT_r29_s99
+         100        99    N/A                       -0.243  MPFS_DISCOVERY_KIT_timing_violations_max_r29_s100.rpt  MPFS_DISCOVERY_KIT_r29_s100
+         101       100    N/A                       -0.234  MPFS_DISCOVERY_KIT_timing_violations_max_r29_s101.rpt  MPFS_DISCOVERY_KIT_r29_s101
+  The best result MPFS_DISCOVERY_KIT_r29_s101 has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 30   DATE: 20:54:49 11-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 102 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+           1         0    N/A                Layout failed  MPFS_DISCOVERY_KIT_timing_violations_max_r30_s1.rpt  MPFS_DISCOVERY_KIT_r30_s1
+           2         1    N/A                Layout failed  MPFS_DISCOVERY_KIT_timing_violations_max_r30_s2.rpt  MPFS_DISCOVERY_KIT_r30_s2
+           3         2    N/A                Layout failed  MPFS_DISCOVERY_KIT_timing_violations_max_r30_s3.rpt  MPFS_DISCOVERY_KIT_r30_s3
+           4         3    N/A                Layout failed  MPFS_DISCOVERY_KIT_timing_violations_max_r30_s4.rpt  MPFS_DISCOVERY_KIT_r30_s4
+           5         4    N/A                Layout failed  MPFS_DISCOVERY_KIT_timing_violations_max_r30_s5.rpt  MPFS_DISCOVERY_KIT_r30_s5
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 31   DATE: 20:58:36 11-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 6 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+           6         5    N/A                       -0.566  MPFS_DISCOVERY_KIT_timing_violations_max_r31_s6.rpt  MPFS_DISCOVERY_KIT_r31_s6
+           7         6    N/A                       -0.711  MPFS_DISCOVERY_KIT_timing_violations_max_r31_s7.rpt  MPFS_DISCOVERY_KIT_r31_s7
+           8         7    N/A                       -0.487  MPFS_DISCOVERY_KIT_timing_violations_max_r31_s8.rpt  MPFS_DISCOVERY_KIT_r31_s8
+           9         8    N/A                       -0.466  MPFS_DISCOVERY_KIT_timing_violations_max_r31_s9.rpt  MPFS_DISCOVERY_KIT_r31_s9
+          10         9    N/A                       -0.229  MPFS_DISCOVERY_KIT_timing_violations_max_r31_s10.rpt  MPFS_DISCOVERY_KIT_r31_s10
+  The best result MPFS_DISCOVERY_KIT_r31_s10 has been saved into the project.
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 32   DATE: 00:13:14 12-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 11 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+          11        10    N/A                       -0.234  MPFS_DISCOVERY_KIT_timing_violations_max_r32_s11.rpt  MPFS_DISCOVERY_KIT_r32_s11
+          12        11    N/A                       -0.353  MPFS_DISCOVERY_KIT_timing_violations_max_r32_s12.rpt  MPFS_DISCOVERY_KIT_r32_s12
+          14        13    N/A               Layout aborted  MPFS_DISCOVERY_KIT_timing_violations_max_r32_s14.rpt  MPFS_DISCOVERY_KIT_r32_s14
+#------------------------------------------------------------------------------------------------------------------------------------------
+# RUN NUMBER: 33   DATE: 01:18:26 12-Apr-2026
+# INVOKED AS: C:/Microchip/Libero_SoC_2025.2/Libero_SoC/Designer/bin/libero.exe extended_run_lib.tcl -skip_open_project -root {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT} -n 5 -starting_seed_index 15 -compare_criteria violations -analysis max -slack_criteria worst -stop_on_success
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Seed Index  Seed      Maximum Delay        Worst Slack  Report Analyzed                                Saved Design
+# ==========  ========  ===============  ===============  =============================================  ===================================
+          15        14    N/A                       -1.037  MPFS_DISCOVERY_KIT_timing_violations_max_r33_s15.rpt  MPFS_DISCOVERY_KIT_r33_s15
+          16        15    N/A                       -0.224  MPFS_DISCOVERY_KIT_timing_violations_max_r33_s16.rpt  MPFS_DISCOVERY_KIT_r33_s16
+          17        16    N/A                       -0.271  MPFS_DISCOVERY_KIT_timing_violations_max_r33_s17.rpt  MPFS_DISCOVERY_KIT_r33_s17
+          18        17    N/A                       -0.594  MPFS_DISCOVERY_KIT_timing_violations_max_r33_s18.rpt  MPFS_DISCOVERY_KIT_r33_s18
+          19        18    N/A                       -0.323  MPFS_DISCOVERY_KIT_timing_violations_max_r33_s19.rpt  MPFS_DISCOVERY_KIT_r33_s19
+  The best result MPFS_DISCOVERY_KIT_r33_s16 has been saved into the project.
+

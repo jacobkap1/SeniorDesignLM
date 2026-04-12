@@ -3,7 +3,7 @@ Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 20
 Family: PolarFireSoC
 Die: MPFS095T
 Package: FCSG325
-Date: Thu Apr  9 00:40:59 2026
+Date: Sun Apr 12 02:47:18 2026
 
 Report path: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\Design_Initialization_Data_Report.txt
 
@@ -1322,16 +1322,16 @@ Used Modules
 +-----------------------+-----------------------------------------------------------------------------------+
 | Peripheral Block Name | Instance Name                                                                     |
 +-----------------------+-----------------------------------------------------------------------------------+
-| HS_IO_CLK_SW_0        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_RX                                 |
-| HS_IO_CLK_SW_1        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_FIFO                               |
-| HS_IO_CLK_SE_6        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_CASCADED                           |
-| CLKDIVDEL_SE_1        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_RXCLK/I_CDD                       |
-| CLKDIVDEL_SE_3        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD                        |
+| HS_IO_CLK_SW_0        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_FIFO                               |
+| HS_IO_CLK_SW_2        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_CASCADED                           |
+| HS_IO_CLK_SW_4        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_RX                                 |
+| CLKDIVDEL_SW_1        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD                        |
+| CLKDIVDEL_SW_0        | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_RXCLK/I_CDD                       |
 | ICB_CLKINT_NE_4       | CLOCKS_AND_RESETS_0/CLKINT_REF_CLK_50MHz/U0_IOBA                                  |
+| ICB_CLKINT_SW_1       | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/CLKINT_0_1                                   |
 | ICB_CLKINT_SW_2       | CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_12_1                         |
 | ICB_CLKINT_SW_3       | MIPI_CAMERA_0/PF_CCC_C1_0/PF_CCC_C1_0/clkint_0_1                                  |
 | ICB_CLKINT_SW_9       | CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_4_1                          |
-| ICB_CLKINT_SE_1       | MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/CLKINT_0_1                                   |
 | ICB_CLKINT_W_0        | CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_0_1                          |
 | ICB_CLKINT_W_5        | CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_8_1                          |
 | CRNINT_SW_4           | MIPI_CAMERA_0/PF_CCC_C1_0/PF_CCC_C1_0/pll_inst_0_1                                |
@@ -7429,6 +7429,14 @@ HS_IO_CLK_SE_5 (Unused pin tie-off)
 +-----------+---------+
 
 
+HS_IO_CLK_SE_6 (Unused pin tie-off)
++-----------+---------+
+| Input Pin | Tie-Off |
++-----------+---------+
+| A         | 1       |
++-----------+---------+
+
+
 HS_IO_CLK_SE_7 (Unused pin tie-off)
 +-----------+---------+
 | Input Pin | Tie-Off |
@@ -7453,6 +7461,14 @@ HS_IO_CLK_SE_9 (Unused pin tie-off)
 +-----------+---------+
 
 
+HS_IO_CLK_SW_1 (Unused pin tie-off)
++-----------+---------+
+| Input Pin | Tie-Off |
++-----------+---------+
+| A         | 1       |
++-----------+---------+
+
+
 HS_IO_CLK_SW_10 (Unused pin tie-off)
 +-----------+---------+
 | Input Pin | Tie-Off |
@@ -7469,23 +7485,7 @@ HS_IO_CLK_SW_11 (Unused pin tie-off)
 +-----------+---------+
 
 
-HS_IO_CLK_SW_2 (Unused pin tie-off)
-+-----------+---------+
-| Input Pin | Tie-Off |
-+-----------+---------+
-| A         | 1       |
-+-----------+---------+
-
-
 HS_IO_CLK_SW_3 (Unused pin tie-off)
-+-----------+---------+
-| Input Pin | Tie-Off |
-+-----------+---------+
-| A         | 1       |
-+-----------+---------+
-
-
-HS_IO_CLK_SW_4 (Unused pin tie-off)
 +-----------+---------+
 | Input Pin | Tie-Off |
 +-----------+---------+
@@ -7702,6 +7702,19 @@ CLKDIVDEL_SE_0 (Unused pin tie-off)
 +-----------------+---------+
 
 
+CLKDIVDEL_SE_1 (Unused pin tie-off)
++-----------------+---------+
+| Input Pin       | Tie-Off |
++-----------------+---------+
+| A               | 1       |
+| BIT_SLIP        | 0       |
+| DELAY_LINE_DIR  | 1       |
+| DELAY_LINE_LOAD | 1       |
+| DELAY_LINE_MOVE | 1       |
+| RST_N           | 0       |
++-----------------+---------+
+
+
 CLKDIVDEL_SE_2 (Unused pin tie-off)
 +-----------------+---------+
 | Input Pin       | Tie-Off |
@@ -7715,20 +7728,7 @@ CLKDIVDEL_SE_2 (Unused pin tie-off)
 +-----------------+---------+
 
 
-CLKDIVDEL_SW_0 (Unused pin tie-off)
-+-----------------+---------+
-| Input Pin       | Tie-Off |
-+-----------------+---------+
-| A               | 1       |
-| BIT_SLIP        | 0       |
-| DELAY_LINE_DIR  | 1       |
-| DELAY_LINE_LOAD | 1       |
-| DELAY_LINE_MOVE | 1       |
-| RST_N           | 0       |
-+-----------------+---------+
-
-
-CLKDIVDEL_SW_1 (Unused pin tie-off)
+CLKDIVDEL_SE_3 (Unused pin tie-off)
 +-----------------+---------+
 | Input Pin       | Tie-Off |
 +-----------------+---------+
@@ -8091,6 +8091,15 @@ ICB_CLKINT_SE_0 (Unused pin tie-off)
 +-----------+---------+
 
 
+ICB_CLKINT_SE_1 (Unused pin tie-off)
++-----------+---------+
+| Input Pin | Tie-Off |
++-----------+---------+
+| A         | 1       |
+| EN        | 1       |
++-----------+---------+
+
+
 ICB_CLKINT_SE_10 (Unused pin tie-off)
 +-----------+---------+
 | Input Pin | Tie-Off |
@@ -8182,15 +8191,6 @@ ICB_CLKINT_SE_9 (Unused pin tie-off)
 
 
 ICB_CLKINT_SW_0 (Unused pin tie-off)
-+-----------+---------+
-| Input Pin | Tie-Off |
-+-----------+---------+
-| A         | 1       |
-| EN        | 1       |
-+-----------+---------+
-
-
-ICB_CLKINT_SW_1 (Unused pin tie-off)
 +-----------+---------+
 | Input Pin | Tie-Off |
 +-----------+---------+

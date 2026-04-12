@@ -22,19 +22,19 @@ data VCCI_2.5_VOLTR EXT
 data VCCI_3.3_VOLTR EXT
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT.afl'
+data AFL 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/COMPILE/MPFS_DISCOVERY_KIT.afl'
 data ADL 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT.adl'
-data LOC 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT.loc'
-data SEG 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT.seg'
-data NMAT_TXT 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT.nmatinit.txt'
+data LOC 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/COMPILE/MPFS_DISCOVERY_KIT.loc'
+data SEG 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/COMPILE/MPFS_DISCOVERY_KIT.seg'
 
 data IO_PDC_0 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_KIT_BANK_SETTINGS.pdc'
 data IO_PDC_1 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_KIT_BOARD_MISC.pdc'
 data IO_PDC_2 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_MAC.pdc'
-data IO_PDC_3 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_RPi.pdc'
-data IO_PDC_4 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_UARTS.pdc'
-data IO_PDC_5 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_7_SEG.pdc'
-data IO_PDC_6 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/user.pdc'
+data IO_PDC_3 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_mikroBUS.pdc'
+data IO_PDC_4 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_RPi.pdc'
+data IO_PDC_5 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_UARTS.pdc'
+data IO_PDC_6 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/MPFS_DISCOVERY_7_SEG.pdc'
+data IO_PDC_7 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/user.pdc'
 data FP_PDC_0 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/fp/SW_PLL.pdc'
 data TARGET_IOPDC  'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/io/user.pdc'
 data TARGET_FPPDC  'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/fp/user.pdc'

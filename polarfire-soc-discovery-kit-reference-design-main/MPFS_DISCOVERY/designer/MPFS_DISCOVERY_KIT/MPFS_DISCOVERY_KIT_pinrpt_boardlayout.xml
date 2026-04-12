@@ -16,7 +16,7 @@
 </header>
 <row>
  <cell>0.1</cell>
- <cell>Thu Apr  9 00:37:16 2026</cell>
+ <cell>Sun Apr 12 02:46:00 2026</cell>
  <cell>Designer</cell>
  <cell>2025.2</cell>
  <cell>2025.2.0.14</cell>
@@ -524,28 +524,10 @@
 </row>
 <row>
  <cell>A13</cell>
- <cell>MBUS_RST</cell>
+ <cell>---</cell>
  <cell>GPIO127PB1</cell>
  <cell>Bank1</cell>
- <cell>Assigned</cell>
- <cell>LVCMOS18</cell>
- <cell>Output</cell>
- <cell>None</cell>
- <cell>No</cell>
- <cell>ON</cell>
- <cell>None</cell>
- <cell>No</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>120</cell>
- <cell>---</cell>
- <cell>OFF</cell>
- <cell>8</cell>
- <cell>---</cell>
- <cell>5</cell>
- <cell>---</cell>
- <cell>OFF</cell>
+ <cell>Unassigned</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -558,7 +540,25 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_RST</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF</cell>
 </row>
 <row>
  <cell>A14</cell>
@@ -676,7 +676,7 @@
 </row>
 <row>
  <cell>A17</cell>
- <cell>MBUS_SPI_CLK</cell>
+ <cell>MBUS_SPI_CS</cell>
  <cell>GPIO1PB1/CLKIN_S_5</cell>
  <cell>Bank1</cell>
  <cell>Assigned</cell>
@@ -710,11 +710,11 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_SPI_CLK</cell>
+ <cell>MBUS_SPI_CS</cell>
 </row>
 <row>
  <cell>A18</cell>
- <cell>MBUS_SPI_CS</cell>
+ <cell>MBUS_SPI_CLK</cell>
  <cell>GPIO3NB1</cell>
  <cell>Bank1</cell>
  <cell>Assigned</cell>
@@ -748,7 +748,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_SPI_CS</cell>
+ <cell>MBUS_SPI_CLK</cell>
 </row>
 <row>
  <cell>A19</cell>
@@ -790,21 +790,27 @@
 </row>
 <row>
  <cell>A20</cell>
- <cell>MBUS_UART_TXD</cell>
+ <cell>MBUS_PWM</cell>
  <cell>GPIO5PB1/CLKIN_S_7</cell>
  <cell>Bank1</cell>
  <cell>Assigned</cell>
  <cell>LVCMOS18</cell>
- <cell>Input</cell>
+ <cell>Output</cell>
  <cell>None</cell>
  <cell>No</cell>
  <cell>ON</cell>
- <cell>Up</cell>
+ <cell>None</cell>
  <cell>No</cell>
- <cell>OFF</cell>
  <cell>---</cell>
- <cell>OFF</cell>
+ <cell>---</cell>
+ <cell>---</cell>
  <cell>120</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
+ <cell>8</cell>
+ <cell>---</cell>
+ <cell>5</cell>
+ <cell>---</cell>
  <cell>OFF</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -818,13 +824,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>MBUS_UART_TXD</cell>
+ <cell>MBUS_PWM</cell>
 </row>
 <row>
  <cell>A21</cell>
@@ -2234,27 +2234,21 @@
 </row>
 <row>
  <cell>B16</cell>
- <cell>MBUS_SPI_MOSI</cell>
+ <cell>MBUS_SPI_MISO</cell>
  <cell>GPIO131NB1</cell>
  <cell>Bank1</cell>
  <cell>Assigned</cell>
  <cell>LVCMOS18</cell>
- <cell>Output</cell>
+ <cell>Input</cell>
  <cell>None</cell>
  <cell>No</cell>
  <cell>ON</cell>
- <cell>None</cell>
+ <cell>Up</cell>
  <cell>No</cell>
+ <cell>OFF</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
+ <cell>OFF</cell>
  <cell>120</cell>
- <cell>---</cell>
- <cell>OFF</cell>
- <cell>8</cell>
- <cell>---</cell>
- <cell>5</cell>
- <cell>---</cell>
  <cell>OFF</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -2268,7 +2262,13 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_SPI_MOSI</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>MBUS_SPI_MISO</cell>
 </row>
 <row>
  <cell>B17</cell>
@@ -2424,7 +2424,7 @@
 </row>
 <row>
  <cell>B21</cell>
- <cell>MBUS_SPI_MISO</cell>
+ <cell>MBUS_UART_TXD</cell>
  <cell>GPIO5NB1</cell>
  <cell>Bank1</cell>
  <cell>Assigned</cell>
@@ -2458,7 +2458,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_SPI_MISO</cell>
+ <cell>MBUS_UART_TXD</cell>
 </row>
 <row>
  <cell>C1</cell>
@@ -3146,10 +3146,28 @@
 </row>
 <row>
  <cell>D13</cell>
- <cell>---</cell>
+ <cell>MBUS_RST</cell>
  <cell>GPIO128PB1/DQS/CCC_SW_PLL0_OUT0</cell>
  <cell>Bank1</cell>
- <cell>Unassigned</cell>
+ <cell>Assigned</cell>
+ <cell>LVCMOS18</cell>
+ <cell>Output</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>ON</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>120</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
+ <cell>8</cell>
+ <cell>---</cell>
+ <cell>5</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -3162,25 +3180,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF</cell>
+ <cell>MBUS_RST</cell>
 </row>
 <row>
  <cell>D14</cell>
@@ -4020,7 +4020,7 @@
 </row>
 <row>
  <cell>E17</cell>
- <cell>MBUS_PWM</cell>
+ <cell>MBUS_SPI_MOSI</cell>
  <cell>GPIO9PB1/CLKIN_S_8/CCC_SE_CLKIN_S_8/CCC_SE_PLL0_OUT0</cell>
  <cell>Bank1</cell>
  <cell>Assigned</cell>
@@ -4054,7 +4054,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_PWM</cell>
+ <cell>MBUS_SPI_MOSI</cell>
 </row>
 <row>
  <cell>E18</cell>
@@ -11126,10 +11126,28 @@
 </row>
 <row>
  <cell>V15</cell>
- <cell>---</cell>
+ <cell>MBUS_AN</cell>
  <cell>HSIO75PB0/DQS/CCC_NW_PLL1_OUT0</cell>
  <cell>Bank0</cell>
- <cell>Unassigned</cell>
+ <cell>Assigned</cell>
+ <cell>LVCMOS18</cell>
+ <cell>Output</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>ON</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>120</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
+ <cell>8</cell>
+ <cell>---</cell>
+ <cell>5</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -11142,25 +11160,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON</cell>
+ <cell>MBUS_AN</cell>
 </row>
 <row>
  <cell>V16</cell>
@@ -11240,28 +11240,10 @@
 </row>
 <row>
  <cell>V18</cell>
- <cell>MBUS_AN</cell>
+ <cell>---</cell>
  <cell>HSIO57PB0/DQS/CCC_NE_PLL1_OUT0</cell>
  <cell>Bank0</cell>
- <cell>Assigned</cell>
- <cell>LVCMOS18</cell>
- <cell>Output</cell>
- <cell>None</cell>
- <cell>No</cell>
- <cell>ON</cell>
- <cell>None</cell>
- <cell>No</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>120</cell>
- <cell>---</cell>
- <cell>OFF</cell>
- <cell>8</cell>
- <cell>---</cell>
- <cell>5</cell>
- <cell>---</cell>
- <cell>OFF</cell>
+ <cell>Unassigned</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -11274,7 +11256,25 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>MBUS_AN</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON</cell>
 </row>
 <row>
  <cell>V20</cell>
@@ -12114,10 +12114,28 @@
 </row>
 <row>
  <cell>Y14</cell>
- <cell>---</cell>
+ <cell>CAM_EN</cell>
  <cell>HSIO76PB0/CCC_NW_CLKIN_N_1</cell>
  <cell>Bank0</cell>
- <cell>Unassigned</cell>
+ <cell>Fixed</cell>
+ <cell>LVCMOS18</cell>
+ <cell>Output</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>ON</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>---</cell>
+ <cell>120</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
+ <cell>8</cell>
+ <cell>---</cell>
+ <cell>5</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
@@ -12130,25 +12148,7 @@
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDD18 through resistor (10K ohm) is allowed. CLAMP=ON</cell>
+ <cell>CAM_EN</cell>
 </row>
 <row>
  <cell>Y15</cell>

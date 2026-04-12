@@ -1,5 +1,5 @@
 module timer #(
-    parameter CYCLES = 200
+    parameter CYCLES = 1000
 )(
     input  logic        clk,
     input  logic        resetn,

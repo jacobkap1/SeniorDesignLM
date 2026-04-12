@@ -75,10 +75,10 @@ module security_core #(
     logic [127:0] aes_block[0:SHARES-1], aes_exp[0:SHARES-1], aes_plain;
     logic [3:0]   aes_exp_addr;
     logic [1:0]   aes_count;
-    logic         aes_enable, aes_reseed, aes_puf, aes_key_valid, aes_block_valid, aes_end, aes_exp_valid, aes_ready, aes_valid, aes_stream;
+    logic         aes_enable, aes_key_valid, aes_block_valid, aes_end, aes_exp_valid, aes_ready, aes_valid, aes_stream;
     
     wire aes_write;
-    assign aes_write = aes_stream && (aes_ready || aes_count < 2'd3);
+    assign aes_write = rng_valid && aes_stream && (aes_ready || aes_count < 2'd3);
     
     logic [7:0] k_sbox[0:SHARES-1], d_sbox[0:SHARES-1], sbox_i[0:SHARES-1], sbox_o[0:SHARES-1];
     
@@ -112,7 +112,6 @@ module security_core #(
             aes_count    <= 2'b0;
             
             aes_enable      <= 1'b0;
-            aes_reseed      <= 1'b0;
             aes_key_valid   <= 1'b0;
             aes_block_valid <= 1'b0;
             aes_end         <= 1'b0;
@@ -124,7 +123,6 @@ module security_core #(
             msg_end          <= 1'b0;
             aes_key_valid    <= 1'b0;
             aes_block_valid  <= 1'b0;
-            aes_reseed       <= 1'b0;
             aes_stream       <= 1'b0;
             aes_end          <= 1'b0;
             
@@ -149,11 +147,8 @@ module security_core #(
                         
                         hash_end <= wdata[2];
                         
-                        aes_reseed <= wdata[3];
-                        
-                        aes_puf       <= wdata[4];
-                        aes_key_valid <= wdata[5];
-                        aes_end       <= wdata[6];
+                        aes_key_valid <= wdata[3];
+                        aes_end       <= wdata[4];
                     end
                 end
                 // Hash
@@ -437,18 +432,18 @@ module security_core #(
         end else if (arvalid && !arready_reg) begin
             arready_reg <= 1'b1;
             case (araddr[ADDR_LSB+OPT_MEM_ADDR_BITS-1:ADDR_LSB])
-                5'd0:  rdata_reg <= {25'b0, aes_end, aes_key_valid, aes_puf, aes_reseed, hash_end, aes_enable, hash_enable}; // 0x00
+                5'd0:  rdata_reg <= {27'b0, aes_end, aes_key_valid, hash_end, aes_enable, hash_enable}; // 0x00
                 
                 5'd1:  rdata_reg <= hash_block[31:0];                                                   // 0x04
                 
-                5'd2:  rdata_reg <= aes_key[0][255:224] ^ aes_key[1][255:224] ^ aes_key[2][255:224];    // 0x08
-                5'd3:  rdata_reg <= aes_key[0][223:192] ^ aes_key[1][223:192] ^ aes_key[2][223:192];    // 0x0C
-                5'd4:  rdata_reg <= aes_key[0][191:160] ^ aes_key[1][191:160] ^ aes_key[2][191:160];    // 0x10
-                5'd5:  rdata_reg <= aes_key[0][159:128] ^ aes_key[1][159:128] ^ aes_key[2][159:128];    // 0x14
-                5'd6:  rdata_reg <= aes_key[0][127: 96] ^ aes_key[1][127: 96] ^ aes_key[2][127: 96];    // 0x18
-                5'd7:  rdata_reg <= aes_key[0][ 95: 64] ^ aes_key[1][ 95: 64] ^ aes_key[2][ 95: 64];    // 0x1C
-                5'd8:  rdata_reg <= aes_key[0][ 63: 32] ^ aes_key[1][ 63: 32] ^ aes_key[2][ 63: 32];    // 0x20
-                5'd9:  rdata_reg <= aes_key[0][ 31:  0] ^ aes_key[1][ 31:  0] ^ aes_key[2][ 31:  0];    // 0x24
+                5'd2:  rdata_reg <= aes_key[0][255:224];    // 0x08
+                5'd3:  rdata_reg <= aes_key[0][223:192];    // 0x0C
+                5'd4:  rdata_reg <= aes_key[0][191:160];    // 0x10
+                5'd5:  rdata_reg <= aes_key[0][159:128];    // 0x14
+                5'd6:  rdata_reg <= aes_key[0][127: 96];    // 0x18
+                5'd7:  rdata_reg <= aes_key[0][ 95: 64];    // 0x1C
+                5'd8:  rdata_reg <= aes_key[0][ 63: 32];    // 0x20
+                5'd9:  rdata_reg <= aes_key[0][ 31:  0];    // 0x24
                 
                 5'd11: rdata_reg <= hash_digest[255:224];                                               // 0x2C
                 5'd12: rdata_reg <= hash_digest[223:192];                                               // 0x30
@@ -489,7 +484,7 @@ module security_core #(
     );
     
     // RNG
-    csprng rng(.clk(clk), .resetn(resetn), .enable_i(aes_enable), .reseed_i(aes_reseed), .valid_o(rng_valid), .z(z));
+    csprng rng(.clk(clk), .resetn(resetn), .enable_i(aes_enable), .valid_o(rng_valid), .z(z));
     dom_rng #(SHARES) dom(z, zm0, zm1, zm2, zi0, zi1, zi2);
     
     // SBOX

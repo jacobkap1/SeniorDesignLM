@@ -6,7 +6,7 @@ The 'open_project' command succeeded.
 Info: Programming is already enabled for device 'MPFS095T'.
 The 'enable_device' command succeeded.
 PPD file 'C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/designer/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT.ppd' has been loaded successfully.
-DESIGN : MPFS_DISCOVERY_KIT;  CHECKSUM : 7B61;  PDB_VERSION : 1.0
+DESIGN : MPFS_DISCOVERY_KIT;  CHECKSUM : FA7B;  PDB_VERSION : 1.0
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'E2009OS1XR' : Scan Chain...
@@ -22,14 +22,14 @@ programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT CRCERR[1] = 0
 programmer 'E2009OS1XR' : device 'MPFS095T' : Programming Mode: JTAG
 programmer 'E2009OS1XR' : device 'MPFS095T' : Programming FPGA Array, sNVM, and eNVM...
 programmer 'E2009OS1XR' : device 'MPFS095T' : Calculating component bitstream digests using programming file...
-programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT Fabric component bitstream digest[256] = 87e79995ffbba36dfa47e0aa2f60c9c00e97dc753880b3fc8853a3228a6912c3
+programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT Fabric component bitstream digest[256] = ceb88341f4bb2ab64deb7fc54380cdb7a5c0eebdf1d3de0643a8557885f52a7e
 programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT eNVM component bitstream digest[256] = d95779958854c43fab8cf9c48e2180a2f57cc7fadc6eff253255aa092ccbbf16
 programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT sNVM component bitstream digest[256] = b0a9e2be29f47fa951a6a131a8dd9a9016e5ba87de5833c742b7f654428ea6e7
-programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT Entire bitstream digest[256] = 9fb7aae3d44ccfc4481e99947d85e538b963e873831dc60b14457fbd1ae1dc96
+programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT Entire bitstream digest[256] = 3cc80eec166e42d3acfc47fd33f08bc9fd49295bb22461d9b52fe115447ccd64
 programmer 'E2009OS1XR' : device 'MPFS095T' : Reading digests for all the segments from the device...
-programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT CHECK FABRIC digest[256] = e65756fecf8d0afab613e93dff68f6d98a07334a24e310bb328df4ec9e891fef
-programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT CC digest[256] = 5eacdce359d86186397491515c5f492126035535d04bbc5f227a37a93bc4c75d
-programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT SNVM digest[256] = 826d0882d3529c5ede218630c79ccee72c404fc5cd2602819f76cfb85a3e7cd8
+programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT CHECK FABRIC digest[256] = 40e841c32cf19637a04f4fea4f62833451eef6bb43f6bab80608914d2ea9d9b8
+programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT CC digest[256] = 14d2d35243e8ccbbd7f294611aac704b71dab083ae9ba59e6062c34ac185393c
+programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT SNVM digest[256] = c843a61f68ef4b68264bff6945b323ae7c5b03f4931f0954be8d281286fd8781
 programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT UL digest[256] = cda0565eb6ac34d4410fcc8e69b568d1c4f7f809a16e106266163b28241892ba
 programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT UKDIGEST0 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
 programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT UKDIGEST1 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
@@ -49,10 +49,10 @@ programmer 'E2009OS1XR' : device 'MPFS095T' : Please refer to System Services Us
 programmer 'E2009OS1XR' : device 'MPFS095T' : ===================================================================================
 programmer 'E2009OS1XR' : device 'MPFS095T' : EXPORT DSN[128] = 0df260e0580c2a803d8a4c41fea8acb8
 programmer 'E2009OS1XR' : device 'MPFS095T' : ===================================================================================
-programmer 'E2009OS1XR' : Finished: Thu Apr  9 00:42:38 2026 (Elapsed time 00:00:46)
+programmer 'E2009OS1XR' : Finished: Sun Apr 12 02:48:57 2026 (Elapsed time 00:00:46)
 programmer 'E2009OS1XR' : device 'MPFS095T' : Executing action PROGRAM PASSED.
 programmer 'E2009OS1XR' : Chain programming PASSED.
-Chain Programming Finished: Thu Apr  9 00:42:38 2026 (Elapsed time 00:00:46)
+Chain Programming Finished: Sun Apr 12 02:48:57 2026 (Elapsed time 00:00:46)
 
                         o - o - o - o - o - o
 

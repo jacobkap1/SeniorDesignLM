@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Mar 20 22:11:32 2026
+// Created by SmartDesign Sat Apr 11 12:05:51 2026
 // Version: 2025.2 2025.2.0.14
 //////////////////////////////////////////////////////////////////////
 
@@ -10,7 +10,6 @@ module csprng(
     // Inputs
     clk,
     enable_i,
-    reseed_i,
     resetn,
     // Outputs
     valid_o,
@@ -22,7 +21,6 @@ module csprng(
 //--------------------------------------------------------------------
 input         clk;
 input         enable_i;
-input         reseed_i;
 input         resetn;
 //--------------------------------------------------------------------
 // Output
@@ -36,7 +34,6 @@ wire          clk;
 wire          enable_i;
 wire   [7:0]  neoTRNG_0_data_o;
 wire          neoTRNG_0_valid_o;
-wire          reseed_i;
 wire          resetn;
 wire          timer_0_out;
 wire   [63:0] trng_acc_0_seed_o;
@@ -84,7 +81,6 @@ trivium trivium_0(
         .enable_i ( timer_0_out ),
         .seed_i   ( trng_acc_0_seed_o ),
         .valid_i  ( trng_acc_0_valid_o ),
-        .reseed_i ( reseed_i ),
         // Outputs
         .z        ( z_net_0 ),
         .valid_o  ( valid_o_net_0 ) 
@@ -98,7 +94,6 @@ trng_acc trng_acc_0(
         .enable_i   ( timer_0_out ),
         .byte_i     ( neoTRNG_0_data_o ),
         .trng_valid ( neoTRNG_0_valid_o ),
-        .reseed_i   ( reseed_i ),
         // Outputs
         .seed_o     ( trng_acc_0_seed_o ),
         .valid_o    ( trng_acc_0_valid_o ) 

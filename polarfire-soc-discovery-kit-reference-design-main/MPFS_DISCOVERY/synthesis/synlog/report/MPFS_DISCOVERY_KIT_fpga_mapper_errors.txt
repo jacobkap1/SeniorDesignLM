@@ -1,2 +1,4 @@
+**** Begin Compile Point : FIC0_INITIATOR ****
+**** End Compile Point : FIC0_INITIATOR ****
 **** Begin Compile Point : MPFS_DISCOVERY_KIT ****
 **** End Compile Point : MPFS_DISCOVERY_KIT ****

@@ -4,7 +4,6 @@ module trng_acc(
     input  logic        enable_i,
     input  logic [7:0]  byte_i,
     input  logic        trng_valid,
-    input  logic        reseed_i,
 
     output logic [63:0] seed_o,
     output logic        valid_o
@@ -17,8 +16,6 @@ module trng_acc(
             count    = 3'd0;
             valid_o <= 1'b0;
         end else if (enable_i) begin
-            if (reseed_i) count = 3'd0;
-            
             if (trng_valid) begin
                 seed_o <= {seed_o[55:0], byte_i};
                 

@@ -1,5 +1,5 @@
 ;--------------------------------------------------------------------------------
-; Date:    Thu Apr  9 00:40:10 2026
+; Date:    Sun Apr 12 02:46:27 2026
 ; version: 2025.2 2025.2.0.14
 ; Design:  MPFS_DISCOVERY_KIT
 ; Family:  PolarFireSoC
@@ -26,38 +26,23 @@ Section PA5GENMASK_OVERRIDE.
 ; -------------------------------------
 
 Module  ICBMUXINGPC_SW_0                      728  1        858  1    ICBMUXING       .
-        BANKCLK_BRIDGING                      "10'h0"                  U. 
+        BANKCLK_BRIDGING                      "10'h101"                U. 
         BANKCLK_CCW_SOURCE_SEL                "30'h18C6318C"           D. 
-        BANKCLK_CW_SOURCE_SEL                 "30'h18C63061"           U. 
+        BANKCLK_CW_SOURCE_SEL                 "30'h18062581"           U. 
         BANK_OUT_CCW_SEL                      "6'h3F"                  D. 
-        BANK_OUT_CW_SEL                       "6'h3F"                  D. 
-        CLKSTOP_SOURCE_SEL                    "60'h300000008B000"      U. 
+        BANK_OUT_CW_SEL                       "6'h17"                  U. 
+        CLKSTOP_SOURCE_SEL                    "60'h300000008C840"      U. 
         DYNEN                                 "1'h1"                   D. 
         DYNEN_SOFT_RESET                      "1'h1"                   D. 
-        NMUX_SEL                              "72'hFC1FCBFC2FC6FFFFFF" U. 
+        NMUX_SEL                              "72'hFC1FFF1823CFFFFFFF" U. 
         SOFT_RESET                            "1'h0"                   D. 
         SOFT_RESET_PERIPH                     "1'h0"                   D. 
-        STOP_SEL                              "24'hF3FF0F"             U. 
-End_Module.
-
-Module  ICBMUXINGPC_SE_0                      1604 1        1665 2    ICBMUXING       .
-        BANKCLK_BRIDGING                      "10'h0"                  N. 
-        BANKCLK_CCW_SOURCE_SEL                "30'h18C63180"           U. 
-        BANKCLK_CW_SOURCE_SEL                 "30'h18C6318C"           D. 
-        BANK_OUT_CCW_SEL                      "6'h0"                   U. 
-        BANK_OUT_CW_SEL                       "6'h3F"                  D. 
-        CLKSTOP_SOURCE_SEL                    "60'h80"                 U. 
-        DYNEN                                 "1'h1"                   D. 
-        DYNEN_SOFT_RESET                      "1'h1"                   D. 
-        NMUX_SEL                              "72'hFFFFFF7FF7BFFFFFFF" U. 
-        SOFT_RESET                            "1'h0"                   D. 
-        SOFT_RESET_PERIPH                     "1'h0"                   D. 
-        STOP_SEL                              "24'hFFFFF3"             U. 
+        STOP_SEL                              "24'hF3FF03"             U. 
 End_Module.
 
 Module  LANECTRL_S_0                          71   3        58   6    LANECTRL        .
         CDR_CLK_DIV                           "3'h4"                   U. 
-        CDR_CLK_SEL                           "12'h1"                  U. 
+        CDR_CLK_SEL                           "12'h0"                  U. 
         CDR_EN                                "2'h1"                   U. 
         DIV_CLK_EN_SRC                        "2'h3"                   U. 
         DIV_CLK_SEL                           "2'h0"                   U. 
@@ -68,7 +53,7 @@ Module  LANECTRL_S_0                          71   3        58   6    LANECTRL  
         FIFO_MODE                             "1'h0"                   U. 
         FIFO_RD_PTR_MODE                      "3'h3"                   U. 
         HS_IO_CLK_PAUSE_EN                    "1'h1"                   U. 
-        HS_IO_CLK_SEL                         "9'h1C1"                 U. 
+        HS_IO_CLK_SEL                         "9'h1E0"                 U. 
         QDR_EN                                "1'h0"                   U. 
         RANK_2_MODE                           "1'h0"                   U. 
         READ_MARGIN_TEST_EN                   "1'h0"                   U. 
@@ -380,10 +365,10 @@ Module  ICBMUXINGPC_NE_0                      1604 217      1665 854  ICBMUXING 
         BANKCLK_CW_SOURCE_SEL                 "30'h18C6318C"           D. 
         BANK_OUT_CCW_SEL                      "6'h3F"                  D. 
         BANK_OUT_CW_SEL                       "6'h3F"                  D. 
-        CLKSTOP_SOURCE_SEL                    "60'h900000"             U. 
+        CLKSTOP_SOURCE_SEL                    "60'h1100000"            U. 
         DYNEN                                 "1'h1"                   D. 
         DYNEN_SOFT_RESET                      "1'h1"                   D. 
-        NMUX_SEL                              "72'hFFFFFFFFFFFFFFF6BF" U. 
+        NMUX_SEL                              "72'hFFFFFFFDAFFFFFFFFF" U. 
         SOFT_RESET                            "1'h0"                   D. 
         SOFT_RESET_PERIPH                     "1'h0"                   D. 
         STOP_SEL                              "24'hFFFCFF"             U. 
@@ -404,6 +389,21 @@ End_Module.
 ; -------------------------------------
 ; Unused modules. Default from DDF     
 ; -------------------------------------
+
+Module  ICBMUXINGPC_SE_0                      1604 1        1665 2    ICBMUXING       .
+        BANKCLK_BRIDGING                      "10'h0"                  N. 
+        BANKCLK_CCW_SOURCE_SEL                "30'h18C6318C"           D. 
+        BANKCLK_CW_SOURCE_SEL                 "30'h18C6318C"           D. 
+        BANK_OUT_CCW_SEL                      "6'h3F"                  D. 
+        BANK_OUT_CW_SEL                       "6'h3F"                  D. 
+        CLKSTOP_SOURCE_SEL                    "60'h0"                  D. 
+        DYNEN                                 "1'h1"                   D. 
+        DYNEN_SOFT_RESET                      "1'h1"                   D. 
+        NMUX_SEL                              "72'hffffffffffffffffff" D. 
+        SOFT_RESET                            "1'h0"                   D. 
+        SOFT_RESET_PERIPH                     "1'h0"                   D. 
+        STOP_SEL                              "24'hffffff"             D. 
+End_Module.
 
 Module  ICBMUXINGPC_E_0                       2036 1        2004 25   ICBMUXING       .
         BANKCLK_BRIDGING                      "10'h0"                  N. 

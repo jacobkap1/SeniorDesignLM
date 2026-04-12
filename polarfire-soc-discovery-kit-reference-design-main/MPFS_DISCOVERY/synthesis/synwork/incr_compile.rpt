@@ -13,189 +13,242 @@ Hostname: AXIIOMATIC-PC
 Implementation : synthesis
 Synopsys HDL compiler and linker, Version comp202503synp2, Build 183R, Built Nov 18 2025 09:08:11, @
 
-Modified Files: 2
+Modified Files: 5
 FID:  path (prevtimestamp, timestamp)
-321      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01)
-398      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17)
+321      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02)
+386      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v (2026-04-11 19:35:35, 2026-04-12 01:08:34)
+387      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09)
+470      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14)
+398      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 86
+Modules that may have changed as a result of file changes: 111
 MID:  lib.cell.view
 10       work.APBM.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 11       work.APBS.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 305      work.AXI4S_INITIATOR_MIPIRX.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 14       work.BANKCTRLM.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 15       work.BANKCTRL_GPIO.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 16       work.BANKCTRL_HSIO.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 17       work.BANKEN.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 18       work.CLKBUF_DIFF.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 19       work.CLKBUF_DIFF_ODT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 25       work.CORELNKTMR_V.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 29       work.CRN_COMMON.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 30       work.CRN_INT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 31       work.CRYPTO.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 32       work.CRYPTO_SOC.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 42       work.DEBUG.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 43       work.DLL.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 90       work.DRI.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 91       work.ENFORCE.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 98       work.GLITCHDETECT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 101      work.GPSS_COMMON.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 102      work.HS_IO_CLK.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 103      work.ICB_BANKCLK.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 104      work.ICB_CLKDIV.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 105      work.ICB_CLKDIVDELAY.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 106      work.ICB_CLKINT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 107      work.ICB_CLKSTOP.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 108      work.ICB_CLKSTOP_EN.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 109      work.ICB_INT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 110      work.ICB_MUXING.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 111      work.ICB_NGMUX.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 112      work.INIT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 115      work.IOD.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 116      work.LANECTRL.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 117      work.LANERST.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 118      work.MCHP_BLIC.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 133      work.OSC_RC160MHZ.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 134      work.OSC_RC200MHZ.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 135      work.OSC_RC2MHZ.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 136      work.PCIE.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 137      work.PCIE_COMMON.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 138      work.PFSOC_SCSM.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 141      work.PF_SPI.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 142      work.PLL.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 143      work.QUADRST.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 144      work.QUADRST_PCIE.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 147      work.SCB.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 149      work.SYSCTRL_RESET_STATUS.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 150      work.SYSRESET.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 151      work.SYS_SERVICES.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 152      work.TAMPER.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 153      work.TVS.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 154      work.TX_PLL.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 155      work.UPROM.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 156      work.USPI.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 157      work.VOLTAGEDETECT.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 158      work.VREFBANKDYN.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 159      work.VREFCTRL.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 160      work.XCVR.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 161      work.XCVR_64B6XB.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 162      work.XCVR_8B10B.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 163      work.XCVR_APB_LINK.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 164      work.XCVR_APB_LINK_V.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 165      work.XCVR_APB_LINK_V2.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 166      work.XCVR_DUAL_PCS.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 167      work.XCVR_PIPE.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 168      work.XCVR_PIPE_AXI0.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 169      work.XCVR_PIPE_AXI1.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 170      work.XCVR_PMA.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 171      work.XCVR_REF_CLK.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 172      work.XCVR_REF_CLK_N.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 173      work.XCVR_REF_CLK_P.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 174      work.XCVR_TEST.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
 175      work.XCVR_VV.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-08 20:23:05, 2026-04-08 23:24:01) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\syn_comps.v (2026-04-11 23:39:14, 2026-04-12 01:10:02) <-- (module definition)
+323      work.async_fifo_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
 324      work.axi4lite_adapter_mipi_csi_rx.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
+325      work.axi4lite_adapter_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+326      work.axi4lite_if_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+210      work.caxi4interconnect_FIFO.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v (2026-04-11 19:35:35, 2026-04-12 01:08:34) <-- (may instantiate this module)
+211      work.caxi4interconnect_FIFO_CTRL.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v (2026-04-11 19:35:35, 2026-04-12 01:08:34) <-- (may instantiate this module)
+223      work.caxi4interconnect_RAM_BLOCK.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v (2026-04-11 19:35:35, 2026-04-12 01:08:34) <-- (may instantiate this module)
+236      work.caxi4interconnect_SlvAxi4ProtConvAXI4ID.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v (2026-04-11 19:35:35, 2026-04-12 01:08:34) <-- (module definition)
+288      work.csprng.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09) <-- (module definition)
+334      work.data_packer_vdma.data_packer_vdma may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+339      work.ddr_write_controller_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+340      work.ddr_write_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
 341      work.interrupt_controller_mipi_csi_rx.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
+342      work.interrupt_controller_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
 343      work.mipi_csi2_rx_byte2pixel_conversion.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 344      work.mipi_csi2_rx_cdcfifo.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 345      work.mipi_csi2_rx_cdcfiforam.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 346      work.mipi_csi2_rx_crc_calc.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 347      work.mipi_csi2_rx_embsync_detect.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 348      work.mipi_csi2_rxdecoder.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 349      work.mipicsi2rxdecoderPF.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
 350      work.mipicsi2rxdecoderPF_C0.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (module definition)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (module definition)
 351      work.mipicsi2rxdecoderPF_native.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
+295      work.neotrng.neotrng_rtl may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09) <-- (may instantiate this module)
+297      work.neotrng_cell.neotrng_cell_rtl may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09) <-- (may instantiate this module)
+352      work.ram2port_async_fifo.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
 358      work.read_reg_mipi_csi_rx.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
+359      work.read_reg_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+363      work.synchronizer_circuit_2stage_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+301      work.timer.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09) <-- (may instantiate this module)
+302      work.trivium.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09) <-- (may instantiate this module)
+303      work.trng_acc.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-11 19:36:04, 2026-04-12 01:03:09) <-- (may instantiate this module)
+364      work.vdma_controller.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+365      work.vdma_dma_top.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (module definition)
+366      work.vdma_ip_reset.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
+367      work.vdma_write.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
 373      work.write_reg_mipi_csi_rx.verilog may have changed because the following files changed:
-                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-08 20:20:37, 2026-04-08 23:19:17) <-- (may instantiate this module)
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v (2026-04-11 23:29:04, 2026-04-12 01:08:48) <-- (may instantiate this module)
+374      work.write_reg_vdma.verilog may have changed because the following files changed:
+                        C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58, 2026-04-12 01:02:14) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 261
+Unmodified files: 258
 FID:  path (timestamp)
 216      C:\Microchip\Libero_SoC_2025.2\Libero_SoC\Synplify_Pro\lib\generic\acg5.v (2025-11-18 09:13:42)
 217      C:\Microchip\Libero_SoC_2025.2\Libero_SoC\Synplify_Pro\lib\vhd2008\arith.vhd (2025-11-18 11:58:26)
@@ -402,8 +455,6 @@ FID:  path (timestamp)
 383      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\DMA_CONTROLLER\DMA_CONTROLLER_0\rtl\vlog\core\coreaxi4dmacontroller_wr_tran_ctrl.v (2026-02-27 01:39:58)
 384      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\DMA_CONTROLLER\DMA_CONTROLLER_0\rtl\vlog\core\coreaxi4dmacontroller_wr_tran_queue.v (2026-02-27 01:39:58)
 385      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\DMA_INITIATOR\DMA_INITIATOR.v (2026-03-22 21:47:28)
-386      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v (2026-04-07 02:45:25)
-387      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v (2026-04-07 02:45:49)
 388      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_3_0x4000_0xxx\FIC_3_0x4000_0xxx.v (2026-02-26 22:55:23)
 389      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_3_0x4xxx_xxxx\FIC_3_0x4xxx_xxxx.v (2026-02-26 22:55:23)
 390      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\FIC_3_ADDRESS_GENERATION\FIC_3_ADDRESS_GENERATION.v (2026-02-26 22:55:23)
@@ -412,7 +463,6 @@ FID:  path (timestamp)
 393      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\GPIO\GPIO_0\rtl\vlog\core\coregpio.v (2026-02-26 22:55:23)
 394      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\INIT_MONITOR\INIT_MONITOR.v (2026-02-26 22:55:23)
 395      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\INIT_MONITOR\INIT_MONITOR_0\INIT_MONITOR_INIT_MONITOR_0_PFSOC_INIT_MONITOR.v (2026-02-26 22:55:23)
-470      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIPI_CAMERA\MIPI_CAMERA.v (2026-04-08 20:16:58)
 396      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIV_IHC_C0\MIV_IHC_C0.v (2026-02-26 22:55:23)
 397      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MIV_IHC_C0\MIV_IHC_C0_0\rtl\core\core_merged\miv_ihc_core_merged.v (2026-02-26 22:55:23)
 399      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\MPFS_DISCOVERY_KIT_MSS\MPFS_DISCOVERY_KIT_MSS.v (2026-02-26 22:55:23)
@@ -444,23 +494,23 @@ FID:  path (timestamp)
 414      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\SPI_FOR_7_SEG\SPI_FOR_7_SEG.v (2026-02-26 22:55:23)
 482      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\VDMA_C0\VDMA_C0.v (2026-04-08 01:26:30)
 415      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\corepwm_C0\corepwm_C0.v (2026-02-26 22:55:23)
-433      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\csprng\csprng.v (2026-03-20 22:11:32)
+433      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\csprng\csprng.v (2026-04-11 12:05:51)
 483      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\component\work\mipicsi2rxdecoderPF_C0\mipicsi2rxdecoderPF_C0.v (2026-04-08 15:54:39)
 416      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\APB_PASS_THROUGH.v (2026-02-26 22:55:23)
-417      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes256_dec.v (2026-04-04 16:48:52)
+417      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes256_dec.v (2026-04-11 01:33:58)
 418      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\aes_key_expansion.v (2026-04-04 16:01:13)
 419      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\apb_arbiter.v (2026-02-26 22:55:23)
 422      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\dom_rng.v (2026-02-26 22:55:23)
 426      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\neoTRNG.vhd (2026-02-26 22:55:23)
 427      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\sbox.v (2026-02-26 22:55:23)
-432      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\security_core.v (2026-04-05 02:20:07)
+432      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\security_core.v (2026-04-11 12:08:05)
 428      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\sha256.v (2026-04-04 14:50:16)
-429      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\timer.v (2026-03-12 01:42:17)
-430      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\trivium.v (2026-04-04 15:24:38)
-431      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\trng_acc.v (2026-04-04 15:24:15)
+429      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\timer.v (2026-04-11 23:36:07)
+430      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\trivium.v (2026-04-11 12:04:01)
+431      C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\hdl\trng_acc.v (2026-04-11 12:05:38)
 
 *******************************************************************
-Unchanged modules: 285
+Unchanged modules: 257
 MID:  lib.cell.view
 0        COREAPB3_LIB.COREAPB3_MUXPTOB3.verilog
 1        COREAPB3_LIB.CoreAPB3.verilog
@@ -589,9 +639,6 @@ MID:  lib.cell.view
 322      work.VDMA_C0.verilog
 286      work.aes256_dec.verilog
 287      work.aes256_key_expansion.verilog
-323      work.async_fifo_vdma.verilog
-325      work.axi4lite_adapter_vdma.verilog
-326      work.axi4lite_if_vdma.verilog
 176      work.caxi4interconnect_AHB_SM_Undefburst.verilog
 177      work.caxi4interconnect_AddressController.verilog
 178      work.caxi4interconnect_Axi4CrossBar.verilog
@@ -626,8 +673,6 @@ MID:  lib.cell.view
 207      work.caxi4interconnect_DownConverter.verilog
 208      work.caxi4interconnect_DualPort_FF_SyncWr_SyncRd.verilog
 209      work.caxi4interconnect_DualPort_RAM_SyncWr_SyncRd.verilog
-210      work.caxi4interconnect_FIFO.verilog
-211      work.caxi4interconnect_FIFO_CTRL.verilog
 212      work.caxi4interconnect_FIFO_downsizing.verilog
 213      work.caxi4interconnect_FIFO_upsizing.verilog
 214      work.caxi4interconnect_FifoDualPort.verilog
@@ -639,7 +684,6 @@ MID:  lib.cell.view
 220      work.caxi4interconnect_MstrClockDomainCrossing.verilog
 221      work.caxi4interconnect_MstrDataWidthConv.verilog
 222      work.caxi4interconnect_MstrProtocolConverter.verilog
-223      work.caxi4interconnect_RAM_BLOCK.verilog
 224      work.caxi4interconnect_RDataController.verilog
 225      work.caxi4interconnect_RdFifoDualPort.verilog
 226      work.caxi4interconnect_ReadDataController.verilog
@@ -652,7 +696,6 @@ MID:  lib.cell.view
 233      work.caxi4interconnect_RoundRobinArb.verilog
 234      work.caxi4interconnect_SlaveConvertor.verilog
 235      work.caxi4interconnect_SlaveDataMuxController.verilog
-236      work.caxi4interconnect_SlvAxi4ProtConvAXI4ID.verilog
 237      work.caxi4interconnect_SlvAxi4ProtConvRead.verilog
 238      work.caxi4interconnect_SlvAxi4ProtConvWrite.verilog
 239      work.caxi4interconnect_SlvAxi4ProtocolConv.verilog
@@ -679,16 +722,10 @@ MID:  lib.cell.view
 253      work.corepwm_reg_if.verilog
 254      work.corepwm_tach_if.verilog
 255      work.corepwm_timebase.verilog
-288      work.csprng.verilog
-334      work.data_packer_vdma.data_packer_vdma
-335      work.data_packer_vdma.vhdl
 336      work.ddr_axi4_arbiter_native_vdma.verilog
 337      work.ddr_axi4_arbiter_vdma.verilog
 338      work.ddr_rw_arbiter_vdma.verilog
-339      work.ddr_write_controller_vdma.verilog
-340      work.ddr_write_vdma.verilog
 290      work.dom_rng.verilog
-342      work.interrupt_controller_vdma.verilog
 256      work.miv_ihc_address_controller.verilog
 257      work.miv_ihc_apb_arbiter_2.verilog
 258      work.miv_ihc_apb_arbiter_3.verilog
@@ -715,35 +752,20 @@ MID:  lib.cell.view
 279      work.miv_ihc_interrupt_module.verilog
 280      work.miv_ihc_mailbox_address_decoder.verilog
 281      work.miv_ihc_ram_singleport_addreg.verilog
-295      work.neotrng.neotrng_rtl
-296      work.neotrng.vhdl
-297      work.neotrng_cell.neotrng_cell_rtl
-298      work.neotrng_cell.vhdl
-352      work.ram2port_async_fifo.verilog
 353      work.ram_wrapper_vdma.verilog
 354      work.read_demux_vdma.read_demux_vdma
 355      work.read_demux_vdma.vhdl
 356      work.read_mux_vdma.read_mux_vdma
 357      work.read_mux_vdma.vhdl
-359      work.read_reg_vdma.verilog
 360      work.read_top_vdma.verilog
 361      work.request_scheduler_vdma.request_scheduler_vdma
 362      work.request_scheduler_vdma.vhdl
 299      work.sbox.verilog
 304      work.security_core.verilog
 300      work.sha256.verilog
-363      work.synchronizer_circuit_2stage_vdma.verilog
-301      work.timer.verilog
-302      work.trivium.verilog
-303      work.trng_acc.verilog
-364      work.vdma_controller.verilog
-365      work.vdma_dma_top.verilog
-366      work.vdma_ip_reset.verilog
-367      work.vdma_write.verilog
 368      work.video_axi_fifo_vdma.verilog
 369      work.write_demux_vdma.vhdl
 370      work.write_demux_vdma.write_demux_vdma
 371      work.write_mux_vdma.vhdl
 372      work.write_mux_vdma.write_mux_vdma
-374      work.write_reg_vdma.verilog
 375      work.write_top_vdma.verilog

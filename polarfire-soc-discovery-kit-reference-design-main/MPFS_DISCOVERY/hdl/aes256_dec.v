@@ -336,6 +336,7 @@ module aes256_dec #(
                     
                     if (end_seen || end_i) begin
                         end_seen <= 1'b0;
+                        w        <= '{default:'{default:128'd0}};
                         t        <= 4'b0;
                         state    <= LOAD_W;
                     end else begin
@@ -355,6 +356,7 @@ module aes256_dec #(
                         state <= FIRST;
                     end else if (end_seen || end_i) begin
                         end_seen <= 1'b0;
+                        w        <= '{default:'{default:128'd0}};
                         t        <= 4'b0;
                         state    <= LOAD_W;
                     end

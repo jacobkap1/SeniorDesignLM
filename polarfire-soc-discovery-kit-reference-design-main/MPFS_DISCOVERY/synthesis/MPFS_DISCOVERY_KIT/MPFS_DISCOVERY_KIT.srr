@@ -1,4 +1,4 @@
-# Wed Apr  8 23:26:42 2026
+# Sun Apr 12 01:14:31 2026
 
 
 Copyright (C) 1994-2025 Synopsys, Inc.
@@ -22,27 +22,26 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 207MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 207MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 207MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 207MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 207MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 207MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 207MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 196MB peak: 207MB)
 
 
 @N: MF104 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\fic0_initiator\fic0_initiator.v":1476:7:1476:20|Found compile point of type hard on View view:work.FIC0_INITIATOR(verilog) 
 @N: MF104 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes_key_expansion.v":1:7:1:26|Found compile point of type hard on View view:work.aes256_key_expansion_3s_75_layer0(verilog) 
 @N: MF104 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":1:7:1:16|Found compile point of type hard on View view:work.aes256_dec_3s_76_layer0(verilog) 
-@N: MF104 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\security_core.v":1:7:1:19|Found compile point of type hard on View view:work.security_core_3s_2s_5s(verilog) 
 
 
 @N: MF105 |Performing bottom-up mapping of Top level view:work.MPFS_DISCOVERY_KIT(verilog) 
 
-Start loading ILMs (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 416MB peak: 416MB)
+Start loading ILMs (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 415MB peak: 415MB)
 
 
 Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
@@ -52,24 +51,30 @@ Start creating ILM for FPGA FIC0_INITIATOR (Real Time elapsed 0h:00m:02s; CPU Ti
 
 Finished creating ILM for FPGA FIC0_INITIATOR (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 439MB peak: 439MB)
 
-@W: BN114 :|Removing instance CP_fanout_cell_security_core_3s_2s_5s_verilog_inst (in view: work.security_core_3s_2s_5s_rtl_ilm(verilog)) because it does not drive other instances.
 
-Start creating ILM for FPGA security_core_3s_2s_5s (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 408MB peak: 440MB)
-
-
-Finished creating ILM for FPGA security_core_3s_2s_5s (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 409MB peak: 440MB)
+Start creating ILM for FPGA aes256_key_expansion_3s_75_layer0 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 395MB peak: 440MB)
 
 
-Finished loading ILMs (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 377MB peak: 440MB)
+Finished creating ILM for FPGA aes256_key_expansion_3s_75_layer0 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 395MB peak: 440MB)
+
+@W: BN114 :|Removing instance CP_fanout_cell_aes256_dec_3s_76_layer0_verilog_inst (in view: work.aes256_dec_3s_76_layer0_rtl_ilm(verilog)) because it does not drive other instances.
+
+Start creating ILM for FPGA aes256_dec_3s_76_layer0 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 400MB peak: 440MB)
+
+
+Finished creating ILM for FPGA aes256_dec_3s_76_layer0 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 401MB peak: 440MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 400MB peak: 440MB)
 
 
 Begin compile point sub-process log
 
 @N: MF106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\mpfs_discovery_kit\mpfs_discovery_kit.v":9:7:9:24|Mapping Top level view:work.MPFS_DISCOVERY_KIT(verilog) because 
-		 Interface of Compile Point has changed.
+		 Interface of a contained Compile Point has changed.
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 377MB peak: 440MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 400MB peak: 440MB)
 
 @N: MO111 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_x_ctrl.v":125:32:125:45|Tristate driver fifoFullQueueX (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_interrupt_x_ctrl_1s_0s_27s_0s_0_1(verilog)) on net fifoFullQueueX (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_interrupt_x_ctrl_1s_0s_27s_0s_0_1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_controller.v":125:32:125:35|Tristate driver int3 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10_layer0(verilog)) on net int3 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_intController_Z10_layer0(verilog)) has its enable tied to GND.
@@ -91,6 +96,46 @@ Dissolving instances under view:work.caxi4interconnect_RegisterSlice_1_1_1_1_1_8
 @N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_buffer_descriptors.v":208:23:239:25|Found ROM un402_ctrlAddrDec[1:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_bufferDescriptors_Z1_layer0(verilog)) with 62 words by 2 bits.
 @N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1975:8:1975:11|ROM AXI4RdTransDone_1 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11_layer0(verilog)) mapped in logic.
 @N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_axi4_initiator_ctrl.v":1975:8:1975:11|Found ROM AXI4RdTransDone_1 (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4INITIATORDMACtrl_Z11_layer0(verilog)) with 9 words by 1 bit.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":170:41:170:49|ROM _l0\.ROUND_0\.Ki_2[31:0] (in view: work.sha256(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":170:41:170:49|Found ROM _l0\.ROUND_0\.Ki_2[31:0] (in view: work.sha256(verilog)) with 32 words by 32 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":170:41:170:49|ROM _l1\.ROUND_1\.Ki_4[31:0] (in view: work.sha256(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":170:41:170:49|Found ROM _l1\.ROUND_1\.Ki_4[31:0] (in view: work.sha256(verilog)) with 32 words by 32 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un142_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un151_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un160_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un169_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un318_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un327_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un336_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un345_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un494_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un503_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un512_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un521_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un142_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|Found ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un142_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un151_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|Found ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un151_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un160_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|Found ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un160_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un169_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|Found ROM _l0\.InvShiftRows_3\.InvMixColumns_0_l3\.un169_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un318_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|Found ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un318_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un327_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|Found ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un327_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un336_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|Found ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un336_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un345_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|Found ROM _l1\.InvShiftRows_4\.InvMixColumns_1_l3\.un345_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un494_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":131:22:131:34|Found ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un494_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un503_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":132:22:132:34|Found ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un503_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un512_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":133:22:133:34|Found ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un512_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
+@N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un521_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) mapped in logic.
+@N: MO106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\aes256_dec.v":134:22:134:34|Found ROM _l2\.InvShiftRows_5\.InvMixColumns_2_l3\.un521_st[7:0] (in view: work.aes256_dec_3s_76_layer0(verilog)) with 256 words by 8 bits.
 @N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreapb3\4.2.100\rtl\vlog\core\coreapb3.v":267:2:267:5|ROM FIC_3_0x4000_0xxx_0.FIC_3_0x4000_0xxx_0.iPSELS_raw_5[4:0] (in view: work.FIC_3_ADDRESS_GENERATION(verilog)) mapped in logic.
 @N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreapb3\4.2.100\rtl\vlog\core\coreapb3.v":267:2:267:5|ROM FIC_3_0x4xxx_xxxx_0.FIC_3_0x4xxx_xxxx_0.iPSELS_raw_2[2:0] (in view: work.FIC_3_ADDRESS_GENERATION(verilog)) mapped in logic.
 @N: BZ173 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreapb3\4.2.100\rtl\vlog\core\coreapb3.v":267:2:267:5|ROM FIC_3_0x4000_0xxx_0.FIC_3_0x4000_0xxx_0.iPSELS_raw_5[4:0] (in view: work.FIC_3_ADDRESS_GENERATION(verilog)) mapped in logic.
@@ -122,24 +167,25 @@ Dissolving instances under view:work.caxi4interconnect_RegisterSlice_1_1_1_1_1_8
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_wr_tran_queue.v":290:0:290:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.wrTranQueue_inst.priLvl_wrTranQueue1[0] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.rdTranQueue_inst.priLvl_rdTranQueue1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_wr_tran_queue.v":290:0:290:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.wrTranQueue_inst.dataValid_wrTranQueue1 because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.rdTranQueue_inst.dataValid_rdTranQueue1. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_wr_tran_queue.v":245:0:245:5|Removing sequential instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.wrTranQueue_inst.priLvl_wrTranQueue0[0] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.rdTranQueue_inst.priLvl_rdTranQueue0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":474:16:474:45|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_both_28[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg_28[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":471:0:471:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_both_33[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg_33[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":451:0:451:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[5].APB_32.edge_neg_46[5] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[5].APB_32.edge_pos_46[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":444:0:444:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[5].APB_32.edge_neg[5] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[5].APB_32.edge_pos[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":474:16:474:45|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_both_28[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg_28[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":464:0:464:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_both[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":474:16:474:45|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_both_54[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg_54[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":471:0:471:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_both_33[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg_33[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":464:0:464:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[5].APB_32.edge_both[5] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[5].APB_32.edge_pos[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":471:0:471:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_both_59[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg_59[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":451:0:451:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg_33[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_pos_33[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":451:0:451:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg_59[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_pos_59[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":424:0:424:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_pos[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":464:0:464:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_both[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":464:0:464:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_both[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":424:0:424:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_pos[4] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[4].APB_32.edge_neg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":451:0:451:1|Removing user instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg_59[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_pos_59[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\gpio\gpio_0\rtl\vlog\core\coregpio.v":424:0:424:5|Removing sequential instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_pos[6] because it is equivalent to instance FIC_3_PERIPHERALS_0.COREGPIO_C0.GPIO_0.xhdl1.GEN_BITS[6].APB_32.edge_neg[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MF135 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_dma_tran_ctrl.v":907:0:907:5|RAM FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.numOfBytesInRdReg\[0\][10:0] is 2 words by 11 bits.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 395MB peak: 440MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 406MB peak: 440MB)
 
 
-Starting area decomp  (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 395MB peak: 440MB)
+Starting area decomp  (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 406MB peak: 440MB)
 
 @N: MF135 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_dma_tran_ctrl.v":907:0:907:5|RAM FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.numOfBytesInRdReg\[0\][10:0] is 2 words by 11 bits.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_wr_tran_queue.v":245:0:245:5|Removing instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.wrTranQueue_inst.nxtDscrptrNumAddr_WrTranQueue0[0] because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_CONTROLLER_inst_0.DMA_CONTROLLER_0.U_DMAController.DMATranCtrl.rdTranQueue_inst.nxtDscrptrNumAddr_rdTranQueue0[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -467,6 +513,16 @@ original code -> new code
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|Removing instance FIC_0_PERIPHERALS_0.DMA_INITIATOR_inst_0.DMA_INITIATOR_0.SlvConvertor_loop[0].slvcnv.rgsl.genblk5.brs.sValid because it is equivalent to instance FIC_0_PERIPHERALS_0.DMA_INITIATOR_inst_0.DMA_INITIATOR_0.SlvConvertor_loop[0].slvcnv.rgsl.genblk5.brs.currState[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":96:0:96:5|Found counter in view:work.caxi4interconnect_FIFO_CTRL_256s_255s_0s_8s_256s_0s_MPFS_DISCOVERY_KIT(verilog) instance rdptr[7:0] 
 @N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":96:0:96:5|Found counter in view:work.caxi4interconnect_FIFO_CTRL_256s_255s_0s_8s_256s_0s_MPFS_DISCOVERY_KIT(verilog) instance wrptr[7:0] 
+Encoding state machine FIC0_INITIATOR_0.SlvConvertor_loop\[4\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCWr.currStateAWr[1:0] (in view: work.FIC0_INITIATOR(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvwrite.v":426:1:426:6|There are no possible illegal states for state machine FIC0_INITIATOR_0.SlvConvertor_loop\[4\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCWr.currStateAWr[1:0] (in view: work.FIC0_INITIATOR(verilog)); safe FSM implementation is not required.
+Encoding state machine FIC0_INITIATOR_0.SlvConvertor_loop\[4\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCRd.currStateARd[1:0] (in view: work.FIC0_INITIATOR(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvread.v":343:1:343:6|There are no possible illegal states for state machine FIC0_INITIATOR_0.SlvConvertor_loop\[4\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCRd.currStateARd[1:0] (in view: work.FIC0_INITIATOR(verilog)); safe FSM implementation is not required.
 Encoding state machine FIC0_INITIATOR_0.SlvConvertor_loop\[0\]\.slvcnv.slvProtConv.genblk1\.u_AXILtePC.SlvPCWr.currStateAWr[1:0] (in view: work.FIC0_INITIATOR(verilog))
 original code -> new code
    00 -> 0
@@ -495,6 +551,24 @@ original code -> new code
 @N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\mss_lsram\coreaxi4sram_0\rtl\vlog\core\coreaxi4sram_mainctrl.v":1968:6:1968:11|Found counter in view:work.MSS_LSRAM_COREAXI4SRAM_0_CoreAXI4SRAM_MAINCTRL_Z74_layer0(verilog) instance genblk2\.rdbeat_cnt[8:0] 
 @N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\mss_lsram\coreaxi4sram_0\rtl\vlog\core\coreaxi4sram_mainctrl.v":1636:8:1636:13|Found counter in view:work.MSS_LSRAM_COREAXI4SRAM_0_CoreAXI4SRAM_MAINCTRL_Z74_layer0(verilog) instance genblk2\.genblk2\.ram_rdreq_cntr[8:0] 
 @N: MF179 :|Found 9 by 9 bit equality operator ('==') genblk2\.genblk2\.ren_sc8 (in view: work.MSS_LSRAM_COREAXI4SRAM_0_CoreAXI4SRAM_MAINCTRL_Z74_layer0(verilog))
+Encoding state machine state[3:0] (in view: work.sha256(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":179:4:179:12|There are no possible illegal states for state machine state[3:0] (in view: work.sha256(verilog)); safe FSM implementation is not required.
+Multibit Mux Optimization Enabled. 
+@N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":179:4:179:12|Found counter in view:work.sha256(verilog) instance t[5:1] 
+@N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\trivium.v":42:4:42:12|Found counter in view:work.trivium(verilog) instance t[4:0] 
+@N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\neotrng.vhd":191:4:191:5|Found counter in view:work.neoTRNG(neotrng_rtl) instance sample_cnt[6:0] 
+Encoding state machine state[4:0] (in view: work.aes256_key_expansion_3s_75_layer0(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
 Encoding state machine rx_state[3:0] (in view: work.CoreUARTapb_C0_CoreUARTapb_C0_0_COREUART_1s_1s_0s_27s_0s_0s(verilog))
 original code -> new code
    00 -> 00
@@ -758,10 +832,10 @@ original code -> new code
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":168:4:168:5|Removing instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.WRITE_FIFO_PROC.s_fifo_6[1] because it is equivalent to instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.WRITE_FIFO_PROC.s_fifo_6[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":250:4:250:5|Removing instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.mux_sel_o[2] because it is equivalent to instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.mux_sel_o[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":250:4:250:5|Removing instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.mux_sel_o[1] because it is equivalent to instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.mux_sel_o[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":168:4:168:5|Removing instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.WRITE_FIFO_PROC.s_fifo_6[3] because it is equivalent to instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.WRITE_FIFO_PROC.s_fifo_6[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 Only the first 100 messages of id 'BN132' are reported. To see all messages use 'report_messages -log C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.srr -id BN132' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN132} -count unlimited' in the Tcl shell.
 @W: FX107 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\async_fifo_vdma.v":452:0:452:5|RAM RAM2PORT_ASYNC_FIFO_INST.ram[31:0] (in view: work.async_fifo_vdma_5s_32s_31s_10s_16s_1(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\async_fifo_vdma.v":452:0:452:5|RAM RAM2PORT_ASYNC_FIFO_INST.ram[28:0] (in view: work.async_fifo_vdma_5s_32s_31s_10s_16s_0(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 Encoding state machine r_state[3:0] (in view: work.vdma_controller(verilog))
 original code -> new code
    00 -> 00
@@ -779,10 +853,10 @@ original code -> new code
    10 -> 10
 @N: MO231 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\ddr_write_controller_vdma.v":115:3:115:8|Found counter in view:work.ddr_write_controller_vdma(verilog) instance s_counter[8:0] 
 
-Finished area decomp  (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:33s; Memory used current: 423MB peak: 440MB)
+Finished area decomp  (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:39s; Memory used current: 479MB peak: 479MB)
 
 
-Starting factoring (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:33s; Memory used current: 423MB peak: 440MB)
+Starting factoring (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:40s; Memory used current: 479MB peak: 480MB)
 
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_dscrptr_src_mux.v":400:0:400:5|Removing sequential instance U_DMAController.dscrptrSrcMux_inst.strDscrptr_intStatusMux (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACONTROLLER_Z12_layer0(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\dma_controller\dma_controller_0\rtl\vlog\core\coreaxi4dmacontroller_int_error_ctrl_fsm.v":634:0:634:5|Removing sequential instance U_DMAController.DMATranCtrl.intErrorCtrl_inst.currState[13] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_COREAXI4DMACONTROLLER_Z12_layer0(verilog)) because it does not drive other instances.
@@ -805,7 +879,7 @@ Starting factoring (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:33s; M
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\ddr_rw_arbiter_vdma.v":449:1:449:6|Removing sequential instance ddr_axi4_arbiter_vdma_0.genblk1\.ddr_axi4_arbiter_native_vdma_0.ddr_rw_arbiter_vdma_0.rack_o (in view: work.VDMA_16s(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\ddr_rw_arbiter_vdma.v":449:1:449:6|Removing sequential instance ddr_axi4_arbiter_vdma_0.genblk1\.ddr_axi4_arbiter_native_vdma_0.ddr_rw_arbiter_vdma_0.arvalid (in view: work.VDMA_16s(verilog)) because it does not drive other instances.
 
-Finished factoring (Real Time elapsed 0h:00m:38s; CPU Time elapsed 0h:00m:37s; Memory used current: 485MB peak: 513MB)
+Finished factoring (Real Time elapsed 0h:00m:50s; CPU Time elapsed 0h:00m:49s; Memory used current: 548MB peak: 548MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -855,28 +929,48 @@ NConnInternalConnection caching is on
 
 Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:42s; Memory used current: 461MB peak: 522MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:00m:58s; Memory used current: 531MB peak: 611MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:48s; CPU Time elapsed 0h:00m:46s; Memory used current: 464MB peak: 522MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:01m:10s; CPU Time elapsed 0h:01m:07s; Memory used current: 532MB peak: 611MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:54s; CPU Time elapsed 0h:00m:52s; Memory used current: 464MB peak: 522MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:23s; CPU Time elapsed 0h:01m:20s; Memory used current: 532MB peak: 611MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:53s; Memory used current: 464MB peak: 522MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:25s; CPU Time elapsed 0h:01m:22s; Memory used current: 532MB peak: 611MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:00m:58s; Memory used current: 465MB peak: 522MB)
+Finished preparing to map (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:32s; Memory used current: 519MB peak: 611MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:01m:03s; CPU Time elapsed 0h:01m:01s; Memory used current: 536MB peak: 546MB)
+Finished technology mapping (Real Time elapsed 0h:01m:43s; CPU Time elapsed 0h:01m:39s; Memory used current: 624MB peak: 624MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:01m:02s		     0.45ns		16289 /      8993
-   2		0h:01m:03s		     0.45ns		16172 /      8993
-@N: FP130 |Promoting Net FIC_0_PERIPHERALS_0.security_core_0.dff_arst_i on CLKINT  I_13674 
+   1		0h:01m:42s		    -3.98ns		23839 /     19383
+   2		0h:01m:46s		    -3.65ns		23142 /     19383
+   3		0h:01m:47s		    -3.30ns		23142 /     19383
+   4		0h:01m:48s		    -3.30ns		23142 /     19383
+@N: FX271 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":179:4:179:12|Replicating instance FIC_0_PERIPHERALS_0.security_core_0.hash_core.t[1] (in view: work.MPFS_DISCOVERY_KIT(verilog)) with 5 loads 1 time to improve timing.
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+   5		0h:01m:52s		    -3.27ns		23141 /     19384
+   6		0h:01m:52s		    -3.13ns		23142 /     19384
+   7		0h:01m:53s		    -2.98ns		23142 /     19384
+   8		0h:01m:53s		    -2.99ns		23144 /     19384
+   9		0h:01m:53s		    -2.72ns		23144 /     19384
+  10		0h:01m:53s		    -2.68ns		23144 /     19384
+@N: FX271 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\sha256.v":179:4:179:12|Replicating instance FIC_0_PERIPHERALS_0.security_core_0.hash_core.t[2] (in view: work.MPFS_DISCOVERY_KIT(verilog)) with 4 loads 1 time to improve timing.
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+  11		0h:01m:56s		    -2.68ns		23144 /     19385
+@N: FP130 |Promoting Net FIC_0_PERIPHERALS_0.security_core_0.key_expansion.dff_arst_i on CLKINT  I_7410 
 
 Added 0 Buffers
 Added 0 Cells via replication
@@ -903,10 +997,10 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:09s; Memory used current: 543MB peak: 546MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:02m:09s; CPU Time elapsed 0h:02m:05s; Memory used current: 644MB peak: 644MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:01m:12s; CPU Time elapsed 0h:01m:09s; Memory used current: 545MB peak: 548MB)
+Finished restoring hierarchy (Real Time elapsed 0h:02m:10s; CPU Time elapsed 0h:02m:06s; Memory used current: 648MB peak: 654MB)
 
 
 End compile point sub-process log
@@ -915,12 +1009,12 @@ Writing compile point status file C:\Users\Danug\Documents\Code\SecureVISION-pol
 
 Summary of Compile Points :
 *************************** 
-Name                   Status       Reason                            
-----------------------------------------------------------------------
-MPFS_DISCOVERY_KIT     Remapped     Interface of Compile Point changed
-======================================================================
+Name                   Status       Reason                                        
+----------------------------------------------------------------------------------
+MPFS_DISCOVERY_KIT     Remapped     Interface of a contained Compile Point changed
+==================================================================================
 
-Process took 0h:01m:12s realtime, 0h:01m:10s cputime
-# Wed Apr  8 23:27:54 2026
+Process took 0h:02m:12s realtime, 0h:02m:08s cputime
+# Sun Apr 12 01:16:43 2026
 
 ###########################################################]

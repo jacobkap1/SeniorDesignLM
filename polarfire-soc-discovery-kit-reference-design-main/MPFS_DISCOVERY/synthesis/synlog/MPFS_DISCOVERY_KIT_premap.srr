@@ -1,4 +1,4 @@
-# Wed Apr  8 23:26:15 2026
+# Sun Apr 12 01:13:55 2026
 
 
 Copyright (C) 1994-2025 Synopsys, Inc.
@@ -29,10 +29,10 @@ See clock summary report "C:\Users\Danug\Documents\Code\SecureVISION-polarfire-r
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 476MB peak: 476MB)
+Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 480MB peak: 480MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 476MB peak: 477MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 480MB peak: 481MB)
 
 @W: BN108 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":21:7:21:38|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_9s_38s_64s_0s_1s.
 @W: BN108 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":21:7:21:38|syn_hier attribute not currently supported on instances slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z58_layer0.
@@ -79,10 +79,10 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0
 @W: BN108 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":21:7:21:39|syn_hier attribute not currently supported on instances mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_Z15_layer0.
 @W: BN108 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":21:7:21:39|syn_hier attribute not currently supported on instances mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_Z18_layer0.
 
-Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 489MB peak: 489MB)
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 500MB peak: 500MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 489MB peak: 491MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 500MB peak: 502MB)
 
 NConnInternalConnection caching is on
 
@@ -159,13 +159,13 @@ Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic.
 
 Only the first 100 messages of id 'BN108' are reported. To see all messages use 'report_messages -log C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\synlog\MPFS_DISCOVERY_KIT_premap.srr -id BN108' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN108} -count unlimited' in the Tcl shell.
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 584MB peak: 584MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 591MB peak: 591MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 584MB peak: 585MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 591MB peak: 592MB)
 
 
-Start optimization across hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 585MB peak: 585MB)
+Start optimization across hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 592MB peak: 592MB)
 
 @N: MO111 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\pf_iod_generic_rx_c0_tr\pf_iod_generic_rx_c0_tr_0\rtl\vlog\core\corebclksclkalign.v":83:11:83:31|Tristate driver PLL_VCOPHSEL_SCLK_SEL (in view: work.PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN_Z106_layer0(verilog)) on net PLL_VCOPHSEL_SCLK_SEL (in view: work.PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN_Z106_layer0(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\pf_iod_generic_rx_c0_tr\pf_iod_generic_rx_c0_tr_0\rtl\vlog\core\corebclksclkalign.v":86:11:86:31|Tristate driver PLL_VCOPHSEL_MCLK_SEL (in view: work.PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN_Z106_layer0(verilog)) on net PLL_VCOPHSEL_MCLK_SEL (in view: work.PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN_Z106_layer0(verilog)) has its enable tied to GND.
@@ -204,22 +204,6 @@ Start optimization across hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elap
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\async_fifo_vdma.v":258:0:258:5|Removing sequential instance fifo_hempty (in view: work.async_fifo_vdma_5s_32s_31s_10s_16s_1(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\async_fifo_vdma.v":219:0:219:5|Removing sequential instance rdata_count[4:0] (in view: work.async_fifo_vdma_5s_32s_31s_10s_16s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\interrupt_controller_vdma.v":160:3:160:8|Removing sequential instance interrupt_overflow_o[4:0] (in view: work.interrupt_controller_vdma(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":254:3:254:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.axi4lite_adapter_vdma_0.mem_rd_req is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":239:3:239:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.axi4lite_adapter_vdma_0.arready is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":164:3:164:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.axi4lite_adapter_vdma_0.awready is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":220:3:220:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.axi4lite_adapter_vdma_0.bvalid is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":194:3:194:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.axi4lite_adapter_vdma_0.wready is reduced to a combinational gate by constant propagation.
-@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":280:3:280:8|Removing sequential instance rvalid (in view: work.axi4lite_adapter_vdma(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":95:25:95:47|Removing instance axi4lite_adapter_vdma_0 (in view: work.axi4lite_if_vdma(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":508:3:508:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.read_reg_vdma_0.mem_rd_data_valid is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":483:3:483:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.read_reg_vdma_0.frame_size_fifo_ren is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":522:3:522:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.read_reg_vdma_0.mem_rd_data[8] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":522:3:522:8|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.dma_top_0.axi4lite_regmap_vdma_0.read_reg_vdma_0.mem_rd_data[16] is reduced to a combinational gate by constant propagation.
-@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\axi4lite_if_vdma.v":498:3:498:8|Removing sequential instance r_frame_size[31:3] (in view: work.read_reg_vdma(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\async_fifo_vdma.v":390:4:390:27|Removing instance RAM2PORT_ASYNC_FIFO_INST (in view: work.async_fifo_vdma_5s_32s_31s_10s_16s_0(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\ddr_write_controller_vdma.v":237:3:237:8|Removing sequential instance frame_size_fifo_data_1[31:3] (in view: work.ddr_write_controller_vdma(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\ddr_write_controller_vdma.v":192:3:192:8|Removing sequential instance frm_sz_vld (in view: work.ddr_write_controller_vdma(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\interrupt_controller_vdma.v":102:3:102:8|Removing sequential instance status_reg_o[4:0] (in view: work.interrupt_controller_vdma(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":141:4:141:5|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.s_req1_dly is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":141:4:141:5|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.s_req2_dly is reduced to a combinational gate by constant propagation.
 @W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\microchip\solutioncore\vdma\1.1.0\rtl\request_scheduler_vdma.vhd":141:4:141:5|Sequential instance MIPI_CAMERA_0.VDMA_C0_0.VDMA_C0_0.ddr_axi4_arbiter_vdma_0.genblk1.ddr_axi4_arbiter_native_vdma_0.write_top_vdma_0.request_scheduler_vdma_0.s_req3_dly is reduced to a combinational gate by constant propagation.
@@ -257,7 +241,7 @@ Start optimization across hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elap
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\mss_lsram\coreaxi4sram_0\rtl\vlog\core\coreaxi4sram_slvif.v":221:2:221:7|Removing sequential instance ARBURST_slvif[1:0] (in view: work.MSS_LSRAM_COREAXI4SRAM_0_CoreAXI4SRAM_SLVIF_64s_32s_1s_1s_1s_2048s_1s_8s_0s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\mss_lsram\coreaxi4sram_0\rtl\vlog\core\coreaxi4sram_slvif.v":221:2:221:7|Removing sequential instance ARSIZE_slvif[2:0] (in view: work.MSS_LSRAM_COREAXI4SRAM_0_CoreAXI4SRAM_SLVIF_64s_32s_1s_1s_1s_2048s_1s_8s_0s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\mss_lsram\coreaxi4sram_0\rtl\vlog\core\coreaxi4sram_slvif.v":221:2:221:7|Removing sequential instance ARADDR_slvif[31:0] (in view: work.MSS_LSRAM_COREAXI4SRAM_0_CoreAXI4SRAM_SLVIF_64s_32s_1s_1s_1s_2048s_1s_8s_0s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\security_core.v":493:22:493:24|Removing instance dom (in view: work.security_core_3s_2s_5s(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\security_core.v":488:22:488:24|Removing instance dom (in view: work.security_core_3s_2s_5s(verilog)) because it does not drive other instances.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":635:4:635:15|Removing instance genblk2\.mstrProtConv (in view: work.caxi4interconnect_MasterConvertor_Z46_layer0(verilog)) because it does not drive other instances.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":869:4:869:10|Removing instance mstrCDC (in view: work.caxi4interconnect_MasterConvertor_Z46_layer0(verilog)) because it does not drive other instances.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\masterconvertor.v":758:4:758:10|Removing instance mstrDWC (in view: work.caxi4interconnect_MasterConvertor_Z46_layer0(verilog)) because it does not drive other instances.
@@ -319,6 +303,11 @@ Start optimization across hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elap
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_widthconvwr.v":379:3:379:8|Removing sequential instance SLAVE_WUSER[0] (in view: work.caxi4interconnect_DWC_DownConv_widthConvwr_64s_32s_1s_46s_8s_4s_9s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_widthconvwr.v":817:3:817:8|Removing sequential instance MASTER_WUSER_reg[0] (in view: work.caxi4interconnect_DWC_DownConv_widthConvwr_64s_32s_1s_46s_8s_4s_9s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":96:0:96:5|Removing sequential instance fifo_nearly_empty (in view: work.caxi4interconnect_FIFO_CTRL_16s_15s_128s_4s_16s_0s_1_0_1(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":96:0:96:5|Removing sequential instance fifo_one_from_full (in view: work.caxi4interconnect_FIFO_CTRL_16s_15s_128s_4s_16s_0s_1_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_precalccmdfifowrctrl.v":125:2:125:7|Removing sequential instance MASTER_ACACHE_out[3:0] (in view: work.caxi4interconnect_DWC_DownConv_preCalcCmdFifoWrCtrl_32s_64s_38s_1s_9s_1_3s_7s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_precalccmdfifowrctrl.v":125:2:125:7|Removing sequential instance MASTER_ALOCK_out[1:0] (in view: work.caxi4interconnect_DWC_DownConv_preCalcCmdFifoWrCtrl_32s_64s_38s_1s_9s_1_3s_7s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_precalccmdfifowrctrl.v":125:2:125:7|Removing sequential instance MASTER_APROT_out[2:0] (in view: work.caxi4interconnect_DWC_DownConv_preCalcCmdFifoWrCtrl_32s_64s_38s_1s_9s_1_3s_7s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_precalccmdfifowrctrl.v":125:2:125:7|Removing sequential instance MASTER_AQOS_out[3:0] (in view: work.caxi4interconnect_DWC_DownConv_preCalcCmdFifoWrCtrl_32s_64s_38s_1s_9s_1_3s_7s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 
 Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\synlog\MPFS_DISCOVERY_KIT_premap.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":751:4:751:9|Removing instance slvCDC (in view: work.caxi4interconnect_SlaveConvertor_Z53_layer0(verilog)) because it does not drive other instances.
@@ -332,26 +321,8 @@ Only the first 100 messages of id 'BN362' are reported. To see all messages use 
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_readwidthconv.v":490:33:490:45|Removing instance genblk1\.byte2bit_inst (in view: work.caxi4interconnect_DWC_DownConv_readWidthConv_32s_16s_46s_64s_38s_9s_1s_0_1s_2(verilog)) because it does not drive other instances.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_cmdfifowritectrl.v":522:3:522:8|Removing sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[3].slvcnv.slvdwc.genblk1.DownConverter_inst.writeWidthConv.wrCmdFifoWriteCtrl.max_length[8:0] because it is equivalent to instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[3].slvcnv.slvdwc.genblk1.DownConverter_inst.writeWidthConv.wrCmdFifoWriteCtrl.length[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":751:4:751:9|Removing instance slvCDC (in view: work.caxi4interconnect_SlaveConvertor_Z67_layer0(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":132:0:132:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCRd.rdDataFif.fifoWrite_f1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCRd.rdDataFif.fifoOverRunErr is reduced to a combinational gate by constant propagation.
-@W: MO156 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\dualport_ram_syncwr_syncrd.v":94:0:94:5|RAM mem[42:0] removed due to constant propagation. 
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":401:6:401:10|Removing instance genblk1\.DPRam (in view: work.caxi4interconnect_FifoDualPort_0_2s_9s_43s_1_0(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrDataFif.fifoUnderRunErr is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrDataFif.fifoRdAddr[0] is reduced to a combinational gate by constant propagation.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":401:6:401:10|Removing instance genblk1\.DPRam (in view: work.caxi4interconnect_FifoDualPort_0_2s_9s_37s_1_0(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":132:0:132:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoWrite_f1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoOverRunErr is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoUnderRunErr is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoNearFull is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":140:0:140:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoEmpty is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":169:0:169:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoRdAddr[0] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":268:0:268:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvProtConv.genblk1.u_AXILtePC.SlvPCWr.wrLenFif.fifoRdValid is reduced to a combinational gate by constant propagation.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\fifodualport.v":401:6:401:10|Removing instance genblk1\.DPRam (in view: work.caxi4interconnect_FifoDualPort_0_2s_8s_17s_1_0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvwrite.v":172:2:172:9|Removing instance wrLenFif (in view: work.caxi4interconnect_SlvAxi4ProtConvWrite_Z70_layer0(verilog)) because it does not drive other instances.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_cmdfifowritectrl.v":522:3:522:8|Removing sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvdwc.genblk1.DownConverter_inst.readWidthConv.rdCmdFifoWriteCtrl.max_length[8:0] because it is equivalent to instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvdwc.genblk1.DownConverter_inst.readWidthConv.rdCmdFifoWriteCtrl.length[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_readwidthconv.v":490:33:490:45|Removing instance genblk1\.byte2bit_inst (in view: work.caxi4interconnect_DWC_DownConv_readWidthConv_32s_16s_46s_64s_38s_9s_1s_0_1s_0(verilog)) because it does not drive other instances.
-@N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\fifo.v":99:6:99:8|Removing instance genblk1\[0\]\.ram (in view: work.caxi4interconnect_FIFO_16s_10s_10s_15s_128s_16s_4s_128s_15s_0(verilog)) because it does not drive other instances.
-@W: MO129 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":96:0:96:5|Sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvdwc.genblk1.DownConverter_inst.writeWidthConv.genblk1.BrespCmdFifo.fifo_ctrl_inst.rdptr[0] is reduced to a combinational gate by constant propagation.
 @W: BN132 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\dwc_downconv_cmdfifowritectrl.v":522:3:522:8|Removing sequential instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvdwc.genblk1.DownConverter_inst.writeWidthConv.wrCmdFifoWriteCtrl.max_length[8:0] because it is equivalent to instance FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.SlvConvertor_loop[4].slvcnv.slvdwc.genblk1.DownConverter_inst.writeWidthConv.wrCmdFifoWriteCtrl.length[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":751:4:751:9|Removing instance slvCDC (in view: work.caxi4interconnect_SlaveConvertor_Z72_layer0(verilog)) because it does not drive other instances.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4crossbar\readdatacontroller.v":190:6:190:12|Removing instance rdFif\.reqQual (in view: work.caxi4interconnect_ReadDataController_Z35_layer0(verilog)) because it does not drive other instances.
@@ -391,13 +362,13 @@ Only the first 100 messages of id 'BN362' are reported. To see all messages use 
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\clocks_and_resets\clocks_and_resets.v":209:10:209:24|Removing instance RESET_FIC_2_CLK (in view: work.CLOCKS_AND_RESETS(verilog)) because it does not drive other instances.
 @N: BN115 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\work\clocks_and_resets\clocks_and_resets.v":192:10:192:24|Removing instance RESET_FIC_1_CLK (in view: work.CLOCKS_AND_RESETS(verilog)) because it does not drive other instances.
 
-Finished optimization across hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 588MB peak: 588MB)
+Finished optimization across hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 595MB peak: 595MB)
 
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 588MB peak: 589MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 595MB peak: 596MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 588MB peak: 589MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 595MB peak: 596MB)
 
 @N: FP130 |Promoting Net CLOCKS_AND_RESETS_0.RESET_FIC_0_CLK.CORERESET_0.dff on CLKINT  I_2 
 @N: FP130 |Promoting Net CLOCKS_AND_RESETS_0.RESET_FIC_0_CLK.CORERESET_0.dff_arst on CLKINT  I_3 
@@ -407,11 +378,10 @@ Finished DisTri Cleanup (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:0
 @N: FP130 |Promoting Net MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.HS_IO_CLK_FIFO_Y on CLKINT  I_1 
 @N: FP130 |Promoting Net MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.PF_LANECTRL_0.RX_DQS_90[0] on CLKINT  I_1 
 @N: FP130 |Promoting Net MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.HS_IO_CLK_CASCADED_Y on CLKINT  I_2 
-@N: FX1185 |Applying syn_allowed_resources blockrams=45 on compile point FIC0_INITIATOR 
-@N: FX1185 |Applying syn_allowed_resources blockrams=24 on compile point aes256_dec_3s_76_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=52 on compile point FIC0_INITIATOR 
 @N: FX1184 |Applying syn_allowed_resources blockrams=308 on top level netlist MPFS_DISCOVERY_KIT 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 606MB peak: 606MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 615MB peak: 615MB)
 
 Some data will not be shown as it is part of encrypted module
 
@@ -423,9 +393,9 @@ Clock Summary
 Level     Clock                                                                  Frequency     Period        Type                               Group                      Load 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       REF_CLK_50MHz                                                          50.0 MHz      20.000        declared                           default_clkgroup           1    
-1 .         CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0        125.0 MHz     8.000         generated (from REF_CLK_50MHz)     default_clkgroup           26685
+1 .         CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0        125.0 MHz     8.000         generated (from REF_CLK_50MHz)     default_clkgroup           32441
 1 .         CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3        50.0 MHz      20.000        generated (from REF_CLK_50MHz)     default_clkgroup           1206 
-1 .         CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1        125.0 MHz     8.000         generated (from REF_CLK_50MHz)     default_clkgroup           738  
+1 .         CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1        125.0 MHz     8.000         generated (from REF_CLK_50MHz)     default_clkgroup           797  
 1 .         CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2        125.0 MHz     8.000         generated (from REF_CLK_50MHz)     default_clkgroup           1    
                                                                                                                                                                                 
 0 -       RX_CLK_P                                                               250.0 MHz     4.000         declared                           default_clkgroup           9    
@@ -486,9 +456,9 @@ Clock Load Summary
 Clock                                                                Load      Pin                                                                                                               Seq Example                                                                                                              Seq Example                                                                                                 Comb Example                                                                                                         
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 REF_CLK_50MHz                                                        1         REF_CLK_50MHz(port)                                                                                               CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.REF_CLK_0                                                       -                                                                                                           CLOCKS_AND_RESETS_0.CLKINT_REF_CLK_50MHz.I(BUFG)                                                                     
-CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0        26685     CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.OUT0(PLL)                                                MSS_WRAPPER_0.MPFS_DISCOVERY_KIT_MSS_0.I_MSS.FIC_0_ACLK                                                                  -                                                                                                           CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.clkint_0.I(BUFG)                                                       
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0        32441     CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.OUT0(PLL)                                                MSS_WRAPPER_0.MPFS_DISCOVERY_KIT_MSS_0.I_MSS.FIC_0_ACLK                                                                  -                                                                                                           CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.clkint_0.I(BUFG)                                                       
 CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3        1206      CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.OUT3(PLL)                                                MSS_WRAPPER_0.MPFS_DISCOVERY_KIT_MSS_0.I_MSS.FIC_3_PCLK                                                                  -                                                                                                           CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.clkint_12.I(BUFG)                                                      
-CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1        738       CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.OUT1(PLL)                                                MSS_WRAPPER_0.MPFS_DISCOVERY_KIT_MSS_0.I_MSS.FIC_1_ACLK                                                                  -                                                                                                           CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.clkint_4.I(BUFG)                                                       
+CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1        797       CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.OUT1(PLL)                                                MSS_WRAPPER_0.MPFS_DISCOVERY_KIT_MSS_0.I_MSS.FIC_1_ACLK                                                                  -                                                                                                           CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.clkint_4.I(BUFG)                                                       
 CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2        1         CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.pll_inst_0.OUT2(PLL)                                                MSS_WRAPPER_0.MPFS_DISCOVERY_KIT_MSS_0.I_MSS.FIC_2_ACLK                                                                  -                                                                                                           CLOCKS_AND_RESETS_0.CCC_FIC_x_CLK.PF_CCC_C0_0.clkint_8.I(BUFG)                                                       
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 RX_CLK_P                                                             9         RX_CLK_P(port)                                                                                                    MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.PF_LANECTRL_0.I_LANECTRL.HS_IO_CLK[1]                                               -                                                                                                           MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.HS_IO_CLK_CASCADED.A(HS_IO_CLK)                                                 
@@ -566,7 +536,7 @@ neoTRNG_cell_9_false|sreg_8_inferred_clock[0]                        1         F
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\MPFS_DISCOVERY_KIT.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 555MB peak: 607MB)
+Starting constraint checker (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 552MB peak: 616MB)
 
 Encoding state machine currState[8:0] (in view: work.DMA_CONTROLLER_DMA_CONTROLLER_0_CoreAXI4DMAController_AXI4LiteTARGETCtrl(verilog))
 original code -> new code
@@ -791,13 +761,13 @@ original code -> new code
    101 -> 00100000
    110 -> 01000000
    111 -> 10000000
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_7(verilog))
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_6(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_7(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_6(verilog)); safe FSM implementation is not required.
 Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_2(verilog))
 original code -> new code
    00 -> 00
@@ -826,27 +796,27 @@ original code -> new code
    10 -> 10
    11 -> 11
 @N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_11s_0_1_3_1(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_3(verilog))
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_5(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_3(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_0(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_5(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_2(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_0(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_1(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_2(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_4(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_4(verilog)); safe FSM implementation is not required.
 Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_2(verilog))
 original code -> new code
    00 -> 00
@@ -871,20 +841,20 @@ original code -> new code
    00 -> 0
    01 -> 1
 @N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvread.v":343:1:343:6|There are no possible illegal states for state machine currStateARd[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvRead_Z71_layer0(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_4(verilog))
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_6(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_4(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_1(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_6(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_3(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_3(verilog)); safe FSM implementation is not required.
 Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_5(verilog))
 original code -> new code
    00 -> 00
@@ -892,13 +862,13 @@ original code -> new code
    10 -> 10
    11 -> 11
 @N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_5(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_3(verilog))
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_4(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_3(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_4(verilog)); safe FSM implementation is not required.
 Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_3(verilog))
 original code -> new code
    00 -> 00
@@ -916,6 +886,13 @@ original code -> new code
    00 -> 0
    01 -> 1
 @N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\slvaxi4protconvread.v":343:1:343:6|There are no possible illegal states for state machine currStateARd[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvRead_Z51_layer0(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_10(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_10(verilog)); safe FSM implementation is not required.
 Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_7(verilog))
 original code -> new code
    00 -> 00
@@ -923,34 +900,27 @@ original code -> new code
    10 -> 10
    11 -> 11
 @N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_7(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_2(verilog))
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_7(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_2(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_4(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_7(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_6(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_4(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_1(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_6(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_5(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_1(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_1(verilog))
-original code -> new code
-   00 -> 00
-   01 -> 01
-   10 -> 10
-   11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_1(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_5(verilog)); safe FSM implementation is not required.
 Encoding state machine currStateAWr[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvWrite_Z65_layer0(verilog))
 original code -> new code
    00 -> 0
@@ -996,41 +966,41 @@ original code -> new code
    10 -> 10
    11 -> 11
 @N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_6(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_10(verilog))
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_1(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_10(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_5(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_1(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_0(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_5(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_3(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_78s_0_1_3_0(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_1(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_3(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_6(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_77s_0_1_3_1(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_1(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_6(verilog)); safe FSM implementation is not required.
-Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_4(verilog))
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_83s_0_1_3_1(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_1(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_4(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\component\actel\directcore\coreaxi4interconnect\2.9.100\rtl\vlog\core\axi4convertors\regslicefull.v":183:1:183:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_12s_0_1_3_1(verilog)); safe FSM implementation is not required.
 Encoding state machine currStateAWr[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvWrite_Z60_layer0(verilog))
 original code -> new code
    00 -> 0
@@ -1287,18 +1257,18 @@ original code -> new code
    01 -> 01
    10 -> 10
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 568MB peak: 607MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 573MB peak: 616MB)
 
 Some data will not be shown as it is part of encrypted module
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\MPFS_DISCOVERY_KIT_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:20s; Memory used current: 575MB peak: 607MB)
+Finished constraint checker (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 581MB peak: 616MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:20s; Memory used current: 421MB peak: 607MB)
+At Mapper Exit (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:27s; Memory used current: 432MB peak: 616MB)
 
-Process took 0h:00m:21s realtime, 0h:00m:20s cputime
-# Wed Apr  8 23:26:37 2026
+Process took 0h:00m:29s realtime, 0h:00m:27s cputime
+# Sun Apr 12 01:14:25 2026
 
 ###########################################################]

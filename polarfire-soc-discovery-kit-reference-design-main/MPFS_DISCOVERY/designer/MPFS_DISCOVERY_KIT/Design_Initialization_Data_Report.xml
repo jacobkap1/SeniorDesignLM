@@ -6,7 +6,7 @@
 <text>Family: PolarFireSoC</text>
 <text>Die: MPFS095T</text>
 <text>Package: FCSG325</text>
-<text>Date: Thu Apr  9 00:40:59 2026
+<text>Date: Sun Apr 12 02:47:18 2026
 </text>
 <text>Report path: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\Design_Initialization_Data_Report.xml</text>
 <section>
@@ -9075,27 +9075,31 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </header>
 <row>
  <cell>HS_IO_CLK_SW_0</cell>
- <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_RX</cell>
-</row>
-<row>
- <cell>HS_IO_CLK_SW_1</cell>
  <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_FIFO</cell>
 </row>
 <row>
- <cell>HS_IO_CLK_SE_6</cell>
+ <cell>HS_IO_CLK_SW_2</cell>
  <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_CASCADED</cell>
 </row>
 <row>
- <cell>CLKDIVDEL_SE_1</cell>
- <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_RXCLK/I_CDD</cell>
+ <cell>HS_IO_CLK_SW_4</cell>
+ <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/HS_IO_CLK_RX</cell>
 </row>
 <row>
- <cell>CLKDIVDEL_SE_3</cell>
+ <cell>CLKDIVDEL_SW_1</cell>
  <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD</cell>
+</row>
+<row>
+ <cell>CLKDIVDEL_SW_0</cell>
+ <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_RXCLK/I_CDD</cell>
 </row>
 <row>
  <cell>ICB_CLKINT_NE_4</cell>
  <cell>CLOCKS_AND_RESETS_0/CLKINT_REF_CLK_50MHz/U0_IOBA</cell>
+</row>
+<row>
+ <cell>ICB_CLKINT_SW_1</cell>
+ <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/CLKINT_0_1</cell>
 </row>
 <row>
  <cell>ICB_CLKINT_SW_2</cell>
@@ -9108,10 +9112,6 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 <row>
  <cell>ICB_CLKINT_SW_9</cell>
  <cell>CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/clkint_4_1</cell>
-</row>
-<row>
- <cell>ICB_CLKINT_SE_1</cell>
- <cell>MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/CLKINT_0_1</cell>
 </row>
 <row>
  <cell>ICB_CLKINT_W_0</cell>
@@ -31478,6 +31478,19 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </table>
 </section>
 <section>
+<name>HS_IO_CLK_SE_6 (Unused pin tie-off)</name>
+<table>
+<header>
+ <cell>Input Pin</cell>
+ <cell>Tie-Off</cell>
+</header>
+<row>
+ <cell>A</cell>
+ <cell>1</cell>
+</row>
+</table>
+</section>
+<section>
 <name>HS_IO_CLK_SE_7 (Unused pin tie-off)</name>
 <table>
 <header>
@@ -31517,6 +31530,19 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </table>
 </section>
 <section>
+<name>HS_IO_CLK_SW_1 (Unused pin tie-off)</name>
+<table>
+<header>
+ <cell>Input Pin</cell>
+ <cell>Tie-Off</cell>
+</header>
+<row>
+ <cell>A</cell>
+ <cell>1</cell>
+</row>
+</table>
+</section>
+<section>
 <name>HS_IO_CLK_SW_10 (Unused pin tie-off)</name>
 <table>
 <header>
@@ -31543,33 +31569,7 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </table>
 </section>
 <section>
-<name>HS_IO_CLK_SW_2 (Unused pin tie-off)</name>
-<table>
-<header>
- <cell>Input Pin</cell>
- <cell>Tie-Off</cell>
-</header>
-<row>
- <cell>A</cell>
- <cell>1</cell>
-</row>
-</table>
-</section>
-<section>
 <name>HS_IO_CLK_SW_3 (Unused pin tie-off)</name>
-<table>
-<header>
- <cell>Input Pin</cell>
- <cell>Tie-Off</cell>
-</header>
-<row>
- <cell>A</cell>
- <cell>1</cell>
-</row>
-</table>
-</section>
-<section>
-<name>HS_IO_CLK_SW_4 (Unused pin tie-off)</name>
 <table>
 <header>
  <cell>Input Pin</cell>
@@ -32076,6 +32076,39 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </table>
 </section>
 <section>
+<name>CLKDIVDEL_SE_1 (Unused pin tie-off)</name>
+<table>
+<header>
+ <cell>Input Pin</cell>
+ <cell>Tie-Off</cell>
+</header>
+<row>
+ <cell>A</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>BIT_SLIP</cell>
+ <cell>0</cell>
+</row>
+<row>
+ <cell>DELAY_LINE_DIR</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>DELAY_LINE_LOAD</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>DELAY_LINE_MOVE</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>RST_N</cell>
+ <cell>0</cell>
+</row>
+</table>
+</section>
+<section>
 <name>CLKDIVDEL_SE_2 (Unused pin tie-off)</name>
 <table>
 <header>
@@ -32109,40 +32142,7 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </table>
 </section>
 <section>
-<name>CLKDIVDEL_SW_0 (Unused pin tie-off)</name>
-<table>
-<header>
- <cell>Input Pin</cell>
- <cell>Tie-Off</cell>
-</header>
-<row>
- <cell>A</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>BIT_SLIP</cell>
- <cell>0</cell>
-</row>
-<row>
- <cell>DELAY_LINE_DIR</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>DELAY_LINE_LOAD</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>DELAY_LINE_MOVE</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>RST_N</cell>
- <cell>0</cell>
-</row>
-</table>
-</section>
-<section>
-<name>CLKDIVDEL_SW_1 (Unused pin tie-off)</name>
+<name>CLKDIVDEL_SE_3 (Unused pin tie-off)</name>
 <table>
 <header>
  <cell>Input Pin</cell>
@@ -32853,6 +32853,23 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </table>
 </section>
 <section>
+<name>ICB_CLKINT_SE_1 (Unused pin tie-off)</name>
+<table>
+<header>
+ <cell>Input Pin</cell>
+ <cell>Tie-Off</cell>
+</header>
+<row>
+ <cell>A</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>EN</cell>
+ <cell>1</cell>
+</row>
+</table>
+</section>
+<section>
 <name>ICB_CLKINT_SE_10 (Unused pin tie-off)</name>
 <table>
 <header>
@@ -33024,23 +33041,6 @@ INFO: The PUFT timing numbers reflect the typical elapsed time between the de-as
 </section>
 <section>
 <name>ICB_CLKINT_SW_0 (Unused pin tie-off)</name>
-<table>
-<header>
- <cell>Input Pin</cell>
- <cell>Tie-Off</cell>
-</header>
-<row>
- <cell>A</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>EN</cell>
- <cell>1</cell>
-</row>
-</table>
-</section>
-<section>
-<name>ICB_CLKINT_SW_1 (Unused pin tie-off)</name>
 <table>
 <header>
  <cell>Input Pin</cell>

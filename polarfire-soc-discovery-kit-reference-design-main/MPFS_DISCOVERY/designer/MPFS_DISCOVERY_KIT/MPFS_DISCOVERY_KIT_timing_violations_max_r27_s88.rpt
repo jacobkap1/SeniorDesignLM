@@ -1,0 +1,919 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version 2025.2
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+Date: Fri Apr 10 23:03:10 2026
+
+
+Design: MPFS_DISCOVERY_KIT
+Family: PolarFireSoC
+Die: MPFS095T
+Package: FCSG325
+Temperature Range: 0 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_lt,fast_hv_lt,slow_lv_ht
+
+
+Path 1
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/r_isr[2]:ALn
+  Delay (ns):              4.663
+  Slack (ns):             -1.929
+  Arrival (ns):           12.296
+  Required (ns):          10.367
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/sot_state[1]:ALn
+  Delay (ns):              4.494
+  Slack (ns):             -1.739
+  Arrival (ns):           12.127
+  Required (ns):          10.388
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/r_isr[0]:ALn
+  Delay (ns):              4.339
+  Slack (ns):             -1.575
+  Arrival (ns):           11.972
+  Required (ns):          10.397
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/wait_cnt[3]:ALn
+  Delay (ns):              4.338
+  Slack (ns):             -1.574
+  Arrival (ns):           11.971
+  Required (ns):          10.397
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/wait_cnt[2]:ALn
+  Delay (ns):              4.338
+  Slack (ns):             -1.574
+  Arrival (ns):           11.971
+  Required (ns):          10.397
+  Operating Conditions: slow_lv_ht
+
+Path 6
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/wait_cnt[1]:ALn
+  Delay (ns):              4.338
+  Slack (ns):             -1.574
+  Arrival (ns):           11.971
+  Required (ns):          10.397
+  Operating Conditions: slow_lv_ht
+
+Path 7
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/wait_cnt[0]:ALn
+  Delay (ns):              4.338
+  Slack (ns):             -1.574
+  Arrival (ns):           11.971
+  Required (ns):          10.397
+  Operating Conditions: slow_lv_ht
+
+Path 8
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/s_data_in:ALn
+  Delay (ns):              4.166
+  Slack (ns):             -1.410
+  Arrival (ns):           11.799
+  Required (ns):          10.389
+  Operating Conditions: slow_lv_ht
+
+Path 9
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/sot_r1_pclk:ALn
+  Delay (ns):              4.124
+  Slack (ns):             -1.393
+  Arrival (ns):           11.757
+  Required (ns):          10.364
+  Operating Conditions: slow_lv_ht
+
+Path 10
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/MSC_i_12/MSC_i_13/MSC_i_14/ram_block_ram_block_0_1/INST_RAM1K20_IP:A_DOUT_ARST_N
+  Delay (ns):              3.178
+  Slack (ns):             -0.329
+  Arrival (ns):           10.811
+  Required (ns):          10.482
+  Operating Conditions: slow_lv_ht
+
+Path 11
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/sot_r0_cclk:ALn
+  Delay (ns):              4.123
+  Slack (ns):             -0.310
+  Arrival (ns):           11.756
+  Required (ns):          11.446
+  Operating Conditions: slow_lv_ht
+
+Path 12
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][6][5]:EN
+  Delay (ns):              7.875
+  Slack (ns):             -0.249
+  Arrival (ns):           15.508
+  Required (ns):          15.259
+  Operating Conditions: slow_lv_ht
+
+Path 13
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][6][0]:EN
+  Delay (ns):              7.875
+  Slack (ns):             -0.249
+  Arrival (ns):           15.508
+  Required (ns):          15.259
+  Operating Conditions: slow_lv_ht
+
+Path 14
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[37]:D
+  Delay (ns):              1.895
+  Slack (ns):             -0.238
+  Arrival (ns):            9.554
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 15
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[35]:D
+  Delay (ns):              1.894
+  Slack (ns):             -0.237
+  Arrival (ns):            9.553
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 16
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[32]:D
+  Delay (ns):              1.880
+  Slack (ns):             -0.223
+  Arrival (ns):            9.539
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 17
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/crc_error_reg1:ALn
+  Delay (ns):              2.937
+  Slack (ns):             -0.215
+  Arrival (ns):           10.570
+  Required (ns):          10.355
+  Operating Conditions: slow_lv_ht
+
+Path 18
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][5][1]:EN
+  Delay (ns):              7.848
+  Slack (ns):             -0.214
+  Arrival (ns):           15.481
+  Required (ns):          15.267
+  Operating Conditions: slow_lv_ht
+
+Path 19
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[34]:D
+  Delay (ns):              1.870
+  Slack (ns):             -0.213
+  Arrival (ns):            9.529
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 20
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][5][5]:EN
+  Delay (ns):              7.847
+  Slack (ns):             -0.213
+  Arrival (ns):           15.480
+  Required (ns):          15.267
+  Operating Conditions: slow_lv_ht
+
+Path 21
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:ALn
+  Delay (ns):              2.934
+  Slack (ns):             -0.208
+  Arrival (ns):           10.567
+  Required (ns):          10.359
+  Operating Conditions: slow_lv_ht
+
+Path 22
+  From: MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/sot_r1_pclk:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/sot_r0_cclk:EN
+  Delay (ns):              0.630
+  Slack (ns):             -0.205
+  Arrival (ns):            8.081
+  Required (ns):           7.876
+  Operating Conditions: slow_lv_ht
+
+Path 23
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][4][6]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 24
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][4][5]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 25
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][6]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 26
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][4]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 27
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][3]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 28
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][0]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 29
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][4][1]:EN
+  Delay (ns):              7.833
+  Slack (ns):             -0.200
+  Arrival (ns):           15.466
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 30
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][4][0]:EN
+  Delay (ns):              7.832
+  Slack (ns):             -0.199
+  Arrival (ns):           15.465
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 31
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][5]:EN
+  Delay (ns):              7.832
+  Slack (ns):             -0.199
+  Arrival (ns):           15.465
+  Required (ns):          15.266
+  Operating Conditions: slow_lv_ht
+
+Path 32
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[29]:D
+  Delay (ns):              1.851
+  Slack (ns):             -0.194
+  Arrival (ns):            9.510
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 33
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[31]:D
+  Delay (ns):              1.849
+  Slack (ns):             -0.192
+  Arrival (ns):            9.508
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 34
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[36]:D
+  Delay (ns):              1.842
+  Slack (ns):             -0.185
+  Arrival (ns):            9.501
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 35
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/data_type_o_2[3]:ALn
+  Delay (ns):              2.901
+  Slack (ns):             -0.170
+  Arrival (ns):           10.534
+  Required (ns):          10.364
+  Operating Conditions: slow_lv_ht
+
+Path 36
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[33]:D
+  Delay (ns):              1.819
+  Slack (ns):             -0.162
+  Arrival (ns):            9.478
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 37
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[28]:D
+  Delay (ns):              1.819
+  Slack (ns):             -0.162
+  Arrival (ns):            9.478
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 38
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[26]:D
+  Delay (ns):              1.811
+  Slack (ns):             -0.154
+  Arrival (ns):            9.470
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 39
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[29]:D
+  Delay (ns):              7.930
+  Slack (ns):             -0.147
+  Arrival (ns):           15.569
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 40
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[30]:D
+  Delay (ns):              1.799
+  Slack (ns):             -0.142
+  Arrival (ns):            9.458
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 41
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[27]:D
+  Delay (ns):              7.917
+  Slack (ns):             -0.134
+  Arrival (ns):           15.556
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 42
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/word_count_reg1_0[3]:ALn
+  Delay (ns):              2.849
+  Slack (ns):             -0.133
+  Arrival (ns):           10.482
+  Required (ns):          10.349
+  Operating Conditions: slow_lv_ht
+
+Path 43
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[29]:D
+  Delay (ns):              7.901
+  Slack (ns):             -0.129
+  Arrival (ns):           15.551
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 44
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[25]:D
+  Delay (ns):              1.783
+  Slack (ns):             -0.126
+  Arrival (ns):            9.442
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 45
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[23]:D
+  Delay (ns):              1.782
+  Slack (ns):             -0.125
+  Arrival (ns):            9.441
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 46
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[1]:D
+  Delay (ns):              1.968
+  Slack (ns):             -0.122
+  Arrival (ns):            9.414
+  Required (ns):           9.292
+  Operating Conditions: slow_lv_ht
+
+Path 47
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[27]:D
+  Delay (ns):              7.888
+  Slack (ns):             -0.116
+  Arrival (ns):           15.538
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 48
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[27]:D
+  Delay (ns):              1.770
+  Slack (ns):             -0.113
+  Arrival (ns):            9.429
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 49
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[20]:D
+  Delay (ns):              1.768
+  Slack (ns):             -0.111
+  Arrival (ns):            9.427
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 50
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[22]:D
+  Delay (ns):              1.758
+  Slack (ns):             -0.101
+  Arrival (ns):            9.417
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 51
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/ecc_error_reg1:ALn
+  Delay (ns):              2.851
+  Slack (ns):             -0.097
+  Arrival (ns):           10.484
+  Required (ns):          10.387
+  Operating Conditions: slow_lv_ht
+
+Path 52
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][6][4]:EN
+  Delay (ns):              7.711
+  Slack (ns):             -0.097
+  Arrival (ns):           15.344
+  Required (ns):          15.247
+  Operating Conditions: slow_lv_ht
+
+Path 53
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/MSC_i_12/MSC_i_13/MSC_i_14/ram_block_ram_block_0_0/INST_RAM1K20_IP:A_DOUT_ARST_N
+  Delay (ns):              2.937
+  Slack (ns):             -0.095
+  Arrival (ns):           10.570
+  Required (ns):          10.475
+  Operating Conditions: slow_lv_ht
+
+Path 54
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[29]:D
+  Delay (ns):              7.866
+  Slack (ns):             -0.094
+  Arrival (ns):           15.516
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 55
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[3]:D
+  Delay (ns):              1.938
+  Slack (ns):             -0.091
+  Arrival (ns):            9.384
+  Required (ns):           9.293
+  Operating Conditions: slow_lv_ht
+
+Path 56
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/MSC_i_12/MSC_i_13/wraddr_sync_rr[5]:ALn
+  Delay (ns):              2.814
+  Slack (ns):             -0.089
+  Arrival (ns):           10.447
+  Required (ns):          10.358
+  Operating Conditions: slow_lv_ht
+
+Path 57
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/word_count_reg2_1[13]:ALn
+  Delay (ns):              2.813
+  Slack (ns):             -0.088
+  Arrival (ns):           10.446
+  Required (ns):          10.358
+  Operating Conditions: slow_lv_ht
+
+Path 58
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][6][6]:EN
+  Delay (ns):              7.728
+  Slack (ns):             -0.087
+  Arrival (ns):           15.361
+  Required (ns):          15.274
+  Operating Conditions: slow_lv_ht
+
+Path 59
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][6][3]:EN
+  Delay (ns):              7.728
+  Slack (ns):             -0.087
+  Arrival (ns):           15.361
+  Required (ns):          15.274
+  Operating Conditions: slow_lv_ht
+
+Path 60
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][6][3]:EN
+  Delay (ns):              7.726
+  Slack (ns):             -0.085
+  Arrival (ns):           15.359
+  Required (ns):          15.274
+  Operating Conditions: slow_lv_ht
+
+Path 61
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[17]:D
+  Delay (ns):              1.739
+  Slack (ns):             -0.082
+  Arrival (ns):            9.398
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 62
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[5]:D
+  Delay (ns):              1.927
+  Slack (ns):             -0.081
+  Arrival (ns):            9.373
+  Required (ns):           9.292
+  Operating Conditions: slow_lv_ht
+
+Path 63
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[27]:D
+  Delay (ns):              7.853
+  Slack (ns):             -0.081
+  Arrival (ns):           15.503
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 64
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][6][0]:EN
+  Delay (ns):              7.695
+  Slack (ns):             -0.081
+  Arrival (ns):           15.328
+  Required (ns):          15.247
+  Operating Conditions: slow_lv_ht
+
+Path 65
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][6][7]:EN
+  Delay (ns):              7.695
+  Slack (ns):             -0.081
+  Arrival (ns):           15.328
+  Required (ns):          15.247
+  Operating Conditions: slow_lv_ht
+
+Path 66
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[19]:D
+  Delay (ns):              1.737
+  Slack (ns):             -0.080
+  Arrival (ns):            9.396
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 67
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][6][2]:EN
+  Delay (ns):              7.709
+  Slack (ns):             -0.075
+  Arrival (ns):           15.342
+  Required (ns):          15.267
+  Operating Conditions: slow_lv_ht
+
+Path 68
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][6][5]:EN
+  Delay (ns):              7.708
+  Slack (ns):             -0.074
+  Arrival (ns):           15.341
+  Required (ns):          15.267
+  Operating Conditions: slow_lv_ht
+
+Path 69
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[24]:D
+  Delay (ns):              1.730
+  Slack (ns):             -0.073
+  Arrival (ns):            9.389
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 70
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[2]:D
+  Delay (ns):              1.918
+  Slack (ns):             -0.071
+  Arrival (ns):            9.364
+  Required (ns):           9.293
+  Operating Conditions: slow_lv_ht
+
+Path 71
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[8]:D
+  Delay (ns):              1.906
+  Slack (ns):             -0.060
+  Arrival (ns):            9.352
+  Required (ns):           9.292
+  Operating Conditions: slow_lv_ht
+
+Path 72
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[6]:D
+  Delay (ns):              1.905
+  Slack (ns):             -0.059
+  Arrival (ns):            9.351
+  Required (ns):           9.292
+  Operating Conditions: slow_lv_ht
+
+Path 73
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_ip_reset_0/synchronizer_circuit_2stage_video_clk/sync_out_o:CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/async_fifo_vdma_0/rdata_count[7]:D
+  Delay (ns):              1.904
+  Slack (ns):             -0.058
+  Arrival (ns):            9.350
+  Required (ns):           9.292
+  Operating Conditions: slow_lv_ht
+
+Path 74
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[14]:D
+  Delay (ns):              1.709
+  Slack (ns):             -0.054
+  Arrival (ns):            9.368
+  Required (ns):           9.314
+  Operating Conditions: slow_lv_ht
+
+Path 75
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[21]:D
+  Delay (ns):              1.707
+  Slack (ns):             -0.050
+  Arrival (ns):            9.366
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 76
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[16]:D
+  Delay (ns):              1.707
+  Slack (ns):             -0.050
+  Arrival (ns):            9.366
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 77
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[28]:D
+  Delay (ns):              7.830
+  Slack (ns):             -0.047
+  Arrival (ns):           15.469
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 78
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/crc_error_o:ALn
+  Delay (ns):              2.793
+  Slack (ns):             -0.047
+  Arrival (ns):           10.426
+  Required (ns):          10.379
+  Operating Conditions: slow_lv_ht
+
+Path 79
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   MIPI_CAMERA_0/mipicsi2rxdecoderPF_C0_0/MSC_i_0/MSC_i_4/MSC_i_10/MSC_i_12/MSC_i_13/wraddr_sync_rr[9]:ALn
+  Delay (ns):              2.793
+  Slack (ns):             -0.047
+  Arrival (ns):           10.426
+  Required (ns):          10.379
+  Operating Conditions: slow_lv_ht
+
+Path 80
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              7.820
+  Slack (ns):             -0.035
+  Arrival (ns):           15.459
+  Required (ns):          15.424
+  Operating Conditions: slow_lv_ht
+
+Path 81
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[18]:D
+  Delay (ns):              1.687
+  Slack (ns):             -0.030
+  Arrival (ns):            9.346
+  Required (ns):           9.316
+  Operating Conditions: slow_lv_ht
+
+Path 82
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[28]:D
+  Delay (ns):              7.801
+  Slack (ns):             -0.029
+  Arrival (ns):           15.451
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 83
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[13]:D
+  Delay (ns):              1.682
+  Slack (ns):             -0.027
+  Arrival (ns):            9.341
+  Required (ns):           9.314
+  Operating Conditions: slow_lv_ht
+
+Path 84
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[29]:D
+  Delay (ns):              7.805
+  Slack (ns):             -0.022
+  Arrival (ns):           15.444
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 85
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][12][5]:EN
+  Delay (ns):              7.641
+  Slack (ns):             -0.019
+  Arrival (ns):           15.274
+  Required (ns):          15.255
+  Operating Conditions: slow_lv_ht
+
+Path 86
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][12][6]:EN
+  Delay (ns):              7.640
+  Slack (ns):             -0.018
+  Arrival (ns):           15.273
+  Required (ns):          15.255
+  Operating Conditions: slow_lv_ht
+
+Path 87
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_fast[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[30]:D
+  Delay (ns):              7.791
+  Slack (ns):             -0.017
+  Arrival (ns):           15.441
+  Required (ns):          15.424
+  Operating Conditions: slow_lv_ht
+
+Path 88
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][0][6]:EN
+  Delay (ns):              7.666
+  Slack (ns):             -0.014
+  Arrival (ns):           15.299
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 89
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][0][4]:EN
+  Delay (ns):              7.666
+  Slack (ns):             -0.014
+  Arrival (ns):           15.299
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 90
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][0][3]:EN
+  Delay (ns):              7.666
+  Slack (ns):             -0.014
+  Arrival (ns):           15.299
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 91
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][0][7]:EN
+  Delay (ns):              7.665
+  Slack (ns):             -0.013
+  Arrival (ns):           15.298
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 92
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[2][0][2]:EN
+  Delay (ns):              7.665
+  Slack (ns):             -0.013
+  Arrival (ns):           15.298
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 93
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][0][6]:EN
+  Delay (ns):              7.665
+  Slack (ns):             -0.013
+  Arrival (ns):           15.298
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 94
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][0][3]:EN
+  Delay (ns):              7.665
+  Slack (ns):             -0.013
+  Arrival (ns):           15.298
+  Required (ns):          15.285
+  Operating Conditions: slow_lv_ht
+
+Path 95
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][2]:EN
+  Delay (ns):              7.646
+  Slack (ns):             -0.012
+  Arrival (ns):           15.279
+  Required (ns):          15.267
+  Operating Conditions: slow_lv_ht
+
+Path 96
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][4][1]:EN
+  Delay (ns):              7.646
+  Slack (ns):             -0.012
+  Arrival (ns):           15.279
+  Required (ns):          15.267
+  Operating Conditions: slow_lv_ht
+
+Path 97
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_core/t_Z[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/a[27]:D
+  Delay (ns):              7.792
+  Slack (ns):             -0.009
+  Arrival (ns):           15.431
+  Required (ns):          15.422
+  Operating Conditions: slow_lv_ht
+
+Path 98
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[0][7][7]:EN
+  Delay (ns):              7.627
+  Slack (ns):             -0.006
+  Arrival (ns):           15.260
+  Required (ns):          15.254
+  Operating Conditions: slow_lv_ht
+
+Path 99
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/dec/s_o[1][7][5]:EN
+  Delay (ns):              7.626
+  Slack (ns):             -0.004
+  Arrival (ns):           15.259
+  Required (ns):          15.255
+  Operating Conditions: slow_lv_ht
+
+Path 100
+  From: MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/buff_addr_fifo/RAM2PORT_ASYNC_FIFO_INST/ram_ram_0_0/INST_RAM1K20_IP:A_CLK
+  To:   MIPI_CAMERA_0/VDMA_C0_0/VDMA_C0_0/dma_top_0/vdma_write_0/ddr_write_vdma/ddr_write_controller_vdma_0/write_start_addr_o_1[11]:D
+  Delay (ns):              1.658
+  Slack (ns):             -0.003
+  Arrival (ns):            9.317
+  Required (ns):           9.314
+  Operating Conditions: slow_lv_ht
+

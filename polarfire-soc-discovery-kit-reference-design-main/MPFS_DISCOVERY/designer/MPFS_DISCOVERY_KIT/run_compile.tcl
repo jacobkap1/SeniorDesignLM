@@ -20,11 +20,10 @@ set_defvar -name {USE_CONSTRAINT_FLOW} -value True
 set_defvar -name {FHB_AUTO_INSTANTIATION} -value {0}
 set_defvar -name {SYSTEM_CONTROLLER_SUSPEND_MODE} -value {0}
 
-set_partition_info -name "/MPFS_DISCOVERY_KIT" -timestamp "1775705197"
+set_partition_info -name "/MPFS_DISCOVERY_KIT" -timestamp "1775970865"
+set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775970865"
+set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775924003"
 set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775608421"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775608421"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775608421"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775626723"
 set_compile_info \
     -category {"Device Selection"} \
     -name {"Family"} \

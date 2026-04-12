@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>616</data>
+<data>565</data>
 <report_link name="more">
 <data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\synlog\report\MPFS_DISCOVERY_KIT_premap_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>347</data>
+<data>325</data>
 <report_link name="more">
 <data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\synlog\report\MPFS_DISCOVERY_KIT_premap_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:20s</data>
+<data>0h:00m:27s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:21s</data>
+<data>0h:00m:29s</data>
 </info>
 <info name="Peak Memory">
-<data>607MB</data>
+<data>616MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1775705196</data>
+<data type="timestamp">1775970864</data>
 </info>
 </job_info>
 </job_run_status>

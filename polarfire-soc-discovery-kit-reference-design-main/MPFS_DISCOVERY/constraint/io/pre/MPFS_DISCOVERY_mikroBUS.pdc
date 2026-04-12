@@ -1,0 +1,90 @@
+# Microchip I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: 2025.2 2025.2.0.14
+
+# Family: PolarFireSoC , Die: MPFS095T , Package: FCSG325
+
+# Date generated: Sat Apr 11 20:56:47 2026 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+set_io -port_name MBUS_AN  \
+    -io_std LVCMOS33       \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name MBUS_PWM  \
+    -io_std LVCMOS33        \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name MBUS_RST  \
+    -io_std LVCMOS33        \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name MBUS_SPI_CLK  \
+    -io_std LVCMOS33            \
+    -DIRECTION INOUT
+
+
+set_io -port_name MBUS_SPI_CS  \
+    -io_std LVCMOS33           \
+    -DIRECTION INOUT
+
+
+set_io -port_name MBUS_SPI_MISO  \
+    -io_std LVCMOS33             \
+    -DIRECTION INPUT
+
+
+set_io -port_name MBUS_SPI_MOSI  \
+    -io_std LVCMOS33             \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name MBUS_UART_RXD  \
+    -io_std LVCMOS33             \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name MBUS_UART_TXD  \
+    -io_std LVCMOS33             \
+    -DIRECTION INPUT
+
+
+
+#
+#Ports using Dedicated Pins
+
+#
+

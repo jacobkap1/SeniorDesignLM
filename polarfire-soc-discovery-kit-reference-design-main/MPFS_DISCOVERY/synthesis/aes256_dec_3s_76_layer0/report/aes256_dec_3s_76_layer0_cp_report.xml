@@ -16,7 +16,7 @@ The file contains the information about all compile points from mapper to be dis
 <data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\aes256_dec_3s_76_layer0\aes256_dec_3s_76_layer0.srr</data>
 </report_link>
 </data>
-<data>Mapped</data>
-<data>No database</data>
+<data>Remapped</data>
+<data>Design changed</data>
 </row>
 </report_table>

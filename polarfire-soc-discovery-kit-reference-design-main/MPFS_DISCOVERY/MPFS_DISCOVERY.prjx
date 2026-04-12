@@ -297,7 +297,7 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.9.100\COREAXI4INTERCONNECT.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775544325"
+TIME="1775970514"
 SIZE="10980"
 PARENT="<project>\component\work\DMA_INITIATOR\DMA_INITIATOR.cxf"
 PARENT="<project>\component\work\FIC0_INITIATOR\FIC0_INITIATOR.cxf"
@@ -895,7 +895,7 @@ PARENT="<project>\component\work\MSS_LSRAM\MSS_LSRAM.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\COREBCLKSCLKALIGN.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="3195"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.cxf"
 ENDFILE
@@ -1313,7 +1313,7 @@ PARENT="<project>\component\work\PF_CCC_C1\PF_CCC_C1.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\PF_CLK_DIV_DELAY\1.1.101\PF_CLK_DIV_DELAY.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677976"
+TIME="1775972497"
 SIZE="253"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
@@ -1325,13 +1325,13 @@ PARENT="<project>\component\work\RECONFIGURATION_INTERFACE\RECONFIGURATION_INTER
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\PF_IOD\1.0.218\PF_IOD.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="243"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\PF_LANECTRL\2.0.102\PF_LANECTRL.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="364"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
@@ -1945,13 +1945,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\csprng\csprng.cxf,actgen_cxf"
 STATE="utd"
-TIME="1774059092"
-SIZE="2504"
+TIME="1775923551"
+SIZE="2349"
 ENDFILE
 VALUE "<project>\component\work\csprng\csprng.v,hdl"
 STATE="utd"
-TIME="1774059092"
-SIZE="3129"
+TIME="1775923551"
+SIZE="2996"
 PARENT="<project>\component\work\csprng\csprng.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -2327,24 +2327,24 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FIC0_INITIATOR\FIC0_INITIATOR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775544328"
+TIME="1775970517"
 SIZE="182758"
 ENDFILE
 VALUE "<project>\component\work\FIC0_INITIATOR\FIC0_INITIATOR.v,hdl"
 STATE="utd"
-TIME="1775544325"
+TIME="1775970514"
 SIZE="364172"
 PARENT="<project>\component\work\FIC0_INITIATOR\FIC0_INITIATOR.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775544350"
+TIME="1775970189"
 SIZE="58973"
 ENDFILE
 VALUE "<project>\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.v,hdl"
 STATE="utd"
-TIME="1775544349"
+TIME="1775970189"
 SIZE="82716"
 PARENT="<project>\component\work\FIC_0_PERIPHERALS\FIC_0_PERIPHERALS.cxf"
 IS_READONLY="TRUE"
@@ -2562,13 +2562,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\MIPI_CAMERA\MIPI_CAMERA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775693819"
-SIZE="19186"
+TIME="1775970134"
+SIZE="23942"
 ENDFILE
 VALUE "<project>\component\work\MIPI_CAMERA\MIPI_CAMERA.v,hdl"
 STATE="utd"
-TIME="1775693818"
-SIZE="22477"
+TIME="1775970134"
+SIZE="24989"
 PARENT="<project>\component\work\MIPI_CAMERA\MIPI_CAMERA.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -2613,13 +2613,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775704758"
-SIZE="21258"
+TIME="1775970528"
+SIZE="21412"
 ENDFILE
 VALUE "<project>\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.v,hdl"
 STATE="utd"
-TIME="1775704757"
-SIZE="91064"
+TIME="1775970528"
+SIZE="93103"
 PARENT="<project>\component\work\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -2791,144 +2791,144 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_FIFO\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677975"
+TIME="1775972497"
 SIZE="529"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_FIFO\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.v,hdl"
 STATE="utd"
-TIME="1775677975"
+TIME="1775972497"
 SIZE="1139"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_FIFO\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_RXCLK\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677976"
+TIME="1775972497"
 SIZE="531"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_RXCLK\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.v,hdl"
 STATE="utd"
-TIME="1775677976"
+TIME="1775972497"
 SIZE="871"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_RXCLK\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_CLK_TRAINING\PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677976"
+TIME="1775972497"
 SIZE="517"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_CLK_TRAINING\PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD.v,hdl"
 STATE="utd"
-TIME="1775677976"
+TIME="1775972497"
 SIZE="3715"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_CLK_TRAINING\PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677978"
+TIME="1775972499"
 SIZE="6292"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.v,hdl"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="50833"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_RX\PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="497"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_RX\PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD.v,hdl"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="8163"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_RX\PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="635"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL.v,hdl"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="4063"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_LANECTRL_PAUSE_SYNC.v,hdl"
 STATE="utd"
-TIME="1775677977"
+TIME="1775972498"
 SIZE="3703"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677969"
+TIME="1775972495"
 SIZE="6947"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.v,hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="9558"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf,actgen_cxf"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="5047"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.cxf"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\core\CoreBclkSclkAlign.v,hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="9600"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_SD_wrap.v,tb_hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="11772"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_TB.v,tb_hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="14757"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbscheck_parallel_fab_x2.v,tb_hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="4031"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbsgen_parallel_fab_x2.v,tb_hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="3556"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\rev_bits_x2.v,tb_hdl"
 STATE="utd"
-TIME="1775677968"
+TIME="1775972495"
 SIZE="830"
 PARENT="<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN.cxf"
 IS_READONLY="TRUE"
@@ -3004,8 +3004,8 @@ SIZE="1027"
 ENDFILE
 VALUE "<project>\constraint\io\MPFS_DISCOVERY_KIT_BOARD_MISC.pdc,io_pdc"
 STATE="utd"
-TIME="1772164523"
-SIZE="1718"
+TIME="1775944374"
+SIZE="2589"
 ENDFILE
 VALUE "<project>\constraint\io\MPFS_DISCOVERY_MAC.pdc,io_pdc"
 STATE="utd"
@@ -3029,19 +3029,19 @@ SIZE="210"
 ENDFILE
 VALUE "<project>\constraint\io\user.pdc,io_pdc"
 STATE="utd"
-TIME="1775705478"
-SIZE="1827"
+TIME="1775954610"
+SIZE="2049"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\constraint\MPFS_DISCOVERY_KIT_derived_constraints.sdc,sdc"
 STATE="utd"
-TIME="1775694083"
+TIME="1775970575"
 SIZE="33201"
 ENDFILE
 VALUE "<project>\hdl\aes256_dec.v,hdl"
 STATE="utd"
-TIME="1775335732"
-SIZE="18869"
+TIME="1775885638"
+SIZE="19003"
 ENDFILE
 VALUE "<project>\hdl\aes_key_expansion.v,hdl"
 STATE="utd"
@@ -3085,8 +3085,8 @@ SIZE="12153"
 ENDFILE
 VALUE "<project>\hdl\security_core.v,hdl"
 STATE="utd"
-TIME="1775370007"
-SIZE="22648"
+TIME="1775923685"
+SIZE="22040"
 ENDFILE
 VALUE "<project>\hdl\sha256.v,hdl"
 STATE="utd"
@@ -3095,18 +3095,18 @@ SIZE="10563"
 ENDFILE
 VALUE "<project>\hdl\timer.v,hdl"
 STATE="utd"
-TIME="1773294137"
-SIZE="538"
+TIME="1775964967"
+SIZE="539"
 ENDFILE
 VALUE "<project>\hdl\trivium.v,hdl"
 STATE="utd"
-TIME="1775330678"
-SIZE="2845"
+TIME="1775923441"
+SIZE="2658"
 ENDFILE
 VALUE "<project>\hdl\trng_acc.v,hdl"
 STATE="utd"
-TIME="1775330655"
-SIZE="890"
+TIME="1775923538"
+SIZE="800"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
@@ -3229,23 +3229,23 @@ PARENT="<project>\component\Actel\DirectCore\CORESPI\5.2.104\CORESPI.cxf"
 ENDFILE
 VALUE "<project>\synthesis\MPFS_DISCOVERY_KIT.so,so"
 STATE="utd"
-TIME="1775629770"
+TIME="1775875185"
 SIZE="295"
 ENDFILE
 VALUE "<project>\synthesis\MPFS_DISCOVERY_KIT.vm,syn_vm"
-STATE="utd"
-TIME="1775629765"
-SIZE="18864431"
+STATE="ood"
+TIME="1775875178"
+SIZE="18940542"
 ENDFILE
 VALUE "<project>\synthesis\MPFS_DISCOVERY_KIT_syn.prj,prj"
 STATE="utd"
-TIME="1775629770"
+TIME="1775875186"
 SIZE="49706"
 ENDFILE
 VALUE "<project>\synthesis\MPFS_DISCOVERY_KIT_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1775629766"
-SIZE="238885"
+TIME="1775875180"
+SIZE="239870"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
@@ -3414,28 +3414,6 @@ VALUE "<project>\constraint\io\MPFS_DISCOVERY_MAC.pdc,io_pdc"
 VALUE "<project>\constraint\io\MPFS_DISCOVERY_7_SEG.pdc,io_pdc"
 VALUE "<project>\constraint\io\user.pdc,io_pdc"
 ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\MPFS_DISCOVERY_KIT.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-LIST Impl2
-ideSYNTHESIS(<project>\synthesis\MPFS_DISCOVERY_KIT.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST "MPFS_DISCOVERY_KIT_MSS::work"
 FILE "<project>\component\work\MPFS_DISCOVERY_KIT_MSS\MPFS_DISCOVERY_KIT_MSS.v,hdl"
@@ -3449,36 +3427,6 @@ VALUE "<project>\simulation\MPFS_DISCOVERY_KIT_MSS_PFSOC_MSS_FIC3_compile_bfm.tc
 VALUE "<project>\simulation\MPFS_DISCOVERY_KIT_MSS_PFSOC_MSS_FIC3_user.bfm,sim"
 VALUE "<project>\simulation\MPFS_DISCOVERY_KIT_MSS_PFSOC_MSS_PROCESSOR_compile_bfm.tcl,sim"
 VALUE "<project>\simulation\MPFS_DISCOVERY_KIT_MSS_PFSOC_MSS_PROCESSOR_user.bfm,sim"
-ENDLIST
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN::work"
-FILE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\core\CoreBclkSclkAlign.v,hdl"
-LIST Other_Association
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_SD_wrap.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_TB.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\CoreBclkSclkAlign.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\ICB_BclkSclkAlign.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_CCC_C0.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_CCC_C0_PF_CCC_C0_0_PF_CCC.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_DRI_C0.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_DRI_C0_PF_DRI_C0_0_PF_DRI.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_IOD_CLK_TRAINING_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_IOD_RX_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_LANECTRL_0_PF_LANECTRL.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_LANECTRL_ADDR_CMD_0_PF_LANECTRL.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_PF_IOD_CLK_TRAINING_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_PF_IOD_TX_CLK_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_PF_IOD_TX_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_LANECTRL_PAUSE_SYNC.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_LANECTRL_PAUSE_SYNC_2.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PLL_BclkSclkAlign.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbscheck_parallel_fab_x2.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbsgen_parallel_fab_x2.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\rev_bits_x2.v,tb_hdl"
 ENDLIST
 ENDLIST
 LIST "VDMA::work"
@@ -3624,33 +3572,6 @@ VALUE "<project>\component\Actel\DirectCore\corepwm\4.5.100\coreparameters.v,tb_
 VALUE "<project>\component\Actel\DirectCore\corepwm\4.5.100\rtl\vlog\test\user\tb_user_corepwm.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\corepwm\4.5.100\mti\scripts\wave_usertb_vlog.do,do"
 ENDLIST
-LIST PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_SD_wrap.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_TB.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\CoreBclkSclkAlign.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\ICB_BclkSclkAlign.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_CCC_C0.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_CCC_C0_PF_CCC_C0_0_PF_CCC.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_DRI_C0.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_DRI_C0_PF_DRI_C0_0_PF_DRI.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_IOD_CLK_TRAINING_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_IOD_RX_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_LANECTRL_0_PF_LANECTRL.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_LANECTRL_ADDR_CMD_0_PF_LANECTRL.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_PF_IOD_CLK_TRAINING_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_PF_IOD_TX_CLK_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0_PF_IOD_TX_PF_IOD.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_LANECTRL_PAUSE_SYNC.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_LANECTRL_PAUSE_SYNC_2.v,tb_hdl"
-VALUE "<project>\component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PLL_BclkSclkAlign.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbscheck_parallel_fab_x2.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbsgen_parallel_fab_x2.v,tb_hdl"
-VALUE "<project>\component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\rev_bits_x2.v,tb_hdl"
-ENDLIST
 LIST VDMA
 VALUE "<project>\component\Microchip\SolutionCore\VDMA\1.1.0\Stimulus\axi4_ram.v,tb_hdl"
 VALUE "<project>\component\Microchip\SolutionCore\VDMA\1.1.0\Stimulus\vdma_tb.v,tb_hdl"
@@ -3788,28 +3709,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "MPFS_DISCOVERY_KIT::work"
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\MPFS_DISCOVERY_KIT.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-LIST Impl2
-ideSYNTHESIS(<project>\synthesis\MPFS_DISCOVERY_KIT.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -3823,31 +3722,25 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;CORE_I2C_C0_0_WRAPPER;0
 Reports;Reports;0
 ReportsCurrentItem;Run Programming Action:MPFS_DISCOVERY_KIT_PROGRAM.log
+SmartDesign;FIC_0_PERIPHERALS;0
+SmartDesign;MIPI_CAMERA;0
 Constraint Manager;Constraint Manager;0
+SmartDesign;FIC_3_PERIPHERALS;0
 SmartDesign;MSS_WRAPPER;0
 SmartDesign;MPFS_DISCOVERY_KIT;0
-HDL;constraint\MPFS_DISCOVERY_KIT_derived_constraints.sdc;0
-SmartDesign;FIC_3_PERIPHERALS;0
-SmartDesign;MIPI_CAMERA;0
-HDL;constraint\io\MPFS_DISCOVERY_KIT_BOARD_MISC.pdc;0
-HDL;constraint\io\MPFS_DISCOVERY_I2C_LOOPBACK.pdc;0
-HDL;constraint\io\MPFS_DISCOVERY_mikroBUS.pdc;0
-HDL;constraint\io\MPFS_DISCOVERY_RPi.pdc;0
-StartPage;StartPage;0
-HDL;hdl\sha256.v;0
-HDL;hdl\trivium.v;0
+SmartDesign;CLOCKS_AND_RESETS;0
+HDL;hdl\timer.v;0
+HDL;constraint\io\user.pdc;0
 HDL;hdl\trng_acc.v;0
+HDL;hdl\trivium.v;0
+SmartDesign;csprng;0
+HDL;hdl\security_core.v;0
+StartPage;StartPage;0
 HDL;hdl\aes256_dec.v;0
 HDL;hdl\aes_key_expansion.v;0
-SmartDesign;FIC_0_PERIPHERALS;0
-HDL;constraint\io\user.pdc;0
-HDL;hdl\security_core.v;0
-SmartDesign;CLOCKS_AND_RESETS;0
-SmartDesign;csprng;0
-ACTIVEVIEW;MSS_WRAPPER
+ACTIVEVIEW;MPFS_DISCOVERY_KIT
 ENDLIST
 LIST ModuleSubBlockList
 LIST "aes256_dec::work","hdl\aes256_dec.v","FALSE","FALSE"
@@ -4648,8 +4541,6 @@ ENDLIST
 LIST "GF_SHARED_MUL::work","hdl\sbox.v","FALSE","FALSE"
 SUBBLOCK "GF_MUL::work","hdl\sbox.v","FALSE","FALSE"
 ENDLIST
-LIST "ICB_BCLKSCLKALIGN::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\core\ICB_BclkSclkAlign.v","FALSE","FALSE"
-ENDLIST
 LIST "LSRAM_top_vdma::work","component\Microchip\SolutionCore\VDMA\1.1.0\RTL\LSRAM_top_vdma.v","FALSE","FALSE"
 ENDLIST
 LIST "miv_ihc_address_controller::work","component\work\MIV_IHC_C0\MIV_IHC_C0_0\rtl\core\core_merged\miv_ihc_core_merged.v","FALSE","FALSE"
@@ -4697,8 +4588,6 @@ ENDLIST
 LIST "mult::work","hdl\modular.v","FALSE","FALSE"
 ENDLIST
 LIST "neoTRNG_cell::work","hdl\neoTRNG.vhd","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL_PAUSE_SYNC::work","component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_LANECTRL_PAUSE_SYNC.v","FALSE","FALSE"
 ENDLIST
 LIST "ram2port_async_fifo::work","component\Microchip\SolutionCore\VDMA\1.1.0\RTL\async_fifo_vdma.v","FALSE","FALSE"
 ENDLIST
@@ -5059,9 +4948,9 @@ LIST "LINEAR_TRANSFORM::work","hdl\sbox.v","FALSE","FALSE"
 ENDLIST
 LIST "MIPI_CAMERA::work","component\work\MIPI_CAMERA\MIPI_CAMERA.v","TRUE","FALSE"
 SUBBLOCK "PF_CCC_C1::work","component\work\PF_CCC_C1\PF_CCC_C1.v","TRUE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.v","TRUE","FALSE"
 SUBBLOCK "VDMA_C0::work","component\work\VDMA_C0\VDMA_C0.v","TRUE","FALSE"
 SUBBLOCK "mipicsi2rxdecoderPF_C0::work","component\work\mipicsi2rxdecoderPF_C0\mipicsi2rxdecoderPF_C0.v","TRUE","FALSE"
+SUBBLOCK "PF_IOD_GENERIC_RX_C0::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf","TRUE","FALSE"
 ENDLIST
 LIST "mipicsi2rxdecoderPF::work","component\Microchip\SolutionCore\mipicsi2rxdecoderPF\5.1.0\Encrypted\mipicsi2rxdecoderPF.v","FALSE","FALSE"
 SUBBLOCK "axi4lite_adapter_mipi_csi_rx::work","component\Microchip\SolutionCore\mipicsi2rxdecoderPF\5.1.0\Encrypted\mipicsi2rxdecoderPF.v","FALSE","FALSE"
@@ -5181,33 +5070,13 @@ SUBBLOCK "PF_CCC_C1_PF_CCC_C1_0_PF_CCC::work","component\work\PF_CCC_C1\PF_CCC_C
 ENDLIST
 LIST "PF_CCC_C1_PF_CCC_C1_0_PF_CCC::work","component\work\PF_CCC_C1\PF_CCC_C1_0\PF_CCC_C1_PF_CCC_C1_0_PF_CCC.v","FALSE","FALSE"
 ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.v","TRUE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY::work","component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_FIFO\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.v","FALSE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY::work","component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_RXCLK\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.v","FALSE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_CLK_TRAINING\PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD.v","FALSE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_RX\PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD.v","FALSE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL::work","component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL.v","FALSE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_TR::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.v","TRUE","FALSE"
+LIST "PF_IOD_GENERIC_RX_C0::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_GENERIC_RX_C0.cxf","TRUE","FALSE"
+SUBBLOCK "PF_CLK_DIV_DELAY::work","","FALSE","FALSE"
+SUBBLOCK "PF_IOD::work","","FALSE","FALSE"
+SUBBLOCK "PF_LANECTRL::work","","FALSE","FALSE"
+SUBBLOCK "PF_IOD_GENERIC_RX_C0_TR::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.cxf","TRUE","FALSE"
 ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY::work","component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_FIFO\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.v","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY::work","component\work\PF_IOD_GENERIC_RX_C0\PF_CLK_DIV_RXCLK\PF_IOD_GENERIC_RX_C0_PF_CLK_DIV_RXCLK_PF_CLK_DIV_DELAY.v","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_CLK_TRAINING\PF_IOD_GENERIC_RX_C0_PF_IOD_CLK_TRAINING_PF_IOD.v","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD::work","component\work\PF_IOD_GENERIC_RX_C0\PF_IOD_RX\PF_IOD_GENERIC_RX_C0_PF_IOD_RX_PF_IOD.v","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL::work","component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL.v","FALSE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_PF_LANECTRL_0_PF_LANECTRL_PAUSE_SYNC::work","component\work\PF_IOD_GENERIC_RX_C0\PF_LANECTRL_0\PF_LANECTRL_PAUSE_SYNC.v","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_TR::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.v","TRUE","FALSE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\core\CoreBclkSclkAlign.v","FALSE","FALSE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C0_TR_PF_IOD_GENERIC_RX_C0_TR_0_COREBCLKSCLKALIGN::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\core\CoreBclkSclkAlign.v","FALSE","FALSE"
-SUBBLOCK "PLL_BCLKSCLKALIGN::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\core\PLL_BclkSclkAlign.v","FALSE","FALSE"
-SUBBLOCK "ICB_BCLKSCLKALIGN::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\core\ICB_BclkSclkAlign.v","FALSE","FALSE"
-ENDLIST
-LIST "PLL_BCLKSCLKALIGN::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\core\PLL_BclkSclkAlign.v","FALSE","FALSE"
+LIST "PF_IOD_GENERIC_RX_C0_TR::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR.cxf","TRUE","FALSE"
 ENDLIST
 LIST "read_demux_vdma::work","component\Microchip\SolutionCore\VDMA\1.1.0\RTL\read_demux_vdma.vhd","FALSE","FALSE"
 ENDLIST
@@ -5274,18 +5143,6 @@ ENDLIST
 LIST "write_demux_vdma::work","component\Microchip\SolutionCore\VDMA\1.1.0\RTL\write_demux_vdma.vhd","FALSE","FALSE"
 ENDLIST
 LIST "write_reg_vdma::work","component\Microchip\SolutionCore\VDMA\1.1.0\RTL\axi4lite_if_vdma.v","FALSE","FALSE"
-ENDLIST
-LIST "BclkSclk_PLL_TX2_1200mbps_SD_wrap::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_SD_wrap.v","FALSE","TRUE"
-SUBBLOCK "PF_CCC_C0::work","component\work\PF_CCC_C0\PF_CCC_C0.v","TRUE","FALSE"
-SUBBLOCK "PF_DRI_C0::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_DRI_C0.v","FALSE","TRUE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_prbscheck_parallel_fab_x2::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbscheck_parallel_fab_x2.v","FALSE","TRUE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_prbsgen_parallel_fab_x2::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbsgen_parallel_fab_x2.v","FALSE","TRUE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_rev_bits_x2::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\rev_bits_x2.v","FALSE","TRUE"
-SUBBLOCK "PF_IOD_GENERIC_RX_C1::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1.v","FALSE","TRUE"
-SUBBLOCK "PF_IOD_GENERIC_TX_C0::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_TX_C0.v","FALSE","TRUE"
-ENDLIST
-LIST "BclkSclk_PLL_TX2_1200mbps_TB::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_TB.v","FALSE","TRUE"
-SUBBLOCK "BclkSclk_PLL_TX2_1200mbps_SD_wrap::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\BclkSclk_PLL_TX2_1200mbps_SD_wrap.v","FALSE","TRUE"
 ENDLIST
 LIST "BFM_AHBSLAVEEXT::work","","FALSE","FALSE"
 ENDLIST
@@ -6083,12 +5940,6 @@ SUBBLOCK "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_PLL_BCLKSCLKALIGN::work","com
 SUBBLOCK "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_ICB_BCLKSCLKALIGN::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\ICB_BclkSclkAlign.v","FALSE","TRUE"
 ENDLIST
 LIST "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_PLL_BCLKSCLKALIGN::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PLL_BclkSclkAlign.v","FALSE","TRUE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_prbscheck_parallel_fab_x2::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbscheck_parallel_fab_x2.v","FALSE","TRUE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_prbsgen_parallel_fab_x2::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\prbsgen_parallel_fab_x2.v","FALSE","TRUE"
-ENDLIST
-LIST "PF_IOD_GENERIC_RX_C1_COREBCLKSCLKALIGN_0_rev_bits_x2::work","component\work\PF_IOD_GENERIC_RX_C0_TR\PF_IOD_GENERIC_RX_C0_TR_0\rtl\vlog\test\user\rev_bits_x2.v","FALSE","TRUE"
 ENDLIST
 LIST "PF_IOD_GENERIC_RX_C1_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY::work","component\Actel\DirectCore\COREBCLKSCLKALIGN\3.0.100\rtl\vlog\test\user\PF_IOD_GENERIC_RX_C1_PF_CLK_DIV_FIFO_PF_CLK_DIV_DELAY.v","FALSE","TRUE"
 ENDLIST

@@ -6,7 +6,7 @@
 
 # Family: PolarFireSoC , Die: MPFS095T , Package: FCSG325
 
-# Date generated: Wed Apr  8 23:31:18 2026 
+# Date generated: Sat Apr 11 20:43:30 2026 
 
 
 # 
@@ -25,6 +25,12 @@
 # User Locked I/O settings
 # 
 
+set_io -port_name CAM_EN  \
+    -pin_name Y14         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
 set_io -port_name I2C_SCL  \
     -pin_name T21          \
     -fixed true            \
@@ -35,6 +41,12 @@ set_io -port_name I2C_SDA  \
     -pin_name T20          \
     -fixed true            \
     -DIRECTION INOUT
+
+
+set_io -port_name LED1  \
+    -pin_name T18       \
+    -fixed true         \
+    -DIRECTION OUTPUT
 
 
 set_io -port_name {RXD[0]}  \

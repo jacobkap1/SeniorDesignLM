@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr  7 02:45:49 2026
+// Created by SmartDesign Sun Apr 12 01:03:09 2026
 // Version: 2025.2 2025.2.0.14
 //////////////////////////////////////////////////////////////////////
 
@@ -512,50 +512,50 @@ wire          AXI4mslave3_SLAVE3_WREADY;
 wire   [3:0]  AXI4mslave3_0_WSTRB;
 wire   [0:0]  AXI4mslave3_0_WUSER;
 wire          AXI4mslave3_0_WVALID;
-wire   [37:0] AXI4mslave4_0_ARADDR;
-wire   [1:0]  AXI4mslave4_0_ARBURST;
-wire   [3:0]  AXI4mslave4_0_ARCACHE;
-wire   [8:0]  AXI4mslave4_0_ARID;
-wire   [7:0]  AXI4mslave4_0_ARLEN;
-wire   [1:0]  AXI4mslave4_0_ARLOCK;
-wire   [2:0]  AXI4mslave4_0_ARPROT;
-wire   [3:0]  AXI4mslave4_0_ARQOS;
+wire   [37:0] AXI4mslave4_1_ARADDR;
+wire   [1:0]  AXI4mslave4_1_ARBURST;
+wire   [3:0]  AXI4mslave4_1_ARCACHE;
+wire   [8:0]  AXI4mslave4_1_ARID;
+wire   [7:0]  AXI4mslave4_1_ARLEN;
+wire   [1:0]  AXI4mslave4_1_ARLOCK;
+wire   [2:0]  AXI4mslave4_1_ARPROT;
+wire   [3:0]  AXI4mslave4_1_ARQOS;
 wire          AXI4mslave4_SLAVE4_ARREADY;
-wire   [3:0]  AXI4mslave4_0_ARREGION;
-wire   [2:0]  AXI4mslave4_0_ARSIZE;
-wire   [0:0]  AXI4mslave4_0_ARUSER;
-wire          AXI4mslave4_0_ARVALID;
-wire   [37:0] AXI4mslave4_0_AWADDR;
-wire   [1:0]  AXI4mslave4_0_AWBURST;
-wire   [3:0]  AXI4mslave4_0_AWCACHE;
-wire   [8:0]  AXI4mslave4_0_AWID;
-wire   [7:0]  AXI4mslave4_0_AWLEN;
-wire   [1:0]  AXI4mslave4_0_AWLOCK;
-wire   [2:0]  AXI4mslave4_0_AWPROT;
-wire   [3:0]  AXI4mslave4_0_AWQOS;
+wire   [3:0]  AXI4mslave4_1_ARREGION;
+wire   [2:0]  AXI4mslave4_1_ARSIZE;
+wire   [0:0]  AXI4mslave4_1_ARUSER;
+wire          AXI4mslave4_1_ARVALID;
+wire   [37:0] AXI4mslave4_1_AWADDR;
+wire   [1:0]  AXI4mslave4_1_AWBURST;
+wire   [3:0]  AXI4mslave4_1_AWCACHE;
+wire   [8:0]  AXI4mslave4_1_AWID;
+wire   [7:0]  AXI4mslave4_1_AWLEN;
+wire   [1:0]  AXI4mslave4_1_AWLOCK;
+wire   [2:0]  AXI4mslave4_1_AWPROT;
+wire   [3:0]  AXI4mslave4_1_AWQOS;
 wire          AXI4mslave4_SLAVE4_AWREADY;
-wire   [3:0]  AXI4mslave4_0_AWREGION;
-wire   [2:0]  AXI4mslave4_0_AWSIZE;
-wire   [0:0]  AXI4mslave4_0_AWUSER;
-wire          AXI4mslave4_0_AWVALID;
+wire   [3:0]  AXI4mslave4_1_AWREGION;
+wire   [2:0]  AXI4mslave4_1_AWSIZE;
+wire   [0:0]  AXI4mslave4_1_AWUSER;
+wire          AXI4mslave4_1_AWVALID;
 wire   [8:0]  AXI4mslave4_SLAVE4_BID;
-wire          AXI4mslave4_0_BREADY;
+wire          AXI4mslave4_1_BREADY;
 wire   [1:0]  AXI4mslave4_SLAVE4_BRESP;
 wire   [0:0]  AXI4mslave4_SLAVE4_BUSER;
 wire          AXI4mslave4_SLAVE4_BVALID;
 wire   [31:0] AXI4mslave4_SLAVE4_RDATA;
 wire   [8:0]  AXI4mslave4_SLAVE4_RID;
 wire          AXI4mslave4_SLAVE4_RLAST;
-wire          AXI4mslave4_0_RREADY;
+wire          AXI4mslave4_1_RREADY;
 wire   [1:0]  AXI4mslave4_SLAVE4_RRESP;
 wire   [0:0]  AXI4mslave4_SLAVE4_RUSER;
 wire          AXI4mslave4_SLAVE4_RVALID;
-wire   [31:0] AXI4mslave4_0_WDATA;
-wire          AXI4mslave4_0_WLAST;
+wire   [31:0] AXI4mslave4_1_WDATA;
+wire          AXI4mslave4_1_WLAST;
 wire          AXI4mslave4_SLAVE4_WREADY;
-wire   [3:0]  AXI4mslave4_0_WSTRB;
-wire   [0:0]  AXI4mslave4_0_WUSER;
-wire          AXI4mslave4_0_WVALID;
+wire   [3:0]  AXI4mslave4_1_WSTRB;
+wire   [0:0]  AXI4mslave4_1_WUSER;
+wire          AXI4mslave4_1_WVALID;
 wire   [31:0] DMA_CONTROLLER_AXI4InitiatorDMA_IF_ARADDR;
 wire   [1:0]  DMA_CONTROLLER_AXI4InitiatorDMA_IF_ARBURST;
 wire   [7:0]  DMA_CONTROLLER_AXI4InitiatorDMA_IF_ARID;
@@ -761,37 +761,6 @@ wire          AXI4mslave3_0_RREADY_net_0;
 wire   [0:0]  AXI4mslave3_0_AWUSER_net_0;
 wire   [0:0]  AXI4mslave3_0_WUSER_net_0;
 wire   [0:0]  AXI4mslave3_0_ARUSER_net_0;
-wire   [8:0]  AXI4mslave4_0_AWID_net_0;
-wire   [37:0] AXI4mslave4_0_AWADDR_net_0;
-wire   [7:0]  AXI4mslave4_0_AWLEN_net_0;
-wire   [2:0]  AXI4mslave4_0_AWSIZE_net_0;
-wire   [1:0]  AXI4mslave4_0_AWBURST_net_0;
-wire   [1:0]  AXI4mslave4_0_AWLOCK_net_0;
-wire   [3:0]  AXI4mslave4_0_AWCACHE_net_0;
-wire   [2:0]  AXI4mslave4_0_AWPROT_net_0;
-wire   [3:0]  AXI4mslave4_0_AWQOS_net_0;
-wire   [3:0]  AXI4mslave4_0_AWREGION_net_0;
-wire          AXI4mslave4_0_AWVALID_net_0;
-wire   [31:0] AXI4mslave4_0_WDATA_net_0;
-wire   [3:0]  AXI4mslave4_0_WSTRB_net_0;
-wire          AXI4mslave4_0_WLAST_net_0;
-wire          AXI4mslave4_0_WVALID_net_0;
-wire          AXI4mslave4_0_BREADY_net_0;
-wire   [8:0]  AXI4mslave4_0_ARID_net_0;
-wire   [37:0] AXI4mslave4_0_ARADDR_net_0;
-wire   [7:0]  AXI4mslave4_0_ARLEN_net_0;
-wire   [2:0]  AXI4mslave4_0_ARSIZE_net_0;
-wire   [1:0]  AXI4mslave4_0_ARBURST_net_0;
-wire   [1:0]  AXI4mslave4_0_ARLOCK_net_0;
-wire   [3:0]  AXI4mslave4_0_ARCACHE_net_0;
-wire   [2:0]  AXI4mslave4_0_ARPROT_net_0;
-wire   [3:0]  AXI4mslave4_0_ARQOS_net_0;
-wire   [3:0]  AXI4mslave4_0_ARREGION_net_0;
-wire          AXI4mslave4_0_ARVALID_net_0;
-wire          AXI4mslave4_0_RREADY_net_0;
-wire   [0:0]  AXI4mslave4_0_AWUSER_net_0;
-wire   [0:0]  AXI4mslave4_0_WUSER_net_0;
-wire   [0:0]  AXI4mslave4_0_ARUSER_net_0;
 wire          AXI4mmaster0_AWREADY_net_0;
 wire          AXI4mmaster0_WREADY_net_0;
 wire   [7:0]  AXI4mmaster0_BID_net_0;
@@ -805,6 +774,37 @@ wire          AXI4mmaster0_RLAST_net_0;
 wire          AXI4mmaster0_RVALID_net_0;
 wire   [0:0]  AXI4mmaster0_BUSER_net_0;
 wire   [0:0]  AXI4mmaster0_RUSER_net_0;
+wire   [8:0]  AXI4mslave4_1_AWID_net_0;
+wire   [37:0] AXI4mslave4_1_AWADDR_net_0;
+wire   [7:0]  AXI4mslave4_1_AWLEN_net_0;
+wire   [2:0]  AXI4mslave4_1_AWSIZE_net_0;
+wire   [1:0]  AXI4mslave4_1_AWBURST_net_0;
+wire   [1:0]  AXI4mslave4_1_AWLOCK_net_0;
+wire   [3:0]  AXI4mslave4_1_AWCACHE_net_0;
+wire   [2:0]  AXI4mslave4_1_AWPROT_net_0;
+wire   [3:0]  AXI4mslave4_1_AWQOS_net_0;
+wire   [3:0]  AXI4mslave4_1_AWREGION_net_0;
+wire          AXI4mslave4_1_AWVALID_net_0;
+wire   [31:0] AXI4mslave4_1_WDATA_net_0;
+wire   [3:0]  AXI4mslave4_1_WSTRB_net_0;
+wire          AXI4mslave4_1_WLAST_net_0;
+wire          AXI4mslave4_1_WVALID_net_0;
+wire          AXI4mslave4_1_BREADY_net_0;
+wire   [8:0]  AXI4mslave4_1_ARID_net_0;
+wire   [37:0] AXI4mslave4_1_ARADDR_net_0;
+wire   [7:0]  AXI4mslave4_1_ARLEN_net_0;
+wire   [2:0]  AXI4mslave4_1_ARSIZE_net_0;
+wire   [1:0]  AXI4mslave4_1_ARBURST_net_0;
+wire   [1:0]  AXI4mslave4_1_ARLOCK_net_0;
+wire   [3:0]  AXI4mslave4_1_ARCACHE_net_0;
+wire   [2:0]  AXI4mslave4_1_ARPROT_net_0;
+wire   [3:0]  AXI4mslave4_1_ARQOS_net_0;
+wire   [3:0]  AXI4mslave4_1_ARREGION_net_0;
+wire          AXI4mslave4_1_ARVALID_net_0;
+wire          AXI4mslave4_1_RREADY_net_0;
+wire   [0:0]  AXI4mslave4_1_AWUSER_net_0;
+wire   [0:0]  AXI4mslave4_1_WUSER_net_0;
+wire   [0:0]  AXI4mslave4_1_ARUSER_net_0;
 wire   [0:0]  INTERRUPT_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
@@ -1008,68 +1008,6 @@ assign AXI4mslave3_0_WUSER_net_0[0]     = AXI4mslave3_0_WUSER[0];
 assign AXI4mslave3_SLAVE3_WUSER[0:0]    = AXI4mslave3_0_WUSER_net_0[0];
 assign AXI4mslave3_0_ARUSER_net_0[0]    = AXI4mslave3_0_ARUSER[0];
 assign AXI4mslave3_SLAVE3_ARUSER[0:0]   = AXI4mslave3_0_ARUSER_net_0[0];
-assign AXI4mslave4_0_AWID_net_0         = AXI4mslave4_0_AWID;
-assign AXI4mslave4_SLAVE4_AWID[8:0]     = AXI4mslave4_0_AWID_net_0;
-assign AXI4mslave4_0_AWADDR_net_0       = AXI4mslave4_0_AWADDR;
-assign AXI4mslave4_SLAVE4_AWADDR[37:0]  = AXI4mslave4_0_AWADDR_net_0;
-assign AXI4mslave4_0_AWLEN_net_0        = AXI4mslave4_0_AWLEN;
-assign AXI4mslave4_SLAVE4_AWLEN[7:0]    = AXI4mslave4_0_AWLEN_net_0;
-assign AXI4mslave4_0_AWSIZE_net_0       = AXI4mslave4_0_AWSIZE;
-assign AXI4mslave4_SLAVE4_AWSIZE[2:0]   = AXI4mslave4_0_AWSIZE_net_0;
-assign AXI4mslave4_0_AWBURST_net_0      = AXI4mslave4_0_AWBURST;
-assign AXI4mslave4_SLAVE4_AWBURST[1:0]  = AXI4mslave4_0_AWBURST_net_0;
-assign AXI4mslave4_0_AWLOCK_net_0       = AXI4mslave4_0_AWLOCK;
-assign AXI4mslave4_SLAVE4_AWLOCK[1:0]   = AXI4mslave4_0_AWLOCK_net_0;
-assign AXI4mslave4_0_AWCACHE_net_0      = AXI4mslave4_0_AWCACHE;
-assign AXI4mslave4_SLAVE4_AWCACHE[3:0]  = AXI4mslave4_0_AWCACHE_net_0;
-assign AXI4mslave4_0_AWPROT_net_0       = AXI4mslave4_0_AWPROT;
-assign AXI4mslave4_SLAVE4_AWPROT[2:0]   = AXI4mslave4_0_AWPROT_net_0;
-assign AXI4mslave4_0_AWQOS_net_0        = AXI4mslave4_0_AWQOS;
-assign AXI4mslave4_SLAVE4_AWQOS[3:0]    = AXI4mslave4_0_AWQOS_net_0;
-assign AXI4mslave4_0_AWREGION_net_0     = AXI4mslave4_0_AWREGION;
-assign AXI4mslave4_SLAVE4_AWREGION[3:0] = AXI4mslave4_0_AWREGION_net_0;
-assign AXI4mslave4_0_AWVALID_net_0      = AXI4mslave4_0_AWVALID;
-assign AXI4mslave4_SLAVE4_AWVALID       = AXI4mslave4_0_AWVALID_net_0;
-assign AXI4mslave4_0_WDATA_net_0        = AXI4mslave4_0_WDATA;
-assign AXI4mslave4_SLAVE4_WDATA[31:0]   = AXI4mslave4_0_WDATA_net_0;
-assign AXI4mslave4_0_WSTRB_net_0        = AXI4mslave4_0_WSTRB;
-assign AXI4mslave4_SLAVE4_WSTRB[3:0]    = AXI4mslave4_0_WSTRB_net_0;
-assign AXI4mslave4_0_WLAST_net_0        = AXI4mslave4_0_WLAST;
-assign AXI4mslave4_SLAVE4_WLAST         = AXI4mslave4_0_WLAST_net_0;
-assign AXI4mslave4_0_WVALID_net_0       = AXI4mslave4_0_WVALID;
-assign AXI4mslave4_SLAVE4_WVALID        = AXI4mslave4_0_WVALID_net_0;
-assign AXI4mslave4_0_BREADY_net_0       = AXI4mslave4_0_BREADY;
-assign AXI4mslave4_SLAVE4_BREADY        = AXI4mslave4_0_BREADY_net_0;
-assign AXI4mslave4_0_ARID_net_0         = AXI4mslave4_0_ARID;
-assign AXI4mslave4_SLAVE4_ARID[8:0]     = AXI4mslave4_0_ARID_net_0;
-assign AXI4mslave4_0_ARADDR_net_0       = AXI4mslave4_0_ARADDR;
-assign AXI4mslave4_SLAVE4_ARADDR[37:0]  = AXI4mslave4_0_ARADDR_net_0;
-assign AXI4mslave4_0_ARLEN_net_0        = AXI4mslave4_0_ARLEN;
-assign AXI4mslave4_SLAVE4_ARLEN[7:0]    = AXI4mslave4_0_ARLEN_net_0;
-assign AXI4mslave4_0_ARSIZE_net_0       = AXI4mslave4_0_ARSIZE;
-assign AXI4mslave4_SLAVE4_ARSIZE[2:0]   = AXI4mslave4_0_ARSIZE_net_0;
-assign AXI4mslave4_0_ARBURST_net_0      = AXI4mslave4_0_ARBURST;
-assign AXI4mslave4_SLAVE4_ARBURST[1:0]  = AXI4mslave4_0_ARBURST_net_0;
-assign AXI4mslave4_0_ARLOCK_net_0       = AXI4mslave4_0_ARLOCK;
-assign AXI4mslave4_SLAVE4_ARLOCK[1:0]   = AXI4mslave4_0_ARLOCK_net_0;
-assign AXI4mslave4_0_ARCACHE_net_0      = AXI4mslave4_0_ARCACHE;
-assign AXI4mslave4_SLAVE4_ARCACHE[3:0]  = AXI4mslave4_0_ARCACHE_net_0;
-assign AXI4mslave4_0_ARPROT_net_0       = AXI4mslave4_0_ARPROT;
-assign AXI4mslave4_SLAVE4_ARPROT[2:0]   = AXI4mslave4_0_ARPROT_net_0;
-assign AXI4mslave4_0_ARQOS_net_0        = AXI4mslave4_0_ARQOS;
-assign AXI4mslave4_SLAVE4_ARQOS[3:0]    = AXI4mslave4_0_ARQOS_net_0;
-assign AXI4mslave4_0_ARREGION_net_0     = AXI4mslave4_0_ARREGION;
-assign AXI4mslave4_SLAVE4_ARREGION[3:0] = AXI4mslave4_0_ARREGION_net_0;
-assign AXI4mslave4_0_ARVALID_net_0      = AXI4mslave4_0_ARVALID;
-assign AXI4mslave4_SLAVE4_ARVALID       = AXI4mslave4_0_ARVALID_net_0;
-assign AXI4mslave4_0_RREADY_net_0       = AXI4mslave4_0_RREADY;
-assign AXI4mslave4_SLAVE4_RREADY        = AXI4mslave4_0_RREADY_net_0;
-assign AXI4mslave4_0_AWUSER_net_0[0]    = AXI4mslave4_0_AWUSER[0];
-assign AXI4mslave4_SLAVE4_AWUSER[0:0]   = AXI4mslave4_0_AWUSER_net_0[0];
-assign AXI4mslave4_0_WUSER_net_0[0]     = AXI4mslave4_0_WUSER[0];
-assign AXI4mslave4_SLAVE4_WUSER[0:0]    = AXI4mslave4_0_WUSER_net_0[0];
-assign AXI4mslave4_0_ARUSER_net_0[0]    = AXI4mslave4_0_ARUSER[0];
-assign AXI4mslave4_SLAVE4_ARUSER[0:0]   = AXI4mslave4_0_ARUSER_net_0[0];
 assign AXI4mmaster0_AWREADY_net_0       = AXI4mmaster0_AWREADY;
 assign AXI4mmaster0_MASTER0_AWREADY     = AXI4mmaster0_AWREADY_net_0;
 assign AXI4mmaster0_WREADY_net_0        = AXI4mmaster0_WREADY;
@@ -1096,6 +1034,68 @@ assign AXI4mmaster0_BUSER_net_0[0]      = AXI4mmaster0_BUSER[0];
 assign AXI4mmaster0_MASTER0_BUSER[0:0]  = AXI4mmaster0_BUSER_net_0[0];
 assign AXI4mmaster0_RUSER_net_0[0]      = AXI4mmaster0_RUSER[0];
 assign AXI4mmaster0_MASTER0_RUSER[0:0]  = AXI4mmaster0_RUSER_net_0[0];
+assign AXI4mslave4_1_AWID_net_0         = AXI4mslave4_1_AWID;
+assign AXI4mslave4_SLAVE4_AWID[8:0]     = AXI4mslave4_1_AWID_net_0;
+assign AXI4mslave4_1_AWADDR_net_0       = AXI4mslave4_1_AWADDR;
+assign AXI4mslave4_SLAVE4_AWADDR[37:0]  = AXI4mslave4_1_AWADDR_net_0;
+assign AXI4mslave4_1_AWLEN_net_0        = AXI4mslave4_1_AWLEN;
+assign AXI4mslave4_SLAVE4_AWLEN[7:0]    = AXI4mslave4_1_AWLEN_net_0;
+assign AXI4mslave4_1_AWSIZE_net_0       = AXI4mslave4_1_AWSIZE;
+assign AXI4mslave4_SLAVE4_AWSIZE[2:0]   = AXI4mslave4_1_AWSIZE_net_0;
+assign AXI4mslave4_1_AWBURST_net_0      = AXI4mslave4_1_AWBURST;
+assign AXI4mslave4_SLAVE4_AWBURST[1:0]  = AXI4mslave4_1_AWBURST_net_0;
+assign AXI4mslave4_1_AWLOCK_net_0       = AXI4mslave4_1_AWLOCK;
+assign AXI4mslave4_SLAVE4_AWLOCK[1:0]   = AXI4mslave4_1_AWLOCK_net_0;
+assign AXI4mslave4_1_AWCACHE_net_0      = AXI4mslave4_1_AWCACHE;
+assign AXI4mslave4_SLAVE4_AWCACHE[3:0]  = AXI4mslave4_1_AWCACHE_net_0;
+assign AXI4mslave4_1_AWPROT_net_0       = AXI4mslave4_1_AWPROT;
+assign AXI4mslave4_SLAVE4_AWPROT[2:0]   = AXI4mslave4_1_AWPROT_net_0;
+assign AXI4mslave4_1_AWQOS_net_0        = AXI4mslave4_1_AWQOS;
+assign AXI4mslave4_SLAVE4_AWQOS[3:0]    = AXI4mslave4_1_AWQOS_net_0;
+assign AXI4mslave4_1_AWREGION_net_0     = AXI4mslave4_1_AWREGION;
+assign AXI4mslave4_SLAVE4_AWREGION[3:0] = AXI4mslave4_1_AWREGION_net_0;
+assign AXI4mslave4_1_AWVALID_net_0      = AXI4mslave4_1_AWVALID;
+assign AXI4mslave4_SLAVE4_AWVALID       = AXI4mslave4_1_AWVALID_net_0;
+assign AXI4mslave4_1_WDATA_net_0        = AXI4mslave4_1_WDATA;
+assign AXI4mslave4_SLAVE4_WDATA[31:0]   = AXI4mslave4_1_WDATA_net_0;
+assign AXI4mslave4_1_WSTRB_net_0        = AXI4mslave4_1_WSTRB;
+assign AXI4mslave4_SLAVE4_WSTRB[3:0]    = AXI4mslave4_1_WSTRB_net_0;
+assign AXI4mslave4_1_WLAST_net_0        = AXI4mslave4_1_WLAST;
+assign AXI4mslave4_SLAVE4_WLAST         = AXI4mslave4_1_WLAST_net_0;
+assign AXI4mslave4_1_WVALID_net_0       = AXI4mslave4_1_WVALID;
+assign AXI4mslave4_SLAVE4_WVALID        = AXI4mslave4_1_WVALID_net_0;
+assign AXI4mslave4_1_BREADY_net_0       = AXI4mslave4_1_BREADY;
+assign AXI4mslave4_SLAVE4_BREADY        = AXI4mslave4_1_BREADY_net_0;
+assign AXI4mslave4_1_ARID_net_0         = AXI4mslave4_1_ARID;
+assign AXI4mslave4_SLAVE4_ARID[8:0]     = AXI4mslave4_1_ARID_net_0;
+assign AXI4mslave4_1_ARADDR_net_0       = AXI4mslave4_1_ARADDR;
+assign AXI4mslave4_SLAVE4_ARADDR[37:0]  = AXI4mslave4_1_ARADDR_net_0;
+assign AXI4mslave4_1_ARLEN_net_0        = AXI4mslave4_1_ARLEN;
+assign AXI4mslave4_SLAVE4_ARLEN[7:0]    = AXI4mslave4_1_ARLEN_net_0;
+assign AXI4mslave4_1_ARSIZE_net_0       = AXI4mslave4_1_ARSIZE;
+assign AXI4mslave4_SLAVE4_ARSIZE[2:0]   = AXI4mslave4_1_ARSIZE_net_0;
+assign AXI4mslave4_1_ARBURST_net_0      = AXI4mslave4_1_ARBURST;
+assign AXI4mslave4_SLAVE4_ARBURST[1:0]  = AXI4mslave4_1_ARBURST_net_0;
+assign AXI4mslave4_1_ARLOCK_net_0       = AXI4mslave4_1_ARLOCK;
+assign AXI4mslave4_SLAVE4_ARLOCK[1:0]   = AXI4mslave4_1_ARLOCK_net_0;
+assign AXI4mslave4_1_ARCACHE_net_0      = AXI4mslave4_1_ARCACHE;
+assign AXI4mslave4_SLAVE4_ARCACHE[3:0]  = AXI4mslave4_1_ARCACHE_net_0;
+assign AXI4mslave4_1_ARPROT_net_0       = AXI4mslave4_1_ARPROT;
+assign AXI4mslave4_SLAVE4_ARPROT[2:0]   = AXI4mslave4_1_ARPROT_net_0;
+assign AXI4mslave4_1_ARQOS_net_0        = AXI4mslave4_1_ARQOS;
+assign AXI4mslave4_SLAVE4_ARQOS[3:0]    = AXI4mslave4_1_ARQOS_net_0;
+assign AXI4mslave4_1_ARREGION_net_0     = AXI4mslave4_1_ARREGION;
+assign AXI4mslave4_SLAVE4_ARREGION[3:0] = AXI4mslave4_1_ARREGION_net_0;
+assign AXI4mslave4_1_ARVALID_net_0      = AXI4mslave4_1_ARVALID;
+assign AXI4mslave4_SLAVE4_ARVALID       = AXI4mslave4_1_ARVALID_net_0;
+assign AXI4mslave4_1_RREADY_net_0       = AXI4mslave4_1_RREADY;
+assign AXI4mslave4_SLAVE4_RREADY        = AXI4mslave4_1_RREADY_net_0;
+assign AXI4mslave4_1_AWUSER_net_0[0]    = AXI4mslave4_1_AWUSER[0];
+assign AXI4mslave4_SLAVE4_AWUSER[0:0]   = AXI4mslave4_1_AWUSER_net_0[0];
+assign AXI4mslave4_1_WUSER_net_0[0]     = AXI4mslave4_1_WUSER[0];
+assign AXI4mslave4_SLAVE4_WUSER[0:0]    = AXI4mslave4_1_WUSER_net_0[0];
+assign AXI4mslave4_1_ARUSER_net_0[0]    = AXI4mslave4_1_ARUSER[0];
+assign AXI4mslave4_SLAVE4_ARUSER[0:0]   = AXI4mslave4_1_ARUSER_net_0[0];
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
@@ -1516,37 +1516,37 @@ FIC0_INITIATOR FIC0_INITIATOR_inst_0(
         .SLAVE3_AWUSER    ( AXI4mslave3_0_AWUSER ),
         .SLAVE3_WUSER     ( AXI4mslave3_0_WUSER ),
         .SLAVE3_ARUSER    ( AXI4mslave3_0_ARUSER ),
-        .SLAVE4_AWID      ( AXI4mslave4_0_AWID ),
-        .SLAVE4_AWADDR    ( AXI4mslave4_0_AWADDR ),
-        .SLAVE4_AWLEN     ( AXI4mslave4_0_AWLEN ),
-        .SLAVE4_AWSIZE    ( AXI4mslave4_0_AWSIZE ),
-        .SLAVE4_AWBURST   ( AXI4mslave4_0_AWBURST ),
-        .SLAVE4_AWLOCK    ( AXI4mslave4_0_AWLOCK ),
-        .SLAVE4_AWCACHE   ( AXI4mslave4_0_AWCACHE ),
-        .SLAVE4_AWPROT    ( AXI4mslave4_0_AWPROT ),
-        .SLAVE4_AWQOS     ( AXI4mslave4_0_AWQOS ),
-        .SLAVE4_AWREGION  ( AXI4mslave4_0_AWREGION ),
-        .SLAVE4_AWVALID   ( AXI4mslave4_0_AWVALID ),
-        .SLAVE4_WDATA     ( AXI4mslave4_0_WDATA ),
-        .SLAVE4_WSTRB     ( AXI4mslave4_0_WSTRB ),
-        .SLAVE4_WLAST     ( AXI4mslave4_0_WLAST ),
-        .SLAVE4_WVALID    ( AXI4mslave4_0_WVALID ),
-        .SLAVE4_BREADY    ( AXI4mslave4_0_BREADY ),
-        .SLAVE4_ARID      ( AXI4mslave4_0_ARID ),
-        .SLAVE4_ARADDR    ( AXI4mslave4_0_ARADDR ),
-        .SLAVE4_ARLEN     ( AXI4mslave4_0_ARLEN ),
-        .SLAVE4_ARSIZE    ( AXI4mslave4_0_ARSIZE ),
-        .SLAVE4_ARBURST   ( AXI4mslave4_0_ARBURST ),
-        .SLAVE4_ARLOCK    ( AXI4mslave4_0_ARLOCK ),
-        .SLAVE4_ARCACHE   ( AXI4mslave4_0_ARCACHE ),
-        .SLAVE4_ARPROT    ( AXI4mslave4_0_ARPROT ),
-        .SLAVE4_ARQOS     ( AXI4mslave4_0_ARQOS ),
-        .SLAVE4_ARREGION  ( AXI4mslave4_0_ARREGION ),
-        .SLAVE4_ARVALID   ( AXI4mslave4_0_ARVALID ),
-        .SLAVE4_RREADY    ( AXI4mslave4_0_RREADY ),
-        .SLAVE4_AWUSER    ( AXI4mslave4_0_AWUSER ),
-        .SLAVE4_WUSER     ( AXI4mslave4_0_WUSER ),
-        .SLAVE4_ARUSER    ( AXI4mslave4_0_ARUSER ),
+        .SLAVE4_AWID      ( AXI4mslave4_1_AWID ),
+        .SLAVE4_AWADDR    ( AXI4mslave4_1_AWADDR ),
+        .SLAVE4_AWLEN     ( AXI4mslave4_1_AWLEN ),
+        .SLAVE4_AWSIZE    ( AXI4mslave4_1_AWSIZE ),
+        .SLAVE4_AWBURST   ( AXI4mslave4_1_AWBURST ),
+        .SLAVE4_AWLOCK    ( AXI4mslave4_1_AWLOCK ),
+        .SLAVE4_AWCACHE   ( AXI4mslave4_1_AWCACHE ),
+        .SLAVE4_AWPROT    ( AXI4mslave4_1_AWPROT ),
+        .SLAVE4_AWQOS     ( AXI4mslave4_1_AWQOS ),
+        .SLAVE4_AWREGION  ( AXI4mslave4_1_AWREGION ),
+        .SLAVE4_AWVALID   ( AXI4mslave4_1_AWVALID ),
+        .SLAVE4_WDATA     ( AXI4mslave4_1_WDATA ),
+        .SLAVE4_WSTRB     ( AXI4mslave4_1_WSTRB ),
+        .SLAVE4_WLAST     ( AXI4mslave4_1_WLAST ),
+        .SLAVE4_WVALID    ( AXI4mslave4_1_WVALID ),
+        .SLAVE4_BREADY    ( AXI4mslave4_1_BREADY ),
+        .SLAVE4_ARID      ( AXI4mslave4_1_ARID ),
+        .SLAVE4_ARADDR    ( AXI4mslave4_1_ARADDR ),
+        .SLAVE4_ARLEN     ( AXI4mslave4_1_ARLEN ),
+        .SLAVE4_ARSIZE    ( AXI4mslave4_1_ARSIZE ),
+        .SLAVE4_ARBURST   ( AXI4mslave4_1_ARBURST ),
+        .SLAVE4_ARLOCK    ( AXI4mslave4_1_ARLOCK ),
+        .SLAVE4_ARCACHE   ( AXI4mslave4_1_ARCACHE ),
+        .SLAVE4_ARPROT    ( AXI4mslave4_1_ARPROT ),
+        .SLAVE4_ARQOS     ( AXI4mslave4_1_ARQOS ),
+        .SLAVE4_ARREGION  ( AXI4mslave4_1_ARREGION ),
+        .SLAVE4_ARVALID   ( AXI4mslave4_1_ARVALID ),
+        .SLAVE4_RREADY    ( AXI4mslave4_1_RREADY ),
+        .SLAVE4_AWUSER    ( AXI4mslave4_1_AWUSER ),
+        .SLAVE4_WUSER     ( AXI4mslave4_1_WUSER ),
+        .SLAVE4_ARUSER    ( AXI4mslave4_1_ARUSER ),
         .MASTER0_AWREADY  ( AXI4mmaster0_AWREADY ),
         .MASTER0_WREADY   ( AXI4mmaster0_WREADY ),
         .MASTER0_BID      ( AXI4mmaster0_BID ),

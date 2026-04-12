@@ -1,5 +1,5 @@
 # Microchip Technology Inc.
-# Date: 2026-Apr-08 23:39:13
+# Date: 2026-Apr-12 01:31:03
 # This file was generated based on the following SDC source files:
 #   C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/constraint/MPFS_DISCOVERY_KIT_derived_constraints.sdc
 #
@@ -24,6 +24,7 @@ set_false_path -from [ get_cells { MIPI_CAMERA_0/VDMA_C0_0/*/*/*/*/*glbl_int_en*
 set_false_path -from [ get_cells { MIPI_CAMERA_0/VDMA_C0_0/*/*/*/*/*interrupt_status_clr* } ]
 set_false_path -from [ get_cells { MIPI_CAMERA_0/VDMA_C0_0/*/*/*/*/*interrupt_en* } ]
 set_false_path -from [ get_cells { MIPI_CAMERA_0/VDMA_C0_0/*/*/*/*/*buff_addr_fifo* } ]
+set_false_path -through [ get_pins { MIPI_CAMERA_0/VDMA_C0_0/*/*/*/*/*mem_rd_data* } ]
 set_multicycle_path -setup 2 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/emflag_cnt[*] } ] -to [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/late_found_lsb_d } ]
 set_multicycle_path -hold 1 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/emflag_cnt[*] } ] -to [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/late_found_lsb_d } ]
 set_multicycle_path -setup 2 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/emflag_cnt[*] } ] -to [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/late_found_msb_d } ]
@@ -122,11 +123,11 @@ set_multicycle_path -setup 2 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX
 set_multicycle_path -hold 1 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/clkalign_curr_state[*] } ] -to [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/rx_err } ]
 set_multicycle_path -setup 2 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/clkalign_curr_state[*] } ] -to [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/clk_align_done } ]
 set_multicycle_path -hold 1 -from [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/clkalign_curr_state[*] } ] -to [ get_cells { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/COREBCLKSCLKALIGN_0/*/genblk1.U_ICB_BCLKSCLKALIGN/clk_align_done } ]
-set_clock_jitter 0.077981 [ get_clocks { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD/Y_DIV } ]
+set_clock_jitter 0.109008 [ get_clocks { MIPI_CAMERA_0/PF_IOD_GENERIC_RX_C0_0/PF_CLK_DIV_FIFO/I_CDD/Y_DIV } ]
 set_clock_jitter 0.135 [ get_clocks { MIPI_CAMERA_0/PF_CCC_C1_0/PF_CCC_C1_0/pll_inst_0/OUT0 } ]
 set_clock_jitter 0.135 [ get_clocks { CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT3 } ]
 set_clock_jitter 0.135 [ get_clocks { CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT2 } ]
 set_clock_jitter 0.135 [ get_clocks { CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT1 } ]
 set_clock_jitter 0.135 [ get_clocks { CLOCKS_AND_RESETS_0/CCC_FIC_x_CLK/PF_CCC_C0_0/pll_inst_0/OUT0 } ]
-set_clock_jitter 0.077981 [ get_clocks { RX_CLK_P } ]
-set_clock_jitter 0.077981 [ get_clocks { REF_CLK_50MHz } ]
+set_clock_jitter 0.109008 [ get_clocks { RX_CLK_P } ]
+set_clock_jitter 0.109008 [ get_clocks { REF_CLK_50MHz } ]
