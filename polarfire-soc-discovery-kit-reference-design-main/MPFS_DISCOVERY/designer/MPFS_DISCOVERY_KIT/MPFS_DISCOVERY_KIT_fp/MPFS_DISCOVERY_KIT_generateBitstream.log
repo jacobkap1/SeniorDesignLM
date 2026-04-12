@@ -1,0 +1,16 @@
+Software Version: 2025.2.0.14
+Opened 'C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT_fp\MPFS_DISCOVERY_KIT.pro'
+PDB file 'C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.pdb' has been loaded successfully.
+DESIGN : MPFS_DISCOVERY_KIT;  CHECKSUM : 7B61;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+Info: Design version: 0
+File/Folder 'C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.ppd'; file programs Fabric, sNVM and eNVM.
+Fabric component bitstream digest: 87e79995ffbba36dfa47e0aa2f60c9c00e97dc753880b3fc8853a3228a6912c3
+eNVM component bitstream digest: d95779958854c43fab8cf9c48e2180a2f57cc7fadc6eff253255aa092ccbbf16
+sNVM component bitstream digest: b0a9e2be29f47fa951a6a131a8dd9a9016e5ba87de5833c742b7f654428ea6e7
+Entire bitstream digest: 9fb7aae3d44ccfc4481e99947d85e538b963e873831dc60b14457fbd1ae1dc96
+Finished: Thu Apr 09 00:41:32 2026 (Elapsed time 00:00:21)
+
+Project saved.
+Project closed.

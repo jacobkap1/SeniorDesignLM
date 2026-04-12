@@ -1,0 +1,20 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+
+Date      :  Sun Mar 22 14:44:10 2026
+Project   :  C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY
+Component :  MSS_LSRAM
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/MSS_LSRAM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/MSS_LSRAM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/COREAXI4SRAM_0/rtl/vlog/core/CoreAXI4SRAM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/COREAXI4SRAM_0/rtl/vlog/core/CoreAXI4SRAM_MAINCTRL.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/COREAXI4SRAM_0/rtl/vlog/core/CoreAXI4SRAM_MAINCTRL_RT.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/COREAXI4SRAM_0/rtl/vlog/core/CoreAXI4SRAM_MAINCTRL_ECC.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/COREAXI4SRAM_0/rtl/vlog/core/CoreAXI4SRAM_MAINCTRL_ECC_RT.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/COREAXI4SRAM_0/rtl/vlog/core/CoreAXI4SRAM_SLVIF.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/PF_TPSRAM_AHB_AXI_0/MSS_LSRAM_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/MSS_LSRAM/MSS_LSRAM.v
+

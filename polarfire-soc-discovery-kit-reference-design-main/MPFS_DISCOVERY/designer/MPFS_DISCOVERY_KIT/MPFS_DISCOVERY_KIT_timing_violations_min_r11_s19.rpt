@@ -1,0 +1,919 @@
+Timing Violation Report Min Delay Analysis
+
+SmartTime Version 2025.2
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+Date: Tue Mar 24 23:25:29 2026
+
+
+Design: MPFS_DISCOVERY_KIT
+Family: PolarFireSoC
+Die: MPFS095T
+Package: FCSG325
+Temperature Range: 0 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_lt,fast_hv_lt,slow_lv_ht
+
+
+Path 1
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[14]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[334]:D
+  Delay (ns):              0.283
+  Slack (ns):              0.018
+  Arrival (ns):            5.752
+  Required (ns):           5.734
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWADDRReg[15]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_aw_inst/MASTER_AADDR_out[15]:D
+  Delay (ns):              0.292
+  Slack (ns):              0.036
+  Arrival (ns):            5.532
+  Required (ns):           5.496
+  Operating Conditions: slow_lv_lt
+
+Path 3
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/DWC_DownConv_preCalcCmdFifoWrCtrl_inst/WrapLogLen_comb_pre[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/wrCmdFifoWriteCtrl/WrapLogLen_reg[2]:D
+  Delay (ns):              0.303
+  Slack (ns):              0.048
+  Arrival (ns):            5.546
+  Required (ns):           5.498
+  Operating Conditions: slow_lv_lt
+
+Path 4
+  From: FIC_3_PERIPHERALS_0/PWM/corepwm_C0_0/genblk3.corepwm_reg_if/psh_prescale_reg[2]:CLK
+  To:   FIC_3_PERIPHERALS_0/PWM/corepwm_C0_0/genblk3.corepwm_reg_if/prescale_reg_Z[2]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.066
+  Arrival (ns):            4.196
+  Required (ns):           4.130
+  Operating Conditions: fast_hv_lt
+
+Path 5
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_8[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_9[0]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.066
+  Arrival (ns):            3.801
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 6
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/t_hi_r0[1][1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/t_hi_r1[1][1]:D
+  Delay (ns):              0.144
+  Slack (ns):              0.067
+  Arrival (ns):            3.815
+  Required (ns):           3.748
+  Operating Conditions: fast_hv_lt
+
+Path 7
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_ar_inst/MASTER_AADDR_out[29]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_ARChan/SLAVE_AADDR[29]:D
+  Delay (ns):              0.144
+  Slack (ns):              0.067
+  Arrival (ns):            3.822
+  Required (ns):           3.755
+  Operating Conditions: fast_hv_lt
+
+Path 8
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_ar_inst/MASTER_AADDR_out[12]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_ARChan/SLAVE_AADDR[12]:D
+  Delay (ns):              0.144
+  Slack (ns):              0.067
+  Arrival (ns):            3.822
+  Required (ns):           3.755
+  Operating Conditions: fast_hv_lt
+
+Path 9
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_9[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_10[0]:D
+  Delay (ns):              0.144
+  Slack (ns):              0.067
+  Arrival (ns):            4.203
+  Required (ns):           4.136
+  Operating Conditions: fast_hv_lt
+
+Path 10
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_4[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_5[0]:D
+  Delay (ns):              0.144
+  Slack (ns):              0.067
+  Arrival (ns):            3.802
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 11
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/t_hi_r0[0][1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/t_hi_r1[0][1]:D
+  Delay (ns):              0.217
+  Slack (ns):              0.068
+  Arrival (ns):            5.489
+  Required (ns):           5.421
+  Operating Conditions: slow_lv_lt
+
+Path 12
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_3[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_4[3]:D
+  Delay (ns):              0.286
+  Slack (ns):              0.068
+  Arrival (ns):            5.779
+  Required (ns):           5.711
+  Operating Conditions: slow_lv_ht
+
+Path 13
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_7[12]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_8[12]:D
+  Delay (ns):              0.146
+  Slack (ns):              0.069
+  Arrival (ns):            3.803
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 14
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[31]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_11[31]:D
+  Delay (ns):              0.146
+  Slack (ns):              0.069
+  Arrival (ns):            3.807
+  Required (ns):           3.738
+  Operating Conditions: fast_hv_lt
+
+Path 15
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_8[26]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[282]:D
+  Delay (ns):              0.147
+  Slack (ns):              0.070
+  Arrival (ns):            3.806
+  Required (ns):           3.736
+  Operating Conditions: fast_hv_lt
+
+Path 16
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_8[12]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[268]:D
+  Delay (ns):              0.147
+  Slack (ns):              0.070
+  Arrival (ns):            3.804
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 17
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_11[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_12[4]:D
+  Delay (ns):              0.147
+  Slack (ns):              0.070
+  Arrival (ns):            3.810
+  Required (ns):           3.740
+  Operating Conditions: fast_hv_lt
+
+Path 18
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_11[4]:D
+  Delay (ns):              0.148
+  Slack (ns):              0.070
+  Arrival (ns):            3.810
+  Required (ns):           3.740
+  Operating Conditions: fast_hv_lt
+
+Path 19
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_3[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_4[4]:D
+  Delay (ns):              0.148
+  Slack (ns):              0.071
+  Arrival (ns):            3.801
+  Required (ns):           3.730
+  Operating Conditions: fast_hv_lt
+
+Path 20
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_1[23]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_2[23]:D
+  Delay (ns):              0.148
+  Slack (ns):              0.071
+  Arrival (ns):            3.823
+  Required (ns):           3.752
+  Operating Conditions: fast_hv_lt
+
+Path 21
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_13[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_14[5]:D
+  Delay (ns):              0.148
+  Slack (ns):              0.071
+  Arrival (ns):            3.805
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 22
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[12]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[332]:D
+  Delay (ns):              0.148
+  Slack (ns):              0.071
+  Arrival (ns):            3.807
+  Required (ns):           3.736
+  Operating Conditions: fast_hv_lt
+
+Path 23
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_ar_inst/MASTER_AADDR_out[14]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_ARChan/SLAVE_AADDR[14]:D
+  Delay (ns):              0.148
+  Slack (ns):              0.071
+  Arrival (ns):            3.826
+  Required (ns):           3.755
+  Operating Conditions: fast_hv_lt
+
+Path 24
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWADDRReg[11]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_aw_inst/MASTER_AADDR_out[11]:D
+  Delay (ns):              0.145
+  Slack (ns):              0.071
+  Arrival (ns):            3.791
+  Required (ns):           3.720
+  Operating Conditions: fast_hv_lt
+
+Path 25
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r2[1][2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r3[1][2]:D
+  Delay (ns):              0.145
+  Slack (ns):              0.072
+  Arrival (ns):            3.808
+  Required (ns):           3.736
+  Operating Conditions: fast_hv_lt
+
+Path 26
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/trng_acc_0/seed_o_4[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/trng_acc_0/seed_o_5[6]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.072
+  Arrival (ns):            3.806
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 27
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWADDRReg[20]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_aw_inst/MASTER_AADDR_out[20]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.072
+  Arrival (ns):            3.805
+  Required (ns):           3.733
+  Operating Conditions: fast_hv_lt
+
+Path 28
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_3[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_3_CLK/CORERESET_0/dff_4[0]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.072
+  Arrival (ns):            4.208
+  Required (ns):           4.136
+  Operating Conditions: fast_hv_lt
+
+Path 29
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_2[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_3[0]:D
+  Delay (ns):              0.221
+  Slack (ns):              0.072
+  Arrival (ns):            5.466
+  Required (ns):           5.394
+  Operating Conditions: slow_lv_lt
+
+Path 30
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_8[18]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[274]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.073
+  Arrival (ns):            3.812
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 31
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[18]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[178]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.073
+  Arrival (ns):            3.812
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 32
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_1[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_2[2]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.073
+  Arrival (ns):            3.798
+  Required (ns):           3.725
+  Operating Conditions: fast_hv_lt
+
+Path 33
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_10[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_11[0]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.073
+  Arrival (ns):            3.808
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 34
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_0[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_1[0]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.073
+  Arrival (ns):            3.808
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 35
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r1[1][2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r2[1][2]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.074
+  Arrival (ns):            3.811
+  Required (ns):           3.737
+  Operating Conditions: fast_hv_lt
+
+Path 36
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[161]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.810
+  Required (ns):           3.736
+  Operating Conditions: fast_hv_lt
+
+Path 37
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[12]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[172]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.808
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 38
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[12]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_6[12]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.808
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 39
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_4[7]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[135]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.813
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 40
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[30]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_11[30]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.826
+  Required (ns):           3.752
+  Operating Conditions: fast_hv_lt
+
+Path 41
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[2].slvcnv/rgsl/genblk4.wrs/sDat[70]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[2].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/widthConvwr/MASTER_WDATA_reg[60]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.074
+  Arrival (ns):            3.808
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 42
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_ar_inst/MASTER_AADDR_out[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_ARChan/addr_fifo[2]:D
+  Delay (ns):              0.186
+  Slack (ns):              0.074
+  Arrival (ns):            3.843
+  Required (ns):           3.769
+  Operating Conditions: fast_hv_lt
+
+Path 43
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_AWChan/SLAVE_AADDR[15]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/holdDat[46]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.807
+  Required (ns):           3.733
+  Operating Conditions: fast_hv_lt
+
+Path 44
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_ARChan/SLAVE_AADDR[28]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk2.arrs/holdDat[59]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.798
+  Required (ns):           3.724
+  Operating Conditions: fast_hv_lt
+
+Path 45
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_9[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_10[0]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.809
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 46
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_5[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_6[0]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.074
+  Arrival (ns):            3.809
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 47
+  From: FIC_3_PERIPHERALS_0/PWM/corepwm_C0_0/genblk3.corepwm_reg_if/psh_prescale_reg[22]:CLK
+  To:   FIC_3_PERIPHERALS_0/PWM/corepwm_C0_0/genblk3.corepwm_reg_if/prescale_reg_Z[22]:D
+  Delay (ns):              0.275
+  Slack (ns):              0.075
+  Arrival (ns):            6.156
+  Required (ns):           6.081
+  Operating Conditions: slow_lv_lt
+
+Path 48
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_lo_r2[1][0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_lo_r3[1][0]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.075
+  Arrival (ns):            3.822
+  Required (ns):           3.747
+  Operating Conditions: fast_hv_lt
+
+Path 49
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_9[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[6]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.075
+  Arrival (ns):            3.809
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 50
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_7[21]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_8[21]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.075
+  Arrival (ns):            3.814
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 51
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_7[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[225]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.075
+  Arrival (ns):            3.815
+  Required (ns):           3.740
+  Operating Conditions: fast_hv_lt
+
+Path 52
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_2[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[68]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.075
+  Arrival (ns):            3.805
+  Required (ns):           3.730
+  Operating Conditions: fast_hv_lt
+
+Path 53
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_14[8]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[8]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.075
+  Arrival (ns):            3.806
+  Required (ns):           3.731
+  Operating Conditions: fast_hv_lt
+
+Path 54
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[30]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[350]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.075
+  Arrival (ns):            3.826
+  Required (ns):           3.751
+  Operating Conditions: fast_hv_lt
+
+Path 55
+  From: FIC_0_PERIPHERALS_0/DMA_CONTROLLER_inst_0/DMA_CONTROLLER_0/U_AXI4INITIATORDMACtrl/AWADDRReg[24]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_aw_inst/MASTER_AADDR_out[24]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.075
+  Arrival (ns):            3.808
+  Required (ns):           3.733
+  Operating Conditions: fast_hv_lt
+
+Path 56
+  From: FIC_3_PERIPHERALS_0/PWM/corepwm_C0_0/genblk3.corepwm_reg_if/psh_period_reg[11]:CLK
+  To:   FIC_3_PERIPHERALS_0/PWM/corepwm_C0_0/genblk3.corepwm_reg_if/period_reg_Z[11]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.076
+  Arrival (ns):            4.199
+  Required (ns):           4.123
+  Operating Conditions: fast_hv_lt
+
+Path 57
+  From: FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/rx_shift[6]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/rx_shift[5]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            4.210
+  Required (ns):           4.134
+  Operating Conditions: fast_hv_lt
+
+Path 58
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_lo_r3[1][1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_lo_r4[1][1]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.807
+  Required (ns):           3.731
+  Operating Conditions: fast_hv_lt
+
+Path 59
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r2[0][2]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r3[0][2]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.812
+  Required (ns):           3.736
+  Operating Conditions: fast_hv_lt
+
+Path 60
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.827
+  Required (ns):           3.751
+  Operating Conditions: fast_hv_lt
+
+Path 61
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.827
+  Required (ns):           3.751
+  Operating Conditions: fast_hv_lt
+
+Path 62
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_9[9]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[9]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.810
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 63
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_4[9]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[9]:D
+  Delay (ns):              0.149
+  Slack (ns):              0.076
+  Arrival (ns):            3.803
+  Required (ns):           3.727
+  Operating Conditions: fast_hv_lt
+
+Path 64
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_14[16]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[16]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.811
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 65
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_13[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_14[3]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.810
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 66
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_12[20]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[404]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.076
+  Arrival (ns):            3.818
+  Required (ns):           3.742
+  Operating Conditions: fast_hv_lt
+
+Path 67
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_12[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_13[1]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.816
+  Required (ns):           3.740
+  Operating Conditions: fast_hv_lt
+
+Path 68
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_11[5]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.810
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 69
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/DWC_DownConv_preCalcCmdFifoWrCtrl_inst/sizeCnt_comb_pre_Z[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/wrCmdFifoWriteCtrl/sizeCnt_reg[5]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.833
+  Required (ns):           3.757
+  Operating Conditions: fast_hv_lt
+
+Path 70
+  From: FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/DWC_DownConv_preCalcCmdFifoWrCtrl_inst/sizeCnt_comb_pre_Z[2]:CLK
+  To:   FIC_0_PERIPHERALS_0/FIC0_INITIATOR_inst_0/FIC0_INITIATOR_0/SlvConvertor_loop[0].slvcnv/slvdwc/genblk1.DownConverter_inst/writeWidthConv/wrCmdFifoWriteCtrl/sizeCnt_reg[2]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.833
+  Required (ns):           3.757
+  Operating Conditions: fast_hv_lt
+
+Path 71
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_UpConv_preCalcAChannel_aw_inst/MASTER_AADDR_out[22]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_AWChan/SLAVE_AADDR[22]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.076
+  Arrival (ns):            3.791
+  Required (ns):           3.715
+  Operating Conditions: fast_hv_lt
+
+Path 72
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_AWChan/SLAVE_AADDR[17]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk1.awrs/holdDat[48]:D
+  Delay (ns):              0.153
+  Slack (ns):              0.076
+  Arrival (ns):            3.809
+  Required (ns):           3.733
+  Operating Conditions: fast_hv_lt
+
+Path 73
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/mstrDWC/genblk1.MstUpConv/DWC_ARChan/SLAVE_AADDR[9]:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/MstConvertor_loop[0].mstrconv/rgsl/genblk2.arrs/holdDat[40]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.076
+  Arrival (ns):            3.804
+  Required (ns):           3.728
+  Operating Conditions: fast_hv_lt
+
+Path 74
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r1[1][0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r2[1][0]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.077
+  Arrival (ns):            3.813
+  Required (ns):           3.736
+  Operating Conditions: fast_hv_lt
+
+Path 75
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/trng_acc_0/seed_o_2[4]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/trng_acc_0/seed_o_3[4]:D
+  Delay (ns):              0.154
+  Slack (ns):              0.077
+  Arrival (ns):            3.802
+  Required (ns):           3.725
+  Operating Conditions: fast_hv_lt
+
+Path 76
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/trivium_0/B[0][17]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/trivium_0/B[1][17]:D
+  Delay (ns):              0.154
+  Slack (ns):              0.077
+  Arrival (ns):            3.809
+  Required (ns):           3.732
+  Operating Conditions: fast_hv_lt
+
+Path 77
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sample_sreg[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/trng_acc_0/seed_o_0[1]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.077
+  Arrival (ns):            3.812
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 78
+  From: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:D
+  Delay (ns):              0.154
+  Slack (ns):              0.077
+  Arrival (ns):            3.828
+  Required (ns):           3.751
+  Operating Conditions: fast_hv_lt
+
+Path 79
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_9[30]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_10[30]:D
+  Delay (ns):              0.154
+  Slack (ns):              0.077
+  Arrival (ns):            3.829
+  Required (ns):           3.752
+  Operating Conditions: fast_hv_lt
+
+Path 80
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_9[20]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[308]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.077
+  Arrival (ns):            3.819
+  Required (ns):           3.742
+  Operating Conditions: fast_hv_lt
+
+Path 81
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_4[3]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[3]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.077
+  Arrival (ns):            3.810
+  Required (ns):           3.733
+  Operating Conditions: fast_hv_lt
+
+Path 82
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[7]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[487]:D
+  Delay (ns):              0.150
+  Slack (ns):              0.077
+  Arrival (ns):            3.791
+  Required (ns):           3.714
+  Operating Conditions: fast_hv_lt
+
+Path 83
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_14[1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[1]:D
+  Delay (ns):              0.154
+  Slack (ns):              0.077
+  Arrival (ns):            3.811
+  Required (ns):           3.734
+  Operating Conditions: fast_hv_lt
+
+Path 84
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_12[21]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_13[21]:D
+  Delay (ns):              0.154
+  Slack (ns):              0.077
+  Arrival (ns):            3.816
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 85
+  From: FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/rx_shift[5]:CLK
+  To:   FIC_3_PERIPHERALS_0/CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/rx_shift[4]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            4.212
+  Required (ns):           4.134
+  Operating Conditions: fast_hv_lt
+
+Path 86
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_r[2][7]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_hi_r0[2][3]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.804
+  Required (ns):           3.726
+  Operating Conditions: fast_hv_lt
+
+Path 87
+  From: FIC_0_PERIPHERALS_0/security_core_0/sbox/y_lo_r1[2][1]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/sbox/y_lo_r2[2][1]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.803
+  Required (ns):           3.725
+  Operating Conditions: fast_hv_lt
+
+Path 88
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_9[5]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[293]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.818
+  Required (ns):           3.740
+  Operating Conditions: fast_hv_lt
+
+Path 89
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_7[27]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_8[27]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.078
+  Arrival (ns):            3.829
+  Required (ns):           3.751
+  Operating Conditions: fast_hv_lt
+
+Path 90
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_5[18]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_6[18]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.817
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 91
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_1[26]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_2[26]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.813
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 92
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[6]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[486]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.837
+  Required (ns):           3.759
+  Operating Conditions: fast_hv_lt
+
+Path 93
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[23]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[503]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.078
+  Arrival (ns):            3.805
+  Required (ns):           3.727
+  Operating Conditions: fast_hv_lt
+
+Path 94
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_15[14]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[494]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.817
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 95
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_13[17]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_block_14[17]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.817
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 96
+  From: FIC_0_PERIPHERALS_0/security_core_0/hash_block_13[13]:CLK
+  To:   FIC_0_PERIPHERALS_0/security_core_0/hash_core/buffer[429]:D
+  Delay (ns):              0.151
+  Slack (ns):              0.078
+  Arrival (ns):            3.817
+  Required (ns):           3.739
+  Operating Conditions: fast_hv_lt
+
+Path 97
+  From: FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/arst_aclk_sync/sysReset_f1:CLK
+  To:   FIC_0_PERIPHERALS_0/DMA_INITIATOR_inst_0/DMA_INITIATOR_0/arst_aclk_sync/sysReset:D
+  Delay (ns):              0.154
+  Slack (ns):              0.078
+  Arrival (ns):            3.800
+  Required (ns):           3.722
+  Operating Conditions: fast_hv_lt
+
+Path 98
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_7[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_8[0]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.813
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 99
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_1[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_2[0]:D
+  Delay (ns):              0.155
+  Slack (ns):              0.078
+  Arrival (ns):            3.813
+  Required (ns):           3.735
+  Operating Conditions: fast_hv_lt
+
+Path 100
+  From: CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_13[0]:CLK
+  To:   CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_14[0]:D
+  Delay (ns):              0.152
+  Slack (ns):              0.078
+  Arrival (ns):            3.830
+  Required (ns):           3.752
+  Operating Conditions: fast_hv_lt
+

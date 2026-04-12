@@ -1,0 +1,140 @@
+
+fsm_encoding {45144014436} onehot
+
+fsm_state_encoding {45144014436} IDLE {00000001}
+
+fsm_state_encoding {45144014436} EXT_FETCH_WAIT {00000010}
+
+fsm_state_encoding {45144014436} EXT_FETCH_STORE {00000100}
+
+fsm_state_encoding {45144014436} EXT_VALID_CHECK {00001000}
+
+fsm_state_encoding {45144014436} EXT_CLR_VALID_WAIT {00010000}
+
+fsm_state_encoding {45144014436} EXT_CLR_VALID {00100000}
+
+fsm_state_encoding {45144014436} STR_FETCH_WAIT {01000000}
+
+fsm_state_encoding {45144014436} STR_FETCH_STORE {10000000}
+
+fsm_registers {45144014436} {currState[7]}  {currState[6]}  {currState[5]}  {currState[4]}  {currState[3]}  {currState[2]}  {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118324} sequential
+
+fsm_state_encoding {131183118324} IDLE {00}
+
+fsm_state_encoding {131183118324} NO_DAT {01}
+
+fsm_state_encoding {131183118324} TWO_DAT {10}
+
+fsm_state_encoding {131183118324} ONE_DAT {11}
+
+fsm_registers {131183118324} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118325} sequential
+
+fsm_state_encoding {131183118325} IDLE {00}
+
+fsm_state_encoding {131183118325} NO_DAT {01}
+
+fsm_state_encoding {131183118325} TWO_DAT {10}
+
+fsm_state_encoding {131183118325} ONE_DAT {11}
+
+fsm_registers {131183118325} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118326} sequential
+
+fsm_state_encoding {131183118326} IDLE {00}
+
+fsm_state_encoding {131183118326} NO_DAT {01}
+
+fsm_state_encoding {131183118326} TWO_DAT {10}
+
+fsm_state_encoding {131183118326} ONE_DAT {11}
+
+fsm_registers {131183118326} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118327} sequential
+
+fsm_state_encoding {131183118327} IDLE {00}
+
+fsm_state_encoding {131183118327} NO_DAT {01}
+
+fsm_state_encoding {131183118327} TWO_DAT {10}
+
+fsm_state_encoding {131183118327} ONE_DAT {11}
+
+fsm_registers {131183118327} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118327} sequential
+
+fsm_state_encoding {131183118327} IDLE {00}
+
+fsm_state_encoding {131183118327} NO_DAT {01}
+
+fsm_state_encoding {131183118327} TWO_DAT {10}
+
+fsm_state_encoding {131183118327} ONE_DAT {11}
+
+fsm_registers {131183118327} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118320} sequential
+
+fsm_state_encoding {131183118320} IDLE {00}
+
+fsm_state_encoding {131183118320} NO_DAT {01}
+
+fsm_state_encoding {131183118320} TWO_DAT {10}
+
+fsm_state_encoding {131183118320} ONE_DAT {11}
+
+fsm_registers {131183118320} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118321} sequential
+
+fsm_state_encoding {131183118321} IDLE {00}
+
+fsm_state_encoding {131183118321} NO_DAT {01}
+
+fsm_state_encoding {131183118321} TWO_DAT {10}
+
+fsm_state_encoding {131183118321} ONE_DAT {11}
+
+fsm_registers {131183118321} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118322} sequential
+
+fsm_state_encoding {131183118322} IDLE {00}
+
+fsm_state_encoding {131183118322} NO_DAT {01}
+
+fsm_state_encoding {131183118322} TWO_DAT {10}
+
+fsm_state_encoding {131183118322} ONE_DAT {11}
+
+fsm_registers {131183118322} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118323} sequential
+
+fsm_state_encoding {131183118323} IDLE {00}
+
+fsm_state_encoding {131183118323} NO_DAT {01}
+
+fsm_state_encoding {131183118323} TWO_DAT {10}
+
+fsm_state_encoding {131183118323} ONE_DAT {11}
+
+fsm_registers {131183118323} {currState[1]}  {currState[0]} 
+
+fsm_encoding {131183118323} sequential
+
+fsm_state_encoding {131183118323} IDLE {00}
+
+fsm_state_encoding {131183118323} NO_DAT {01}
+
+fsm_state_encoding {131183118323} TWO_DAT {10}
+
+fsm_state_encoding {131183118323} ONE_DAT {11}
+
+fsm_registers {131183118323} {currState[1]}  {currState[0]} 

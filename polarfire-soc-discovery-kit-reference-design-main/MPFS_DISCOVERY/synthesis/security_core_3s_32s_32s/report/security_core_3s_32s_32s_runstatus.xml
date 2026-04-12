@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the job information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<job_run_status name="Mapper">
+<report_link name="Detailed report">
+<data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\security_core_3s_32s_32s\security_core_3s_32s_32s.srr</data>
+<title></title>
+</report_link>
+<job_status>
+<data>Running</data>
+</job_status>
+<job_info>
+<info name="Notes">
+<data>23</data>
+<report_link name="more">
+<data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\security_core_3s_32s_32s\report\security_core_3s_32s_32s_notes.txt</data>
+</report_link>
+</info>
+<info name="Warnings">
+<data>5205</data>
+<report_link name="more">
+<data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\security_core_3s_32s_32s\report\security_core_3s_32s_32s_warnings.txt</data>
+</report_link>
+</info>
+<info name="Errors">
+<data>0</data>
+<report_link name="more">
+<data>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\security_core_3s_32s_32s\report\security_core_3s_32s_32s_errors.txt</data>
+</report_link>
+</info>
+<info name="CPU Time">
+<data>0h:14m:47s</data>
+</info>
+<info name="Real Time">
+<data>0h:14m:58s</data>
+</info>
+<info name="Peak Memory">
+<data>2082MB</data>
+</info>
+<info name="Date &amp; Time">
+<data type="timestamp">1773724340</data>
+</info>
+</job_info>
+</job_run_status>

@@ -1,0 +1,26 @@
+<html><body><samp><pre>
+<!@TC:1775705042>
+
+########			REPORT FOR HIGH FANOUT NETS			########
+
+CLOCK GLOBAL THRESHOLD - 2
+ASYNC GLOBAL THRESHOLD - 800
+GLOBAL THRESHOLD - 5000
+
+NET NAME                                                                     CLOCK LOADS     ASYNC RST LOADS     SYNC RST LOADS     ENABLE LOADS     DATA LOADS     TOTAL FANOUT     GLOBAL BUFFER PRESENT
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLOCKS_AND_RESETS_0_FIC_0_CLK                                                22922           0                   0                  0                0              22922            YES                  
+MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0_RX_CLK_G                                1446            0                   0                  0                0              1446             YES                  
+CLOCKS_AND_RESETS_0_FIC_3_CLK                                                1136            0                   0                  0                0              1136             YES                  
+CLOCKS_AND_RESETS_0_FIC_1_CLK                                                597             0                   0                  0                0              597              YES                  
+MIPI_CAMERA_0.PF_CCC_C1_0_OUT0_FABCLK_0                                      333             0                   0                  0                0              333              YES                  
+MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.HS_IO_CLK_FIFO_Y                        4               0                   0                  0                0              4                YES                  
+MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.HS_IO_CLK_CASCADED_Y                    2               0                   0                  0                0              2                YES                  
+MIPI_CAMERA_0.PF_IOD_GENERIC_RX_C0_0.PF_LANECTRL_0_RX_DQS_90[0]              2               0                   0                  0                0              2                YES                  
+dff_arst                                                                     0               15629               0                  0                0              15629            YES                  
+FIC_0_PERIPHERALS_0.FIC0_INITIATOR_inst_0.FIC0_INITIATOR_0.sysReset_arst     0               6266                0                  0                0              6266             YES                  
+FIC_0_PERIPHERALS_0.DMA_INITIATOR_inst_0.DMA_INITIATOR_0.sysReset_arst       0               1485                0                  0                0              1485             YES                  
+dff_arst_0                                                                   0               1055                0                  0                0              1055             YES                  
+==========================================================================================================================================================================================================
+
+</pre></samp></body></html>

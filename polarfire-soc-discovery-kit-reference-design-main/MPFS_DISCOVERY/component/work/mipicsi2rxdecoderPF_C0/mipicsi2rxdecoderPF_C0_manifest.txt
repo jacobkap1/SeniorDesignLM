@@ -1,0 +1,14 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)
+
+Date      :  Wed Apr  8 15:54:40 2026
+Project   :  C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY
+Component :  mipicsi2rxdecoderPF_C0
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/Microchip/SolutionCore/mipicsi2rxdecoderPF/5.1.0/Encrypted/mipicsi2rxdecoderPF.v
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/mipicsi2rxdecoderPF_C0/mipicsi2rxdecoderPF_C0.v
+
+Constraint files:
+    C:/Users/Danug/Documents/Code/SecureVISION-polarfire-reference-design/MPFS_DISCOVERY/component/work/mipicsi2rxdecoderPF_C0\mipicsi2rxdecoderPF_C0_0\mipicsi2rxdecoderPF_C0.sdc

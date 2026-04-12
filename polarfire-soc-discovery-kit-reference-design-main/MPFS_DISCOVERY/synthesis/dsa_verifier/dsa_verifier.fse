@@ -1,0 +1,36 @@
+
+fsm_encoding {1615445411} onehot
+
+fsm_state_encoding {1615445411} AWAIT {00000001}
+
+fsm_state_encoding {1615445411} COMPUTE_U1 {00000010}
+
+fsm_state_encoding {1615445411} COMPUTE_U2 {00000100}
+
+fsm_state_encoding {1615445411} COMPUTE_P1 {00001000}
+
+fsm_state_encoding {1615445411} COMPUTE_P2 {00010000}
+
+fsm_state_encoding {1615445411} COMPUTE_V {00100000}
+
+fsm_state_encoding {1615445411} REDUCE {01000000}
+
+fsm_state_encoding {1615445411} COMPARE {10000000}
+
+fsm_registers {1615445411} {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {1615445412} onehot
+
+fsm_state_encoding {1615445412} EXP_AWAIT {000001}
+
+fsm_state_encoding {1615445412} EXP_LOOP {000010}
+
+fsm_state_encoding {1615445412} EXP_MUL {000100}
+
+fsm_state_encoding {1615445412} EXP_WAIT_R {001000}
+
+fsm_state_encoding {1615445412} EXP_SQ {010000}
+
+fsm_state_encoding {1615445412} EXP_WAIT_S {100000}
+
+fsm_registers {1615445412} {exp_state[5]}  {exp_state[4]}  {exp_state[3]}  {exp_state[2]}  {exp_state[1]}  {exp_state[0]} 
