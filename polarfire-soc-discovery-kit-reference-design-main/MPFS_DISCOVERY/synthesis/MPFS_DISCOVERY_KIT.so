@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>MPFS_DISCOVERY_KIT</design>
-	<target_verilog>C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\synthesis\MPFS_DISCOVERY_KIT.vm</target_verilog>
-</SynplifyOutput>

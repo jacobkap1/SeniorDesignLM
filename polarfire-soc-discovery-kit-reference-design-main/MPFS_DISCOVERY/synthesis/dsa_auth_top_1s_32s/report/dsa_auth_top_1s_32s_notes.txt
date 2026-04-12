@@ -1,7 +1,0 @@
-@N: MF916 |Option synthesis_strategy=base is enabled. 
-@N: MF248 |Running in 64-bit mode.
-@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
-@N: MF104 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\modular.v":72:7:72:9|Found compile point of type hard on View view:work.exp_2048s(verilog) 
-@N: MF104 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\dsa_auth_top.v":1:7:1:18|Found compile point of type hard on View view:work.dsa_auth_top_1s_32s(verilog) 
-@N: MF105 |Performing bottom-up mapping of Compile point view:work.dsa_auth_top_1s_32s(verilog) 
-@N: MF106 :"c:\users\danug\documents\code\securevision-polarfire-reference-design\mpfs_discovery\hdl\dsa_auth_top.v":1:7:1:18|Mapping Compile point view:work.dsa_auth_top_1s_32s(verilog) because 

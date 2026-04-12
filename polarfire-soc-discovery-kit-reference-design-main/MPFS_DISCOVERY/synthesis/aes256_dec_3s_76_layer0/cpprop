@@ -1,9 +1,0 @@
-n work aes256_dec_3s_76_layer0 verilog;
-av .compile_point_summary_status "Mapped";
-av .compile_point_summary_reason "No database";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 34.3438;
-av .compile_point_starttime_stamp "Tue Apr  7 20:33:43 2026";
-av .compile_point_endtime_stamp "Tue Apr  7 20:34:20 2026";
-av .compile_point_realtime_used 37.328;

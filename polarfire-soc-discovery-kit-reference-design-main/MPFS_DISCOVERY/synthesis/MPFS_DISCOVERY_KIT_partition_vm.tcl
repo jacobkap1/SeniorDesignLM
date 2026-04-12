@@ -1,5 +1,0 @@
-set_partition_info -name "/MPFS_DISCOVERY_KIT" -timestamp "1775705197"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775608421"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775608421"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775608421"
-set_partition_info -name "/MPFS_DISCOVERY_KIT/MPFS_DISCOVERY_KIT" -timestamp "1775626723"

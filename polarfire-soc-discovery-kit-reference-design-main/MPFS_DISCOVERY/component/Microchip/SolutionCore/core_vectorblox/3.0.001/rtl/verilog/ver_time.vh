@@ -1,2 +1,0 @@
-`define VER_TIME 32'h00101112
-`define VER_DATE 32'h00300424

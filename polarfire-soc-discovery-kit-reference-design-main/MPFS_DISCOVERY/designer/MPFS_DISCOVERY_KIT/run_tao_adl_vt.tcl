@@ -1,8 +1,0 @@
-set_device -family {PolarFireSoC} -die {MPFS095T} -speed {-1}
-read_adl {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.adl}
-read_afl {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT.afl}
-map_netlist
-read_sdc {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\MPFS_DISCOVERY_KIT_derived_constraints.sdc}
-check_constraints {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\timing_sdc_errors.log}
-estimate_jitter -report {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\timing_analysis_jitter_report.txt}
-write_sdc -mode smarttime {C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\timing_analysis.sdc}

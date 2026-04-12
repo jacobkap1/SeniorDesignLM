@@ -1,9 +1,0 @@
-n work FIC_0_PERIPHERALS verilog;
-av .compile_point_summary_status "Remapped";
-av .compile_point_summary_reason "Interface of a contained Compile Point changed";
-av .compile_point_update_model 1;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 118.047;
-av .compile_point_starttime_stamp "Sat Apr  4 16:59:46 2026";
-av .compile_point_endtime_stamp "Sat Apr  4 17:01:46 2026";
-av .compile_point_realtime_used 120.264;

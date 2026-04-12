@@ -1,9 +1,0 @@
-n work security_core_3s_2s_5s verilog;
-av .compile_point_summary_status "Remapped";
-av .compile_point_summary_reason "Interface of Compile Point changed";
-av .compile_point_update_model 1;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 41.7656;
-av .compile_point_starttime_stamp "Tue Apr  7 20:34:23 2026";
-av .compile_point_endtime_stamp "Tue Apr  7 20:35:14 2026";
-av .compile_point_realtime_used 50.862;

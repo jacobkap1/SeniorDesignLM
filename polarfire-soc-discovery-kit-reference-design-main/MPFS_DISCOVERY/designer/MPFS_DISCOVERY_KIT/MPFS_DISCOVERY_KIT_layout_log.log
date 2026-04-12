@@ -1,723 +1,0 @@
-INFO: Reading User SDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\MPFS_DISCOVERY_KIT_derived_constraints.sdc.
-INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
-
-No errors or warnings found.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : OFF
-Global Pins Demotion     : ON
-Driver Replication       : OFF
-High-effort              : ON
-Repair min-delay         : OFF
-Incremental              : OFF
-Inter-clock optimization : ON
-
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BANK_SETTINGS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BOARD_MISC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_MAC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_RPi.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_UARTS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_7_SEG.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\fp\SW_PLL.pdc. 0 error(s) and 0 warning(s)
-
- Running Timing based Global Demotion. 
-        Moved 997 async pins from global to its source 'CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]'.
-=== Registers Duplicated ===
-1  - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0] duplicated 
-   - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE
-
- Timing based Global Demotion completed successfully. 
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 58 fixed I/O macros, 9 unfixed I/O macros
-Info:  I/O Bank and Globals Assigner identified bank 'Bank0' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner identified bank 'Bank1' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner detected (2) out of (5) I/O Bank(s) with locked I/O technologies.
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 3 seconds
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Placer V5.0 - 2025.2.0 
-Design: MPFS_DISCOVERY_KIT              Started: Wed Apr  8 23:33:02 2026
-
-Initializing High-Effort Timing-Driven Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 35 seconds
-Placement                : 45 seconds
-Improvement              : 164 seconds
-
-Placer completed successfully.
-
-Design: MPFS_DISCOVERY_KIT              
-Finished: Wed Apr  8 23:37:46 2026
-Total CPU Time:     00:06:09            Total Elapsed Time: 00:04:44
-Total Memory Usage: 1488.4 Mbytes
-                        o - o - o - o - o - o
-
-
-Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/cell_en_out[2]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_6[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_4[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Router 
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KITStarted: Wed Apr  8 23:38:03 2026
-
-
-Router completed successfully.
-
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT
-Finished: Wed Apr  8 23:38:42 2026
-Total CPU Time:     00:00:51            Total Elapsed Time: 00:00:39
-Total Memory Usage: 1868.6 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------------------+-------+-------+------------+
-| Type                      | Used  | Total | Percentage |
-+---------------------------+-------+-------+------------+
-| 4LUT                      | 46072 | 93516 | 49.27      |
-| DFF                       | 29009 | 93516 | 31.02      |
-| Logic Element             | 50947 | 93516 | 54.48      |
-| I/Os using I/O Registers  | 0     | 80    | 0.00       |
-| I/O Register Flip-Flops   | 0     | 240   | 0.00       |
-| -- Input  I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Output I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Enable I/O Flip-Flops  | 0     | 80    | 0.00       |
-+---------------------------+-------+-------+------------+
-
-I/O Placement
-+--------+-------+------------+
-| Type   | Count | Percentage |
-+--------+-------+------------+
-| Locked |  55   | 85.94%     |
-| Placed |  9    | 14.06%     |
-+--------+-------+------------+
-
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-Completed writing pin report files.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : OFF
-Global Pins Demotion     : ON
-Driver Replication       : OFF
-High-effort              : ON
-Repair min-delay         : OFF
-Incremental              : OFF
-Inter-clock optimization : ON
-
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BANK_SETTINGS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BOARD_MISC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_MAC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_RPi.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_UARTS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_7_SEG.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\fp\SW_PLL.pdc. 0 error(s) and 0 warning(s)
-
- Running Timing based Global Demotion. 
-        Moved 997 async pins from global to its source 'CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]'.
-=== Registers Duplicated ===
-1  - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0] duplicated 
-   - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE
-
- Timing based Global Demotion completed successfully. 
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 58 fixed I/O macros, 9 unfixed I/O macros
-Info:  I/O Bank and Globals Assigner identified bank 'Bank0' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner identified bank 'Bank1' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner detected (2) out of (5) I/O Bank(s) with locked I/O technologies.
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 3 seconds
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Placer V5.0 - 2025.2.0 
-Design: MPFS_DISCOVERY_KIT              Started: Wed Apr  8 23:42:07 2026
-
-Initializing High-Effort Timing-Driven Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 37 seconds
-Placement                : 44 seconds
-Improvement              : 159 seconds
-
-Placer completed successfully.
-
-Design: MPFS_DISCOVERY_KIT              
-Finished: Wed Apr  8 23:46:47 2026
-Total CPU Time:     00:06:09            Total Elapsed Time: 00:04:40
-Total Memory Usage: 1490.6 Mbytes
-                        o - o - o - o - o - o
-
-
-Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/cell_en_out[2]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_6[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_4[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Router 
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KITStarted: Wed Apr  8 23:47:04 2026
-
-
-Router completed successfully.
-
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT
-Finished: Wed Apr  8 23:47:36 2026
-Total CPU Time:     00:00:42            Total Elapsed Time: 00:00:32
-Total Memory Usage: 1870.9 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------------------+-------+-------+------------+
-| Type                      | Used  | Total | Percentage |
-+---------------------------+-------+-------+------------+
-| 4LUT                      | 46072 | 93516 | 49.27      |
-| DFF                       | 29009 | 93516 | 31.02      |
-| Logic Element             | 50899 | 93516 | 54.43      |
-| I/Os using I/O Registers  | 0     | 80    | 0.00       |
-| I/O Register Flip-Flops   | 0     | 240   | 0.00       |
-| -- Input  I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Output I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Enable I/O Flip-Flops  | 0     | 80    | 0.00       |
-+---------------------------+-------+-------+------------+
-
-I/O Placement
-+--------+-------+------------+
-| Type   | Count | Percentage |
-+--------+-------+------------+
-| Locked |  55   | 85.94%     |
-| Placed |  9    | 14.06%     |
-+--------+-------+------------+
-
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-Completed writing pin report files.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : OFF
-Global Pins Demotion     : ON
-Driver Replication       : OFF
-High-effort              : ON
-Repair min-delay         : OFF
-Incremental              : OFF
-Inter-clock optimization : ON
-
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BANK_SETTINGS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BOARD_MISC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_MAC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_RPi.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_UARTS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_7_SEG.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\fp\SW_PLL.pdc. 0 error(s) and 0 warning(s)
-
- Running Timing based Global Demotion. 
-        Moved 997 async pins from global to its source 'CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]'.
-=== Registers Duplicated ===
-1  - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0] duplicated 
-   - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE
-
- Timing based Global Demotion completed successfully. 
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 58 fixed I/O macros, 9 unfixed I/O macros
-Info:  I/O Bank and Globals Assigner identified bank 'Bank0' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner identified bank 'Bank1' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner detected (2) out of (5) I/O Bank(s) with locked I/O technologies.
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 3 seconds
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Placer V5.0 - 2025.2.0 
-Design: MPFS_DISCOVERY_KIT              Started: Thu Apr  9 00:02:57 2026
-
-Initializing High-Effort Timing-Driven Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 56 seconds
-Placement                : 67 seconds
-Improvement              : 277 seconds
-
-Placer completed successfully.
-
-Design: MPFS_DISCOVERY_KIT              
-Finished: Thu Apr  9 00:10:41 2026
-Total CPU Time:     00:09:47            Total Elapsed Time: 00:07:44
-Total Memory Usage: 1485.4 Mbytes
-                        o - o - o - o - o - o
-
-
-Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/cell_en_out[2]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_6[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_4[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Router 
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KITStarted: Thu Apr  9 00:11:05 2026
-
-
-Router completed successfully.
-
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT
-Finished: Thu Apr  9 00:11:52 2026
-Total CPU Time:     00:01:05            Total Elapsed Time: 00:00:47
-Total Memory Usage: 1869.4 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------------------+-------+-------+------------+
-| Type                      | Used  | Total | Percentage |
-+---------------------------+-------+-------+------------+
-| 4LUT                      | 46072 | 93516 | 49.27      |
-| DFF                       | 29009 | 93516 | 31.02      |
-| Logic Element             | 51032 | 93516 | 54.57      |
-| I/Os using I/O Registers  | 0     | 80    | 0.00       |
-| I/O Register Flip-Flops   | 0     | 240   | 0.00       |
-| -- Input  I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Output I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Enable I/O Flip-Flops  | 0     | 80    | 0.00       |
-+---------------------------+-------+-------+------------+
-
-I/O Placement
-+--------+-------+------------+
-| Type   | Count | Percentage |
-+--------+-------+------------+
-| Locked |  55   | 85.94%     |
-| Placed |  9    | 14.06%     |
-+--------+-------+------------+
-
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-Completed writing pin report files.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : OFF
-Global Pins Demotion     : ON
-Driver Replication       : OFF
-High-effort              : ON
-Repair min-delay         : OFF
-Incremental              : OFF
-Inter-clock optimization : ON
-
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BANK_SETTINGS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_KIT_BOARD_MISC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_MAC.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_RPi.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_UARTS.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\MPFS_DISCOVERY_7_SEG.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\constraint\fp\SW_PLL.pdc. 0 error(s) and 0 warning(s)
-
- Running Timing based Global Demotion. 
-        Moved 997 async pins from global to its source 'CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]'.
-=== Registers Duplicated ===
-1  - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0] duplicated 
-   - CLOCKS_AND_RESETS_0/RESET_FIC_0_CLK/CORERESET_0/dff_15[0]_GB_DEMOTE
-
- Timing based Global Demotion completed successfully. 
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 58 fixed I/O macros, 9 unfixed I/O macros
-Info:  I/O Bank and Globals Assigner identified bank 'Bank0' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner identified bank 'Bank1' as being fixed at VCCI:1.80V VCCR:0.90V
-Info:  I/O Bank and Globals Assigner detected (2) out of (5) I/O Bank(s) with locked I/O technologies.
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 3 seconds
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Placer V5.0 - 2025.2.0 
-Design: MPFS_DISCOVERY_KIT              Started: Thu Apr  9 00:16:40 2026
-
-Initializing High-Effort Timing-Driven Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 51 seconds
-Placement                : 45 seconds
-Improvement              : 159 seconds
-
-Placer completed successfully.
-
-Design: MPFS_DISCOVERY_KIT              
-Finished: Thu Apr  9 00:21:36 2026
-Total CPU Time:     00:06:50            Total Elapsed Time: 00:04:56
-Total Memory Usage: 1493.5 Mbytes
-                        o - o - o - o - o - o
-
-
-Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_4_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_8[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/cell_en_out[2]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_2_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_1_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_5_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_6_0_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_3_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.1.neoTRNG_cell_inst/sreg_6[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_6[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/sreg_4[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_7_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.2.neoTRNG_cell_inst/sreg_4_Z[0]
-Clock pins: 1
-    Driver: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0[0]:Q
-       Net: FIC_0_PERIPHERALS_0/security_core_0/rng/neoTRNG_0/entropy_cell_gen.0.neoTRNG_cell_inst/sreg_0_Z[0]
-Clock pins: 1
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-
-Router 
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KITStarted: Thu Apr  9 00:21:52 2026
-
-
-Router completed successfully.
-
-Design: C:\Users\Danug\Documents\Code\SecureVISION-polarfire-reference-design\MPFS_DISCOVERY\designer\MPFS_DISCOVERY_KIT\MPFS_DISCOVERY_KIT
-Finished: Thu Apr  9 00:22:27 2026
-Total CPU Time:     00:00:46            Total Elapsed Time: 00:00:35
-Total Memory Usage: 1869.3 Mbytes
-                        o - o - o - o - o - o
-
-Resource Usage
-+---------------------------+-------+-------+------------+
-| Type                      | Used  | Total | Percentage |
-+---------------------------+-------+-------+------------+
-| 4LUT                      | 46072 | 93516 | 49.27      |
-| DFF                       | 29009 | 93516 | 31.02      |
-| Logic Element             | 51028 | 93516 | 54.57      |
-| I/Os using I/O Registers  | 0     | 80    | 0.00       |
-| I/O Register Flip-Flops   | 0     | 240   | 0.00       |
-| -- Input  I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Output I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Enable I/O Flip-Flops  | 0     | 80    | 0.00       |
-+---------------------------+-------+-------+------------+
-
-I/O Placement
-+--------+-------+------------+
-| Type   | Count | Percentage |
-+--------+-------+------------+
-| Locked |  55   | 85.94%     |
-| Placed |  9    | 14.06%     |
-+--------+-------+------------+
-
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-Completed writing pin report files.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : OFF
-Global Pins Demotion     : ON
-Driver Replication       : OFF
-High-effort              : ON
-Repair min-delay         : ON
-Incremental              : ON
-Inter-clock optimization : ON
-
-INFO: Skipping Placer...
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-Info: Iteration 1:
-  Worst minimum delay slack: -3.406 ns
-  Total violating paths eligible for improvement: 92
-  Total violating paths improved: 92
-Info: Iteration 2:
-  Worst minimum delay slack: -1.159 ns
-  Total violating paths eligible for improvement: 80
-  Total violating paths improved: 80
-Info: Iteration 3:
-  Worst minimum delay slack: -0.301 ns
-  Total violating paths eligible for improvement: 23
-  Total violating paths improved: 23
-Info: Iteration 4:
-  Worst minimum delay slack: 
-  Total violating paths eligible for improvement: 0
-  Total violating paths improved: 0
-Resource Usage
-+---------------------------+-------+-------+------------+
-| Type                      | Used  | Total | Percentage |
-+---------------------------+-------+-------+------------+
-| 4LUT                      | 46717 | 93516 | 49.96      |
-| DFF                       | 29009 | 93516 | 31.02      |
-| Logic Element             | 51481 | 93516 | 55.05      |
-| I/Os using I/O Registers  | 0     | 80    | 0.00       |
-| I/O Register Flip-Flops   | 0     | 240   | 0.00       |
-| -- Input  I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Output I/O Flip-Flops  | 0     | 80    | 0.00       |
-| -- Enable I/O Flip-Flops  | 0     | 80    | 0.00       |
-+---------------------------+-------+-------+------------+
-
-I/O Placement
-+--------+-------+------------+
-| Type   | Count | Percentage |
-+--------+-------+------------+
-| Locked |  55   | 85.94%     |
-| Placed |  9    | 14.06%     |
-+--------+-------+------------+
-
-TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
-Completed writing pin report files.
