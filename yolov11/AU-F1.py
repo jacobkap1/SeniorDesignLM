@@ -6,9 +6,9 @@ from sklearn.metrics import roc_curve, auc, precision_recall_curve, f1_score
 
 IOU_Threshold = 0.5
 
-Image_Dir = "pics/images"
-Label_Dir = "pics/labels"
-Saved_Dir = "pics/saved"
+Image_Dir = "data/images"
+Label_Dir = "data/labels"
+Saved_Dir = "data/saved"
 
 os.makedirs(Image_Dir, exist_ok = True)
 os.makedirs(Label_Dir, exist_ok = True)
